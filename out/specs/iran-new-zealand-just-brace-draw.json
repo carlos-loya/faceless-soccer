@@ -1,0 +1,108 @@
+{
+  "format": "post_match",
+  "topic": "Iran 2-2 New Zealand — Elijah Just's brace nearly shocks Iran, who fight back twice; Group G all level",
+  "subject": "",
+  "matchup": ["iran", "new-zealand"],
+  "target_duration_seconds": 29,
+  "hook": {
+    "first_frame_text": "HE SCORED TWICE — NOBODY KNEW HIM",
+    "spoken_hook": "Nobody knew his name. Then he scored twice at a World Cup.",
+    "hook_type": "curiosity_gap"
+  },
+  "retention_mechanic": "open_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "TWO GOALS. ZERO FAME.",
+      "voiceover": "Nobody knew his name. Then he scored twice.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black background, gold gradient spotlight cone, a lone silhouetted footballer in a faceless white-and-black kit standing in the beam, broadcast-premium, vertical 9:16, crisp bold condensed white type space at top",
+      "visual_source": "stock_video",
+      "visual_query": "floodlight-bokeh",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "7' — NEW ZEALAND IN FRONT",
+      "voiceover": "Seven minutes in, Elijah Just put New Zealand ahead.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Silhouetted crowd erupting under stadium floodlights, black and gold tone, faceless, vertical 9:16, premium broadcast atmosphere",
+      "visual_source": "stock_video",
+      "visual_query": "crowd-erupt",
+      "sticker_entity": "",
+      "score": "0-1",
+      "duration_seconds": 5
+    },
+    {
+      "index": 3,
+      "on_screen_text": "REZAEIAN LEVELS IT",
+      "voiceover": "Iran hit straight back. Rezaeian, level by halftime.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Ramin Rezaeian in the white Iran national kit, broadcast-premium portrait treatment, deep black and gold graded background, vertical 9:16",
+      "visual_source": "entity",
+      "visual_query": "ramin-rezaeian",
+      "sticker_entity": "",
+      "score": "1-1",
+      "duration_seconds": 5
+    },
+    {
+      "index": 4,
+      "on_screen_text": "JUST STRIKES AGAIN — 54'",
+      "voiceover": "Then the unknown struck again. New Zealand ahead twice.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Moody floodlight bokeh, tension, deep black with warm gold flares, faceless, vertical 9:16, broadcast premium",
+      "visual_source": "stock_video",
+      "visual_query": "floodlight-bokeh",
+      "sticker_entity": "",
+      "score": "1-2",
+      "duration_seconds": 5
+    },
+    {
+      "index": 5,
+      "on_screen_text": "MOHEBBI SAVES IT — 2-2",
+      "voiceover": "Iran refused to lose. Mohebbi's header, two-all.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Silhouetted crowd erupting, gold light burst, faceless celebration, deep black and gold, vertical 9:16, premium broadcast",
+      "visual_source": "stock_video",
+      "visual_query": "crowd-erupt",
+      "sticker_entity": "",
+      "score": "2-2",
+      "duration_seconds": 5
+    },
+    {
+      "index": 6,
+      "on_screen_text": "GROUP G: ALL LEVEL",
+      "voiceover": "Every Group G team has a point. Subscribe for your daily World Cup.",
+      "stat_callout": "",
+      "graphic_type": "group_table",
+      "graphic_prompt": "Clean ranked group-standings table, deep black background, gold accent header, crisp white condensed type, vertical 9:16, premium broadcast",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "score": "",
+      "group_table": [
+        { "team": "iran", "points": 1, "played": 1, "gd": 0, "highlight": true },
+        { "team": "new-zealand", "points": 1, "played": 1, "gd": 0, "highlight": true },
+        { "team": "belgium", "points": 1, "played": 1, "gd": 0, "highlight": false },
+        { "team": "egypt", "points": 1, "played": 1, "gd": 0, "highlight": false }
+      ],
+      "duration_seconds": 6
+    }
+  ],
+  "comment_bait": "Group G's wide open now — who escapes it, the favourites or the minnows? Make your case, I'm in the replies.",
+  "cta": "Subscribe for your daily World Cup stories",
+  "music_mood": "tense building drama with a triumphant late lift",
+  "thumbnail": { "text": "NEW ZEALAND LED TWICE", "concept": "Scoreboard reading IRN 2-2 NZL in gold, New Zealand flag, bold white 'LED TWICE' over a floodlit black-and-gold stadium" },
+  "youtube_title": "Iran 2-2 New Zealand: The Minnows Twice Led Team Melli | World Cup 2026",
+  "youtube_description": "New Zealand's Elijah Just scored twice and twice put the lead over Iran — but Team Melli fought back both times to draw 2-2. Every team in Group G now has a point after Matchday 1. Who escapes the group? #WorldCup2026",
+  "instagram_caption": "Elijah Just scored twice. Iran came back twice. 2-2 and Group G is a logjam. Group G's wide open now — who actually escapes it, the favourites or the minnows? Make your case, I'm in the replies. Subscribe for your daily World Cup stories.",
+  "tiktok_caption": "Two goals from a man nobody knew. Iran 2-2 New Zealand. Group G's wide open — who escapes it? I'm in the replies.",
+  "hashtags": ["#football", "#soccer", "#worldcup2026", "#iran", "#newzealand", "#groupg", "#teammelli", "#tikitakafootytv"]
+}

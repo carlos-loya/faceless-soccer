@@ -1,0 +1,111 @@
+{
+  "format": "post_match",
+  "topic": "Sweden 5-1 Tunisia — World Cup 2026 Group F opener; Yasin Ayari brace steals the show from Isak & Gyökeres",
+  "subject": "yasin-ayari",
+  "matchup": ["sweden", "tunisia"],
+  "target_duration_seconds": 30,
+  "hook": {
+    "first_frame_text": "ISAK, GYÖKERES — THEN THE KID",
+    "spoken_hook": "Everyone came for Sweden's superstar strikers. A twenty-two-year-old stole the show.",
+    "hook_type": "curiosity_gap"
+  },
+  "retention_mechanic": "seamless_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "ISAK, GYÖKERES — THEN THE KID",
+      "voiceover": "Everyone came for Sweden's superstar strikers. A twenty-two-year-old stole the show.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black background, gold gradient energy streaks (#F7D774 to #C8881B), bold white condensed type, a faceless blue-and-yellow Sweden kit silhouette emerging from shadow, premium broadcast feel, vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "alexander-isak",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "AYARI — 7' SCREAMER",
+      "voiceover": "Seven minutes in, Yasin Ayari curled a worldie into the top corner.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black background, gold trajectory arc curling toward a top-corner net, bold white type, faceless silhouette mid-strike in Sweden colors, broadcast-grade, vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "yasin-ayari",
+      "sticker_entity": "",
+      "score": "1-0",
+      "duration_seconds": 5
+    },
+    {
+      "index": 3,
+      "on_screen_text": "ISAK DOUBLES IT",
+      "voiceover": "Then Isak raced clear to make it two.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black-and-gold, a streaking forward silhouette breaking the defensive line, motion blur, bold white type, no faces, vertical 9:16 premium broadcast.",
+      "visual_source": "entity",
+      "visual_query": "alexander-isak",
+      "sticker_entity": "",
+      "score": "2-0",
+      "duration_seconds": 5
+    },
+    {
+      "index": 4,
+      "on_screen_text": "GYÖKERES HITS BACK",
+      "voiceover": "Tunisia pulled one back — Gyökeres answered instantly.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black background with gold burst, a powerful faceless striker silhouette wheeling away in celebration, bold white type, broadcast-grade, vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "viktor-gyokeres",
+      "sticker_entity": "",
+      "score": "3-1",
+      "duration_seconds": 5
+    },
+    {
+      "index": 5,
+      "on_screen_text": "AYARI'S BRACE SEALS A 5-1 ROUT",
+      "voiceover": "Svanberg made four, then Ayari sealed his brace in stoppage time.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Explosive gold confetti over deep black, a faceless Sweden silhouette arms-wide, bold white type reading the rout, vertical 9:16 broadcast finish.",
+      "visual_source": "entity",
+      "visual_query": "yasin-ayari",
+      "sticker_entity": "",
+      "score": "5-1",
+      "duration_seconds": 6
+    },
+    {
+      "index": 6,
+      "on_screen_text": "GROUP F — WHO'S STOPPING THEM?",
+      "voiceover": "Sweden top Group F. Follow for a World Cup story every single day.",
+      "stat_callout": "",
+      "graphic_type": "group_table",
+      "graphic_prompt": "Clean black-and-gold ranked group-standings table, white condensed type, flags and 3-letter codes, the leader row glowing gold, vertical 9:16 broadcast graphic.",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 5,
+      "group_table": [
+        { "team": "sweden", "played": 1, "points": 3, "gd": 4, "highlight": true },
+        { "team": "japan", "played": 1, "points": 1, "gd": 0 },
+        { "team": "netherlands", "played": 1, "points": 1, "gd": 0 },
+        { "team": "tunisia", "played": 1, "points": 0, "gd": -4 }
+      ]
+    }
+  ],
+  "comment_bait": "Sweden look frightening — but the Netherlands are next. Dark horses, or flat-track bullies? Tell me where they finish in Group F.",
+  "cta": "Follow for a World Cup story every single day",
+  "music_mood": "triumphant, building Scandinavian-cold orchestral hype with a punchy drop on the goals",
+  "thumbnail": {
+    "text": "THE KID STOLE IT",
+    "concept": "Split frame — Isak and Gyökeres faded into shadow on one side, a young Sweden No. in bright gold light on the other, big '5-1' and 'AYARI x2' tag, curiosity-driven, no broadcast imagery."
+  },
+  "youtube_title": "Sweden 5-1 Tunisia: Ayari's Brace Steals the Show from Isak & Gyökeres | World Cup 2026",
+  "youtube_description": "Sweden opened their 2026 World Cup with a 5-1 rout of Tunisia in Group F — and it wasn't the superstar strikers who stole it. Yasin Ayari bagged a brace, with Isak, Gyökeres and Svanberg also on the scoresheet. Sweden top the group. Where do they finish? Subscribe for a World Cup story every single day. #WorldCup2026 #Sweden",
+  "instagram_caption": "Isak and Gyökeres were the billing... Ayari was the story. 🇸🇪 Sweden 5-1 Tunisia. Dark horses or flat-track bullies? Tell me where they finish in Group F 👇 Follow @tikitakafootytv for a World Cup story every day.",
+  "tiktok_caption": "The £150m strikers... then the kid stole it 🇸🇪 Sweden 5-1 Tunisia. Dark horses or flat-track bullies? 👇 #worldcup2026",
+  "hashtags": ["#worldcup2026", "#sweden", "#football", "#soccer", "#ayari", "#gyokeres", "#isak", "#tikitakafootytv"]
+}

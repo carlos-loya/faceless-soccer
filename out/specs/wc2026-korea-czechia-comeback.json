@@ -1,0 +1,110 @@
+{
+  "format": "shock_stat",
+  "topic": "South Korea 2-1 Czechia — World Cup 2026 Group A opener comeback (supersub Oh Hyeon-gyu wins it)",
+  "subject": "",
+  "target_duration_seconds": 30,
+  "hook": {
+    "first_frame_text": "SON CAME OFF — THEN THIS",
+    "spoken_hook": "Korea took Son Heung-min off. His replacement stole the show.",
+    "hook_type": "curiosity_gap"
+  },
+  "retention_mechanic": "seamless_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "SON CAME OFF — THEN THIS",
+      "voiceover": "Korea took Son Heung-min off. His replacement stole the show.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Deep black background, gold gradient accent #F7D774 to #C8881B, bold white condensed type 'SON CAME OFF…', a faint stadium silhouette, premium broadcast feel, vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "son-heung-min",
+      "sticker_entity": "south-korea",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "CZECHIA STRUCK FIRST — 59'",
+      "voiceover": "Czechia drew first blood. Ladislav Krejčí rose to head in a long Coufal throw. One-nil.",
+      "stat_callout": "0-1",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Tense deep-red and black graphic, a bold white condensed 'KREJČÍ 59' header from a long throw', a header silhouette, no real faces, vertical 9:16.",
+      "visual_source": "stock_video",
+      "visual_query": "floodlights",
+      "sticker_entity": "czechia",
+      "duration_seconds": 4
+    },
+    {
+      "index": 3,
+      "on_screen_text": "CUT. CHIP. 1-1.",
+      "voiceover": "Then Hwang In-beom answered. A drop of the shoulder, a clever chip, and Korea were level.",
+      "stat_callout": "1-1",
+      "graphic_type": "stat_card",
+      "graphic_prompt": "Deep black background, gold gradient accent, bold white condensed 'HWANG IN-BEOM EQUALISES 67', a chipped-finish arc graphic, premium broadcast feel, no real faces, vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "hwang-in-beom",
+      "sticker_entity": "south-korea",
+      "duration_seconds": 5
+    },
+    {
+      "index": 4,
+      "on_screen_text": "OFFSIDE — ROBBED OR CORRECT?",
+      "voiceover": "Czechia thought they'd retaken the lead. Souček headed in, but it was ruled out for offside. Replays said the call was right.",
+      "stat_callout": "77'",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Tense deep-red and black graphic, a bold white condensed 'DISALLOWED — OFFSIDE 77', a VAR offside-line motif, no real faces, vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "tomas-soucek",
+      "sticker_entity": "czechia",
+      "duration_seconds": 5
+    },
+    {
+      "index": 5,
+      "on_screen_text": "SON'S REPLACEMENT WINS IT — 80'",
+      "voiceover": "There's your answer. Oh Hyeon-gyu — the man on for Son — taps in Hwang In-beom's cross. Two-one Korea.",
+      "stat_callout": "2-1",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Explosive gold-and-black celebration graphic, bold white condensed 'SUPERSUB 2-1', a substitution-board motif with the number entering, confetti energy, no real faces, vertical 9:16.",
+      "visual_source": "stock_video",
+      "visual_query": "crowd",
+      "sticker_entity": "south-korea",
+      "duration_seconds": 5
+    },
+    {
+      "index": 6,
+      "on_screen_text": "THEN THE SAVE TO WIN IT",
+      "voiceover": "And in stoppage time, Kim Seung-gyu flew to his right to keep it. A clutch save to seal the comeback.",
+      "stat_callout": "93'",
+      "graphic_type": "stat_card",
+      "graphic_prompt": "Deep black background, gold gradient accent, bold white condensed 'CLUTCH SAVE 93', a goalkeeper-dive silhouette, premium broadcast feel, no real faces, vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "kim-seung-gyu",
+      "sticker_entity": "south-korea",
+      "duration_seconds": 4
+    },
+    {
+      "index": 7,
+      "on_screen_text": "SUBSCRIBE — DAILY WORLD CUP",
+      "voiceover": "Comeback complete, Korea are up and running. Subscribe for your daily World Cup story.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Brand end card, deep black, gold TT monogram top-center, bold white condensed 'DAILY WORLD CUP', a hand-drawn gold arrow pointing down, vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "son-heung-min",
+      "sticker_entity": "south-korea",
+      "duration_seconds": 4
+    }
+  ],
+  "comment_bait": "Souček's goal — correct offside call, or did Czechia get robbed? Drop your verdict below 🇨🇿",
+  "cta": "Subscribe for your daily World Cup story",
+  "music_mood": "Tense build into a triumphant, surging comeback anthem; a gut-punch dip on the disallowed-goal beat",
+  "thumbnail": {
+    "text": "SON OFF — THEN THIS",
+    "concept": "Son Heung-min's face (real CC photo) large on the right, intense/uncertain expression, South Korea red wash, bold gold 'SON OFF —' over a white 'THEN THIS?' on the left, deep black + gold, a faint 2-1 scoreboard hint in a corner, premium broadcast feel, vertical 9:16."
+  },
+  "youtube_title": "Son Came Off — Then His Replacement Won It | South Korea 2-1 Czechia (World Cup 2026)",
+  "youtube_description": "Korea subbed off captain Son Heung-min — and the man who replaced him won the game. South Korea came from behind to beat Czechia 2-1 in their World Cup 2026 Group A opener at Estadio Akron: Ladislav Krejci headed Czechia ahead, Hwang In-beom levelled with a slick chip, Tomas Soucek had a header ruled out for offside, supersub Oh Hyeon-gyu finished it, and Kim Seung-gyu's clutch late save sealed it. Correct offside call, or were Czechia robbed? Your daily World Cup story — subscribe. #worldcup2026 #southkorea",
+  "instagram_caption": "Korea took Son OFF… and his replacement won it 🇰🇷 Hwang In-beom's chip levelled it, Soucek's header got chalked off for offside, then supersub Oh Hyeon-gyu — on for Son — won it, before Kim Seung-gyu's clutch save sealed the comeback. Correct offside call, or were Czechia robbed? Subscribe for your daily World Cup story.",
+  "tiktok_caption": "They subbed off Son… then his replacement won it 🇰🇷 Chip to level, a goal chalked off for offside, supersub winner + a clutch keeper save. Robbed or correct call? Daily World Cup content 👇",
+  "hashtags": ["#worldcup2026", "#southkorea", "#czechia", "#sonheungmin", "#soccer", "#football", "#comeback", "#worldcupopener", "#tikitakafootytv"]
+}

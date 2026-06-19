@@ -1,0 +1,20 @@
+{
+  "slug": "wembley-stadium",
+  "type": "stadium",
+  "name": "Wembley Stadium",
+  "aliases": ["Wembley"],
+  "facts": {
+    "location": { "value": "London — England's national stadium", "as_of": "2026-06-09", "source": "https://en.wikipedia.org/wiki/Wembley_Stadium", "confidence": "high" }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Wembley_Stadium%2C_London_%28Ank_Kumar%29_03.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "Ank Kumar / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-09",
+    "curated": true,
+    "curated_note": "Vision-vetted: Wembley exterior (arch + Bobby Moore statue). Landscape — crops to the facade in 9:16."
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-09"
+}

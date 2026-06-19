@@ -1,0 +1,60 @@
+{
+  "slug": "estadio-azteca",
+  "type": "stadium",
+  "name": "Estadio Azteca",
+  "aliases": [
+    "Azteca",
+    "Estadio Banorte",
+    "Mexico City Stadium"
+  ],
+  "facts": {
+    "location": {
+      "value": "Mexico City, Mexico",
+      "as_of": "2026-06-10",
+      "source": "https://en.wikipedia.org/wiki/Estadio_Azteca",
+      "confidence": "high"
+    },
+    "capacity": {
+      "value": "87,523 after the 2026 renovation (largest in Mexico and Latin America); held up to ~115,000 for the 1986 World Cup",
+      "as_of": "2026-06-10",
+      "source": "https://en.wikipedia.org/wiki/Estadio_Azteca",
+      "confidence": "high"
+    },
+    "wc_record": {
+      "value": "SUPERLATIVE (verify): first stadium ever to host three World Cups (1970, 1986, 2026) and the first to host three World Cup opening matches",
+      "as_of": "2026-06-10",
+      "source": "https://www.espn.com/soccer/story/_/id/37497919/estadio-azteca-only-stadium-three-world-cups-now-mexico-co-host-2026",
+      "confidence": "high"
+    },
+    "finals_hosted": {
+      "value": "Hosted two World Cup finals: 1970 (Brazil 4-1 Italy \u2014 Pel\u00e9's third title) and 1986 (Argentina 3-2 West Germany \u2014 Maradona)",
+      "as_of": "2026-06-10",
+      "source": "https://en.wikipedia.org/wiki/Estadio_Azteca",
+      "confidence": "high"
+    },
+    "iconic_moments": {
+      "value": "Site of Maradona's 'Hand of God' and 'Goal of the Century' in the 1986 quarter-final vs England",
+      "as_of": "2026-06-10",
+      "source": "https://en.wikipedia.org/wiki/Estadio_Azteca",
+      "confidence": "high"
+    },
+    "renovation": {
+      "value": "Nearly two-year renovation completed March 2026; reopened 28 March 2026 with a Mexico 0-0 Portugal friendly",
+      "as_of": "2026-06-10",
+      "source": "https://stadiumdb.com/news/2025/12/mexico_modernization_of_estadio_azteca_legendary_stadium_prepares_for_world_cup",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Vista_a%C3%A9rea_del_Estadio_Azteca_-_2026_-_02.jpg",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "attribution": "ProtoplasmaKid / CC BY 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-10"
+  },
+  "active_narratives": [
+    "mexico-host-opener",
+    "wc2010-opener-echo"
+  ],
+  "last_verified": "2026-06-10"
+}

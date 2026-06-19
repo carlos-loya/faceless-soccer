@@ -1,0 +1,66 @@
+{
+  "slug": "julian-alvarez",
+  "type": "player",
+  "name": "Julián Álvarez",
+  "aliases": [
+    "Julián",
+    "La Araña",
+    "The Spider"
+  ],
+  "facts": {
+    "age": {
+      "value": 26,
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Juli%C3%A1n_Alvarez",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Atlético Madrid",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Juli%C3%A1n_Alvarez",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "Argentina (defending champions)",
+      "as_of": "2026-06-09",
+      "source": "https://www.goal.com/en/lists/argentina-squad-world-cup-2026/bltba570fcb2ec2100e",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Forward",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Juli%C3%A1n_Alvarez",
+      "confidence": "high"
+    },
+    "current_form": {
+      "value": "Atlético Madrid's top scorer in all competitions in 2025-26 (reported around 29 goals, 6 assists); reached a club-record goal tally in his first full season, including a Champions League semi-final goal",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Juli%C3%A1n_Alvarez",
+      "confidence": "med"
+    },
+    "fitness": {
+      "value": "Recovered from a pre-tournament injury and fully cleared; named in Argentina's final 26-man World Cup 2026 squad",
+      "as_of": "2026-06-06",
+      "source": "https://www.goal.com/en/lists/argentina-squad-world-cup-2026/bltba570fcb2ec2100e",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Key forward for defending champions Argentina; second senior World Cup after winning Qatar 2022",
+      "as_of": "2026-06-09",
+      "source": "https://www.matchbingo.co.uk/world-cup-2026/argentina/julian-alvarez",
+      "confidence": "med"
+    },
+    "records": {
+      "value": "2022 World Cup winner with Argentina; 2024 Copa América winner",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Juli%C3%A1n_Alvarez",
+      "confidence": "high"
+    }
+  },
+  "image": null,
+  "image_todo": "fetch + verify a Creative-Commons portrait; no fabricated URLs",
+  "active_narratives": [
+    "argentina-title-defense"
+  ],
+  "last_verified": "2026-06-09"
+}

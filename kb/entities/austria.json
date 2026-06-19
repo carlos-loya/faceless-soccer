@@ -1,0 +1,17 @@
+{
+  "slug": "austria",
+  "type": "nation",
+  "name": "Austria",
+  "code": "AUT",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/1280px-Flag_of_Austria.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Bundesministerium für Landesverteidigung / via Wikimedia Commons",
+    "as_of": "2026-06-15"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

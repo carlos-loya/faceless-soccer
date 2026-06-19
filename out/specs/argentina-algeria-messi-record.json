@@ -1,0 +1,114 @@
+{
+  "format": "post_match",
+  "topic": "Argentina 3-0 Algeria: Messi hat trick ties Klose's all-time World Cup goal record (16) in Group J opener at Arrowhead Stadium, Kansas City",
+  "subject": "lionel-messi",
+  "matchup": ["argentina", "algeria"],
+  "target_duration_seconds": 28,
+  "hook": {
+    "first_frame_text": "NEEDED 3. SCORED 3.",
+    "spoken_hook": "Needed three for history. Delivered a hat trick.",
+    "hook_type": "curiosity_gap"
+  },
+  "retention_mechanic": "open_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "NEEDED 3. SCORED 3.",
+      "voiceover": "Needed three for history. Delivered a hat trick.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black background with gold gradient energy arcs (#F7D774 to #C8881B), bold condensed white type reading 'NEEDED 3 / SCORED 3', a faceless Argentina #10 silhouette emerging from shadow, premium broadcast feel, vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "lionel-messi",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "FIRST WC HAT TRICK",
+      "voiceover": "Four World Cups, never a hat trick. At 38, he changed that.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black background with a glowing gold circle framing the number '0' crossed out in red, bold white condensed type 'FIRST WC HAT TRICK', shadowy Argentina kit silhouette, broadcast-grade, vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "lionel-messi",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 4
+    },
+    {
+      "index": 3,
+      "on_screen_text": "17' — ROCKET IN KC",
+      "voiceover": "De Paul split them. Messi buried a screamer.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black background with a curved gold trajectory line arcing toward a top-corner net graphic, bold white '17' with a rocket icon, faceless strike silhouette in Argentina colors, motion energy, vertical 9:16.",
+      "visual_source": "stock_video",
+      "visual_query": "crowd-erupt",
+      "sticker_entity": "",
+      "score": "1-0",
+      "duration_seconds": 5
+    },
+    {
+      "index": 4,
+      "on_screen_text": "60' — BRACE. HISTORY CALLS.",
+      "voiceover": "Hour mark. Second goal. Now chasing Klose's all-time record.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black background with a glowing gold '2' dominating the frame, bold white condensed 'BRACE' stacked below, gold dust particles rising, faceless Argentina silhouette arms-wide, vertical 9:16 broadcast.",
+      "visual_source": "stock_video",
+      "visual_query": "gold-confetti",
+      "sticker_entity": "",
+      "score": "2-0",
+      "duration_seconds": 5
+    },
+    {
+      "index": 5,
+      "on_screen_text": "71' — TIED KLOSE. 16 GOALS.",
+      "voiceover": "Eleven minutes later. Hat trick done. Sixteen goals—tied a twelve-year-old record.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Explosive gold confetti over deep black, a giant bold gold '16' in the center with 'TIED' in white condensed below, faceless Argentina celebration silhouette, vertical 9:16, climactic broadcast finish.",
+      "visual_source": "entity",
+      "visual_query": "fifa-world-cup-trophy",
+      "sticker_entity": "",
+      "score": "3-0",
+      "duration_seconds": 6
+    },
+    {
+      "index": 6,
+      "on_screen_text": "GROUP J — ARGENTINA LEAD",
+      "voiceover": "Argentina top Group J, three-nil. Subscribe for a World Cup story every day.",
+      "stat_callout": "",
+      "graphic_type": "group_table",
+      "graphic_prompt": "Clean black-and-gold ranked group-standings table, white condensed type, flag icons and 3-letter codes, Argentina row highlighted in glowing gold, vertical 9:16 broadcast graphic.",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 5,
+      "group_table": [
+        { "team": "argentina", "played": 1, "points": 3, "gd": 3, "highlight": true },
+        { "team": "algeria", "played": 1, "points": 0, "gd": -3 },
+        { "team": "austria", "played": 0, "points": 0, "gd": 0 },
+        { "team": "jordan", "played": 0, "points": 0, "gd": 0 }
+      ]
+    }
+  ],
+  "comment_bait": "Messi tied Klose tonight. Ronaldo plays tomorrow. Who breaks the record first? Convince me I'm wrong about your pick.",
+  "cta": "Follow for a World Cup story every single day",
+  "music_mood": "triumphant orchestral swell with a rising cinematic drop, gold-tinged hero energy, building to a big release on the hat trick reveal",
+  "thumbnail": {
+    "text": "MESSI. 16. TIED.",
+    "concept": "Lionel Messi's CC portrait (Argentina kit, the known Wikimedia face) on a deep black background, gold '16' big and bold beside him, 'HAT TRICK' tag in white, premium broadcast look, no broadcast imagery."
+  },
+  "youtube_title": "Messi Hat Trick vs Algeria: Argentina 3-0 World Cup 2026 — Ties Klose's Record",
+  "youtube_description": "Argentina 3-0 Algeria — Lionel Messi's first ever World Cup hat trick ties Miroslav Klose's all-time record of 16 goals. The defending champions open Group J with a statement win in Kansas City. Messi now has 16 World Cup goals across five tournaments. Ronaldo plays tomorrow — who breaks the record first? Subscribe for a World Cup story every single day. #WorldCup2026 #Argentina #Messi",
+  "instagram_caption": "Needed three. Scored three. Messi ties Klose's all-time WC record with a hat trick 🇦🇷 Argentina 3-0 Algeria. Messi tied it tonight. Ronaldo plays tomorrow. Who breaks the record first? Convince me I'm wrong 👇 Follow @tikitakafootytv for a World Cup story every day.",
+  "tiktok_caption": "Needed three for history. Delivered a hat trick. 🇦🇷 Messi ties Klose at 16 WC goals. Ronaldo tomorrow — who breaks it first? 👇 #worldcup2026",
+  "hashtags": [
+    "#worldcup2026", "#argentina", "#messi", "#algeria", "#futbol",
+    "#soccer", "#football", "#hattrick", "#record", "#tikitakafootytv"
+  ]
+}

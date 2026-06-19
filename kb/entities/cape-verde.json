@@ -1,0 +1,16 @@
+{
+  "slug": "cape-verde",
+  "type": "nation",
+  "name": "Cape Verde",
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Flag_of_Cape_Verde.svg/1280px-Flag_of_Cape_Verde.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Original: Pedro Gregório Vector:  SKopp / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-15"
+  },
+  "active_narratives": [],
+  "last_verified": "",
+  "code": "CPV"
+}

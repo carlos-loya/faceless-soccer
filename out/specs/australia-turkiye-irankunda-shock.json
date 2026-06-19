@@ -1,0 +1,111 @@
+{
+  "format": "news_story",
+  "topic": "Australia 2-0 Türkiye, WC 2026 Group D — the dark horses humbled (71.7% possession, Güler's 8 shots) and a 20-year-old ex-refugee, Nestory Irankunda, writes history",
+  "subject": "nestory-irankunda",
+  "matchup": ["australia", "turkiye"],
+  "target_duration_seconds": 30,
+  "hook": {
+    "first_frame_text": "Everyone's dark horse just got humbled.",
+    "spoken_hook": "Türkiye were everyone's dark horse. Someone just ripped up the script.",
+    "hook_type": "bold_claim"
+  },
+  "retention_mechanic": "seamless_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "Everyone's dark horse just got humbled.",
+      "voiceover": "Türkiye were everyone's dark horse. Someone just ripped up the script.",
+      "stat_callout": "",
+      "score": "0-0",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Vertical 9:16, deep black background, gold gradient accents (#F7D774 to #C8881B). Moody floodlight bokeh, a single bold white condensed caption bar. Premium broadcast tease, no faces, no logos.",
+      "visual_source": "stock_video",
+      "visual_query": "floodlight-bokeh",
+      "sticker_entity": "",
+      "duration_seconds": 4
+    },
+    {
+      "index": 2,
+      "on_screen_text": "Güler. 72% of the ball. 8 shots. Nothing.",
+      "voiceover": "Real Madrid's Güler. Seventy-two percent of the ball, eight shots, and still nothing.",
+      "stat_callout": "",
+      "score": "0-0",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black with gold accents, tense floodlit atmosphere, bold white condensed caption bar. Anticipation, no broadcast imagery.",
+      "visual_source": "entity",
+      "visual_query": "arda-guler",
+      "sticker_entity": "",
+      "duration_seconds": 5
+    },
+    {
+      "index": 3,
+      "on_screen_text": "Then the kid struck.",
+      "voiceover": "Then a twenty-year-old chased a long ball and finished first time.",
+      "stat_callout": "",
+      "score": "1-0",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black with gold accents, sharp energy lines radiating from one point, bold white condensed caption bar. Premium broadcast feel, no broadcast imagery.",
+      "visual_source": "entity",
+      "visual_query": "nestory-irankunda",
+      "sticker_entity": "",
+      "duration_seconds": 4
+    },
+    {
+      "index": 4,
+      "on_screen_text": "Youngest Aussie ever to score at a World Cup.",
+      "voiceover": "Nestory Irankunda, once a refugee, now Australia's youngest ever World Cup scorer.",
+      "stat_callout": "",
+      "score": "1-0",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, explosive gold confetti and erupting crowd energy on deep black, bold condensed white type. Triumphant, premium, no faces.",
+      "visual_source": "stock_video",
+      "visual_query": "crowd-erupt",
+      "sticker_entity": "",
+      "duration_seconds": 5
+    },
+    {
+      "index": 5,
+      "on_screen_text": "Then Metcalfe killed it.",
+      "voiceover": "Then Metcalfe sealed it from range. Two-nil, on twenty-eight percent of the ball.",
+      "stat_callout": "",
+      "score": "2-0",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black, gold confetti, bold white condensed caption bar. Celebratory, premium, no faces.",
+      "visual_source": "stock_video",
+      "visual_query": "gold-confetti",
+      "sticker_entity": "",
+      "duration_seconds": 5
+    },
+    {
+      "index": 6,
+      "on_screen_text": "GROUP D",
+      "voiceover": "Australia, level with the USA at the top. Türkiye, pointless. Subscribe for your daily World Cup shock.",
+      "stat_callout": "",
+      "score": "2-0",
+      "graphic_type": "group_table",
+      "graphic_prompt": "Vertical 9:16, deep black with gold accents, a clean broadcast standings table, bold white condensed type. Premium, no faces, no logos.",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "group_table": [
+        { "team": "usa", "played": 1, "gd": 3, "points": 3 },
+        { "team": "australia", "played": 1, "gd": 2, "points": 3, "highlight": true },
+        { "team": "turkiye", "played": 1, "gd": -2, "points": 0 },
+        { "team": "paraguay", "played": 1, "gd": -3, "points": 0 }
+      ],
+      "duration_seconds": 6
+    }
+  ],
+  "comment_bait": "So — are Australia the real dark horse of Group D now? Tell me I'm wrong about the Socceroos 🇦🇺",
+  "cta": "Subscribe for your daily World Cup story",
+  "music_mood": "Cinematic and tense floodlit intro that swells into a triumphant, underdog-anthem payoff.",
+  "thumbnail": {
+    "text": "DARK HORSES BURIED",
+    "concept": "Black-and-gold blowout with a bold white 'AUS 2-0 TUR' scoreboard and an 'AGE 20' tag over an erupting-crowd silhouette; the Irankunda subject cutout pinned to one side — tension and a scoreline that screams upset, not two flags."
+  },
+  "youtube_title": "Irankunda shocks Türkiye: Australia's 2-0 World Cup upset | Güler held scoreless",
+  "youtube_description": "Australia stunned dark horses Türkiye 2-0 in their World Cup 2026 Group D opener at BC Place, Vancouver. Türkiye had 71.7% possession and Real Madrid's Arda Güler took a tournament-high 8 shots, but keeper Patrick Beach (8 saves on a record debut) and a deep Aussie block held firm. Nestory Irankunda — 20 years old, who came to Australia as a refugee — chased a long ball and finished to become the youngest Australian ever to score at a World Cup (beating Brett Holman by almost six years), before Connor Metcalfe sealed it from range. Australia are now level with the USA atop the same group we covered for the 4-1 Paraguay rout; Türkiye are pointless. Are the Socceroos the real dark horse of Group D now? Your daily World Cup stories, every day. #worldcup2026 #socceroos",
+  "instagram_caption": "Everyone's dark horse just got humbled. Türkiye had Real Madrid's Güler and 72% of the ball — and a 20-year-old who arrived as a refugee buried them anyway. Australia 2-0 Türkiye, Irankunda into the history books. 🇦🇺 Are the Socceroos the real dark horse of Group D now? Tell me I'm wrong below. Subscribe for your daily World Cup story.",
+  "tiktok_caption": "Türkiye had Arda Güler and 72% of the ball. A 20-year-old refugee kid buried them anyway 🇦🇺 Australia 2-0 Türkiye, Irankunda makes history. Real dark horse of Group D now? Tell me I'm wrong ⬇️ #worldcup2026",
+  "hashtags": ["#worldcup2026", "#socceroos", "#australia", "#irankunda", "#ardaguler", "#turkiye", "#football", "#soccer", "#tikitakafootytv"]
+}

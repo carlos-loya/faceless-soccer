@@ -1,0 +1,28 @@
+{
+  "slug": "ivory-coast",
+  "type": "nation",
+  "name": "Côte d'Ivoire",
+  "aliases": [
+    "Ivory Coast",
+    "Côte d'Ivoire",
+    "Les Éléphants"
+  ],
+  "code": "CIV",
+  "facts": {
+    "group": {
+      "value": "Group E — opponents Germany, Curaçao, Ecuador",
+      "as_of": "2025-12-05",
+      "source": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_C%C3%B4te_d%27Ivoire.svg/1280px-Flag_of_C%C3%B4te_d%27Ivoire.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Public domain via Wikimedia Commons",
+    "as_of": "2026-06-14"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-14"
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "netherlands-japan-2026-comeback",
+  "headline": "Japan come from behind twice to hold the Netherlands 2-2 in their World Cup 2026 opener",
+  "summary": "In Group F at AT&T Stadium, Dallas on June 14, 2026, Japan drew 2-2 with the Netherlands after twice fighting back from a goal down. Captain Virgil van Dijk headed the Oranje in front (51'); Keito Nakamura levelled six minutes later (57'). Crysencio Summerville restored the Dutch lead (64') but Daichi Kamada headed an 88th-minute equaliser to snatch a point for Japan. The Netherlands dominated the ball (60% possession) and chances (xG 0.79 to 0.54) but couldn't close it out — per match commentary the Netherlands had never previously failed to win a World Cup game in which they took the lead twice. The point caps a remarkable Japan run: they arrived on a five-game winning streak that included their first-ever victory over England (1-0, Mitoma 23', Wembley, 31 March 2026). Japan's resilience and Moriyasu's pressing system made the world's No.8 side blink; the Samurai Blue keep alive talk that this is their strongest-ever squad.",
+  "entities": ["netherlands", "japan", "virgil-van-dijk", "kaoru-mitoma"],
+  "heat": "hot",
+  "as_of": "2026-06-14",
+  "sources": [
+    "https://www.espn.com/soccer/match/_/gameId/760425/japan-netherlands",
+    "https://www.nbcsports.com/soccer/news/netherlands-vs-japan-live-updates-world-cup-live-score-video-highlights-goals",
+    "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F"
+  ],
+  "angles": [
+    "Never-say-die Japan: down twice, level twice — Kamada's 88th-minute header steals a point",
+    "The streak rolls on: Japan beat England at Wembley, now hold the No.8 Netherlands — best Samurai Blue side ever?",
+    "Van Dijk's header wasn't enough: Netherlands had NEVER lost a WC lead twice and failed to win — until now",
+    "Dutch dominance, dropped points: 60% possession, more xG, two points gone",
+    "Kamada the late hero: the man who broke Dutch hearts in the 88th minute",
+    "Group F blown open: Japan announce themselves, Sweden & Tunisia still to come"
+  ],
+  "last_verified": "2026-06-14"
+}

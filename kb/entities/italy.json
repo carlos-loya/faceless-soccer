@@ -1,0 +1,19 @@
+{
+  "slug": "italy",
+  "type": "nation",
+  "name": "Italy",
+  "aliases": [
+    "Azzurri",
+    "Italia"
+  ],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1280px-Flag_of_Italy.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "See below. / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-09"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-09"
+}

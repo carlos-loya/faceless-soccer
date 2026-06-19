@@ -1,0 +1,122 @@
+{
+  "format": "player_story",
+  "topic": "Luis Diaz arrived on the world stage — one assist, one goal as Colombia beat Uzbekistan 3-1 to top Group K",
+  "subject": "luis-diaz",
+  "matchup": ["uzbekistan", "colombia"],
+  "target_duration_seconds": 28,
+  "hook": {
+    "first_frame_text": "27 YEARS. ZERO WC GOALS. TONIGHT.",
+    "spoken_hook": "Luis Diaz. 27 years. Zero World Cup goals. Ninety minutes changed everything.",
+    "hook_type": "shock_number"
+  },
+  "retention_mechanic": "seamless_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "27 YEARS. ZERO WC GOALS.",
+      "voiceover": "Luis Diaz. 27 years. Zero World Cup goals. Until tonight.",
+      "stat_callout": "",
+      "score": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Vertical 9:16, deep black background, gold gradient accents (#F7D774 to #C8881B). Large condensed white 'DIAZ' dead center, gold underline. Floodlight bokeh behind. Premium broadcast tease.",
+      "visual_source": "commons",
+      "visual_query": "Luis Díaz Colombia",
+      "sticker_entity": "",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "THE PASS THAT CHANGED IT",
+      "voiceover": "40th minute. His pass splits the Uzbekistan defense. Munoz scores. One-nil.",
+      "stat_callout": "",
+      "score": "0-1",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black bg. White condensed text 'THE PASS THAT CHANGED IT' across center. Gold accent underline. Minimal and bold.",
+      "visual_source": "commons",
+      "visual_query": "Luis Díaz footballer",
+      "sticker_entity": "",
+      "duration_seconds": 3
+    },
+    {
+      "index": 3,
+      "on_screen_text": "THEN THE PRESSURE",
+      "voiceover": "Uzbekistan hit back. First goal in their history. Now it's on Diaz to answer.",
+      "stat_callout": "",
+      "score": "1-1",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black bg. White condensed text 'THEN THE PRESSURE' across center. Gold accent underline. Minimal and bold.",
+      "visual_source": "commons",
+      "visual_query": "Abbosbek Fayzullaev",
+      "sticker_entity": "",
+      "duration_seconds": 3
+    },
+    {
+      "index": 4,
+      "on_screen_text": "HE ANSWERS",
+      "voiceover": "Five minutes later. Low and hard. First World Cup goal. Diaz makes it two-one.",
+      "stat_callout": "",
+      "score": "1-2",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black bg. White condensed text 'FIRST WORLD CUP GOAL' across center. Gold accent underline. Minimal and bold.",
+      "visual_source": "stock_video",
+      "visual_query": "crowd-erupt",
+      "sticker_entity": "",
+      "duration_seconds": 4
+    },
+    {
+      "index": 5,
+      "on_screen_text": "NIGHT COMPLETE",
+      "voiceover": "Stoppage time. Campaz makes it three-one. Diaz's night is done.",
+      "stat_callout": "",
+      "score": "1-3",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black bg. White condensed text 'NIGHT COMPLETE' across center. Gold accent underline. Minimal and bold.",
+      "visual_source": "stock_video",
+      "visual_query": "gold-confetti",
+      "sticker_entity": "",
+      "duration_seconds": 3
+    },
+    {
+      "index": 6,
+      "on_screen_text": "GROUP K",
+      "voiceover": "Colombia top Group K. Portugal and Congo drew. Subscribe for daily World Cup stories.",
+      "stat_callout": "",
+      "score": "",
+      "graphic_type": "group_table",
+      "graphic_prompt": "",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "group_table": [
+        {"team": "colombia", "points": 3, "played": 1, "gd": 2, "highlight": true},
+        {"team": "portugal", "points": 1, "played": 1, "gd": 0},
+        {"team": "dr-congo", "points": 1, "played": 1, "gd": 0},
+        {"team": "uzbekistan", "points": 0, "played": 1, "gd": -2}
+      ],
+      "duration_seconds": 5
+    }
+  ],
+  "comment_bait": "One assist. One goal. Is Diaz Colombia's most dangerous weapon at this World Cup? Convince me I'm wrong.",
+  "cta": "Follow for your daily World Cup stories",
+  "music_mood": "Epic cinematic buildup with a triumphant drop — orchestral, rising tension through the equalizer, releasing on Diaz's goal.",
+  "thumbnail": {
+    "text": "DIAZ DELIVERS",
+    "concept": "Luis Diaz in Colombia yellow mid-celebration, 'DIAZ' in bold gold type. Black background. No AI-generated face — use a real CC photo if available."
+  },
+  "youtube_title": "Uzbekistan 1-3 Colombia | Luis Diaz Arrives on the World Stage | 2026 World Cup",
+  "youtube_description": "Luis Diaz waited 27 years for his World Cup moment. It came in 90 minutes — one stunning assist, one clinical finish. Colombia beat Uzbekistan 3-1 to top Group K. Fayzullaev scored Uzbekistan's first ever World Cup goal, but Diaz answered immediately.\n\nSubscribe for daily World Cup stories 🇨🇴",
+  "instagram_caption": "27 years. Zero World Cup goals. Until tonight. Diaz arrived. 🟡🔵\n\nIs he Colombia's most dangerous weapon at this World Cup? Convince me I'm wrong.",
+  "tiktok_caption": "27 years. Zero WC goals. Then this. Diaz arrived. Is he Colombia's most dangerous weapon? Convince me I'm wrong.",
+  "hashtags": [
+    "WorldCup2026",
+    "Colombia",
+    "Uzbekistan",
+    "LuisDiaz",
+    "FIFAWorldCup",
+    "football",
+    "soccer",
+    "tikitakafootytv",
+    "GroupK",
+    "worldcup"
+  ]
+}

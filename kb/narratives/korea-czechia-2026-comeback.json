@@ -1,0 +1,22 @@
+{
+  "slug": "korea-czechia-2026-comeback",
+  "headline": "South Korea fight back to beat Czechia 2-1 on World Cup 2026 opening day",
+  "summary": "In Group A at Estadio Akron, Guadalajara on June 11, 2026, South Korea came from behind to beat Czechia 2-1. Czechia led through a Ladislav Krejčí header (59') from a Vladimír Coufal long throw. South Korea responded fast: Hwang In-beom equalised (67') with a clever cut and chipped finish, set up by a Lee Kang-in through ball, then substitute Oh Hyeon-gyu — on for captain Son Heung-min — tapped in the winner (80') from a Hwang In-beom cross. Czechia thought they had restored parity when Tomáš Souček headed in from a free kick (77') but it was correctly ruled out for offside. South Korea dominated possession (55%) and chances; Son created openings but couldn't score, and the Czech keeper made a notable 49' double save before Korea's comeback.",
+  "entities": ["south-korea", "czechia", "hwang-in-beom", "oh-hyeon-gyu", "ladislav-krejci", "lee-kang-in", "son-heung-min", "tomas-soucek", "vladimir-coufal"],
+  "heat": "hot",
+  "as_of": "2026-06-11",
+  "sources": [
+    "https://sports.yahoo.com/soccer/live/2026-world-cup-schedule-scores-live-updates-group-stage-mexico-vs-south-africa-south-korea-czechia-150000738.html",
+    "https://www.nbcnews.com/sports/soccer/live-blog/fifa-world-cup-2026-opening-ceremonies-june-11-live-updates-rcna349400",
+    "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021441"
+  ],
+  "angles": [
+    "The supersub: Oh Hyeon-gyu comes on for Son and wins it — bench depth decides it",
+    "Son Heung-min's quiet night still ends in a Korea win — leadership without a goal",
+    "Hwang In-beom's equaliser — the cut-and-chip that turned the game",
+    "Czechia's VAR heartbreak: Souček's 'goal' chalked off for offside",
+    "Set-piece warning: Coufal's long throw nearly won it for Czechia",
+    "Comeback kings — Korea down 1-0, win 2-1 in 21 minutes"
+  ],
+  "last_verified": "2026-06-11"
+}

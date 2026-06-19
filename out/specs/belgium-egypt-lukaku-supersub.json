@@ -1,0 +1,111 @@
+{
+  "format": "post_match",
+  "topic": "Romelu Lukaku comes off the bench and forces an equaliser 22 seconds later as Belgium draw Egypt 1-1 (2026 World Cup, Group G)",
+  "subject": "romelu-lukaku",
+  "matchup": ["belgium", "egypt"],
+  "target_duration_seconds": 28,
+  "hook": {
+    "first_frame_text": "ON FOR 22 SECONDS.",
+    "spoken_hook": "He'd been on the pitch twenty-two seconds. Then this.",
+    "hook_type": "shock_number"
+  },
+  "retention_mechanic": "open_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "ON FOR 22 SECONDS",
+      "voiceover": "He'd been on the pitch twenty-two seconds. Then this.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black 9:16, gold gradient accents, a substitute's silhouette stepping onto the pitch under floodlights, a stopwatch motif glowing gold, bold white condensed type space at top, premium broadcast feel, no faces, no logos",
+      "visual_source": "entity",
+      "visual_query": "romelu-lukaku",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "EGYPT STRUCK FIRST — 20'",
+      "voiceover": "Egypt struck first — Emam Ashour, twenty minutes in.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black background, silhouetted crowd erupting in gold light, a ball rippling a net rendered abstractly, bold white condensed caption space, cinematic underdog energy, no faces, no logos",
+      "visual_source": "stock_video",
+      "visual_query": "crowd-erupt",
+      "sticker_entity": "",
+      "score": "0-1",
+      "duration_seconds": 5
+    },
+    {
+      "index": 3,
+      "on_screen_text": "DE BRUYNE HIT THE POST",
+      "voiceover": "De Bruyne hit the post. Belgium needed a spark.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black 9:16, gold accents, a midfielder silhouette striking a ball that clips the post, tension and frustration energy, white condensed type space, no faces, no logos",
+      "visual_source": "entity",
+      "visual_query": "kevin-de-bruyne",
+      "sticker_entity": "",
+      "score": "0-1",
+      "duration_seconds": 5
+    },
+    {
+      "index": 4,
+      "on_screen_text": "SUPERSUB OR LUCKY?",
+      "voiceover": "So on came Lukaku — and twenty-two seconds later, his cross forced the equaliser.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black background, gold light burst, a striker silhouette whipping in a cross, the ball deflecting into the net, triumphant energy, white bold condensed caption space, cinematic, no faces, no logos",
+      "visual_source": "entity",
+      "visual_query": "romelu-lukaku",
+      "sticker_entity": "",
+      "score": "1-1",
+      "duration_seconds": 5
+    },
+    {
+      "index": 5,
+      "on_screen_text": "GROUP G",
+      "voiceover": "Group G's deadlocked — Belgium and Egypt share the points.",
+      "stat_callout": "",
+      "graphic_type": "group_table",
+      "graphic_prompt": "Clean black-and-gold ranked group table, position, flag, three-letter code, played, goal difference, points columns, premium broadcast scoreboard styling, vertical 9:16",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "score": "1-1",
+      "group_table": [
+        {"team": "belgium", "points": 1, "played": 1, "gd": 0, "highlight": true},
+        {"team": "egypt", "points": 1, "played": 1, "gd": 0, "highlight": false},
+        {"team": "iran", "points": 0, "played": 0, "gd": 0, "highlight": false},
+        {"team": "new-zealand", "points": 0, "played": 0, "gd": 0, "highlight": false}
+      ],
+      "duration_seconds": 5
+    },
+    {
+      "index": 6,
+      "on_screen_text": "SUBSCRIBE — DAILY WORLD CUP",
+      "voiceover": "Every World Cup shock, daily — subscribe so you don't miss one.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black background with rich gold confetti falling, TikiTakaFootyTV gold wordmark energy, bold white condensed subscribe prompt space, celebratory premium broadcast outro, no faces, no logos",
+      "visual_source": "stock_video",
+      "visual_query": "gold-confetti",
+      "sticker_entity": "",
+      "score": "1-1",
+      "duration_seconds": 4
+    }
+  ],
+  "comment_bait": "Supersub genius or did Belgium get lucky? Tell me who's topping Group G.",
+  "cta": "Subscribe for daily World Cup stories",
+  "music_mood": "tense, building, last-minute drama — pulsing strings that lift on the equaliser",
+  "thumbnail": {
+    "text": "LUKAKU: 22 SECONDS",
+    "concept": "Romelu Lukaku's face mid-celebration on the right over a deep-black/gold frame, huge white '22 SECONDS' text left, small stopwatch accent — curiosity + shock, no scoreline-only flags"
+  },
+  "youtube_title": "Belgium 1-1 Egypt: Lukaku Forced an Equaliser 22 Seconds After Coming On",
+  "youtube_description": "Romelu Lukaku came off the bench and within 22 seconds his cross forced the own goal that rescued Belgium, who were held 1-1 by Egypt in Group G at the 2026 World Cup. Emam Ashour put Egypt ahead, De Bruyne hit the post, and Courtois kept Belgium in it. Both favourites level on a point. No-footage, original-graphic recap. Subscribe for daily World Cup stories. #worldcup2026 #belgium #egypt",
+  "instagram_caption": "On the pitch 22 seconds — then his cross forced the equaliser. Lukaku off the bench rescued Belgium against Egypt, 1-1. Supersub genius or did Belgium get lucky? Tell me who's topping Group G. Subscribe for daily World Cup stories.",
+  "tiktok_caption": "Lukaku came on and 22 seconds later forced Belgium's equaliser vs Egypt. 1-1. Supersub genius or lucky? Who's topping Group G?",
+  "hashtags": ["#worldcup2026", "#football", "#soccer", "#belgium", "#egypt", "#lukaku", "#debruyne", "#tikitakafootytv"]
+}

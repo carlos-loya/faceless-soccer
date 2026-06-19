@@ -1,0 +1,144 @@
+{
+  "format": "player_story",
+  "topic": "England 4-2 Croatia \u2014 Bellingham's early second-half strike breaks Croatian resistance after they twice fought back in a Group L thriller",
+  "subject": "jude-bellingham",
+  "matchup": [
+    "england",
+    "croatia"
+  ],
+  "target_duration_seconds": 24,
+  "hook": {
+    "first_frame_text": "200 MILLION. \nONE MOMENT.",
+    "spoken_hook": "Two hundred million pounds. One World Cup moment to justify it all. For Bellingham, tonight was everything.",
+    "hook_type": "shock_number"
+  },
+  "retention_mechanic": "seamless_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "200 MILLION.\nONE MOMENT.",
+      "voiceover": "Two hundred million pounds. One World Cup moment to justify it all. For Bellingham, tonight was everything.",
+      "stat_callout": "",
+      "score": "0-0",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Vertical 9:16, deep black background, gold gradient accents (#F7D774 to #C8881B). Bold white condensed lines: '200 MILLION' / 'ONE MOMENT.' Premium broadcast tease, no faces, no logos.",
+      "visual_source": "stock_video",
+      "visual_query": "floodlight-bokeh",
+      "sticker_entity": "",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "TWICE THEY CAME BACK",
+      "voiceover": "England scored first, but Croatia do not scare. Baturina pulled one back. Then Musa right on halftime. Two-two at the break and the old doubts came rushing back. Would Bellingham disappear like before?",
+      "stat_callout": "",
+      "score": "2-2",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black with tense gold-edged atmosphere, bold white condensed '2-2' in the center, 'SUBSCRIBE' in smaller gold type below. The balance tipping. Premium broadcast, no faces.",
+      "visual_source": "entity",
+      "visual_query": "jude-bellingham",
+      "sticker_entity": "",
+      "duration_seconds": 5
+    },
+    {
+      "index": 3,
+      "on_screen_text": "BELLINGHAM. 47'.",
+      "voiceover": "First minute of the second half. Anderson slipped him through. This was the moment England's golden boy had been waiting for.",
+      "stat_callout": "",
+      "score": "2-2",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black with tense gold-edged atmosphere, bold white condensed 'BELLINGHAM. 47\"' in the center with gold radiance lines building. The tipping point. Premium, no faces.",
+      "visual_source": "entity",
+      "visual_query": "jude-bellingham",
+      "sticker_entity": "",
+      "duration_seconds": 3
+    },
+    {
+      "index": 4,
+      "on_screen_text": "THE RESISTANCE BROKEN",
+      "voiceover": "He made no mistake. Three-two. The resistance was broken. One swing of his right foot and England were ahead to stay.",
+      "stat_callout": "",
+      "score": "3-2",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black exploding into gold, bold white condensed 'BELLINGHAM' in the center with gold radiance lines. Hero arrives. Turning point. Premium, no faces, no logos.",
+      "visual_source": "entity",
+      "visual_query": "jude-bellingham",
+      "sticker_entity": "",
+      "duration_seconds": 4
+    },
+    {
+      "index": 5,
+      "on_screen_text": "GROUP L",
+      "voiceover": "England top Group L. Croatia on watch. Ghana and Panama next.",
+      "stat_callout": "",
+      "score": "4-2",
+      "graphic_type": "group_table",
+      "graphic_prompt": "Vertical 9:16, deep black with gold accents, clean broadcast standings table, bold white condensed type. Premium, no faces, no logos.",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "group_table": [
+        {
+          "team": "england",
+          "played": 1,
+          "gd": 2,
+          "points": 3,
+          "highlight": true
+        },
+        {
+          "team": "croatia",
+          "played": 1,
+          "gd": -2,
+          "points": 0
+        },
+        {
+          "team": "ghana",
+          "played": 0,
+          "points": 0
+        },
+        {
+          "team": "panama",
+          "played": 0,
+          "points": 0
+        }
+      ],
+      "duration_seconds": 3
+    },
+    {
+      "index": 6,
+      "on_screen_text": "SUBSCRIBE \u2014 DAILY WORLD CUP",
+      "voiceover": "Your daily World Cup story. Don't miss the next one.",
+      "stat_callout": "",
+      "score": "4-2",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Vertical 9:16, deep black, gold gradient accents, bold white condensed 'DAILY WORLD CUP' lockup with the TikiTaka monogram, night-stadium glow behind. Clean, premium, no faces.",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "duration_seconds": 3
+    }
+  ],
+  "comment_bait": "Croatia or Ghana \u2014 who finishes 2nd in Group L? \ud83d\udc40",
+  "cta": "Subscribe for your daily World Cup story",
+  "music_mood": "Cinematic, building \u2014 a tense opening that swells into a triumphant anthem as Bellingham strikes, then settles into confident victory. Premium broadcast energy.",
+  "thumbnail": {
+    "text": "200M. ONE MOMENT.",
+    "concept": "Deep black and gold, bold white '200 MILLION' in condensed type, 'BELLINGHAM' in gold over a silhouetted figure, England flag on the left, Croatia flag fading on the right. Burden of a nation. Premium feel, no faces."
+  },
+  "youtube_title": "England 4-2 Croatia: Bellingham Carries England Past Croatia in Group L Thriller | World Cup 2026",
+  "youtube_description": "The most expensive teenager in history. One World Cup moment to justify it all. Jude Bellingham delivered when England needed him most \u2014 striking just two minutes into the second half to break Croatian resistance in a 4-2 Group L thriller at AT&T Stadium. Harry Kane opened the scoring (12'), but Croatia answered twice through Baturina (36') and Musa (45+5'). With the game locked at 2-2 at the break and the old doubts creeping back, Bellingham took over (47') and Rashford sealed it late (85'). England top Group L. Bellingham owns the night. But Croatia, Ghana and Panama are all still watching. Your daily World Cup stories, every day. #worldcup2026 #england #croatia #bellingham",
+  "instagram_caption": "Two hundred million pounds. One moment. Bellingham delivered. \ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f England 4-2 Croatia \u2014 Croatia came back twice, but Bellingham broke them. England top Group L, but who finishes 2nd \u2014 Croatia or Ghana? \ud83d\udc47 Subscribe for your daily World Cup story.",
+  "tiktok_caption": "200 million pounds \u2014 and Bellingham just showed why \ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f Croatia came back twice, but England's golden boy broke them. Group L is his. Who finishes 2nd \u2014 Croatia or Ghana? \ud83d\udc40 #worldcup2026 #england #bellingham",
+  "hashtags": [
+    "#worldcup2026",
+    "#england",
+    "#croatia",
+    "#bellingham",
+    "#judebellingham",
+    "#worldcup",
+    "#football",
+    "#soccer",
+    "#groupl",
+    "#tikitakafootytv"
+  ]
+}

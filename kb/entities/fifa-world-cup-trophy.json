@@ -1,0 +1,18 @@
+{
+  "slug": "fifa-world-cup-trophy",
+  "type": "object",
+  "name": "FIFA World Cup Trophy",
+  "aliases": ["World Cup trophy", "the trophy"],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/FIFA_World_Cup_Trophy_at_National_Football_Museum%2C_Manchester_02.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "Ank Kumar / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-09",
+    "curated": true,
+    "curated_note": "Vision-vetted: clean portrait shot of the trophy itself (no team). Keyword search returned Germany-2014 celebrating; this was hand-picked."
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-09"
+}

@@ -1,0 +1,68 @@
+{
+  "slug": "virgil-van-dijk",
+  "type": "player",
+  "name": "Virgil van Dijk",
+  "aliases": [
+    "Van Dijk",
+    "VVD"
+  ],
+  "facts": {
+    "age": {
+      "value": 34,
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Virgil_van_Dijk",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Liverpool",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Virgil_van_Dijk",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "Netherlands",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Virgil_van_Dijk",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Centre-back",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Virgil_van_Dijk",
+      "confidence": "high"
+    },
+    "current_form": {
+      "value": "Liverpool captain (third season as skipper). The only outfield player to feature for every minute of any team's 2025-26 Premier League campaign; became the oldest outfield player in PL history to play every minute of a season (passing John Terry), aged 34y 320d on the final day. Turns 35 in July 2026.",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Virgil_van_Dijk",
+      "confidence": "high"
+    },
+    "fitness": {
+      "value": "Fully fit; played every minute of Liverpool's league season. Named in the Netherlands World Cup squad.",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Virgil_van_Dijk",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Captains the Netherlands at the World Cup; in Ronald Koeman's 26-man squad (named ~27 May 2026). Captained the side for a record 72nd time vs Lithuania on 17 Nov 2025 (passing Frank de Boer). Widely expected to be his final international tournament. Netherlands in Group F with Japan, Sweden and Tunisia; open vs Japan on 14 June in Dallas.",
+      "as_of": "2026-06-09",
+      "source": "https://www.uefa.com/european-qualifiers/news/02a6-20d15935831f-d0d88d0f1da0-1000--netherlands-at-the-world-cup-2026-squad-fixtures-group-a/",
+      "confidence": "high"
+    },
+    "records": {
+      "value": "Most appearances as Netherlands captain (72+, passing Frank de Boer). Oldest outfield player to play every minute of a Premier League season (34y 320d).",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Virgil_van_Dijk",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/20160604_AUT_NED_8876_%28cropped%29.jpg",
+    "license": "CC BY-SA 3.0 at",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+    "attribution": "Ailura / CC BY-SA 3.0 at via Wikimedia Commons",
+    "as_of": "2026-06-14"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-09"
+}

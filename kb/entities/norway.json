@@ -1,0 +1,72 @@
+{
+  "slug": "norway",
+  "type": "nation",
+  "name": "Norway",
+  "aliases": [
+    "De Castbergske Guttene",
+    "Drillos-era successors"
+  ],
+  "facts": {
+    "group": {
+      "value": "Group I — opponents France, Senegal, Iraq",
+      "as_of": "2025-12-05",
+      "source": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_draw",
+      "confidence": "high"
+    },
+    "fifa_ranking": {
+      "value": "31st",
+      "as_of": "2026-05-26",
+      "source": "https://www.aljazeera.com/sports/2026/5/26/norway-world-cup-2026-preview-players-to-watch-squad-list",
+      "confidence": "med"
+    },
+    "manager": {
+      "value": "Ståle Solbakken — high-pressing, possession-based with fast counterattacking transitions",
+      "as_of": "2026-05-26",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/norway-squad-announcement-stale-solbakken",
+      "confidence": "high"
+    },
+    "qualification": {
+      "value": "QUALIFIED — won their UEFA qualifying group with a perfect 8 wins from 8, scoring 37 goals and conceding 5, including home-and-away wins over Italy. First World Cup since 1998 (a 28-year absence).",
+      "as_of": "2026-05-26",
+      "source": "https://www.olympics.com/en/news/fifa-world-cup-2026-norway-all-players-full-squad-list-key-stats-and-schedule",
+      "confidence": "high"
+    },
+    "recent_form": {
+      "value": "Unbeaten, dominant qualifying campaign (8/8 wins, 37 goals); Haaland scored 16 in qualifying — roughly double any other European player",
+      "as_of": "2026-05-26",
+      "source": "https://www.aljazeera.com/sports/2026/5/26/norway-world-cup-2026-preview-players-to-watch-squad-list",
+      "confidence": "med"
+    },
+    "wc_role": {
+      "value": "Returning dark horse — qualified for their first World Cup since 1998 (ended a 28-year absence); Haaland's first World Cup",
+      "as_of": "2026-05-26",
+      "source": "https://www.olympics.com/en/news/fifa-world-cup-2026-norway-all-players-full-squad-list-key-stats-and-schedule",
+      "confidence": "high"
+    },
+    "key_players": {
+      "value": "Erling Haaland (Manchester City; 16 qualifying goals; ~55 goals in ~49 caps for Norway), Martin Ødegaard (Arsenal captain, creative hub), Alexander Sørloth, Antonio Nusa, Oscar Bobb",
+      "as_of": "2026-05-26",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/norway-squad-announcement-stale-solbakken",
+      "confidence": "high"
+    },
+    "squad_news": {
+      "value": "Solbakken named his 26-man squad in May 2026, headlined by Haaland and Ødegaard. Ødegaard's season was disrupted by multiple injuries but he is in the squad.",
+      "as_of": "2026-05-26",
+      "source": "https://www.aljazeera.com/sports/2026/5/26/norway-world-cup-2026-preview-players-to-watch-squad-list",
+      "confidence": "med"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/1280px-Flag_of_Norway.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Original: Fredrik Meltzer Vector:  Gutten på Hemsen / via Wikimedia Commons",
+    "as_of": "2026-06-15"
+  },
+  "image_todo": "fetch + verify a Creative-Commons flag/crest; no fabricated URLs",
+  "active_narratives": [
+    "haaland-first-world-cup"
+  ],
+  "last_verified": "2026-06-09",
+  "code": "NOR"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "argentina-2022-celebration",
+  "type": "moment",
+  "name": "Argentina 2022 World Cup celebration",
+  "aliases": [
+    "Obelisco celebration"
+  ],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Fiesta_en_el_Obelisco.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "Adriel Rivera / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-09",
+    "curated": true,
+    "curated_note": "Vision-vetted: massive sky-blue crowd at the Buenos Aires Obelisco; portrait, no centered faces."
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-09"
+}

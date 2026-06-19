@@ -1,0 +1,195 @@
+{
+  "version": 1,
+  "note": "Seed list for the outlier-discovery engine (see OUTLIER-ENGINE-SPEC.md). channel_id is filled where confirmed; null means resolve from handle/name at first ingest via channels.list?forHandle (1 unit) and cache it. priority = how directly the lane maps to our copyright-safe strategy (high = stats/trivia/tactics we'll emulate; medium = edits/highlights/banter we study for viral MECHANICS only).",
+  "lanes": {
+    "stats": "Stats/graphics/data \u2014 our core copyright-safe lane",
+    "trivia_lists": "Trivia, ranking lists, did-you-know \u2014 core copyright-safe lane",
+    "tactics": "Tactical/analysis breakdowns \u2014 copyright-safe-adjacent",
+    "edits": "Player edits \u2014 footage-heavy; study the mechanic, not the footage",
+    "shorts_highlights": "Faceless highlight/compilation Shorts \u2014 study pacing/hooks",
+    "news_banter": "News, memes, banter, debate \u2014 study comment-engineering",
+    "skills_freestyle": "Skills/freestyle/tutorials \u2014 recreatable formats"
+  },
+  "channels": [
+    {
+      "name": "433",
+      "handle": "@433",
+      "channel_id": null,
+      "lane": "stats",
+      "priority": "high",
+      "why": "Market leader; match-info-first graphics, <15s discipline, test-and-iterate model"
+    },
+    {
+      "name": "90 Minute Football",
+      "handle": null,
+      "channel_id": "UCRVrcSqDGjCG_SjO4EvpPHw",
+      "lane": "stats",
+      "priority": "high",
+      "why": "Data/info-led, 'handing football back to the fans' \u2014 verify YT presence"
+    },
+    {
+      "name": "Squawka",
+      "handle": null,
+      "channel_id": null,
+      "lane": "stats",
+      "priority": "high",
+      "why": "Opta-powered stat graphics; benchmark for data-viz style \u2014 verify YT presence"
+    },
+    {
+      "name": "HITC Sevens",
+      "handle": "@hitcseven",
+      "channel_id": "UCi9SqUCnW_flgsrl6_PRJFQ",
+      "lane": "trivia_lists",
+      "priority": "high",
+      "why": "Home of short football lists; '7 best/worst/weirdest' format \u2014 most directly emulatable"
+    },
+    {
+      "name": "The Football Terrace",
+      "handle": null,
+      "channel_id": "UCjoj16PAB4l1o8B6I7dgD8Q",
+      "lane": "trivia_lists",
+      "priority": "high",
+      "why": "Weekly quizzes/lists across YT/TikTok"
+    },
+    {
+      "name": "Football Trivia League",
+      "handle": "@FootballTriviaLeague",
+      "channel_id": null,
+      "lane": "trivia_lists",
+      "priority": "high",
+      "why": "Trivia/quiz format, copyright-safe"
+    },
+    {
+      "name": "Tifo Football (The Athletic)",
+      "handle": null,
+      "channel_id": "UCGYYNGmyhZ_kwBF_lqqXdAQ",
+      "lane": "tactics",
+      "priority": "high",
+      "why": "Animated tactical/historical breakdowns \u2014 gold standard for graphic+VO, zero broadcast footage"
+    },
+    {
+      "name": "Tactics HUB",
+      "handle": null,
+      "channel_id": "UCF_kUQJ53OIzorg8lic4Vgg",
+      "lane": "tactics",
+      "priority": "medium",
+      "why": "Sharp tactical insight"
+    },
+    {
+      "name": "RDF Tactics",
+      "handle": null,
+      "channel_id": "UCZ7umxF5sRT5bkJQH8ZYK_g",
+      "lane": "tactics",
+      "priority": "medium",
+      "why": "Tactics/Football Manager angle"
+    },
+    {
+      "name": "GOAT7 4K EDITS",
+      "handle": null,
+      "channel_id": "UCNno2XhBM69_1WSB2Qfnvtw",
+      "lane": "edits",
+      "priority": "medium",
+      "why": "~1.75M; top player-edit page \u2014 study hook/pacing mechanics"
+    },
+    {
+      "name": "colo99",
+      "handle": null,
+      "channel_id": "UC9nq8hTJDF7rZh_-5ZDsfFg",
+      "lane": "edits",
+      "priority": "medium",
+      "why": "Football edits with a twist (WC/UCL/Juve)"
+    },
+    {
+      "name": "SVMM",
+      "handle": null,
+      "channel_id": "UCLfjwrn-9PxnsvqZj7RFTpQ",
+      "lane": "edits",
+      "priority": "medium",
+      "why": "~1.2M; best-players edits"
+    },
+    {
+      "name": "v7skills",
+      "handle": null,
+      "channel_id": "UCAhmzTwC-8xoxL8-czI9pgw",
+      "lane": "edits",
+      "priority": "medium",
+      "why": "~1.6M; skills/edits"
+    },
+    {
+      "name": "Football Edits",
+      "handle": null,
+      "channel_id": "UCgJ3x6CUOw1vBtGanxoKIDw",
+      "lane": "edits",
+      "priority": "medium",
+      "why": "Faceless edits channel"
+    },
+    {
+      "name": "Best Football Shorts",
+      "handle": null,
+      "channel_id": "UCnpdLn1-k-DcyWi0bNezRig",
+      "lane": "shorts_highlights",
+      "priority": "medium",
+      "why": "Faceless highlight Shorts \u2014 pacing/hook study"
+    },
+    {
+      "name": "HQ Sports Shorts",
+      "handle": null,
+      "channel_id": "UCFlC8vJqt8h1BQO8t4MXE-w",
+      "lane": "shorts_highlights",
+      "priority": "medium",
+      "why": "~1.75M faceless sports Shorts"
+    },
+    {
+      "name": "Shorts Sports X",
+      "handle": null,
+      "channel_id": "UCLZSFZKiKFhvOE8Kscaik-g",
+      "lane": "shorts_highlights",
+      "priority": "medium",
+      "why": "~2.75M faceless sports Shorts"
+    },
+    {
+      "name": "Football Daily",
+      "handle": "@FootballDaily",
+      "channel_id": "UCbWUEnTRHb3bRdrnovq8iuA",
+      "lane": "news_banter",
+      "priority": "medium",
+      "why": "News/headlines/banter; comment-engineering study"
+    },
+    {
+      "name": "COPA90 Football",
+      "handle": null,
+      "channel_id": "UCEPKlFeUjRY_1mpZP8GnkVg",
+      "lane": "news_banter",
+      "priority": "medium",
+      "why": "Fan culture/storytelling (Derby Days 25M+)"
+    },
+    {
+      "name": "Bleacher Report Football",
+      "handle": null,
+      "channel_id": "UCzGyQFulrYxlz1T_j7n0_uQ",
+      "lane": "news_banter",
+      "priority": "medium",
+      "why": "Memes, graphics, Q&A narrative videos \u2014 verify YT handle"
+    },
+    {
+      "name": "F2Freestylers",
+      "handle": null,
+      "channel_id": null,
+      "lane": "skills_freestyle",
+      "priority": "low",
+      "why": "Tutorials/entertainment \u2014 recreatable-format reference"
+    },
+    {
+      "name": "Thogden",
+      "handle": null,
+      "channel_id": "UCnU7ly6zEcQxUScjhkgFYAQ",
+      "lane": "skills_freestyle",
+      "priority": "low",
+      "why": "Vlog/match-day style; for format range"
+    }
+  ],
+  "candidates_to_verify": [
+    "Instagram-native brands to check for a YouTube channel before adding: Best of Football, FTBL, Rivalsbanter, footballsoccermeme. These are huge on IG but the engine is YouTube-first \u2014 only add ones with a real YT channel.",
+    "Resolve all handle/name-only entries to channel_id at first ingest (channels.list forHandle/forUsername, 1 unit each), then cache in the channels table."
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "format": "shock_stat",
+  "topic": "Christian Pulisic's redemption arc going into the USMNT's 2026 World Cup opener vs Paraguay",
+  "subject": "christian-pulisic",
+  "target_duration_seconds": 26,
+  "hook": {
+    "first_frame_text": "27 GAMES. NO GOAL. THEN THIS.",
+    "spoken_hook": "America's biggest star went twenty-seven games without a goal. Then — this.",
+    "hook_type": "curiosity_gap"
+  },
+  "retention_mechanic": "seamless_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "27 GAMES. NO GOAL. THEN THIS.",
+      "voiceover": "America's biggest star went twenty-seven games without a goal. Then — this.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Deep black background, gold gradient accent #F7D774 to #C8881B, bold white condensed type reading '27 GAMES / NO GOAL / THEN THIS', a faceless soccer player silhouette in red-white-and-blue kit lit dramatically from the side, tense pre-reveal mood, premium broadcast feel, vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "christian-pulisic",
+      "sticker_entity": "",
+      "camera": "push_in",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "5 MONTHS. NOT ONE GOAL.",
+      "voiceover": "Five months. A whole season at Milan without scoring — nineteen straight games. The critics had buried him.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Brand stat card on deep black, gold gradient frame, giant white condensed '0 GOALS' over '19 STRAIGHT GAMES', a thin downward gold trend line, cold and tense mood, vertical 9:16.",
+      "visual_source": "stock_video",
+      "visual_query": "floodlights",
+      "sticker_entity": "",
+      "duration_seconds": 5
+    },
+    {
+      "index": 3,
+      "on_screen_text": "DROUGHT OVER — GOAL + ASSIST",
+      "voiceover": "Then, right before the World Cup, the drought broke. A goal and an assist to beat Senegal. There's your answer.",
+      "stat_callout": "",
+      "graphic_type": "stat_card",
+      "graphic_prompt": "Explosive gold burst on black, bold white condensed 'DROUGHT OVER', radiating gold light rays, confetti specks, triumphant premium broadcast feel, vertical 9:16.",
+      "visual_source": "stock_video",
+      "visual_query": "crowd",
+      "sticker_entity": "",
+      "duration_seconds": 6
+    },
+    {
+      "index": 4,
+      "on_screen_text": "NOW — CARRY THE HOSTS?",
+      "voiceover": "Now the hosts need him. Tonight, the USA open their home World Cup against Paraguay in Los Angeles.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "A lone soccer player silhouette in a red-white-and-blue kit under blazing stadium floodlights, the weight-of-a-nation mood, deep black sky, gold rim light, bold white condensed text 'CARRY THE HOSTS?', vertical 9:16, no recognizable face.",
+      "visual_source": "commons",
+      "visual_query": "SoFi Stadium",
+      "sticker_entity": "",
+      "camera": "pan_left",
+      "duration_seconds": 7
+    },
+    {
+      "index": 5,
+      "on_screen_text": "27 GAMES — NOW THIS.",
+      "voiceover": "From twenty-seven games without a goal, to carrying a nation. Subscribe for your daily World Cup news and stories.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Brand end card, deep black, gold TT monogram top-center, bold white condensed '27 GAMES — NOW THIS', a faceless red-white-and-blue player silhouette echoing the opening frame, a hand-drawn gold arrow pointing down to the subscribe area, premium broadcast feel, vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "christian-pulisic",
+      "sticker_entity": "",
+      "duration_seconds": 6
+    }
+  ],
+  "comment_bait": "Pulisic the hero tonight, or heartbreak on home soil? Drop your verdict in the comments 🇺🇸",
+  "cta": "Subscribe for your daily World Cup news and stories",
+  "music_mood": "Tense cinematic build that releases into triumphant, anthemic hype",
+  "thumbnail": {
+    "text": "27 GAMES — THEN THIS?",
+    "concept": "Pulisic's CC portrait in a USA kit under floodlights, a bold cracked gold '27' stamp across the frame, deep black + gold, a curiosity-gap face thumbnail (not flags + a scoreline)."
+  },
+  "youtube_title": "Pulisic Went 27 Games Without a Goal — Then THIS | USA's World Cup Opener vs Paraguay",
+  "youtube_description": "Christian Pulisic went five months and 27 games without scoring — then broke the drought with a goal and an assist days before the World Cup. Now the USA host nation needs him as they open against Paraguay in Los Angeles. Does Captain America carry the Stars and Stripes out of Group D? Your daily World Cup story — subscribe. #worldcup2026 #usmnt #pulisic",
+  "instagram_caption": "27 games. 5 months. Not one goal. Then America's biggest star woke up right before the World Cup. 🇺🇸 Now the hosts need him tonight vs Paraguay — hero, or heartbreak on home soil? Subscribe for your daily World Cup story.",
+  "tiktok_caption": "Pulisic went 27 games without a goal… then THIS 🇺🇸 Now the USA need him to carry the hosts tonight vs Paraguay. Hero or heartbreak? Daily World Cup content 👇",
+  "hashtags": ["#worldcup2026", "#usmnt", "#pulisic", "#usa", "#soccer", "#football", "#captainamerica", "#tikitakafootytv"]
+}

@@ -1,0 +1,65 @@
+{
+  "slug": "canada",
+  "type": "nation",
+  "name": "Canada",
+  "aliases": [
+    "Les Rouges",
+    "The Reds",
+    "CanMNT"
+  ],
+  "facts": {
+    "group": {
+      "value": "Group B — opponents Bosnia and Herzegovina, Qatar, Switzerland",
+      "as_of": "2025-12-05",
+      "source": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_draw",
+      "confidence": "high"
+    },
+    "fifa_ranking": {
+      "value": "30th (second-ranked side in Group B)",
+      "as_of": "2026-04-01",
+      "source": "https://www.aljazeera.com/sports/2026/6/1/canadas-world-cup-2026-team-preview-squad-players-to-watch-group-stage-matches",
+      "confidence": "med"
+    },
+    "manager": {
+      "value": "Jesse Marsch",
+      "as_of": "2026-05-29",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/canada-squad-announcement",
+      "confidence": "high"
+    },
+    "qualification": {
+      "value": "Auto-qualified as co-host (USA/Canada/Mexico); third World Cup appearance and first on home soil",
+      "as_of": "2026-05-29",
+      "source": "https://www.aljazeera.com/sports/2026/6/1/canadas-world-cup-2026-team-preview-squad-players-to-watch-group-stage-matches",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Co-host nation; third World Cup appearance, first on home soil",
+      "as_of": "2026-05-29",
+      "source": "https://www.aljazeera.com/sports/2026/6/1/canadas-world-cup-2026-team-preview-squad-players-to-watch-group-stage-matches",
+      "confidence": "high"
+    },
+    "key_players": {
+      "value": "Alphonso Davies (captain, Bayern Munich), Jonathan David (Juventus), Tajon Buchanan (Villarreal)",
+      "as_of": "2026-05-29",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/canada-squad-announcement",
+      "confidence": "high"
+    },
+    "squad_news": {
+      "value": "Marsch named the 26-man squad on 29 May 2026 (3 GK, 9 DF, 10 MF, 4 FW). Captain Alphonso Davies made the cut despite a hamstring strain that rules him out of the June 12 opener.",
+      "as_of": "2026-05-29",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/canada-squad-announcement",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1280px-Flag_of_Canada_%28Pantone%29.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Original: George F. G. Stanley\n\nModified by: The original uploader was Illegitimate Barrister at  Wikimedia Commons.  The current SVG encoding is a rewrite performed by MapGrid. / via Wikimedia Commons",
+    "as_of": "2026-06-15"
+  },
+  "image_todo": "fetch + verify a Creative-Commons flag/crest; no fabricated URLs",
+  "active_narratives": [],
+  "last_verified": "2026-06-09",
+  "code": "CAN"
+}

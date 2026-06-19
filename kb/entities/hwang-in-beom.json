@@ -1,0 +1,19 @@
+{
+  "slug": "hwang-in-beom",
+  "type": "player",
+  "name": "Hwang In-beom",
+  "aliases": [
+    "In-beom Hwang",
+    "Hwang In Beom"
+  ],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/240611_%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_vs_%EC%A4%91%EA%B5%AD_%28%ED%99%A9%EC%9D%B8%EB%B2%94%29.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "Explicit / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-11"
+  },
+  "active_narratives": ["korea-czechia-2026-comeback"],
+  "last_verified": "2026-06-11"
+}

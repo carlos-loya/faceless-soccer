@@ -1,0 +1,19 @@
+{
+  "slug": "bosnia-and-herzegovina",
+  "type": "nation",
+  "name": "Bosnia & Herzegovina",
+  "code": "BIH",
+  "aliases": [
+    "Bosnia and Herzegovina"
+  ],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bosnia_and_Herzegovina.svg/1280px-Flag_of_Bosnia_and_Herzegovina.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Mladen Kolobarić / via Wikimedia Commons",
+    "as_of": "2026-06-15"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

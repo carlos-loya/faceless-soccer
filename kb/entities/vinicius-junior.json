@@ -1,0 +1,63 @@
+{
+  "slug": "vinicius-junior",
+  "type": "player",
+  "name": "Vin\u00edcius J\u00fanior",
+  "aliases": [
+    "Vinicius Jr",
+    "Vini Jr",
+    "Vinicius Junior"
+  ],
+  "facts": {
+    "age": {
+      "value": 25,
+      "as_of": "2026-06-09",
+      "source": "https://www.olympics.com/en/news/fifa-world-cup-2026-brazil-players-squad-list-key-stats-schedule",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Real Madrid",
+      "as_of": "2026-06-09",
+      "source": "https://www.olympics.com/en/news/fifa-world-cup-2026-brazil-players-squad-list-key-stats-schedule",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "Brazil",
+      "as_of": "2026-06-09",
+      "source": "https://www.olympics.com/en/news/fifa-world-cup-2026-brazil-players-squad-list-key-stats-schedule",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Forward",
+      "as_of": "2026-06-09",
+      "source": "https://www.olympics.com/en/news/fifa-world-cup-2026-brazil-players-squad-list-key-stats-schedule",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Brazil's talisman and highest-profile player; Brazil now coached by Carlo Ancelotti; Vini has publicly rejected the favourites tag",
+      "as_of": "2026-06-09",
+      "source": "https://www.espn.com/soccer/story/_/id/48310581/vinicius-junior-brazil-favourites-tag-2026-world-cup-neymar-carlo-ancelotti",
+      "confidence": "high"
+    },
+    "accolades": {
+      "value": "Scored in the 2022 and 2024 Champions League finals; finished 2nd in the 2024 Ballon d'Or",
+      "as_of": "2026-06-09",
+      "source": "https://www.olympics.com/en/news/fifa-world-cup-2026-brazil-players-squad-list-key-stats-schedule",
+      "confidence": "high"
+    },
+    "group": {
+      "value": "Brazil open their World Cup campaign against Morocco on June 13",
+      "as_of": "2026-06-09",
+      "source": "https://www.olympics.com/en/news/fifa-world-cup-2026-brazil-players-squad-list-key-stats-schedule",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/2023_05_06_Final_de_la_Copa_del_Rey_-_52879242230_%28cropped%29.jpg",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "attribution": "Junta de Andaluc\u00eda / CC BY-SA 2.0 via Wikimedia Commons",
+    "as_of": "2026-06-10"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-09"
+}

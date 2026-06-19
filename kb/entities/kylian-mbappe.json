@@ -1,0 +1,56 @@
+{
+  "slug": "kylian-mbappe",
+  "type": "player",
+  "name": "Kylian Mbapp\u00e9",
+  "aliases": [
+    "Mbappe",
+    "Mbapp\u00e9"
+  ],
+  "facts": {
+    "age": {
+      "value": 27,
+      "as_of": "2026-06-09",
+      "source": "https://www.aljazeera.com/sports/2026/6/2/france-world-cup-2026-preview-players-to-watch-group-matches-and-squad",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Real Madrid",
+      "as_of": "2026-06-09",
+      "source": "https://www.aljazeera.com/sports/2026/6/2/france-world-cup-2026-preview-players-to-watch-group-matches-and-squad",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "France",
+      "as_of": "2026-06-09",
+      "source": "https://www.uefa.com/european-qualifiers/news/02a6-20d159288012-ce02189d2504-1000--france-at-the-world-cup-2026-squad-fixtures-group-and-hi/",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Forward",
+      "as_of": "2026-06-09",
+      "source": "https://www.aljazeera.com/sports/2026/6/2/france-world-cup-2026-preview-players-to-watch-group-matches-and-squad",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "France captain at his 3rd World Cup; 12 World Cup goals already, chasing Klose's record of 16; France among the favorites to win the tournament",
+      "as_of": "2026-06-09",
+      "source": "https://www.aljazeera.com/sports/2026/6/2/france-world-cup-2026-preview-players-to-watch-group-matches-and-squad",
+      "confidence": "high"
+    },
+    "group": {
+      "value": "Group I with Senegal, Iraq and Norway; opens vs Senegal on June 16 (New York)",
+      "as_of": "2026-06-09",
+      "source": "https://www.uefa.com/european-qualifiers/news/02a6-20d159288012-ce02189d2504-1000--france-at-the-world-cup-2026-squad-fixtures-group-and-hi/",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Picture_with_Mbapp%C3%A9_%28cropped_and_rotated%29.jpg",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "attribution": "Helfer Emilio / CC0 via Wikimedia Commons",
+    "as_of": "2026-06-09"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-09"
+}

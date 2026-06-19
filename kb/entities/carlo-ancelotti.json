@@ -1,0 +1,23 @@
+{
+  "slug": "carlo-ancelotti",
+  "type": "manager",
+  "name": "Carlo Ancelotti",
+  "aliases": ["Ancelotti", "Carletto"],
+  "facts": {
+    "role": {
+      "value": "Head coach of Brazil (appointed 2025); first foreign coach to lead Brazil since 1965, tasked with ending their World Cup drought",
+      "as_of": "2026-06-13",
+      "source": "https://www.dailysabah.com/sports/football/ancelotti-becomes-1st-foreigner-to-land-brazil-job-since-1965",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/26.01.2026_-_Reuni%C3%A3o_com_o_Presidente_da_Federa%C3%A7%C3%A3o_Internacional_de_Futebol_%28FIFA%29%2C_Gianni_Infantino_-_55062589679_%28Carlo_Ancelotti%29_%28cropped%29.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "Ricardo Stuckert / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-13"
+  },
+  "active_narratives": ["brazil-ending-the-drought", "morocco-holds-brazil-wc2026"],
+  "last_verified": "2026-06-13"
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "Spain",
+  "type": "nation",
+  "name": "Spain",
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1280px-Bandera_de_Espa%C3%B1a.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Antonio Vald\u00e9s y Fern\u00e1ndez Baz\u00e1n / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-15"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

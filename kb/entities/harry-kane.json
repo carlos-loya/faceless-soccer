@@ -1,0 +1,69 @@
+{
+  "slug": "harry-kane",
+  "type": "player",
+  "name": "Harry Kane",
+  "aliases": [
+    "Kane"
+  ],
+  "facts": {
+    "age": {
+      "value": 32,
+      "as_of": "2026-06-09",
+      "source": "https://worldcuppass.com/england-world-cup-squad-2026/",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Bayern Munich",
+      "as_of": "2026-06-09",
+      "source": "https://worldcuppass.com/england-world-cup-squad-2026/",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "England",
+      "as_of": "2026-06-09",
+      "source": "https://worldcuppass.com/england-world-cup-squad-2026/",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Striker / forward",
+      "as_of": "2026-06-09",
+      "source": "https://worldcuppass.com/england-world-cup-squad-2026/",
+      "confidence": "high"
+    },
+    "current_form": {
+      "value": "Came off his most prolific club season: reported ~61 goals in all competitions for Bayern Munich in 2025-26 (incl. ~33 Bundesliga goals), among the top five single-season totals in European football history. Arrives at the World Cup in peak goalscoring form.",
+      "as_of": "2026-06-09",
+      "source": "https://sports.yahoo.com/articles/harry-kane-england-leading-man-140807826.html",
+      "confidence": "med"
+    },
+    "fitness": {
+      "value": "Fit; no injury reported. Named to England's 26-man World Cup squad and is the leading man up front.",
+      "as_of": "2026-06-09",
+      "source": "https://worldcuppass.com/england-world-cup-squad-2026/",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "England captain and first-choice striker at his third World Cup; talisman and penalty taker for Tuchel's side.",
+      "as_of": "2026-06-09",
+      "source": "https://worldcuppass.com/england-world-cup-squad-2026/",
+      "confidence": "high"
+    },
+    "records": {
+      "value": "England's all-time top scorer (78+ goals). Captains England at a third World Cup, equalling Billy Wright's record of captaining England at three World Cups. Has 8 World Cup goals across 2018 and 2022 (level with Cristiano Ronaldo). Verify exact goal/cap figures before quoting precise stat lines.",
+      "as_of": "2026-06-09",
+      "source": "https://www.cbssports.com/soccer/news/2026-world-cup-harry-kane-england-international-glory/",
+      "confidence": "med"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Harry_Kane_on_October_10%2C_2023.jpg",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "attribution": "UK Prime Minister / CC BY 2.0 via Wikimedia Commons",
+    "as_of": "2026-06-10"
+  },
+  "active_narratives": [
+    "england-its-coming-home"
+  ],
+  "last_verified": "2026-06-09"
+}

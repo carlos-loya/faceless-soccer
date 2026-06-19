@@ -1,0 +1,111 @@
+{
+  "format": "post_match",
+  "topic": "Austria 3-1 Jordan in their first World Cup match in 28 years",
+  "subject": "austria",
+  "matchup": ["austria", "jordan"],
+  "target_duration_seconds": 28,
+  "hook": {
+    "first_frame_text": "28 years. Then this.",
+    "spoken_hook": "Twenty-eight years since Austria played a World Cup game. They made it count.",
+    "hook_type": "shock_number"
+  },
+  "retention_mechanic": "seamless_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "28 YEARS. ONE RETURN.",
+      "voiceover": "Twenty-eight years. Austria back on the World Cup stage.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Gold confetti on deep black. Bold white condensed text 'AUSTRIA RETURNS' centered. Premium broadcast feel. Vertical 9:16.",
+      "visual_source": "stock_video",
+      "visual_query": "gold-confetti",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "SCHMID. 20'. 1-0.",
+      "voiceover": "Romano Schmid. Twenty minutes. San Francisco. Austria ahead.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Floodlit stadium atmosphere, silhouette of a stadium bowl, gold-tinted lights. Bold white scoreline bottom. Vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "romano-schmid",
+      "sticker_entity": "",
+      "score": "1-0",
+      "duration_seconds": 4
+    },
+    {
+      "index": 3,
+      "on_screen_text": "OLWAN. 50'. 1-1.",
+      "voiceover": "Jordan's debutantes answered — Ali Olwan. Game on.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Tense stadium atmosphere, bokeh lights, deep shadows. Gold text 'JORDAN FIGHT BACK' overlay. Vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "ali-olwan",
+      "sticker_entity": "",
+      "score": "1-1",
+      "duration_seconds": 4
+    },
+    {
+      "index": 4,
+      "on_screen_text": "OWN GOAL. 76'. 2-1.",
+      "voiceover": "Then Yazan Al Arab turned into his own net. Austria breathed again.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Dramatic stadium shot, rain effect, gold-tinted goal net. Text 'OWN GOAL CRUEL' overlaying. Vertical 9:16.",
+      "visual_source": "stock_video",
+      "visual_query": "empty-net-rain",
+      "sticker_entity": "",
+      "score": "2-1",
+      "duration_seconds": 4
+    },
+    {
+      "index": 5,
+      "on_screen_text": "ARNAUTOVIĆ. 90+12. 3-1.",
+      "voiceover": "Ninety-plus twelve. Arnautović from the spot. Subscribe for daily World Cup stories.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Gold confetti explosion, dark background, bold '90+12' oversized clock graphic. Premium broadcast. Vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "marko-arnautovic",
+      "sticker_entity": "",
+      "score": "3-1",
+      "duration_seconds": 5
+    },
+    {
+      "index": 6,
+      "on_screen_text": "GROUP J",
+      "voiceover": "Argentina leads Group J. Austria right in the race.",
+      "stat_callout": "",
+      "graphic_type": "group_table",
+      "graphic_prompt": "Clean group standings table. Gold and black design. Austria highlighted. Vertical 9:16.",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "score": "",
+      "group_table": [
+        {"team": "argentina", "points": 3, "played": 1, "gd": 3},
+        {"team": "austria", "points": 3, "played": 1, "gd": 2, "highlight": true},
+        {"team": "jordan", "points": 0, "played": 1, "gd": -2},
+        {"team": "algeria", "points": 0, "played": 1, "gd": -3}
+      ],
+      "duration_seconds": 5
+    }
+  ],
+  "comment_bait": "Group J wide open behind Argentina — who advances? Make your call, I'll be in the replies.",
+  "cta": "Follow for your daily World Cup stories",
+  "music_mood": "cinematic, triumphant with tension",
+  "thumbnail": {
+    "text": "28 YEARS. 3-1.",
+    "concept": "Austria flag in gold frame, '28 YEARS' top, '3-1' bottom, bold condensed type on black"
+  },
+  "youtube_title": "Austria 3-1 Jordan: 28-Year World Cup Return Ends in Dramatic Win | Group J",
+  "youtube_description": "Austria returned to the World Cup after 28 years and made it count — a 3-1 win over debutants Jordan. Romano Schmid opened the scoring. Jordan hit back through Ali Olwan. An own goal from Yazan Al Arab put Austria ahead, and Marko Arnautović sealed it from the penalty spot in 90+12 minutes. Group J is wide open behind Argentina.\n\n#FIFAWorldCup2026 #Austria #Jordan #WorldCup #GroupJ #TikitakaFootyTV",
+  "instagram_caption": "28 years of waiting. 90+12 minutes of drama. Austria are back. 🇦🇹 Who joins Argentina from Group J? Make your call — I'll be in the replies.",
+  "tiktok_caption": "28 years of waiting. 90+12 minutes of drama. Austria are back. Who joins Argentina from Group J? Make your call — I'll be in the replies.",
+  "hashtags": ["#FIFAWorldCup2026", "#Austria", "#Jordan", "#WorldCup", "#GroupJ", "#Football", "#Soccer", "#TikitakaFootyTV", "#AUTvJOR", "#WorldCup2026"]
+}

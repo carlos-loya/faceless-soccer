@@ -1,0 +1,20 @@
+{
+  "slug": "breel-embolo",
+  "type": "player",
+  "name": "Breel Embolo",
+  "aliases": ["Breel Embolo", "Embolo"],
+  "facts": {
+    "club": {"value": "Borussia Mönchengladbach", "as_of": "2026-06-18", "source": "https://www.transfermarkt.com/", "confidence": "high"},
+    "position": {"value": "Forward", "as_of": "2026-06-18", "source": "https://www.transfermarkt.com/", "confidence": "high"},
+    "national_team": {"value": "Switzerland", "as_of": "2026-06-18", "source": "https://www.transfermarkt.com/", "confidence": "high"}
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/2022128160447_2022-05-08_Fussball_Eintracht_Frankfurt_vs_Borussia_M%C3%B6nchengladbach_-_Sven_-_1D_X_MK_II_-_1422_-_B70I7533_%28cropped%29.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+    "attribution": "Sven Mandel / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-18"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-18"
+}

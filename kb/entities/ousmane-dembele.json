@@ -1,0 +1,65 @@
+{
+  "slug": "ousmane-dembele",
+  "type": "player",
+  "name": "Ousmane Dembélé",
+  "aliases": [
+    "Dembélé",
+    "Dembouz"
+  ],
+  "facts": {
+    "age": {
+      "value": 29,
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Ousmane_Demb%C3%A9l%C3%A9",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Paris Saint-Germain",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Ousmane_Demb%C3%A9l%C3%A9",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "France",
+      "as_of": "2026-06-09",
+      "source": "https://www.aljazeera.com/sports/2026/5/14/mbappe-and-dembele-head-up-star-studded-france-world-cup-squad",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Forward / right winger",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Ousmane_Demb%C3%A9l%C3%A9",
+      "confidence": "high"
+    },
+    "current_form": {
+      "value": "Reigning Ballon d'Or holder (won the 2025 award); central to PSG's first Champions League title and the 2025-26 Ligue 1 title; ~19 goals and 11 assists across all competitions this term",
+      "as_of": "2026-06-09",
+      "source": "https://www.nbcsports.com/soccer/news/ousmane-dembele-wins-2025-ballon-dor",
+      "confidence": "med"
+    },
+    "fitness": {
+      "value": "Managed minutes after the Champions League final; benched in a pre-tournament friendly to recover but in line to start; named in France's final 26-man World Cup 2026 squad",
+      "as_of": "2026-06-09",
+      "source": "https://www.foxsports.com/stories/soccer/william-saliba-hands-france-massive-injury-lift-as-didier-deschamps-issues-blunt-selection-warning-over-ousmane-dembele",
+      "confidence": "med"
+    },
+    "wc_role": {
+      "value": "Co-leads France's attack alongside captain Mbappé; expected starter under Didier Deschamps",
+      "as_of": "2026-06-09",
+      "source": "https://www.aljazeera.com/sports/2026/5/14/mbappe-and-dembele-head-up-star-studded-france-world-cup-squad",
+      "confidence": "high"
+    },
+    "records": {
+      "value": "2025 Ballon d'Or winner; 2018 World Cup winner with France; UEFA Champions League winner (2025) with PSG",
+      "as_of": "2026-06-09",
+      "source": "https://www.nbcsports.com/soccer/news/ousmane-dembele-wins-2025-ballon-dor",
+      "confidence": "high"
+    }
+  },
+  "image": null,
+  "image_todo": "fetch + verify a Creative-Commons portrait; no fabricated URLs",
+  "active_narratives": [
+    "mbappe-france-crown"
+  ],
+  "last_verified": "2026-06-09"
+}

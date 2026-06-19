@@ -1,0 +1,17 @@
+{
+  "slug": "panama",
+  "type": "nation",
+  "name": "Panama",
+  "code": "PAN",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_Panama.svg/1280px-Flag_of_Panama.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Zscout370 et al. / via Wikimedia Commons",
+    "as_of": "2026-06-15"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

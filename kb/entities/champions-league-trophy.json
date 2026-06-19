@@ -1,0 +1,18 @@
+{
+  "slug": "champions-league-trophy",
+  "type": "object",
+  "name": "UEFA Champions League Trophy",
+  "aliases": ["Champions League trophy", "UCL trophy", "big ears"],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/2006_Champions_League_Trophy.jpg",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "attribution": "Gaetano Porcaro / CC BY 2.0 via Wikimedia Commons",
+    "as_of": "2026-06-09",
+    "curated": true,
+    "curated_note": "Vision-vetted: upright iconic UCL trophy, portrait."
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-09"
+}

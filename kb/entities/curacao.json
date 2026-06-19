@@ -1,0 +1,52 @@
+{
+  "slug": "curacao",
+  "type": "nation",
+  "name": "Curaçao",
+  "aliases": [
+    "Kòrsou"
+  ],
+  "code": "CUW",
+  "facts": {
+    "group": {
+      "value": "Group E — opponents Germany, Ivory Coast, Ecuador",
+      "as_of": "2025-12-05",
+      "source": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E",
+      "confidence": "high"
+    },
+    "milestone": {
+      "value": "Smallest nation EVER to reach a men's World Cup — population ~156,000, ~444 km². Took the record from Iceland (2018). First-ever World Cup appearance in 2026.",
+      "as_of": "2026-06-14",
+      "source": "https://www.skysports.com/football/news/12098/13545528/world-cup-2026-curacao-caribbean-nations-historic-first-appearance",
+      "confidence": "high"
+    },
+    "qualification": {
+      "value": "Won CONCACAF qualifying Group B UNDEFEATED with 12 points; sealed it with a 0-0 draw at Jamaica in Nov 2025.",
+      "as_of": "2025-11-18",
+      "source": "https://www.aol.com/articles/curacao-makes-history-smallest-nation-045601902.html",
+      "confidence": "high"
+    },
+    "manager": {
+      "value": "Dick Advocaat (Dutch veteran, ~78) — among the oldest managers ever at a World Cup (verify 'oldest' superlative before asserting).",
+      "as_of": "2026-06-14",
+      "source": "https://www.skysports.com/football/news/12098/13545528/world-cup-2026-curacao-caribbean-nations-historic-first-appearance",
+      "confidence": "med"
+    },
+    "wc_opener_result": {
+      "value": "Lost 7-1 to Germany in their first-ever World Cup match (Group E, NRG Stadium, Houston, 14 Jun 2026). Livano Comenencia scored Curaçao's first-ever World Cup goal to briefly level it 1-1 before Germany ran away with it.",
+      "as_of": "2026-06-14",
+      "source": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021464",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Flag_of_Cura%C3%A7ao.svg/1280px-Flag_of_Cura%C3%A7ao.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Public domain via Wikimedia Commons",
+    "as_of": "2026-06-14"
+  },
+  "active_narratives": [
+    "curacao-smallest-nation-wc2026"
+  ],
+  "last_verified": "2026-06-14"
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "algeria",
+  "type": "nation",
+  "name": "Algeria",
+  "code": "ALG",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Algeria.svg/1280px-Flag_of_Algeria.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Original: National Liberation Front of Algeria\u2002Vector:  SKopp / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-15"
+  },
+  "active_narratives": [],
+  "last_verified": "",
+  "_flag_wiki": "Algeria"
+}

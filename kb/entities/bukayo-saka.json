@@ -1,0 +1,58 @@
+{
+  "slug": "bukayo-saka",
+  "type": "player",
+  "name": "Bukayo Saka",
+  "aliases": [
+    "Saka"
+  ],
+  "facts": {
+    "age": {
+      "value": 24,
+      "as_of": "2026-06-09",
+      "source": "https://worldcuppass.com/england-world-cup-squad-2026/",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Arsenal",
+      "as_of": "2026-06-09",
+      "source": "https://www.arsenal.com/men/players/bukayo-saka",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "England",
+      "as_of": "2026-06-09",
+      "source": "https://worldcuppass.com/england-world-cup-squad-2026/",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Winger / forward",
+      "as_of": "2026-06-09",
+      "source": "https://worldcuppass.com/england-world-cup-squad-2026/",
+      "confidence": "high"
+    },
+    "current_form": {
+      "value": "Premier League champion with Arsenal in 2025-26 (ending the club's ~21-year league-title wait) and part of their run to the Champions League final vs PSG. Reported ~7 league goals and 5 assists in 31 league appearances (minutes managed); signed a new long-term contract (reported to 2031) in February 2026.",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Bukayo_Saka",
+      "confidence": "med"
+    },
+    "fitness": {
+      "value": "Fit; no injury reported. Named to England's 26-man World Cup squad and given the No. 7 shirt.",
+      "as_of": "2026-06-09",
+      "source": "https://www.arsenal.com/news/quartet-selected-englands-world-cup-squad",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Key starting winger for Tuchel's England; one of the side's primary attacking threats, wearing No. 7.",
+      "as_of": "2026-06-09",
+      "source": "https://strikerreport.com/bukayo-saka-fifa-world-cup-2026-profile-stats/",
+      "confidence": "med"
+    }
+  },
+  "image": null,
+  "image_todo": "fetch + verify a Creative-Commons portrait; no fabricated URLs",
+  "active_narratives": [
+    "england-its-coming-home"
+  ],
+  "last_verified": "2026-06-09"
+}

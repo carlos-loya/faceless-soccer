@@ -1,0 +1,36 @@
+{
+  "slug": "curacao-smallest-nation-wc2026",
+  "headline": "The smallest nation ever scored at a World Cup — then Germany answered with SEVEN. Germany 7-1 Curaçao.",
+  "summary": "Curaçao — the SMALLEST nation ever to reach a men's World Cup (population ~156,000, ~444 km²), who qualified UNDEFEATED out of CONCACAF under ~78-year-old Dick Advocaat — played its first-ever World Cup match in the Group E opener vs Germany at NRG Stadium, Houston, on 14 June 2026. RESULT (FINAL): Germany 7-1 Curaçao. Livano Comenencia scored Curaçao's FIRST-EVER World Cup goal to briefly make it 1-1 (a counter/deflection past Manuel Neuer) before Germany scored six unanswered. Kai Havertz bagged a brace (one penalty); Jamal Musiala, Nico Schlotterbeck, Nathaniel Brown and Deniz Undav also scored. The 7-1 scoreline echoes Germany's famous 7-1 demolition of Brazil at the 2014 World Cup. The story for Curaçao is that they were there at all — and that they put one past a four-time world champion.",
+  "entities": ["curacao", "germany", "jamal-musiala", "florian-wirtz"],
+  "heat": "hot",
+  "as_of": "2026-06-14",
+  "result": {
+    "score": "Germany 7-1 Curaçao",
+    "matchup": ["germany", "curacao"],
+    "germany_scorers": ["Kai Havertz (brace, 1 pen)", "Jamal Musiala", "Nico Schlotterbeck", "Nathaniel Brown", "Deniz Undav"],
+    "curacao_scorers": ["Livano Comenencia (Curaçao's first-ever WC goal — briefly 1-1)"],
+    "venue": "NRG Stadium, Houston",
+    "date": "2026-06-14"
+  },
+  "sources": [
+    "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021464",
+    "https://sports.yahoo.com/soccer/live/world-cup-2026-live-updates-scores-schedule-results-135432872.html",
+    "https://www.nbcsports.com/soccer/world-cup/live/germany-vs-curacao-live-updates-score-goals-highlights-stats-2026-fifa-world-cup-june-14",
+    "https://www.skysports.com/football/news/12098/13545528/world-cup-2026-curacao-caribbean-nations-historic-first-appearance"
+  ],
+  "angles": [
+    "A town of 156,000 people scored at a WORLD CUP before Germany buried them 7-1 — and that goal is the whole story.",
+    "Livano Comenencia: the man who scored the smallest nation in history's first-ever World Cup goal — past Manuel Neuer.",
+    "Germany 7-1. Where have we heard that before? (the 2014 Brazil echo) — Die Mannschaft sending a tournament warning.",
+    "They got there UNDEFEATED with a 78-year-old coach, lost 7-1, and STILL made history. Curaçao's day, told straight.",
+    "1-1 for about a minute: the briefest, biggest lead the smallest nation ever held at a World Cup."
+  ],
+  "needs_verification": [
+    "Exact Germany goalscorer minutes/order — Yahoo lists Havertz (brace, 1 pen), Musiala, Schlotterbeck, Brown, Undav for the 7; confirm the 7th goal's scorer and all minutes against FIFA match centre before burning into graphics.",
+    "Comenencia goal minute and whether it was the equalizer that made it exactly 1-1 (sources say yes, brief 1-1).",
+    "Dick Advocaat 'oldest manager at a World Cup' superlative — likely but confirm vs Otto Rehhagel (2010, ~71) etc. before asserting.",
+    "Curaçao population ~156,000 (varies 156k-158k by source)."
+  ],
+  "last_verified": "2026-06-14"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "czechia",
+  "type": "nation",
+  "name": "Czech Republic",
+  "aliases": [
+    "Czechia",
+    "Czech Republic"
+  ],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/1280px-Flag_of_the_Czech_Republic.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Jaroslav Kursa / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-11"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-11",
+  "code": "CZE"
+}

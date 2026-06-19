@@ -1,0 +1,26 @@
+{
+  "slug": "ecuador",
+  "type": "nation",
+  "name": "Ecuador",
+  "aliases": [
+    "La Tri"
+  ],
+  "code": "ECU",
+  "facts": {
+    "group": {
+      "value": "Group E — opponents Germany, Curaçao, Côte d'Ivoire",
+      "as_of": "2025-12-05",
+      "source": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/1280px-Flag_of_Ecuador.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Public domain via Wikimedia Commons",
+    "as_of": "2026-06-14"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-14"
+}

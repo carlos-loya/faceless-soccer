@@ -1,0 +1,15 @@
+{
+  "slug": "Uruguay",
+  "type": "nation",
+  "name": "Uruguay",
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/1280px-Flag_of_Uruguay.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "See File history below for details. / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-15"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "granit-xhaka",
+  "type": "player",
+  "name": "Granit Xhaka",
+  "aliases": ["Granit Xhaka", "Xhaka"],
+  "facts": {
+    "club": {"value": "Bayer Leverkusen", "as_of": "2026-06-18", "source": "https://www.transfermarkt.com/", "confidence": "high"},
+    "position": {"value": "Midfielder / Captain", "as_of": "2026-06-18", "source": "https://www.transfermarkt.com/", "confidence": "high"},
+    "national_team": {"value": "Switzerland (captain)", "as_of": "2026-06-18", "source": "https://www.transfermarkt.com/", "confidence": "high"}
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Granit_Xhaka_%28cropped%29.jpg",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/deed.en",
+    "attribution": "@cfcunofficial (Chelsea Debs) London from London, UK / CC BY-SA 2.0 via Wikimedia Commons",
+    "as_of": "2026-06-18"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-18"
+}

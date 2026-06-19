@@ -1,0 +1,18 @@
+{
+  "slug": "ballon-dor",
+  "type": "object",
+  "name": "Ballon d'Or",
+  "aliases": ["Ballon d'Or", "Golden Ball"],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Zinedine_Zidane%27s_1998_Ballon_d%27Or_trophy%2C_Real_Madrid_Museum%2C_Santiago_Bernab%C3%A9u%2C_Madrid%2C_Spain_%28Ank_Kumar%2C_Infosys_Limited%29_01.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "Ank Kumar / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-09",
+    "curated": true,
+    "curated_note": "Vision-vetted: clean golden-ball Ballon d'Or (Zidane 1998, Real Madrid museum)."
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-09"
+}

@@ -1,0 +1,119 @@
+{
+  "format": "quiz_top5",
+  "topic": "Can you name the last 5 World Cup winners?",
+  "subject": "",
+  "target_duration_seconds": 25,
+  "hook": {
+    "first_frame_text": "Name all 5. Bet you can't.",
+    "spoken_hook": "Name the last five World Cup winners. Bet you miss one.",
+    "hook_type": "question"
+  },
+  "retention_mechanic": "reveal",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "NAME ALL 5. BET YOU CAN'T.",
+      "voiceover": "Name the last five World Cup winners. Bet you miss one.",
+      "stat_callout": "5?",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Deep black bg, huge gold 'NAME ALL 5?' header, the World Cup trophy glowing center, five gold question-mark cards in a row, premium quiz look, vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "fifa-world-cup-trophy",
+      "sticker_entity": "",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "LOCK IN YOUR 5 NOW",
+      "voiceover": "No Googling. Lock in your five right now. Here we go.",
+      "stat_callout": "GUESS",
+      "graphic_type": "quiz_board",
+      "graphic_prompt": "Five numbered slots 2022 down to 2006 with gold borders on black, all hidden behind question marks, a ticking-clock motif, premium broadcast quiz board, vertical 9:16.",
+      "visual_source": "graphic",
+      "visual_query": "",
+      "sticker_entity": "",
+      "duration_seconds": 3
+    },
+    {
+      "index": 3,
+      "on_screen_text": "2022 — ARGENTINA",
+      "voiceover": "Twenty twenty-two, Qatar. Argentina. Messi finally got his hands on it.",
+      "stat_callout": "ARGENTINA",
+      "graphic_type": "quiz_board",
+      "graphic_prompt": "'2022 ARGENTINA' in gold over a celebration backdrop, a green check mark. No faces in the graphic.",
+      "visual_source": "entity",
+      "visual_query": "argentina-2022-celebration",
+      "sticker_entity": "argentina",
+      "duration_seconds": 3
+    },
+    {
+      "index": 4,
+      "on_screen_text": "2018 — FRANCE",
+      "voiceover": "Twenty eighteen, Russia. France. A nineteen-year-old Mbappe lit it up.",
+      "stat_callout": "FRANCE",
+      "graphic_type": "quiz_board",
+      "graphic_prompt": "'2018 FRANCE' gold on black, a green check mark. No faces in the graphic.",
+      "visual_source": "entity",
+      "visual_query": "france-2018-celebration",
+      "sticker_entity": "france",
+      "duration_seconds": 3
+    },
+    {
+      "index": 5,
+      "on_screen_text": "2014 — GERMANY",
+      "voiceover": "Twenty fourteen, Brazil. Germany. Gotze won it in extra time.",
+      "stat_callout": "GERMANY",
+      "graphic_type": "quiz_board",
+      "graphic_prompt": "'2014 GERMANY' gold on black, a green check mark. No faces in the graphic.",
+      "visual_source": "entity",
+      "visual_query": "germany-2014-champions",
+      "sticker_entity": "germany",
+      "duration_seconds": 3
+    },
+    {
+      "index": 6,
+      "on_screen_text": "2010 — SPAIN",
+      "voiceover": "Twenty ten, South Africa. Spain. Tiki-taka at its absolute peak.",
+      "stat_callout": "SPAIN",
+      "graphic_type": "quiz_board",
+      "graphic_prompt": "'2010 SPAIN' gold on black, a green check mark. No faces in the graphic.",
+      "visual_source": "entity",
+      "visual_query": "spain-2010-trophy-lift",
+      "sticker_entity": "spain",
+      "duration_seconds": 3
+    },
+    {
+      "index": 7,
+      "on_screen_text": "2006 — ITALY. HOW MANY?",
+      "voiceover": "And two thousand and six, Italy. That's all five. So how many did you actually get?",
+      "stat_callout": "ITALY",
+      "graphic_type": "quiz_board",
+      "graphic_prompt": "'2006 ITALY' gold on black, all five winners now lit in a column with check marks, big white 'HOW MANY?' prompt at the bottom. No faces.",
+      "visual_source": "entity",
+      "visual_query": "fifa-world-cup-trophy",
+      "sticker_entity": "italy",
+      "duration_seconds": 4
+    },
+    {
+      "index": 8,
+      "on_screen_text": "SUBSCRIBE — DAILY WORLD CUP",
+      "voiceover": "Get four or more and you know your football. Follow for your daily World Cup countdown.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Black to gold fade, bold white 'SUBSCRIBE' with a gold 'DAILY WORLD CUP' tag, the trophy faint behind, a drawn subscribe-arrow, premium broadcast outro, vertical 9:16.",
+      "visual_source": "graphic",
+      "visual_query": "",
+      "sticker_entity": "",
+      "duration_seconds": 3
+    }
+  ],
+  "comment_bait": "How many out of 5 did you get? Be honest 👇",
+  "cta": "Follow for your daily World Cup countdown",
+  "music_mood": "playful tense quiz ticking that resolves triumphant on each reveal",
+  "thumbnail": { "text": "NAME ALL 5?", "concept": "Five gold trophy slots, four revealed years, the most recent hidden behind a question mark" },
+  "youtube_title": "Can You Name the Last 5 World Cup Winners? (Most People Miss One)",
+  "youtube_description": "A quick World Cup quiz: name the last five winners, 2022 back to 2006. How many did you get? Comment your score, then subscribe for a daily World Cup countdown. #WorldCup #football #quiz",
+  "instagram_caption": "Name the last 5 World Cup winners… no Googling. How many did you get? Comment below and tag someone who'd fail.",
+  "tiktok_caption": "bet you can't name all 5 World Cup winners 🏆 how many did you get?",
+  "hashtags": ["#worldcup", "#football", "#soccer", "#footballquiz", "#worldcup2026", "#tikitakafootytv"]
+}

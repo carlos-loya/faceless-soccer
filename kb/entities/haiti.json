@@ -1,0 +1,59 @@
+{
+  "slug": "haiti",
+  "type": "nation",
+  "code": "HAI",
+  "name": "Haiti",
+  "aliases": [
+    "Les Grenadiers",
+    "The Grenadiers"
+  ],
+  "facts": {
+    "group": {
+      "value": "Group C — opponents Brazil, Morocco, Scotland",
+      "as_of": "2026-06-13",
+      "source": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C",
+      "confidence": "high"
+    },
+    "fifa_ranking": {
+      "value": "Ranked around 83rd in the world — the lowest-ranked side in Group C",
+      "as_of": "2026-06-11",
+      "source": "https://www.squawka.com/en/news/world-cup/haiti-world-cup-2026-fixtures-squad-analysis/",
+      "confidence": "med"
+    },
+    "qualification": {
+      "value": "Topped the Third Round of CONCACAF qualifying ahead of Honduras (11 pts from 6 — 3W 2D 1L) to seal direct qualification — and played ZERO home games during the campaign: ongoing conflict in Haiti forced every 'home' fixture to be staged in Curacao",
+      "as_of": "2026-06-11",
+      "source": "https://www.concacaf.com/competitions/fifa-world-cup/news/fifa-world-cup-2026-team-profile-haiti",
+      "confidence": "high"
+    },
+    "wc_history": {
+      "value": "First World Cup appearance since 1974 — a 52-year absence ended",
+      "as_of": "2026-06-11",
+      "source": "https://www.concacaf.com/competitions/fifa-world-cup/news/fifa-world-cup-2026-team-profile-haiti",
+      "confidence": "high"
+    },
+    "key_players": {
+      "value": "Duckens Nazon (striker, all-time top scorer; JOINT-top scorer in CONCACAF qualifying with 6, tied with Guatemala's Oscar Santis, incl. a hat-trick off the bench vs Costa Rica). Note: 6 was the CONCACAF-region high only — global qualifying top scorer was Haaland (16).",
+      "as_of": "2026-06-11",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/duckens-nazon-haiti-interview",
+      "confidence": "high"
+    },
+    "wc_result_md1": {
+      "value": "Lost their opening match 0-1 to Scotland on June 13, 2026 (John McGinn 28') at Gillette Stadium, Foxborough",
+      "as_of": "2026-06-13",
+      "source": "https://www.espn.com/soccer/match/_/gameId/760418/scotland-haiti",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Flag_of_Haiti.svg/960px-Flag_of_Haiti.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Flag of Haiti — public domain via Wikimedia Commons",
+    "as_of": "2026-06-13"
+  },
+  "active_narratives": [
+    "haiti-no-home-game-miracle"
+  ],
+  "last_verified": "2026-06-13"
+}

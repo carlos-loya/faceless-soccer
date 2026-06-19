@@ -1,0 +1,30 @@
+{
+  "slug": "jimenez",
+  "type": "player",
+  "name": "Raúl Jiménez",
+  "aliases": ["Jiménez", "Raúl Jiménez"],
+  "facts": {
+    "nation": {
+      "value": "Mexico",
+      "as_of": "2026-06-11",
+      "source": "https://www.espn.com/soccer/match/_/gameId/760415/south-africa-mexico",
+      "confidence": "high"
+    },
+    "wc2026": {
+      "value": "Scored Mexico's second goal (67', header, assisted by Roberto Alvarado) in the 2-0 win over South Africa in the World Cup opener.",
+      "as_of": "2026-06-11",
+      "source": "https://www.espn.com/soccer/match/_/gameId/760415/south-africa-mexico",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Ra%C3%BAl_Jim%C3%A9nez.jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution": "Tirado.fj / CC BY-SA 3.0 via Wikimedia Commons",
+    "as_of": "2026-06-11",
+    "note": "Older Mexico-kit shot (user-chosen) — cut out to out/cutouts/jimenez.png for the scorers scene."
+  },
+  "active_narratives": ["wc2010-opener-echo"],
+  "last_verified": "2026-06-11"
+}

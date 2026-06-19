@@ -1,0 +1,19 @@
+{
+  "slug": "colombia",
+  "type": "nation",
+  "name": "Colombia",
+  "aliases": [
+    "Colombia"
+  ],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/1280px-Flag_of_Colombia.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "See File history below for details. / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-10"
+  },
+  "active_narratives": [],
+  "last_verified": "",
+  "code": "COL"
+}

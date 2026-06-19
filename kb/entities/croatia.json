@@ -1,0 +1,17 @@
+{
+  "slug": "croatia",
+  "type": "nation",
+  "name": "Croatia",
+  "code": "CRO",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Croatia.svg/1280px-Flag_of_Croatia.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Nightstallion, Elephantus, Neoneo13, Denelson83, Rainman, R-41, Minestrone, Lupo, Zscout370,MaGa (based on Decision of the Parliament) / via Wikimedia Commons",
+    "as_of": "2026-06-15"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

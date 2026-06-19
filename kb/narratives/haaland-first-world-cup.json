@@ -1,0 +1,20 @@
+{
+  "slug": "haaland-first-world-cup",
+  "headline": "Haaland finally at a World Cup — Norway ends a 27-year absence",
+  "summary": "Norway qualified for its first World Cup since 1998 with a perfect 8-from-8 qualifying record (sealed by a 4-1 win in Italy), powered by Erling Haaland's 16 goals. At 25, one of the world's best strikers finally reaches his first World Cup — drawn into Group I with France, setting up a possible Haaland-vs-Mbappé showdown.",
+  "entities": ["erling-haaland", "norway", "france", "kylian-mbappe"],
+  "heat": "hot",
+  "as_of": "2026-06-09",
+  "sources": [
+    "https://www.espn.com/soccer/story/_/id/46903768/how-norway-sealed-first-world-cup-spot-27-years-became-one-europe-best",
+    "https://www.nbcsports.com/soccer/news/norway-qualify-for-first-world-cup-since-1998-are-they-the-dark-horses-at-2026-world-cup",
+    "https://www.aljazeera.com/sports/2026/5/26/norway-world-cup-2026-preview-players-to-watch-group-matches-squad-list"
+  ],
+  "angles": [
+    "Best player to never play at a World Cup — until now?",
+    "Haaland vs Mbappé in Group I — who wins the striker duel?",
+    "Can Haaland drag Norway out of a group with France?",
+    "16 goals in qualifying — does he top the World Cup scoring charts on debut?"
+  ],
+  "last_verified": "2026-06-09"
+}

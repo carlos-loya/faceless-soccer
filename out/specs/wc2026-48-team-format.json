@@ -1,0 +1,89 @@
+{
+  "format": "shock_stat",
+  "topic": "Everything different about the first 48-team World Cup (WC 2026 new format explained)",
+  "subject": "",
+  "target_duration_seconds": 28,
+  "hook": {
+    "first_frame_text": "The World Cup changed forever",
+    "spoken_hook": "The World Cup you grew up with is gone. Here's everything that's different.",
+    "hook_type": "bold_claim"
+  },
+  "retention_mechanic": "open_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "THE WORLD CUP CHANGED FOREVER",
+      "voiceover": "The World Cup you grew up with is gone. Here's everything that's different.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Deep black background, bold white condensed headline 'EVERYTHING THAT CHANGED', a gold World Cup trophy silhouette dissolving into pixels, gold gradient accents #F7D774 to #C8881B, vertical 9:16.",
+      "visual_source": "graphic",
+      "visual_query": "",
+      "duration_seconds": 4
+    },
+    {
+      "index": 2,
+      "on_screen_text": "48 TEAMS — UP FROM 32",
+      "voiceover": "First up, forty-eight teams. That's sixteen more nations than ever before.",
+      "stat_callout": "48",
+      "graphic_type": "stat_card",
+      "graphic_prompt": "Black background, enormous gold gradient '48', small struck-through '32' beside it, white label 'TEAMS', condensed broadcast type, vertical 9:16.",
+      "visual_source": "graphic",
+      "visual_query": "",
+      "duration_seconds": 4
+    },
+    {
+      "index": 3,
+      "on_screen_text": "3 COUNTRIES HOST IT",
+      "voiceover": "It's the first World Cup ever shared by three nations — the USA, Canada, and Mexico.",
+      "stat_callout": "3",
+      "graphic_type": "stat_card",
+      "graphic_prompt": "Black background, bold white '3 HOST NATIONS', three subtle flag-color accent bars (USA, Canada, Mexico), gold underline, vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "usa",
+      "duration_seconds": 5
+    },
+    {
+      "index": 4,
+      "on_screen_text": "104 MATCHES IN 39 DAYS",
+      "voiceover": "That means a hundred and four matches, packed into thirty-nine days — the biggest World Cup in history.",
+      "stat_callout": "104",
+      "graphic_type": "stat_card",
+      "graphic_prompt": "Black background, giant gold '104', white label 'MATCHES / 39 DAYS', faint stadium-light bokeh, condensed type, vertical 9:16.",
+      "visual_source": "stock",
+      "visual_query": "huge football crowd packed stadium under bright floodlights",
+      "duration_seconds": 5
+    },
+    {
+      "index": 5,
+      "on_screen_text": "NEW: A ROUND OF 32",
+      "voiceover": "And there's a brand-new round. Twelve groups now, and even some third-placed teams sneak into the Round of thirty-two.",
+      "stat_callout": "32",
+      "graphic_type": "stat_card",
+      "graphic_prompt": "Black background, glowing gold 'ROUND OF 32', a simple bracket path graphic with one highlighted '3rd PLACE' slot advancing, white condensed type, vertical 9:16.",
+      "visual_source": "graphic",
+      "visual_query": "",
+      "duration_seconds": 6
+    },
+    {
+      "index": 6,
+      "on_screen_text": "BETTER OR WATERED DOWN?",
+      "voiceover": "Bigger than it's ever been. But is it better — or just watered down? Tell me.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Black background, World Cup trophy lit in warm gold, bold white question 'BETTER OR WATERED DOWN?', drawn gold arrow pointing down to a comment prompt, vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "fifa-world-cup-trophy",
+      "duration_seconds": 4
+    }
+  ],
+  "comment_bait": "48 teams and 104 games — better than ever, or watered down?",
+  "cta": "Tell me below",
+  "music_mood": "Modern epic build, big brassy hits, anticipation rising",
+  "thumbnail": { "text": "48 TEAMS?!", "concept": "Giant gold 48 over a fractured World Cup trophy, 'WHAT CHANGED' subtext" },
+  "youtube_title": "The 2026 World Cup Is Completely Different — Here's Everything That Changed",
+  "youtube_description": "48 teams. 104 matches. 3 host nations. A brand-new Round of 32. The 2026 World Cup is the biggest format change since 1998 — here's everything that's different in 30 seconds. Better, or watered down? #worldcup2026",
+  "instagram_caption": "48 teams. 104 matches. 39 days. 3 countries. A whole new Round of 32. The 2026 World Cup is the biggest the tournament has ever been — but is it actually better, or just watered down? Tell me below 👇",
+  "tiktok_caption": "The World Cup completely changed and nobody explained it… until now. Better or watered down? 👇",
+  "hashtags": ["#worldcup2026", "#football", "#soccer", "#fifaworldcup", "#worldcup", "#usa", "#tikitakafootytv", "#footballexplained"]
+}

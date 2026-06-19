@@ -1,0 +1,137 @@
+{
+  "format": "post_match",
+  "topic": "Netherlands 2-2 Japan — Samurai Blue come from behind twice to hold the world's No.8 in their World Cup 2026 Group F opener",
+  "subject": "virgil-van-dijk",
+  "matchup": ["netherlands", "japan"],
+  "target_duration_seconds": 30,
+  "hook": {
+    "first_frame_text": "THE DUTCH BLINKED FIRST",
+    "spoken_hook": "Number eight in the world. In front twice. Still not enough.",
+    "hook_type": "curiosity_gap"
+  },
+  "retention_mechanic": "seamless_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "THE DUTCH BLINKED FIRST",
+      "voiceover": "Number eight in the world. In front twice. Still not enough.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black background, gold gradient energy streaks, bold white condensed headline; tense premium broadcast feel; no faces, no logos.",
+      "visual_source": "entity",
+      "visual_query": "virgil-van-dijk",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "FIRST EVER WIN OVER ENGLAND",
+      "voiceover": "Japan came in red hot. First ever win over England.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black background with gold rising-momentum arc, white condensed caption; energy and confidence; no real faces.",
+      "visual_source": "entity",
+      "visual_query": "kaoru-mitoma",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 4
+    },
+    {
+      "index": 3,
+      "on_screen_text": "VAN DIJK 51'",
+      "voiceover": "Van Dijk rose and headed the Dutch in front.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black and gold broadcast styling, bold white caption, dramatic spotlight; no real faces, crest and kit cues only.",
+      "visual_source": "entity",
+      "visual_query": "virgil-van-dijk",
+      "sticker_entity": "",
+      "score": "1-0",
+      "duration_seconds": 3
+    },
+    {
+      "index": 4,
+      "on_screen_text": "NAKAMURA 57'",
+      "voiceover": "Six minutes later, Nakamura ripped it straight back.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Silhouetted crowd erupting, gold light bursts on deep black, white condensed caption; pure energy, no faces.",
+      "visual_source": "stock_video",
+      "visual_query": "crowd-erupt",
+      "sticker_entity": "",
+      "score": "1-1",
+      "duration_seconds": 3
+    },
+    {
+      "index": 5,
+      "on_screen_text": "SUMMERVILLE 64'",
+      "voiceover": "Summerville struck again. Three points looked done.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Moody floodlit stadium bokeh, gold glow on black, tense white caption; anticipation, no faces.",
+      "visual_source": "stock_video",
+      "visual_query": "floodlight-bokeh",
+      "sticker_entity": "",
+      "score": "2-1",
+      "duration_seconds": 3
+    },
+    {
+      "index": 6,
+      "on_screen_text": "KAMADA 88' — HEARTBREAK",
+      "voiceover": "Then the eighty-eighth minute. Kamada's header broke Dutch hearts.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Explosive late-winner energy, gold confetti and light on black, bold white caption; triumphant, no faces.",
+      "visual_source": "entity",
+      "visual_query": "daichi-kamada",
+      "sticker_entity": "",
+      "score": "2-2",
+      "duration_seconds": 4
+    },
+    {
+      "index": 7,
+      "on_screen_text": "GROUP F",
+      "voiceover": "Group F is wide open. Japan and the Dutch, dead level.",
+      "stat_callout": "",
+      "graphic_type": "group_table",
+      "graphic_prompt": "Clean ranked group-standings table, gold heading on deep black, white condensed type, Japan's row highlighted gold; premium broadcast look.",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "score": "2-2",
+      "group_table": [
+        { "team": "japan", "points": 1, "played": 1, "gd": 0, "highlight": true },
+        { "team": "netherlands", "points": 1, "played": 1, "gd": 0 },
+        { "team": "sweden", "points": 0, "played": 0, "gd": 0 },
+        { "team": "tunisia", "points": 0, "played": 0, "gd": 0 }
+      ],
+      "duration_seconds": 5
+    },
+    {
+      "index": 8,
+      "on_screen_text": "SUBSCRIBE — DAILY WORLD CUP",
+      "voiceover": "Your daily World Cup stories. Subscribe.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black and gold brand end-frame energy, bold white wordmark feel, premium broadcast close; no faces.",
+      "visual_source": "entity",
+      "visual_query": "virgil-van-dijk",
+      "sticker_entity": "",
+      "score": "2-2",
+      "duration_seconds": 3
+    }
+  ],
+  "comment_bait": "Best Japan team ever, or did the Dutch bottle it? 🇯🇵",
+  "cta": "Subscribe for daily World Cup stories, the day they happen",
+  "music_mood": "tense and building, with a triumphant drop on the 88th-minute equaliser",
+  "thumbnail": {
+    "text": "DUTCH BOTTLED IT?",
+    "concept": "Virgil van Dijk's face, jaw tense, half-lit in gold on black; small NED 2-2 JPN scoreline tucked in a corner; bold curiosity-driven text, no broadcast imagery."
+  },
+  "youtube_title": "Japan SHOCK the Netherlands 2-2 — From Behind TWICE | World Cup 2026",
+  "youtube_description": "The Netherlands led twice in their World Cup 2026 Group F opener in Dallas — and Japan came back twice to steal a point. Van Dijk (51') and Summerville (64') for the Dutch; Nakamura (57') and Kamada's 88th-minute header for the Samurai Blue, who arrived on a five-game streak that included their first-ever win over England at Wembley. Generated graphics + voiceover. No footage. Your daily World Cup stories. #worldcup2026",
+  "instagram_caption": "Japan just refused to lose. 🇯🇵 Down twice to the world's No.8 — level twice. Best Japan side ever, or did the Dutch bottle it? 👇 Subscribe for daily World Cup stories.",
+  "tiktok_caption": "The Dutch led TWICE and still couldn't win 😳 Kamada's 88th-min header steals it for Japan. Best Japan team ever or did Oranje bottle it? #worldcup2026",
+  "hashtags": ["#worldcup2026", "#japan", "#netherlands", "#football", "#soccer", "#samuraiblue", "#vandijk", "#tikitakafootytv"]
+}

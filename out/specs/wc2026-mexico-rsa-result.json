@@ -1,0 +1,99 @@
+{
+  "format": "shock_stat",
+  "topic": "Mexico 2-0 South Africa — World Cup 2026 opener result reaction (history did not repeat)",
+  "subject": "",
+  "target_duration_seconds": 31,
+  "hook": {
+    "first_frame_text": "WE SAID HISTORY WOULD REPEAT",
+    "spoken_hook": "We told you history would repeat at the Azteca. It didn't.",
+    "hook_type": "bold_claim"
+  },
+  "retention_mechanic": "open_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "HISTORY DIDN'T REPEAT",
+      "voiceover": "We told you history would repeat at the Azteca. It didn't.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Deep black background, gold gradient accent #F7D774 to #C8881B, bold white condensed type 'HISTORY DIDN'T REPEAT', a faint stadium silhouette, premium broadcast feel, vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "estadio-azteca",
+      "sticker_entity": "",
+      "camera": "pan_left",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "MEXICO 2 vs SOUTH AFRICA 0",
+      "voiceover": "Mexico beat South Africa two-nil. Sixteen years ago, the same opener ended one-all. Not this time.",
+      "stat_callout": "",
+      "graphic_type": "comparison_split",
+      "graphic_prompt": "Two-sided VS scoreboard on deep black, gold gradient frame, MEXICO vs SOUTH AFRICA with flags and a big 2 - 0, premium broadcast feel, vertical 9:16.",
+      "visual_source": "stock_video",
+      "visual_query": "epic-stadium",
+      "sticker_entity": "",
+      "duration_seconds": 6
+    },
+    {
+      "index": 3,
+      "on_screen_text": "QUIÑONES vs JIMÉNEZ",
+      "voiceover": "Julián Quiñones struck after nine minutes, the first goal of the World Cup. Then Raúl Jiménez sealed it with a header.",
+      "stat_callout": "2-0",
+      "graphic_type": "scorers_split",
+      "graphic_prompt": "Two Mexico scorers slide in from opposite sides as cutouts with the 2-0 score clashing between them, deep black, gold accents, premium broadcast feel, vertical 9:16, no real faces.",
+      "visual_source": "stock_video",
+      "visual_query": "crowd",
+      "sticker_entity": "",
+      "duration_seconds": 7
+    },
+    {
+      "index": 4,
+      "on_screen_text": "CHAOS AT THE AZTECA",
+      "voiceover": "And it got wild. Three red cards, two for South Africa, one for Mexico.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Dramatic deep-red and black graphic, a bold white condensed 'THREE RED CARDS', tense mood, vertical 9:16.",
+      "visual_source": "stock_video",
+      "visual_query": "floodlights",
+      "sticker_entity": "",
+      "duration_seconds": 5
+    },
+    {
+      "index": 5,
+      "on_screen_text": "ALL THREE BANNED NEXT GAME",
+      "voiceover": "And those reds bite. All three are banned for matchday two, including Mexico's César Montes.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Tense deep-red and black graphic, a bold white condensed 'SUSPENDED', three red-card icons, vertical 9:16.",
+      "visual_source": "stock_video",
+      "visual_query": "epic-stadium",
+      "sticker_entity": "cesar-montes",
+      "duration_seconds": 6
+    },
+    {
+      "index": 6,
+      "on_screen_text": "SUBSCRIBE — DAILY WORLD CUP",
+      "voiceover": "Subscribe for your daily World Cup news and stories.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Brand end card, deep black, gold TT monogram top-center, bold white condensed 'DAILY WORLD CUP', a hand-drawn gold arrow pointing down, vertical 9:16.",
+      "visual_source": "stock_video",
+      "visual_query": "crowd",
+      "sticker_entity": "",
+      "duration_seconds": 4
+    }
+  ],
+  "comment_bait": "Real contenders, or did the red cards flatter Mexico? Let me know in the comments 🇲🇽",
+  "cta": "Subscribe for your daily World Cup story",
+  "music_mood": "Triumphant Latin-tinged anthem with a tense, dramatic mid-section for the red-card beat",
+  "thumbnail": {
+    "text": "2-0. NO REPEAT.",
+    "concept": "Mexico flag half + South Africa flag half, a bold gold '2-0' cracked across the center, deep black + gold, the Azteca silhouette behind."
+  },
+  "youtube_title": "Mexico 2-0 South Africa: History Did NOT Repeat (World Cup 2026 Opener)",
+  "youtube_description": "We said the 2026 World Cup opener mirrored 2010 — but history didn't repeat the scoreline. Mexico beat South Africa 2-0 at the Azteca: Julian Quinones with the first goal of the tournament, Raul Jimenez sealing it, and three red cards of chaos. Did the hosts look like contenders, or did the reds flatter them? Your daily World Cup story — subscribe. #worldcup2026 #mexico",
+  "instagram_caption": "We called it a rerun of 2010… and then it wasn't. Mexico 2-0 South Africa at the Azteca 🇲🇽 Quinones with the first goal of the World Cup, Jimenez sealed it, and THREE red cards of chaos. Did Mexico look like contenders, or did the reds flatter them? Subscribe for your daily World Cup story.",
+  "tiktok_caption": "2010 ended 1-1. 2026? Mexico 2-0 🇲🇽 First goal of the World Cup + three red cards of chaos at the Azteca. Did the reds flatter Mexico? Daily World Cup content 👇",
+  "hashtags": ["#worldcup2026", "#mexico", "#eltri", "#southafrica", "#soccer", "#football", "#worldcupopener", "#tikitakafootytv"]
+}

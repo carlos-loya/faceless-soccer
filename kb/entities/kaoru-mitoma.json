@@ -1,0 +1,43 @@
+{
+  "slug": "kaoru-mitoma",
+  "type": "player",
+  "name": "Kaoru Mitoma",
+  "aliases": [
+    "Mitoma"
+  ],
+  "facts": {
+    "club": {
+      "value": "Brighton & Hove Albion (Premier League)",
+      "as_of": "2026-06-14",
+      "source": "https://en.wikipedia.org/wiki/Kaoru_Mitoma",
+      "confidence": "med"
+    },
+    "nation": {
+      "value": "Japan",
+      "as_of": "2026-06-14",
+      "source": "https://en.wikipedia.org/wiki/Kaoru_Mitoma",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Left winger",
+      "as_of": "2026-06-14",
+      "source": "https://en.wikipedia.org/wiki/Kaoru_Mitoma",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "One of Japan's most popular and dangerous attackers; scored the 23rd-minute winner in Japan's historic 1-0 victory over England at Wembley on 31 March 2026.",
+      "as_of": "2026-06-14",
+      "source": "https://www.espn.com/soccer/story/_/id/48376117/historic-win-england-how-far-japan-go-fifa-world-cup",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Kaoru_Mitoma_%282022%29.jpg",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "attribution": "jamesboyes / CC BY 2.0 via Wikimedia Commons",
+    "as_of": "2026-06-14"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-14"
+}

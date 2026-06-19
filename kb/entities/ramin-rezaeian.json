@@ -1,0 +1,37 @@
+{
+  "slug": "ramin-rezaeian",
+  "type": "player",
+  "name": "Ramin Rezaeian",
+  "aliases": ["Rezaeian"],
+  "facts": {
+    "nation": {
+      "value": "Iran (Team Melli)",
+      "as_of": "2026-06-15",
+      "source": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021476",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Right-back / wing-back",
+      "as_of": "2026-06-15",
+      "source": "https://en.wikipedia.org/wiki/Ramin_Rezaeian",
+      "confidence": "med"
+    },
+    "wc_2026": {
+      "value": "Scored Iran's first equalizer (32') in the 2-2 group-stage draw with New Zealand on June 15, 2026, cancelling out Elijah Just's opener.",
+      "as_of": "2026-06-15",
+      "source": "https://www.espn.com/soccer/match/_/gameId/760427/new-zealand-iran",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Ramin_Rezaeian_at_the_2018_FIFA_World_Cup.jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution": "Екатерина Лаут / CC BY-SA 3.0 via Wikimedia Commons",
+    "as_of": "2026-06-15",
+    "note": "Clean Iran national-kit portrait (2018 World Cup), vision-vetted from the expanded-source fetcher (Wikidata P18). Correct player confirmed by eye."
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-15",
+  "code": null
+}

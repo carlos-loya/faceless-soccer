@@ -1,0 +1,149 @@
+{
+  "topic": "Mexico 1-0 South Korea: Luis Romo's first World Cup start and goal sends Mexico into the knockout stage",
+  "comment_bait": "A defensive midfielder nobody expected scores the goal that sends Mexico through. Who finishes 2nd — Korea or Czechia? I will be in the replies.",
+  "cta": "Follow for your daily World Cup stories",
+  "handle": "@tikitakafootytv",
+  "scenes": [
+    {
+      "on_screen_text": "63 CAPS. 0 WORLD CUP MINUTES.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "seconds": 3,
+      "visual_source": "entity",
+      "visual_query": "luis-romo",
+      "voiceover": "A defensive midfielder. Sixty-three caps. Not a single World Cup minute. Until tonight.",
+      "bg": "mexico-korea-jimenez/s1-entity.png",
+      "credit": "Selección Nacional de México / CC BY 4.0 via Wikimedia Commons",
+      "score": "0-0"
+    },
+    {
+      "on_screen_text": "SURPRISE START. HOMETOWN PRESSURE.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "seconds": 4,
+      "visual_source": "stock_video",
+      "visual_query": "crowd-erupt",
+      "voiceover": "A surprise starter in Guadalajara, his hometown. Mexico needed a win to go through. Korea stood in the way.",
+      "bgVideo": "mexico-korea-jimenez/s2-broll.mp4",
+      "credit": null,
+      "score": "0-0"
+    },
+    {
+      "on_screen_text": "SUBSCRIBE — FOLLOW MEXICO",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "seconds": 3,
+      "visual_source": "entity",
+      "visual_query": "edson-alvarez",
+      "voiceover": "Subscribe to follow Mexico.",
+      "bg": "mexico-korea-jimenez/s3-entity.png",
+      "credit": "Selección Nacional de México / CC BY 3.0 via Wikimedia Commons",
+      "score": "0-0"
+    },
+    {
+      "on_screen_text": "50'. KEEPER HOWLER. ROMO TAPS IN.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "seconds": 5,
+      "visual_source": "stock_video",
+      "visual_query": "gold-confetti",
+      "voiceover": "Fifty minutes in. Korean keeper drops it. Romo is there. First World Cup start. First World Cup goal. One-nil.",
+      "bgVideo": "mexico-korea-jimenez/s4-broll.mp4",
+      "credit": null,
+      "score": "1-0"
+    },
+    {
+      "on_screen_text": "63 CAPS. 0 MINUTES. THEN EVERYTHING.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "seconds": 4,
+      "visual_source": "entity",
+      "visual_query": "luis-romo",
+      "voiceover": "From zero World Cup minutes to sending Mexico through. The hometown hero.",
+      "bg": "mexico-korea-jimenez/s1-entity.png",
+      "credit": "Selección Nacional de México / CC BY 4.0 via Wikimedia Commons",
+      "score": "1-0"
+    },
+    {
+      "on_screen_text": "GROUP A",
+      "stat_callout": "",
+      "graphic_type": "group_table",
+      "seconds": 5,
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "voiceover": "Group A. Mexico top and through. Korea waits on the final day.",
+      "bgVideo": "mexico-korea-jimenez/s6-broll.mp4",
+      "credit": null,
+      "group_table": [
+        {
+          "code": "MEX",
+          "flag": "mexico-korea-jimenez/gt0-6.png",
+          "name": "Mexico",
+          "points": 6,
+          "played": 2,
+          "gd": 3,
+          "highlight": true
+        },
+        {
+          "code": "KOR",
+          "flag": "mexico-korea-jimenez/gt1-6.png",
+          "name": "South Korea",
+          "points": 3,
+          "played": 2,
+          "gd": 0,
+          "highlight": false
+        },
+        {
+          "code": "CZE",
+          "flag": "mexico-korea-jimenez/gt2-6.png",
+          "name": "Czech Republic",
+          "points": 1,
+          "played": 2,
+          "gd": -1,
+          "highlight": false
+        },
+        {
+          "code": "RSA",
+          "flag": "mexico-korea-jimenez/gt3-6.png",
+          "name": "South Africa",
+          "points": 1,
+          "played": 2,
+          "gd": -2,
+          "highlight": false
+        }
+      ]
+    },
+    {
+      "on_screen_text": "63 CAPS. THEN EVERYTHING.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "seconds": 3,
+      "visual_source": "entity",
+      "visual_query": "luis-romo",
+      "voiceover": "Sixty-three caps. Then everything.",
+      "bg": "mexico-korea-jimenez/s1-entity.png",
+      "credit": "Selección Nacional de México / CC BY 4.0 via Wikimedia Commons"
+    }
+  ],
+  "matchup": [
+    {
+      "img": "mexico-korea-jimenez/gt0-6.png",
+      "name": "Mexico",
+      "code": "MEX"
+    },
+    {
+      "img": "mexico-korea-jimenez/gt1-6.png",
+      "name": "South Korea",
+      "code": "KOR"
+    }
+  ],
+  "sticker": {
+    "img": "mexico-korea-jimenez/sticker.png",
+    "name": "Luis Romo",
+    "cutout": true
+  },
+  "endCard": {
+    "bgVideo": "mexico-korea-jimenez/s99-broll.mp4",
+    "credit": null
+  }
+}

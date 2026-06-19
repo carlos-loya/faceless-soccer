@@ -1,0 +1,19 @@
+{
+  "slug": "kim-seung-gyu",
+  "type": "player",
+  "name": "Kim Seung-gyu",
+  "aliases": [
+    "Seung-gyu Kim",
+    "Kim Seung Gyu"
+  ],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Rus-SK2017_%2822%29.jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution": "Дмитрий Голубович / CC BY-SA 3.0 via Wikimedia Commons",
+    "as_of": "2026-06-11"
+  },
+  "active_narratives": ["korea-czechia-2026-comeback"],
+  "last_verified": "2026-06-11"
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "scotland-28-year-wait",
+  "headline": "Scotland end a 28-year World Cup wait — and start by going top of the group",
+  "summary": "Scotland reached their first World Cup since 1998 (a 28-year absence), having sealed qualification dramatically with two stoppage-time goals to pip Denmark. In their opener on June 13, 2026 they beat Haiti 1-0 through a John McGinn strike (28') at Gillette Stadium — and, because Brazil and Morocco drew 1-1 earlier the same day, the Tartan Army sit TOP of Group C above Brazil after matchday 1.",
+  "entities": ["scotland", "haiti", "brazil", "morocco"],
+  "heat": "hot",
+  "as_of": "2026-06-13",
+  "sources": [
+    "https://www.france24.com/en/sport/20260614-world-cup-2026-scotland-edge-past-haiti-with-mcginn-s-opener",
+    "https://www.espn.com/soccer/story/_/id/49051974/haiti-scotland-live-world-cup-2026-latest-updates-commentary-score-result-fifa",
+    "https://www.uefa.com/european-qualifiers/news/02a6-20d159741fe9-a2a8fac9839d-1000--scotland-at-the-world-cup-2026-squad-fixtures-group-and-hi/"
+  ],
+  "angles": [
+    "28 years of hurt ended — and they win their opener",
+    "Scotland sit ABOVE Brazil in the group after one game (Brazil drew Morocco)",
+    "John McGinn the unlikely hero with the only goal",
+    "Can Scotland actually escape a group with Brazil and Morocco? (prediction bait)",
+    "Dramatic qualification: two stoppage-time goals to pip Denmark, now rewarded"
+  ],
+  "last_verified": "2026-06-13"
+}

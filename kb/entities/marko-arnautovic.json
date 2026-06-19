@@ -1,0 +1,41 @@
+{
+  "slug": "marko-arnautovic",
+  "type": "player",
+  "name": "Marko Arnautović",
+  "aliases": ["Arnautović", "Arnautovic"],
+  "facts": {
+    "age": {
+      "value": 37,
+      "as_of": "2026-06-17",
+      "source": "https://www.transfermarkt.com/marko-arnautovic/profil/spieler/38253",
+      "confidence": "med"
+    },
+    "club": {
+      "value": "Inter Milan (on loan to unnamed recently/could be elsewhere)",
+      "as_of": "2026-06-17",
+      "source": "https://www.transfermarkt.com/marko-arnautovic/profil/spieler/38253",
+      "confidence": "low"
+    },
+    "nation": {
+      "value": "Austria",
+      "as_of": "2026-06-17",
+      "source": "https://www.transfermarkt.com/marko-arnautovic/profil/spieler/38253",
+      "confidence": "med"
+    },
+    "wc_role": {
+      "value": "Austria veteran striker. Sealed Austria's 3-1 win over Jordan with a penalty in 90+12 minutes — Austria's first World Cup match in 28 years.",
+      "as_of": "2026-06-17",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/austria-jordan-highlights-match-report",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Marko_Arnautovi%C4%87_850_1633.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "Granada / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-17"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-17"
+}

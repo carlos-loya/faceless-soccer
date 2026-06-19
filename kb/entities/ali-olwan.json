@@ -1,0 +1,41 @@
+{
+  "slug": "ali-olwan",
+  "type": "player",
+  "name": "Ali Olwan",
+  "aliases": ["Olwan"],
+  "facts": {
+    "age": {
+      "value": 25,
+      "as_of": "2026-06-17",
+      "source": "https://www.transfermarkt.com/ali-olwan/profil/spieler/785651",
+      "confidence": "med"
+    },
+    "club": {
+      "value": "Al-Wehdat (Jordan)",
+      "as_of": "2026-06-17",
+      "source": "https://www.transfermarkt.com/ali-olwan/profil/spieler/785651",
+      "confidence": "med"
+    },
+    "nation": {
+      "value": "Jordan",
+      "as_of": "2026-06-17",
+      "source": "https://www.transfermarkt.com/ali-olwan/profil/spieler/785651",
+      "confidence": "med"
+    },
+    "wc_role": {
+      "value": "Scored Jordan's first-ever World Cup goal — the equalizer against Austria at 50', making it 1-1 in their debut World Cup match.",
+      "as_of": "2026-06-17",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/austria-jordan-highlights-match-report",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Ali_Olwan.png",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "attribution": "M.Sadegh Nikgostar / CC BY 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-17"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-17"
+}

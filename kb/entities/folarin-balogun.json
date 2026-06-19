@@ -1,0 +1,52 @@
+{
+  "slug": "folarin-balogun",
+  "type": "player",
+  "name": "Folarin Balogun",
+  "aliases": [
+    "Balogun",
+    "Flo Balogun"
+  ],
+  "facts": {
+    "club": {
+      "value": "AS Monaco",
+      "as_of": "2026-06-12",
+      "source": "https://sports.yahoo.com/soccer/live/usmnt-vs-paraguay-score-live-updates-where-to-watch-box-score-214536754.html",
+      "confidence": "med"
+    },
+    "nation": {
+      "value": "USA (chose to represent the USA over England/Nigeria in 2023)",
+      "as_of": "2026-06-12",
+      "source": "https://sports.yahoo.com/soccer/live/usmnt-vs-paraguay-score-live-updates-where-to-watch-box-score-214536754.html",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Striker / center-forward",
+      "as_of": "2026-06-12",
+      "source": "https://sports.yahoo.com/soccer/live/usmnt-vs-paraguay-score-live-updates-where-to-watch-box-score-214536754.html",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "USA's starting No. 9. Long the open question in the USMNT lineup \u2014 the striker who had to prove he could finish on the biggest stage.",
+      "as_of": "2026-06-12",
+      "source": "https://sports.yahoo.com/soccer/live/usmnt-vs-paraguay-score-live-updates-where-to-watch-box-score-214536754.html",
+      "confidence": "med"
+    },
+    "opener_performance": {
+      "value": "Scored a first-half BRACE in the USA's 4-1 World Cup opener vs Paraguay (June 12, 2026): 31' tap-in assisted by Pulisic (Robinson deep ball -> Pulisic cutback), then 45' he turned his defender and finessed it into the top corner with his weaker left foot to make it 3-0 at the break. Star of the show on the host nation's opening night.",
+      "as_of": "2026-06-12",
+      "source": "https://sports.yahoo.com/soccer/live/usmnt-vs-paraguay-score-live-updates-where-to-watch-box-score-214536754.html",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Folarin_Balogun_USMNT_v_Belgium_Mar_28_2026-69_%28cropped%29.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "Bryan Berlin / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-12"
+  },
+  "active_narratives": [
+    "usmnt-opener-paraguay-rout"
+  ],
+  "last_verified": "2026-06-12"
+}

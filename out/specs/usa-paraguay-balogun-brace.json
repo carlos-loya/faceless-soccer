@@ -1,0 +1,119 @@
+{
+  "format": "player_story",
+  "topic": "USA 4-1 Paraguay World Cup opener — Folarin Balogun answers the striker question with a first-half brace",
+  "subject": "folarin-balogun",
+  "matchup": ["usa", "paraguay"],
+  "target_duration_seconds": 26,
+  "hook": {
+    "first_frame_text": "Nobody trusted USA's striker.",
+    "spoken_hook": "Everyone said the USA had no number nine. On the biggest night of his life, he answered them.",
+    "hook_type": "bold_claim"
+  },
+  "retention_mechanic": "seamless_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "Nobody trusted USA's striker.",
+      "voiceover": "They said the USA had no striker. Then opening night came.",
+      "stat_callout": "",
+      "score": "0-0",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Vertical 9:16, deep black background, gold gradient accents (#F7D774 to #C8881B). A lone white shirt number 9 dead center, huge condensed white type. Floodlight bokeh glow behind. Premium broadcast tease, no faces.",
+      "visual_source": "stock_video",
+      "visual_query": "floodlight-bokeh",
+      "sticker_entity": "",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "Host nation. Opening night. One question.",
+      "voiceover": "Co-hosts, opening night at SoFi Stadium. One question hung over this team: who scores?",
+      "stat_callout": "",
+      "score": "0-0",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, golden-hour exterior of a vast modern stadium, black-and-gold brand grade, bold white condensed caption bar. No faces, no logos.",
+      "visual_source": "entity",
+      "visual_query": "sofi-stadium",
+      "camera": "pan_left",
+      "sticker_entity": "",
+      "duration_seconds": 4
+    },
+    {
+      "index": 3,
+      "on_screen_text": "Pulisic pulls the strings.",
+      "voiceover": "Seven minutes in, Pulisic forces an own goal.",
+      "stat_callout": "",
+      "score": "1-0",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black with gold accents, energy lines radiating, bold white condensed caption bar. Premium broadcast feel, no broadcast imagery.",
+      "visual_source": "entity",
+      "visual_query": "christian-pulisic",
+      "sticker_entity": "",
+      "duration_seconds": 3
+    },
+    {
+      "index": 4,
+      "on_screen_text": "Then the striker pounces.",
+      "voiceover": "Then his cutback, and the striker taps it home.",
+      "stat_callout": "",
+      "score": "2-0",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black with gold accents, energy lines radiating, bold white condensed caption bar. Premium broadcast feel, no broadcast imagery.",
+      "visual_source": "entity",
+      "visual_query": "christian-pulisic",
+      "sticker_entity": "",
+      "duration_seconds": 3
+    },
+    {
+      "index": 5,
+      "on_screen_text": "BALOGUN. BRACE. TOP CORNER.",
+      "voiceover": "Right before half, Balogun finds the top corner with his weaker foot. A brace.",
+      "stat_callout": "",
+      "score": "3-0",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, explosive gold confetti and crowd-erupt energy on deep black, bold condensed white type. Triumphant, premium, no faces.",
+      "visual_source": "stock_video",
+      "visual_query": "crowd-erupt",
+      "sticker_entity": "",
+      "duration_seconds": 5
+    },
+    {
+      "index": 6,
+      "on_screen_text": "Real deal — or one good night?",
+      "voiceover": "Four-one. The USA's biggest World Cup win in twenty-four years.",
+      "stat_callout": "",
+      "score": "4-1",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black, gold confetti atmosphere, bold white condensed caption bar. Premium, celebratory, no faces.",
+      "visual_source": "stock_video",
+      "visual_query": "gold-confetti",
+      "sticker_entity": "",
+      "duration_seconds": 4
+    },
+    {
+      "index": 7,
+      "on_screen_text": "SUBSCRIBE — DAILY WORLD CUP",
+      "voiceover": "Your daily World Cup story. Subscribe so you don't miss it.",
+      "stat_callout": "",
+      "score": "4-1",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Vertical 9:16, deep black, gold gradient accents, bold white condensed 'DAILY WORLD CUP' lockup with the TikiTaka monogram, night-stadium glow behind. Clean, premium, no faces.",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "duration_seconds": 4
+    }
+  ],
+  "comment_bait": "Balogun the real deal now, or just one good night against Paraguay? Drop your verdict 🇺🇸",
+  "cta": "Subscribe for your daily World Cup story",
+  "music_mood": "Cinematic, building, triumphant — tense floodlit intro that swells into a celebratory anthem.",
+  "thumbnail": {
+    "text": "USA'S NEW NO. 9",
+    "concept": "Folarin Balogun cutout in the USA kit mid-stride against a black-and-gold blowout, bold white '4-1' and a glowing '2 GOALS' tag — face + tension, not a scoreline-and-flags card."
+  },
+  "youtube_title": "Folarin Balogun's BRACE fires USA to 4-1 World Cup opener win vs Paraguay",
+  "youtube_description": "The USA opened their home World Cup with a statement: 4-1 over Paraguay at SoFi Stadium, their biggest World Cup win in 24 years. Folarin Balogun — the striker many doubted — answered with a first-half brace, Pulisic ran the show before being rested at halftime, and Pochettino's side led 3-0 at the break. Balogun the real deal, or just one good night? Your daily World Cup stories, every day. #worldcup2026 #usmnt",
+  "instagram_caption": "The striker nobody trusted just announced himself on the biggest stage. USA 4-1 Paraguay, Balogun with the brace. 🇺🇸 Real deal now, or one good night? Drop your verdict 👇 Subscribe for your daily World Cup story.",
+  "tiktok_caption": "America said it had no striker. Balogun answered with a brace 🇺🇸 USA 4-1 Paraguay. Real deal or one good night? Tell me below ⬇️ #worldcup2026",
+  "hashtags": ["#worldcup2026", "#usmnt", "#balogun", "#pulisic", "#football", "#soccer", "#usa", "#tikitakafootytv"]
+}

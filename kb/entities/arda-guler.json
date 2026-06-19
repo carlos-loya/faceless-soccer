@@ -1,0 +1,47 @@
+{
+  "slug": "arda-guler",
+  "type": "player",
+  "name": "Arda Güler",
+  "aliases": ["Guler", "Arda Guler"],
+  "facts": {
+    "age": {
+      "value": 21,
+      "as_of": "2026-06-14",
+      "source": "https://english.ratopati.com/story/66640/21-year-old-young-sensation-guler-is-on-the-verge-of-breaking-records",
+      "confidence": "med"
+    },
+    "club": {
+      "value": "Real Madrid",
+      "as_of": "2026-06-14",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/youngsters-wonderkids-arda-guler-turkiye-real-madrid",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "Türkiye",
+      "as_of": "2026-06-14",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/youngsters-wonderkids-arda-guler-turkiye-real-madrid",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Attacking midfielder / playmaker",
+      "as_of": "2026-06-14",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/youngsters-wonderkids-arda-guler-turkiye-real-madrid",
+      "confidence": "high"
+    },
+    "opener_performance": {
+      "value": "Türkiye's chief creator vs Australia (June 14, 2026) — took 8 shots, the MOST by any player in a single match at WC 2026, but was limited to long-range efforts + a free kick, all denied by Australia keeper Patrick Beach. Türkiye lost 0-2 despite 71.7% possession.",
+      "as_of": "2026-06-14",
+      "source": "https://theanalyst.com/articles/australia-vs-turkiye-stats-world-cup-2026",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "assets/source/arda-guler.jpg",
+    "license": "owner-provided",
+    "attribution": "",
+    "as_of": "2026-06-14",
+    "note": "Owner-supplied high-res Türkiye-kit (Euro 2024) shot, replacing the dated low-res Fenerbahçe Commons crop (2026-06-14). License is the owner's responsibility — not from the free CC pipeline. Attribution left blank so no credit line burns into the render."
+  },
+  "active_narratives": ["australia-shock-turkiye-wc2026"],
+  "last_verified": "2026-06-14"
+}

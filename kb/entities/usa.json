@@ -1,0 +1,73 @@
+{
+  "slug": "usa",
+  "type": "nation",
+  "name": "United States",
+  "aliases": [
+    "USA",
+    "USMNT",
+    "United States men's national team",
+    "The Stars and Stripes"
+  ],
+  "code": "USA",
+  "facts": {
+    "group": {
+      "value": "Group D — opponents Paraguay, Australia, Türkiye",
+      "as_of": "2025-12-05",
+      "source": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_draw",
+      "confidence": "high"
+    },
+    "manager": {
+      "value": "Mauricio Pochettino",
+      "as_of": "2026-05-26",
+      "source": "https://www.ussoccer.com/stories/2026/05/usmnt/us-mens-national-team-head-coach-mauricio-pochettino-names-26-player-roster-for-fifa-world-cup-2026",
+      "confidence": "high"
+    },
+    "qualification": {
+      "value": "Auto-qualified as co-host (USA/Canada/Mexico)",
+      "as_of": "2026-05-26",
+      "source": "https://www.ussoccer.com/stories/2026/05/usmnt/us-mens-national-team-head-coach-mauricio-pochettino-names-26-player-roster-for-fifa-world-cup-2026",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Co-host nation (with Canada and Mexico); tournament runs June 11 – July 19 across USA/Canada/Mexico",
+      "as_of": "2026-05-26",
+      "source": "https://www.ussoccer.com/stories/2026/05/usmnt/us-mens-national-team-head-coach-mauricio-pochettino-names-26-player-roster-for-fifa-world-cup-2026",
+      "confidence": "high"
+    },
+    "opener": {
+      "value": "Open Group D vs Paraguay on June 12, 2026 at SoFi Stadium, Inglewood/Los Angeles, California",
+      "as_of": "2026-05-26",
+      "source": "https://www.ussoccer.com/stories/2026/05/usmnt/us-mens-national-team-head-coach-mauricio-pochettino-names-26-player-roster-for-fifa-world-cup-2026",
+      "confidence": "high"
+    },
+    "opener_result": {
+      "value": "USA 4-1 Paraguay (Group D opener, June 12, 2026, SoFi Stadium/Los Angeles). Goals: Damián Bobadilla own goal 7' (off a McKennie–Pulisic move), Folarin Balogun 31' (assisted by Pulisic) and 45' (top-corner finish with his weaker left), 3-0 at halftime; Maurício pulled one back for Paraguay 73'; Gio Reyna 90+8' sealed 4-1. Pulisic was the architect of the first half and was subbed at halftime (Pochettino's call, no injury). It was the USA's first multi-goal World Cup win in 24 years (since 2002) and Pochettino's first WC match in charge.",
+      "as_of": "2026-06-12",
+      "source": "https://sports.yahoo.com/soccer/live/usmnt-vs-paraguay-score-live-updates-where-to-watch-box-score-214536754.html",
+      "confidence": "high"
+    },
+    "key_players": {
+      "value": "Christian Pulisic (AC Milan, 84 caps, on-field leader), Tyler Adams, Weston McKennie, Tim Ream, Matt Turner (GK), Tim Weah",
+      "as_of": "2026-05-26",
+      "source": "https://www.ussoccer.com/stories/2026/05/usmnt/us-mens-national-team-head-coach-mauricio-pochettino-names-26-player-roster-for-fifa-world-cup-2026",
+      "confidence": "high"
+    },
+    "squad_news": {
+      "value": "Pochettino named the 26-man roster on 26 May 2026: 13 returnees from the 2022 World Cup plus 13 first-timers — the fifth-youngest squad the USA has ever sent to a World Cup.",
+      "as_of": "2026-05-26",
+      "source": "https://www.espn.com/soccer/story/_/id/48882389/usa-2026-world-cup-roster-christian-pulisic-squad-mckennie-adams",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Flag_of_the_United_States_%28DDD-F-416E_specifications%29.svg/1280px-Flag_of_the_United_States_%28DDD-F-416E_specifications%29.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Unknown / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-09"
+  },
+  "active_narratives": [
+    "usmnt-home-world-cup"
+  ],
+  "last_verified": "2026-06-09"
+}

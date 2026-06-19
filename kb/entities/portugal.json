@@ -1,0 +1,71 @@
+{
+  "slug": "portugal",
+  "type": "nation",
+  "name": "Portugal",
+  "aliases": [
+    "A Seleção",
+    "Selecao"
+  ],
+  "facts": {
+    "group": {
+      "value": "Group K — opponents DR Congo, Uzbekistan, Colombia",
+      "as_of": "2025-12-05",
+      "source": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_draw",
+      "confidence": "high"
+    },
+    "fifa_ranking": {
+      "value": 5,
+      "as_of": "2026-06-10",
+      "source": "https://football-ranking.com/fifa-world-rankings",
+      "confidence": "med"
+    },
+    "manager": {
+      "value": "Roberto Martínez",
+      "as_of": "2026-05-19",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/cristiano-ronaldo-roberto-martinez-portugal-squad-announcement",
+      "confidence": "high"
+    },
+    "qualification": {
+      "value": "Qualified as a UEFA group winner (direct) in 2025 European Qualifiers",
+      "as_of": "2025-11-30",
+      "source": "https://www.uefa.com/european-qualifiers/news/029f-1f318027c4dd-8e9bab478b48-1000--world-cup-2026-which-european-teams-have-qualified/",
+      "confidence": "high"
+    },
+    "recent_form": {
+      "value": "Won the 2025 UEFA Nations League, beating Spain in the final on 8 Jun 2025 (2-2, won on penalties) — their second Nations League title (first team to win it twice). Ronaldo finished as the tournament's top scorer.",
+      "as_of": "2025-06-08",
+      "source": "https://www.uefa.com/uefanationsleague/news/029a-1df446a2d81d-0bc47d9324a5-1000--portugal-vs-spain-report-selecao-create-nations-league-histo/",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Contender — top-5 ranked, deep squad with a PSG and Premier League core",
+      "as_of": "2026-05-19",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/cristiano-ronaldo-roberto-martinez-portugal-squad-announcement",
+      "confidence": "high"
+    },
+    "key_players": {
+      "value": "Cristiano Ronaldo (captain), Vitinha, João Neves, Nuno Mendes, Bruno Fernandes, Bernardo Silva, Rúben Dias",
+      "as_of": "2026-05-19",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/cristiano-ronaldo-roberto-martinez-portugal-squad-announcement",
+      "confidence": "high"
+    },
+    "squad_news": {
+      "value": "Martínez's 26-man squad announced 19 May 2026. Cristiano Ronaldo (41) captains Portugal at a record 6th World Cup — more than any player in tournament history — and is expected to start; the World Cup is the one major trophy he has never won.",
+      "as_of": "2026-05-19",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/cristiano-ronaldo-roberto-martinez-portugal-squad-announcement",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Flag_of_Portugal_%28official%29.svg/1280px-Flag_of_Portugal_%28official%29.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Original: Columbano Bordalo Pinheiro Vector:  Vítor Luís Rodrigues, António Martins-Tuválkin / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-09"
+  },
+  "active_narratives": [
+    "messi-ronaldo-last-dance"
+  ],
+  "last_verified": "2026-06-09",
+  "code": "POR"
+}

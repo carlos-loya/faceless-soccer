@@ -1,0 +1,18 @@
+{
+  "slug": "tomas-soucek",
+  "type": "player",
+  "name": "Tom\u00e1\u0161 Sou\u010dek",
+  "aliases": [
+    "Tomas Soucek"
+  ],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Tom%C3%A1%C5%A1_Sou%C4%8Dek%2C_Czech_Rp.-Montenegro_EURO_2020_QR_10-06-2019.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "Tadeáš Bednarz / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-11"
+  },
+  "active_narratives": ["korea-czechia-2026-comeback"],
+  "last_verified": "2026-06-11"
+}

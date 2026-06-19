@@ -1,0 +1,64 @@
+{
+  "slug": "raphinha",
+  "type": "player",
+  "name": "Raphinha",
+  "aliases": [
+    "Raphael Dias Belloli"
+  ],
+  "facts": {
+    "age": {
+      "value": 29,
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Raphinha",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Barcelona",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Raphinha",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "Brazil",
+      "as_of": "2026-06-09",
+      "source": "https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/carlo-ancelotti-s-official-brazil-squad-for-the-2026-fifa-world-cup-2026-05-18",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Winger / forward",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Raphinha",
+      "confidence": "high"
+    },
+    "current_form": {
+      "value": "One of Barcelona's leading attackers and goal threats in 2025-26 (reported around 21 goals and 7 assists across all competitions); finished 5th in the 2025 Ballon d'Or voting after a treble-winning 2024-25",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Raphinha",
+      "confidence": "med"
+    },
+    "fitness": {
+      "value": "Fit; named in Brazil's final 26-man World Cup 2026 squad announced 18 May 2026",
+      "as_of": "2026-05-18",
+      "source": "https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/carlo-ancelotti-s-official-brazil-squad-for-the-2026-fifa-world-cup-2026-05-18",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Key forward and one of Brazil's primary attacking threats under Carlo Ancelotti, alongside Vinícius Jr; weight on him increased by Rodrygo's injury absence",
+      "as_of": "2026-05-18",
+      "source": "https://theanalyst.com/articles/brazil-world-cup-preview-2026-vinicius-raphinha-neymar-ancelotti",
+      "confidence": "med"
+    },
+    "records": {
+      "value": "Champions League top scorer in 2024-25; part of Barcelona's 2024-25 domestic treble (La Liga, Copa del Rey, Supercopa)",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Raphinha",
+      "confidence": "med"
+    }
+  },
+  "image": null,
+  "image_todo": "fetch + verify a Creative-Commons portrait; no fabricated URLs",
+  "active_narratives": [
+    "brazil-ending-the-drought"
+  ],
+  "last_verified": "2026-06-09"
+}

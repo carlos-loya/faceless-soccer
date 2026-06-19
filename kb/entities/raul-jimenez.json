@@ -1,0 +1,33 @@
+{
+  "slug": "raul-jimenez",
+  "type": "player",
+  "name": "Raúl Jiménez",
+  "aliases": [
+    "Raul Jimenez",
+    "Jimenez",
+    "Jiménez"
+  ],
+  "facts": {
+    "nation": {
+      "value": "Mexico",
+      "as_of": "2026-06-11",
+      "source": "https://www.espn.com/soccer/match/_/gameId/760415/south-africa-mexico",
+      "confidence": "high"
+    },
+    "wc_goal_drought": {
+      "value": "Scored first World Cup goal in his 27th game for Mexico (67th minute vs South Korea, June 19 2026), breaking a goalless run dating back to his debut in 2013.",
+      "as_of": "2026-06-19",
+      "source": "https://www.theguardian.com/football/live/2026/jun/19/mexico-v-south-korea-world-cup-2026-live",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Ra%C3%BAl_Jim%C3%A9nez_14092024_%282%29.jpg",
+    "license": "CC0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "Timmy96 / CC0 via Wikimedia Commons",
+    "as_of": "2026-06-19"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-19"
+}

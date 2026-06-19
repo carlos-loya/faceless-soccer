@@ -1,0 +1,86 @@
+{
+  "format": "did_you_know",
+  "topic": "The 2026 World Cup opener (Mexico vs South Africa) mirrors the 2010 opener — same teams, same date, 16 years apart — at the record-setting Estadio Azteca",
+  "subject": "fifa-world-cup-trophy",
+  "target_duration_seconds": 35,
+  "hook": {
+    "first_frame_text": "Today's opener already happened.",
+    "spoken_hook": "Today's World Cup opener already happened — sixteen years ago.",
+    "hook_type": "curiosity_gap"
+  },
+  "retention_mechanic": "open_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "TODAY'S OPENER ALREADY HAPPENED",
+      "voiceover": "Today's World Cup opener? It already happened — sixteen years ago.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Deep black background, gold gradient accents, faint stadium floodlight glow, premium broadcast feel, vertical 9:16. No faces, no broadcast imagery.",
+      "visual_source": "stock_video",
+      "visual_query": "epic-stadium",
+      "sticker_entity": "",
+      "duration_seconds": 4
+    },
+    {
+      "index": 2,
+      "on_screen_text": "MEXICO vs SOUTH AFRICA",
+      "voiceover": "June eleventh, 2010 — Mexico and South Africa opened the World Cup. And they open it all over again today.",
+      "stat_callout": "",
+      "graphic_type": "comparison_split",
+      "graphic_prompt": "Head-to-head VS layout, deep black background with gold seams, two flag chips clashing with a gold 'VS' badge in the middle, bold white condensed nation names, vertical 9:16. No faces.",
+      "visual_source": "stock_video",
+      "visual_query": "floodlights",
+      "sticker_entity": "",
+      "duration_seconds": 7
+    },
+    {
+      "index": 3,
+      "on_screen_text": "TSHABALALA vs MARQUEZ",
+      "voiceover": "In 2010 it finished one-one — Tshabalala for South Africa, Marquez for Mexico.",
+      "stat_callout": "1-1",
+      "graphic_type": "scorers_split",
+      "graphic_prompt": "Two scorer portraits slide in from opposite sides on a deep black background with gold seams, the gold '1-1' scoreline clashing in the middle, bold white condensed surnames beneath each, premium broadcast feel, vertical 9:16.",
+      "visual_source": "stock_video",
+      "visual_query": "epic-stadium",
+      "sticker_entity": "",
+      "duration_seconds": 6
+    },
+    {
+      "index": 4,
+      "on_screen_text": "ONLY STADIUM WITH 3 WORLD CUPS",
+      "voiceover": "Now it moves to the Azteca — the only stadium ever to host three World Cups. Pele conquered it. So did Maradona.",
+      "stat_callout": "3",
+      "graphic_type": "stat_card",
+      "graphic_prompt": "Deep black background, towering gold numeral '3' with 'WORLD CUPS' beneath in white condensed caps, small timeline '1970 · 1986 · 2026', premium broadcast feel, vertical 9:16. No faces.",
+      "visual_source": "entity",
+      "visual_query": "estadio-azteca",
+      "sticker_entity": "",
+      "duration_seconds": 7
+    },
+    {
+      "index": 5,
+      "on_screen_text": "SUBSCRIBE — EVERY MATCHDAY",
+      "voiceover": "We're covering every matchday of this World Cup. Subscribe so you don't miss one.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Deep black background, gold TikiTakaFootyTV mark, bold white 'EVERY MATCHDAY. ALL TOURNAMENT.' condensed type, subtle gold confetti, vertical 9:16. No faces.",
+      "visual_source": "stock_video",
+      "visual_query": "floodlights",
+      "sticker_entity": "",
+      "duration_seconds": 4
+    }
+  ],
+  "comment_bait": "One-one in 2010 — same score today, or does El Tri finally win the opener? Drop your prediction 👇",
+  "cta": "Subscribe for a video every matchday of the World Cup",
+  "music_mood": "epic orchestral build, anticipatory big-match tension",
+  "thumbnail": {
+    "text": "AGAIN. 16 YEARS LATER.",
+    "concept": "Split frame: '2010' faded over a packed African stadium on the left, '2026' over the gold-lit Azteca on the right, Mexico and South Africa flags clashing in the center, huge gold 'JUNE 11' stamp."
+  },
+  "youtube_title": "Mexico vs South Africa Has Opened a World Cup Before | 2026 Opener",
+  "youtube_description": "The 2026 World Cup kicks off June 11 with Mexico vs South Africa at the Estadio Azteca — and it's happened before. The exact same two teams opened the 2010 World Cup on the exact same date, June 11, ending 1-1 thanks to Siphiwe Tshabalala's iconic first goal of the tournament and Rafael Marquez's equalizer. Now the fixture moves to the Azteca, the only stadium ever to host three World Cups (1970, 1986, 2026). Same game, same date, 16 years apart. Will history repeat? Subscribe for a video every matchday. #WorldCup2026 #Mexico #SouthAfrica",
+  "instagram_caption": "Same two teams. Same date. 16 years apart. Mexico vs South Africa opened the 2010 World Cup — and they open 2026 too, at the only stadium to host three World Cups. 2010 ended 1-1 — same scoreline today, or does El Tri finally win the opener? Drop your prediction 👇 Subscribe for a video every matchday. #tikitakafootytv",
+  "tiktok_caption": "Today's opener already happened — in 2010. Same teams, same date. 1-1 again, or El Tri win it? Predict it 👇 #worldcup2026",
+  "hashtags": ["#worldcup2026", "#mexico", "#southafrica", "#football", "#soccer", "#eltri", "#bafanabafana", "#estadioazteca", "#tikitakafootytv"]
+}

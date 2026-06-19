@@ -1,0 +1,40 @@
+{
+  "slug": "guillermo-ochoa",
+  "type": "player",
+  "name": "Guillermo Ochoa",
+  "aliases": [
+    "Ochoa",
+    "Memo Ochoa"
+  ],
+  "facts": {
+    "nation": {
+      "value": "Mexico",
+      "as_of": "2026-06-09",
+      "source": "https://www.cbssports.com/soccer/news/cristiano-ronaldo-40-year-olds-set-to-make-2026-world-cup-the-oldest/",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Goalkeeper",
+      "as_of": "2026-06-09",
+      "source": "https://www.cbssports.com/soccer/news/cristiano-ronaldo-40-year-olds-set-to-make-2026-world-cup-the-oldest/",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Reaches a 6th World Cup \u2014 one of only THREE players ever (with Messi and Ronaldo). With Mexico playing the tournament opener (June 11), he could become the FIRST player in history to feature in six World Cups",
+      "as_of": "2026-06-09",
+      "source": "https://worldsoccertalk.com/news/2026-world-cup-historic-scheduling-twist-could-give-guillermo-ochoa-edge-over-lionel-messi-and-cristiano-ronaldo/",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Mex-Kor_%281%29_%28cropped%29.jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution": "\u0421\u0432\u0435\u0442\u043b\u0430\u043d\u0430 \u0411\u0435\u043a\u0435\u0442\u043e\u0432\u0430 / CC BY-SA 3.0 via Wikimedia Commons",
+    "as_of": "2026-06-11"
+  },
+  "active_narratives": [
+    "messi-ronaldo-last-dance"
+  ],
+  "last_verified": "2026-06-09"
+}

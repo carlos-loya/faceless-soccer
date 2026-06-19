@@ -1,0 +1,26 @@
+{
+  "slug": "camp-nou",
+  "type": "stadium",
+  "name": "Camp Nou",
+  "aliases": [
+    "Spotify Camp Nou",
+    "Nou Camp"
+  ],
+  "facts": {
+    "club": {
+      "value": "Home stadium of FC Barcelona",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Camp_Nou",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Camp_Nou_aerial.jpg",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "attribution": "Oh-Barcelona.com from Barcelona, Spain / CC BY 2.0 via Wikimedia Commons",
+    "as_of": "2026-06-09"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-09"
+}

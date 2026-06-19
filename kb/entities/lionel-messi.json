@@ -1,0 +1,57 @@
+{
+  "slug": "lionel-messi",
+  "type": "player",
+  "name": "Lionel Messi",
+  "aliases": [
+    "Messi"
+  ],
+  "facts": {
+    "age": {
+      "value": "38 (turns 39 during the tournament)",
+      "as_of": "2026-06-09",
+      "source": "https://www.espn.com/soccer/story/_/id/48904313/lionel-messi-argentina-2026-world-cup-squad",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Inter Miami",
+      "as_of": "2026-06-09",
+      "source": "https://www.nbcdfw.com/news/local/lionel-messi-is-in-argentinas-world-cup-squad-as-coach-calms-injury-fears/4030661/",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "Argentina (defending champions)",
+      "as_of": "2026-06-09",
+      "source": "https://www.espn.com/soccer/story/_/id/48904313/lionel-messi-argentina-2026-world-cup-squad",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Forward",
+      "as_of": "2026-06-09",
+      "source": "https://www.espn.com/soccer/story/_/id/48904313/lionel-messi-argentina-2026-world-cup-squad",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Leads defending champions Argentina at a record 6th World Cup; one of only THREE players ever (with Ronaldo and Mexico's Ochoa) to reach a sixth World Cup",
+      "as_of": "2026-06-09",
+      "source": "https://www.espn.com/soccer/story/_/id/48904313/lionel-messi-argentina-2026-world-cup-squad",
+      "confidence": "high"
+    },
+    "fitness": {
+      "value": "Muscle fatigue / left-hamstring strain in the build-up; confirmed to feature but with managed minutes",
+      "as_of": "2026-06-09",
+      "source": "https://www.espn.com/soccer/story/_/id/49004047/argentina-avoid-risks-messi-play-friendly",
+      "confidence": "med"
+    }
+  },
+  "image": {
+    "url": "assets/source/lionel-messi-argentina-portrait.jpg",
+    "license": "CC BY 4.0",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Lionel-Messi-Argentina-2022-FIFA-World-Cup_(cropped-upscale).jpg",
+    "attribution": "Rodrigo Cornejo / CC BY 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-16"
+  },
+  "active_narratives": [
+    "messi-ronaldo-last-dance"
+  ],
+  "last_verified": "2026-06-09"
+}

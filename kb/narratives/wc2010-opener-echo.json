@@ -1,0 +1,40 @@
+{
+  "slug": "wc2010-opener-echo",
+  "headline": "History repeats: Mexico vs South Africa opens a World Cup again, 16 years on",
+  "summary": "The 2026 World Cup opener (Mexico vs South Africa, June 11 2026, Estadio Azteca) mirrored the 2010 opener: the SAME two nations kicked off the 2010 World Cup on the SAME calendar date, June 11 2010, in Johannesburg — Africa's first World Cup. 2010 ended 1-1 (Tshabalala 55', the first goal of the 2010 tournament; Marquez 79'). RESULT 2026: history did NOT repeat the scoreline — MEXICO WON 2-0. Same fixture, same date, 16 years apart, different ending.",
+  "result_2026": {
+    "score": "Mexico 2-0 South Africa",
+    "scorers": "Julián Quiñones 9' (the first goal of the 2026 World Cup, confirmed) and Raúl Jiménez 67' (header, assisted by Roberto Alvarado)",
+    "cards": "Three red cards (ref Wilton Sampaio) — TWO South Africa (Sphephelo Sithole; Themba Zwane 84' via VAR) and ONE Mexico (César Montes 90+2'). Count + names CONFIRMED by multiple sources (CNN/Yahoo/NBC). ⚠️ DO NOT claim a record: sources CONFLICT — some say 'first opening game EVER with three reds', others 'first in 20 years'. State the count only, never the record.",
+    "stats": "Mexico dominant — 60% possession; South Africa 0 big chances, ~0.07 xG.",
+    "as_of": "2026-06-11",
+    "sources": [
+      "https://www.espn.com/soccer/match/_/gameId/760415/south-africa-mexico",
+      "https://www.cnn.com/2026/06/11/sport/live-news/world-cup-mexico-south-africa",
+      "https://www.foxsports.com/watch/fmc-rq7pjenldg0828e6"
+    ],
+    "confidence": "high"
+  },
+  "entities": ["mexico", "south-africa", "estadio-azteca"],
+  "heat": "hot",
+  "as_of": "2026-06-11",
+  "sources": [
+    "https://www.goal.com/en/news/world-cup-2010-south-africa-1-1-mexico-siphiwe-tshabalala/bltc22d5907a77375ad",
+    "https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_Group_A",
+    "https://eastleighvoice.co.ke/football/365641/world-cup-opener-rekindles-memories-of-2010-mexico-south-africa-clash"
+  ],
+  "angles": [
+    "We said history would repeat — it DIDN'T: 2010 was a 1-1 draw, 2026 Mexico won 2-0",
+    "Same two teams, same date (June 11), 16 years apart — but a different ending",
+    "Quiñones scored the FIRST goal of the 2026 World Cup (9') — echo of Tshabalala opening 2010",
+    "Chaos at the Azteca: three red cards in the World Cup's opening game (verify count)",
+    "Raúl Jiménez's redemption header seals Mexico's home win"
+  ],
+  "superlatives_to_verify": [
+    "Quiñones' goal was the first goal of the 2026 tournament (it was the opening match's opening goal — likely true)",
+    "Sithole's was the FIRST red card of the 2026 tournament (FOX) — verify",
+    "THREE red cards in the opener — confirm the count; do NOT claim a 'record/most ever' without an adversarial check",
+    "Tshabalala's goal was the first goal of the 2010 tournament (true)"
+  ],
+  "last_verified": "2026-06-11"
+}

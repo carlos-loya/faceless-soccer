@@ -1,0 +1,108 @@
+{
+  "format": "post_match",
+  "topic": "Ivory Coast 1-0 Ecuador, WC 2026 Group E (Philadelphia) — Ecuador hit the woodwork twice and dominated, but Amad Diallo's 89th-minute finish off a Wilfried Singo cutback stole it for the Elephants, who leap level with Germany on points",
+  "subject": "amad-diallo",
+  "matchup": ["ivory-coast", "ecuador"],
+  "target_duration_seconds": 28,
+  "hook": {
+    "first_frame_text": "Amad waited 89 minutes for this.",
+    "spoken_hook": "Eighty-nine minutes. No goal. Then this.",
+    "hook_type": "curiosity_gap"
+  },
+  "retention_mechanic": "open_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "AMAD WAITED 89 MINUTES",
+      "voiceover": "Eighty-nine minutes. No goal. Then this.",
+      "stat_callout": "",
+      "score": "0-0",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black background, gold gradient accents (#F7D774 to #C8881B), a single bold white condensed caption bar, moody premium broadcast tease. No faces, no logos, no broadcast imagery.",
+      "visual_source": "entity",
+      "visual_query": "amad-diallo",
+      "sticker_entity": "",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "ECUADOR HIT THE BAR TWICE",
+      "voiceover": "Ecuador hit the bar twice. They should've been gone.",
+      "stat_callout": "",
+      "score": "0-0",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black with gold accents, tense floodlit bokeh atmosphere, bold white condensed caption bar. Anticipation, no faces, no broadcast imagery.",
+      "visual_source": "stock_video",
+      "visual_query": "floodlight-bokeh",
+      "sticker_entity": "",
+      "duration_seconds": 4
+    },
+    {
+      "index": 3,
+      "on_screen_text": "HEADED FOR NIL-NIL",
+      "voiceover": "Ivory Coast couldn't break through. Headed for nil-nil.",
+      "stat_callout": "",
+      "score": "0-0",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black, cold rain over an empty goal, gold rim light, bold white condensed caption bar. Tension and stakes, no faces, no broadcast imagery.",
+      "visual_source": "stock_video",
+      "visual_query": "empty-net-rain",
+      "sticker_entity": "",
+      "duration_seconds": 4
+    },
+    {
+      "index": 4,
+      "on_screen_text": "SINGO'S CUTBACK. 89TH MINUTE.",
+      "voiceover": "Then Singo's cutback. Amad Diallo, ice cold, bottom corner. Eighty-ninth minute.",
+      "stat_callout": "",
+      "score": "1-0",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black with gold gradient accents, sharp energy lines converging on a single point, bold white condensed caption bar. Explosive premium broadcast feel, no faces, no broadcast imagery.",
+      "visual_source": "entity",
+      "visual_query": "amad-diallo",
+      "sticker_entity": "",
+      "duration_seconds": 5
+    },
+    {
+      "index": 5,
+      "on_screen_text": "ROBBED — OR DESERVED?",
+      "voiceover": "A smash and grab. Ecuador battered the woodwork, got nothing.",
+      "stat_callout": "",
+      "score": "1-0",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black, explosive gold confetti raining down, bold white condensed caption bar. Triumphant yet contested mood, no faces, no logos.",
+      "visual_source": "stock_video",
+      "visual_query": "gold-confetti",
+      "sticker_entity": "",
+      "duration_seconds": 4
+    },
+    {
+      "index": 6,
+      "on_screen_text": "GROUP E",
+      "voiceover": "Ivory Coast jump level with Germany. Subscribe for your daily World Cup story.",
+      "stat_callout": "",
+      "score": "1-0",
+      "graphic_type": "group_table",
+      "graphic_prompt": "Vertical 9:16, deep black with gold accents, a clean broadcast standings table, bold white condensed type. Premium, no faces, no logos.",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "group_table": [
+        { "team": "germany", "played": 1, "gd": 6, "points": 3 },
+        { "team": "ivory-coast", "played": 1, "gd": 1, "points": 3, "highlight": true },
+        { "team": "ecuador", "played": 1, "gd": -1, "points": 0 },
+        { "team": "curacao", "played": 1, "gd": -6, "points": 0 }
+      ],
+      "duration_seconds": 6
+    }
+  ],
+  "comment_bait": "Ecuador hit the bar twice and lost. Robbery, or did Ivory Coast earn it? Who's escaping Group E? 🐘",
+  "cta": "Follow for daily World Cup stories — every result, every twist",
+  "music_mood": "tense and building, breaking into late triumphant drama",
+  "thumbnail": { "text": "AMAD'S LATE DAGGER", "concept": "Amad Diallo's face mid-celebration, gold rim light on deep black, a bold '89'' marker' — tension and triumph, no scoreline, no flags" },
+  "youtube_title": "Amad Diallo's 89th-Minute Dagger Stuns Ecuador | Ivory Coast 1-0 | World Cup 2026",
+  "youtube_description": "Ivory Coast 1-0 Ecuador, FIFA World Cup 2026 Group E in Philadelphia. Ecuador hit the woodwork twice and dominated, but Amad Diallo's 89th-minute finish off a Wilfried Singo cutback won it for the Elephants — who jump level with Germany on points. Robbery, or did Ivory Coast earn it? Subscribe for your daily World Cup story.",
+  "instagram_caption": "89 minutes of nothing. Then Amad Diallo. Ecuador hit the bar TWICE and lost — daylight robbery, or did the Elephants just want it more? Tell me who's escaping Group E 🐘 #worldcup2026",
+  "tiktok_caption": "Ecuador hit the woodwork twice and STILL lost 😳 Amad Diallo, 89th minute. Robbery or deserved? Who's escaping Group E? 🐘",
+  "hashtags": ["#worldcup2026", "#football", "#soccer", "#ivorycoast", "#ecuador", "#amaddiallo", "#groupE", "#tikitakafootytv"]
+}

@@ -1,0 +1,568 @@
+{
+  "topic": "Mexico 1-0 South Korea: Raúl Jiménez breaks a 27-game World Cup goal drought to send Mexico into the knockout stage",
+  "comment_bait": "Jiménez waited 27 games then delivered when Mexico needed him most. Who finishes 2nd in Group A — Korea or Czechia? I will be in the replies.",
+  "cta": "Follow for your daily World Cup stories",
+  "handle": "@tikitakafootytv",
+  "scenes": [
+    {
+      "on_screen_text": "27 GAMES. ZERO GOALS.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "audioFile": "mexico-korea-jimenez/scene-1.mp3",
+      "seconds": 5.695,
+      "bg": "mexico-korea-jimenez/s1-entity.jpg",
+      "credit": "Timmy96 / CC0 via Wikimedia Commons",
+      "words": [
+        {
+          "word": "Twenty-seven",
+          "start": 0,
+          "end": 0.823
+        },
+        {
+          "word": "games.",
+          "start": 0.823,
+          "end": 1.266
+        },
+        {
+          "word": "Zero",
+          "start": 1.266,
+          "end": 1.582
+        },
+        {
+          "word": "goals.",
+          "start": 1.582,
+          "end": 2.025
+        },
+        {
+          "word": "That's",
+          "start": 2.025,
+          "end": 2.468
+        },
+        {
+          "word": "how",
+          "start": 2.468,
+          "end": 2.721
+        },
+        {
+          "word": "long",
+          "start": 2.721,
+          "end": 3.037
+        },
+        {
+          "word": "Raúl",
+          "start": 3.037,
+          "end": 3.354
+        },
+        {
+          "word": "Jiménez",
+          "start": 3.354,
+          "end": 3.86
+        },
+        {
+          "word": "waited",
+          "start": 3.86,
+          "end": 4.303
+        },
+        {
+          "word": "for",
+          "start": 4.303,
+          "end": 4.556
+        },
+        {
+          "word": "a",
+          "start": 4.556,
+          "end": 4.683
+        },
+        {
+          "word": "World",
+          "start": 4.683,
+          "end": 5.062
+        },
+        {
+          "word": "Cup",
+          "start": 5.062,
+          "end": 5.315
+        },
+        {
+          "word": "goal.",
+          "start": 5.315,
+          "end": 5.695
+        }
+      ],
+      "score": "0-0"
+    },
+    {
+      "on_screen_text": "KOREA PARKED. MEXICO BESIEGED.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "audioFile": "mexico-korea-jimenez/scene-2.mp3",
+      "seconds": 7.497,
+      "bgVideo": "mexico-korea-jimenez/s2-broll.mp4",
+      "credit": null,
+      "words": [
+        {
+          "word": "Korea",
+          "start": 0,
+          "end": 0.349
+        },
+        {
+          "word": "parked",
+          "start": 0.349,
+          "end": 0.756
+        },
+        {
+          "word": "the",
+          "start": 0.756,
+          "end": 0.988
+        },
+        {
+          "word": "bus.",
+          "start": 0.988,
+          "end": 1.279
+        },
+        {
+          "word": "Mexico",
+          "start": 1.279,
+          "end": 1.685
+        },
+        {
+          "word": "threw",
+          "start": 1.685,
+          "end": 2.034
+        },
+        {
+          "word": "everything.",
+          "start": 2.034,
+          "end": 2.731
+        },
+        {
+          "word": "Twenty-seven",
+          "start": 2.731,
+          "end": 3.487
+        },
+        {
+          "word": "games",
+          "start": 3.487,
+          "end": 3.836
+        },
+        {
+          "word": "of",
+          "start": 3.836,
+          "end": 4.01
+        },
+        {
+          "word": "frustration",
+          "start": 4.01,
+          "end": 4.707
+        },
+        {
+          "word": "—",
+          "start": 4.707,
+          "end": 4.824
+        },
+        {
+          "word": "and",
+          "start": 4.824,
+          "end": 5.056
+        },
+        {
+          "word": "the",
+          "start": 5.056,
+          "end": 5.289
+        },
+        {
+          "word": "co-host",
+          "start": 5.289,
+          "end": 5.754
+        },
+        {
+          "word": "could",
+          "start": 5.754,
+          "end": 6.102
+        },
+        {
+          "word": "not",
+          "start": 6.102,
+          "end": 6.335
+        },
+        {
+          "word": "find",
+          "start": 6.335,
+          "end": 6.625
+        },
+        {
+          "word": "a",
+          "start": 6.625,
+          "end": 6.741
+        },
+        {
+          "word": "way",
+          "start": 6.741,
+          "end": 6.974
+        },
+        {
+          "word": "through.",
+          "start": 6.974,
+          "end": 7.497
+        }
+      ],
+      "score": "0-0"
+    },
+    {
+      "on_screen_text": "SUBSCRIBE — FOLLOW MEXICO",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "audioFile": "mexico-korea-jimenez/scene-3.mp3",
+      "seconds": 1.881,
+      "bg": "mexico-korea-jimenez/s3-entity.png",
+      "credit": "Selección Nacional de México / CC BY 3.0 via Wikimedia Commons",
+      "words": [
+        {
+          "word": "Subscribe",
+          "start": 0,
+          "end": 0.672
+        },
+        {
+          "word": "to",
+          "start": 0.672,
+          "end": 0.873
+        },
+        {
+          "word": "follow",
+          "start": 0.873,
+          "end": 1.344
+        },
+        {
+          "word": "Mexico.",
+          "start": 1.344,
+          "end": 1.881
+        }
+      ],
+      "score": "0-0"
+    },
+    {
+      "on_screen_text": "67'. CHAVEZ DIAGONAL. JIMÉNEZ BULLET.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "audioFile": "mexico-korea-jimenez/scene-4.mp3",
+      "seconds": 6.165,
+      "bgVideo": "mexico-korea-jimenez/s4-broll.mp4",
+      "credit": null,
+      "words": [
+        {
+          "word": "Sixty-seventh",
+          "start": 0,
+          "end": 0.881
+        },
+        {
+          "word": "minute.",
+          "start": 0.881,
+          "end": 1.384
+        },
+        {
+          "word": "Chávez",
+          "start": 1.384,
+          "end": 1.824
+        },
+        {
+          "word": "picked",
+          "start": 1.824,
+          "end": 2.265
+        },
+        {
+          "word": "it",
+          "start": 2.265,
+          "end": 2.453
+        },
+        {
+          "word": "out",
+          "start": 2.453,
+          "end": 2.705
+        },
+        {
+          "word": "on",
+          "start": 2.705,
+          "end": 2.894
+        },
+        {
+          "word": "a",
+          "start": 2.894,
+          "end": 3.02
+        },
+        {
+          "word": "diagonal.",
+          "start": 3.02,
+          "end": 3.649
+        },
+        {
+          "word": "Jiménez",
+          "start": 3.649,
+          "end": 4.152
+        },
+        {
+          "word": "rose.",
+          "start": 4.152,
+          "end": 4.529
+        },
+        {
+          "word": "A",
+          "start": 4.529,
+          "end": 4.655
+        },
+        {
+          "word": "bullet",
+          "start": 4.655,
+          "end": 5.096
+        },
+        {
+          "word": "header.",
+          "start": 5.096,
+          "end": 5.599
+        },
+        {
+          "word": "One-nil.",
+          "start": 5.599,
+          "end": 6.165
+        }
+      ],
+      "score": "1-0"
+    },
+    {
+      "on_screen_text": "27 GAMES. WAITED. THEN DELIVERED.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "audioFile": "mexico-korea-jimenez/scene-5.mp3",
+      "seconds": 4.728,
+      "bg": "mexico-korea-jimenez/s5-entity.png",
+      "credit": "Selección Nacional de México / CC BY 3.0 via Wikimedia Commons",
+      "words": [
+        {
+          "word": "Twenty-seven",
+          "start": 0,
+          "end": 0.798
+        },
+        {
+          "word": "games.",
+          "start": 0.798,
+          "end": 1.228
+        },
+        {
+          "word": "Then",
+          "start": 1.228,
+          "end": 1.535
+        },
+        {
+          "word": "the",
+          "start": 1.535,
+          "end": 1.781
+        },
+        {
+          "word": "biggest",
+          "start": 1.781,
+          "end": 2.272
+        },
+        {
+          "word": "goal",
+          "start": 2.272,
+          "end": 2.579
+        },
+        {
+          "word": "of",
+          "start": 2.579,
+          "end": 2.763
+        },
+        {
+          "word": "his",
+          "start": 2.763,
+          "end": 3.009
+        },
+        {
+          "word": "career.",
+          "start": 3.009,
+          "end": 3.5
+        },
+        {
+          "word": "Mexico",
+          "start": 3.5,
+          "end": 3.93
+        },
+        {
+          "word": "are",
+          "start": 3.93,
+          "end": 4.175
+        },
+        {
+          "word": "through.",
+          "start": 4.175,
+          "end": 4.728
+        }
+      ],
+      "score": "1-0"
+    },
+    {
+      "on_screen_text": "GROUP A",
+      "stat_callout": "",
+      "graphic_type": "group_table",
+      "audioFile": "mexico-korea-jimenez/scene-6.mp3",
+      "seconds": 4.336,
+      "bgVideo": "mexico-korea-jimenez/s6-broll.mp4",
+      "credit": null,
+      "words": [
+        {
+          "word": "Group",
+          "start": 0,
+          "end": 0.413
+        },
+        {
+          "word": "A.",
+          "start": 0.413,
+          "end": 0.619
+        },
+        {
+          "word": "Mexico",
+          "start": 0.619,
+          "end": 1.101
+        },
+        {
+          "word": "top",
+          "start": 1.101,
+          "end": 1.377
+        },
+        {
+          "word": "and",
+          "start": 1.377,
+          "end": 1.652
+        },
+        {
+          "word": "through.",
+          "start": 1.652,
+          "end": 2.271
+        },
+        {
+          "word": "Korea",
+          "start": 2.271,
+          "end": 2.684
+        },
+        {
+          "word": "waits",
+          "start": 2.684,
+          "end": 3.097
+        },
+        {
+          "word": "on",
+          "start": 3.097,
+          "end": 3.304
+        },
+        {
+          "word": "the",
+          "start": 3.304,
+          "end": 3.579
+        },
+        {
+          "word": "final",
+          "start": 3.579,
+          "end": 3.992
+        },
+        {
+          "word": "day.",
+          "start": 3.992,
+          "end": 4.336
+        }
+      ],
+      "group_table": [
+        {
+          "code": "MEX",
+          "flag": "mexico-korea-jimenez/gt0-6.png",
+          "name": "Mexico",
+          "points": 6,
+          "played": 2,
+          "gd": 3,
+          "highlight": true
+        },
+        {
+          "code": "KOR",
+          "flag": "mexico-korea-jimenez/gt1-6.png",
+          "name": "South Korea",
+          "points": 3,
+          "played": 2,
+          "gd": 0,
+          "highlight": false
+        },
+        {
+          "code": "CZE",
+          "flag": "mexico-korea-jimenez/gt2-6.png",
+          "name": "Czech Republic",
+          "points": 1,
+          "played": 2,
+          "gd": -1,
+          "highlight": false
+        },
+        {
+          "code": "RSA",
+          "flag": "mexico-korea-jimenez/gt3-6.png",
+          "name": "South Africa",
+          "points": 1,
+          "played": 2,
+          "gd": -2,
+          "highlight": false
+        }
+      ]
+    },
+    {
+      "on_screen_text": "27 GAMES. THEN EVERYTHING.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "audioFile": "mexico-korea-jimenez/scene-7.mp3",
+      "seconds": 2.194,
+      "bg": "mexico-korea-jimenez/s1-entity.jpg",
+      "credit": "Timmy96 / CC0 via Wikimedia Commons",
+      "words": [
+        {
+          "word": "Twenty-seven",
+          "start": 0,
+          "end": 0.771
+        },
+        {
+          "word": "games.",
+          "start": 0.771,
+          "end": 1.186
+        },
+        {
+          "word": "Then",
+          "start": 1.186,
+          "end": 1.482
+        },
+        {
+          "word": "everything.",
+          "start": 1.482,
+          "end": 2.194
+        }
+      ]
+    }
+  ],
+  "matchup": [
+    {
+      "img": "mexico-korea-jimenez/gt0-6.png",
+      "name": "Mexico",
+      "code": "MEX"
+    },
+    {
+      "img": "mexico-korea-jimenez/gt1-6.png",
+      "name": "South Korea",
+      "code": "KOR"
+    }
+  ],
+  "sticker": {
+    "img": "mexico-korea-jimenez/sticker.png",
+    "name": "Raúl Jiménez",
+    "cutout": true
+  },
+  "outro": {
+    "audioFile": "mexico-korea-jimenez/outro.mp3",
+    "seconds": 9.012
+  },
+  "endCard": {
+    "bgVideo": "mexico-korea-jimenez/s99-broll.mp4",
+    "credit": null
+  }
+}

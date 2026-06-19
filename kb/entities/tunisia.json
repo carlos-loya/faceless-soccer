@@ -1,0 +1,26 @@
+{
+  "slug": "tunisia",
+  "type": "nation",
+  "name": "Tunisia",
+  "aliases": [
+    "Carthage Eagles"
+  ],
+  "code": "TUN",
+  "facts": {
+    "group": {
+      "value": "Group F — opponents Netherlands, Japan, Sweden",
+      "as_of": "2026-06-14",
+      "source": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Tunisia.svg/1280px-Flag_of_Tunisia.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Public domain via Wikimedia Commons",
+    "as_of": "2026-06-14"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-14"
+}

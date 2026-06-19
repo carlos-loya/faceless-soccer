@@ -1,0 +1,16 @@
+{
+  "slug": "belgium",
+  "type": "nation",
+  "name": "Belgium",
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1280px-Flag_of_Belgium.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Dbenbenn and others / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-15"
+  },
+  "active_narratives": [],
+  "last_verified": "",
+  "code": "BEL"
+}

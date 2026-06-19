@@ -1,0 +1,59 @@
+{
+  "slug": "pedri",
+  "type": "player",
+  "name": "Pedri",
+  "aliases": [
+    "Pedri Gonzalez",
+    "Pedro Gonzalez Lopez"
+  ],
+  "facts": {
+    "age": {
+      "value": 23,
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Pedri",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Barcelona",
+      "as_of": "2026-06-09",
+      "source": "https://www.fcbarcelona.com/en/football/first-team/players/70486/pedro-gonzalez",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "Spain",
+      "as_of": "2026-06-09",
+      "source": "https://www.aljazeera.com/sports/2026/6/6/spains-world-cup-2026-team-preview-players-to-watch-group-matches-squad",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Central midfielder",
+      "as_of": "2026-06-09",
+      "source": "https://www.fcbarcelona.com/en/football/first-team/players/70486/pedro-gonzalez",
+      "confidence": "high"
+    },
+    "current_form": {
+      "value": "Rebuilt his 2025-26 season after a left-thigh (biceps femoris) tear in late October kept him out into late November; returned to his best under Hansi Flick as Barcelona's midfield orchestrator, named to the 2025 FIFPRO World 11. Regarded as one of the best midfielders in the world entering the World Cup.",
+      "as_of": "2026-06-05",
+      "source": "https://www.barcablaugranes.com/barcelona-internationals/122908/barcelona-star-pedri-shines-as-spain-dominate-peru-in-final-world-cup-2026-warm-up",
+      "confidence": "med"
+    },
+    "fitness": {
+      "value": "Fit and available; started and shone in Spain's final pre-World Cup warm-up vs Peru. No active injury reported.",
+      "as_of": "2026-06-05",
+      "source": "https://www.barcablaugranes.com/barcelona-internationals/122908/barcelona-star-pedri-shines-as-spain-dominate-peru-in-final-world-cup-2026-warm-up",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Automatic starter in Spain's midfield alongside Rodri; central creative pivot for the tournament favorites. In Spain's final 26-man squad (announced 2026-05-25).",
+      "as_of": "2026-06-06",
+      "source": "https://www.aljazeera.com/sports/2026/6/6/spains-world-cup-2026-team-preview-players-to-watch-group-matches-squad",
+      "confidence": "high"
+    }
+  },
+  "image": null,
+  "image_todo": "fetch + verify a Creative-Commons portrait; no fabricated URLs",
+  "active_narratives": [
+    "spain-favorites-golden-gen"
+  ],
+  "last_verified": "2026-06-09"
+}

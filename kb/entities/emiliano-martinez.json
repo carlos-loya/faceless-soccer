@@ -1,0 +1,66 @@
+{
+  "slug": "emiliano-martinez",
+  "type": "player",
+  "name": "Emiliano Martínez",
+  "aliases": [
+    "Dibu",
+    "Dibu Martínez",
+    "Emi Martínez"
+  ],
+  "facts": {
+    "age": {
+      "value": 33,
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Aston Villa",
+      "as_of": "2026-06-09",
+      "source": "https://www.avfc.co.uk/news/2026/may/29/internationals-martinez-in-argentina-world-cup-squad/",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "Argentina (defending champions)",
+      "as_of": "2026-06-09",
+      "source": "https://www.goal.com/en/lists/argentina-squad-world-cup-2026/bltba570fcb2ec2100e",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Goalkeeper",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez",
+      "confidence": "high"
+    },
+    "current_form": {
+      "value": "Aston Villa's first-choice goalkeeper; won the 2026 Europa League final with Villa (3-0 vs Freiburg)",
+      "as_of": "2026-06-09",
+      "source": "https://www.goal.com/en-us/lists/emi-martinez-argentina-world-cup-injury-update/blte73edffce2df0783",
+      "confidence": "med"
+    },
+    "fitness": {
+      "value": "Suffered a small fracture of the right ring finger in the Europa League final warm-up; avoided surgery (~20-day recovery) and told fans he will be ready for Argentina's WC opener vs Algeria on June 16; named in the final 26-man squad",
+      "as_of": "2026-06-06",
+      "source": "https://www.espn.com/soccer/story/_/id/48954908/emiliano-martinez-return-injury-argentina-world-cup-opener",
+      "confidence": "med"
+    },
+    "wc_role": {
+      "value": "Argentina's first-choice starting goalkeeper for the title defense; penalty-shootout specialist",
+      "as_of": "2026-06-09",
+      "source": "https://www.goal.com/en/lists/argentina-squad-world-cup-2026/bltba570fcb2ec2100e",
+      "confidence": "high"
+    },
+    "records": {
+      "value": "2022 World Cup winner (won the Golden Glove); named The Best FIFA Goalkeeper in 2022 and 2024; two-time Yashin Trophy winner (2023, 2024)",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez",
+      "confidence": "high"
+    }
+  },
+  "image": null,
+  "image_todo": "fetch + verify a Creative-Commons portrait; no fabricated URLs",
+  "active_narratives": [
+    "argentina-title-defense"
+  ],
+  "last_verified": "2026-06-09"
+}

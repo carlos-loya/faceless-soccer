@@ -1,0 +1,69 @@
+{
+  "slug": "phil-foden",
+  "type": "player",
+  "name": "Phil Foden",
+  "aliases": [
+    "Foden"
+  ],
+  "facts": {
+    "age": {
+      "value": 26,
+      "as_of": "2026-06-09",
+      "source": "https://www.givemesport.com/pep-guardiola-england-phil-foden-incredible-diamond-not-going-world-cup/",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Manchester City",
+      "as_of": "2026-06-09",
+      "source": "https://www.espn.com/soccer/story/_/id/48320796/phil-foden-england-manchester-city-2026-world-cup-doubt-form-fitness-rob-dawson",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "England",
+      "as_of": "2026-06-09",
+      "source": "https://www.givemesport.com/pep-guardiola-england-phil-foden-incredible-diamond-not-going-world-cup/",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Attacking midfielder / forward",
+      "as_of": "2026-06-09",
+      "source": "https://www.espn.com/soccer/story/_/id/48320796/phil-foden-england-manchester-city-2026-world-cup-doubt-form-fitness-rob-dawson",
+      "confidence": "high"
+    },
+    "current_form": {
+      "value": "Disrupted, inconsistent 2025-26 at Manchester City. Strong start (reportedly 8 goals in 9 games across Nov-Dec), then a sharp drop-off: reported to have not scored for City in all of 2026 with only three assists in that stretch, as City lost the title to Arsenal. A fall from his 2023-24 PFA/Premier League Player of the Year form.",
+      "as_of": "2026-05-22",
+      "source": "https://www.espn.com/soccer/story/_/id/48320796/phil-foden-england-manchester-city-2026-world-cup-doubt-form-fitness-rob-dawson",
+      "confidence": "med"
+    },
+    "fitness": {
+      "value": "Not in England's World Cup squad. Snubbed from Thomas Tuchel's 26-man squad (announced ~2026-05-21) due to poor and inconsistent 2025-26 form, despite Guardiola publicly backing him as an 'incredible diamond'. Cole Palmer also missed the cut.",
+      "as_of": "2026-05-22",
+      "source": "https://sports.yahoo.com/articles/phil-foden-receives-thomas-tuchel-170000833.html",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "None \u2014 left out of England's 26-man World Cup 2026 squad.",
+      "as_of": "2026-05-22",
+      "source": "https://www.givemesport.com/pep-guardiola-england-phil-foden-incredible-diamond-not-going-world-cup/",
+      "confidence": "high"
+    },
+    "records": {
+      "value": "2023-24 PFA Players' Player of the Year and Premier League Player of the Season. Verify exact award years before quoting.",
+      "as_of": "2026-06-09",
+      "source": "https://www.givemesport.com/pep-guardiola-england-phil-foden-incredible-diamond-not-going-world-cup/",
+      "confidence": "med"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/2023-10-04_Fu%C3%9Fball%2C_M%C3%A4nner%2C_UEFA_Champions_League%2C_RB_Leipzig_-_Manchester_City_FC_1DX_2613%2C_Phil_Foden.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "Steffen Pr\u00f6\u00dfdorf / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-09"
+  },
+  "active_narratives": [
+    "england-its-coming-home"
+  ],
+  "last_verified": "2026-06-09"
+}

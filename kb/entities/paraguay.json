@@ -1,0 +1,29 @@
+{
+  "slug": "paraguay",
+  "type": "nation",
+  "name": "Paraguay",
+  "aliases": [
+    "Paraguay",
+    "La Albirroja"
+  ],
+  "code": "PAR",
+  "facts": {
+    "wc_role": {
+      "value": "2026 World Cup participant; in Group D with USA, Australia and Türkiye. Lost their opener 4-1 to co-hosts USA on June 12, 2026 (Maurício scored their goal in the 73rd minute).",
+      "as_of": "2026-06-12",
+      "source": "https://sports.yahoo.com/soccer/live/usmnt-vs-paraguay-score-live-updates-where-to-watch-box-score-214536754.html",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/1280px-Flag_of_Paraguay.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Public domain via Wikimedia Commons",
+    "as_of": "2026-06-12"
+  },
+  "active_narratives": [
+    "usmnt-opener-paraguay-rout"
+  ],
+  "last_verified": "2026-06-12"
+}

@@ -1,0 +1,65 @@
+{
+  "slug": "lautaro-martinez",
+  "type": "player",
+  "name": "Lautaro Martínez",
+  "aliases": [
+    "Lautaro",
+    "El Toro"
+  ],
+  "facts": {
+    "age": {
+      "value": 28,
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Lautaro_Mart%C3%ADnez",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Inter Milan (captain)",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Lautaro_Mart%C3%ADnez",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "Argentina (defending champions)",
+      "as_of": "2026-06-09",
+      "source": "https://www.goal.com/en/lists/argentina-squad-world-cup-2026/bltba570fcb2ec2100e",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Striker / centre-forward",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Lautaro_Mart%C3%ADnez",
+      "confidence": "high"
+    },
+    "current_form": {
+      "value": "Captained Inter Milan and finished as Serie A top scorer (capocannoniere) in 2025-26; one of the league's most prolific strikers",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Lautaro_Mart%C3%ADnez",
+      "confidence": "high"
+    },
+    "fitness": {
+      "value": "Fit; named in Argentina's final 26-man World Cup 2026 squad",
+      "as_of": "2026-06-06",
+      "source": "https://www.goal.com/en/lists/argentina-squad-world-cup-2026/bltba570fcb2ec2100e",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Argentina's most reliable starting striker; leads the attack alongside Messi and Álvarez for the defending champions",
+      "as_of": "2026-06-09",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/lautaro-martinez-argentina-internazionale",
+      "confidence": "med"
+    },
+    "records": {
+      "value": "Top scorer of the 2024 Copa América (scored the winning goal in the final vs Colombia); two-time Serie A capocannoniere (2023-24, 2025-26)",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Lautaro_Mart%C3%ADnez",
+      "confidence": "med"
+    }
+  },
+  "image": null,
+  "image_todo": "fetch + verify a Creative-Commons portrait; no fabricated URLs",
+  "active_narratives": [
+    "argentina-title-defense"
+  ],
+  "last_verified": "2026-06-09"
+}

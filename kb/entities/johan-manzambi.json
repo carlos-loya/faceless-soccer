@@ -1,0 +1,14 @@
+{
+  "slug": "johan-manzambi",
+  "type": "player",
+  "name": "Johan Manzambi",
+  "aliases": ["Johan Manzambi", "Manzambi"],
+  "facts": {
+    "club": {"value": "SC Freiburg", "as_of": "2026-06-18", "source": "https://www.transfermarkt.com/", "confidence": "high"},
+    "position": {"value": "Midfielder", "as_of": "2026-06-18", "source": "https://www.transfermarkt.com/", "confidence": "high"},
+    "national_team": {"value": "Switzerland", "as_of": "2026-06-18", "source": "https://www.transfermarkt.com/", "confidence": "high"}
+  },
+  "image": null,
+  "active_narratives": [],
+  "last_verified": "2026-06-18"
+}

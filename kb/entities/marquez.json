@@ -1,0 +1,27 @@
+{
+  "slug": "marquez",
+  "type": "player",
+  "name": "Rafael M\u00e1rquez",
+  "aliases": [
+    "Rafa M\u00e1rquez"
+  ],
+  "facts": {
+    "claim_to_fame": {
+      "value": "Scored Mexico's 79' equalizer in the 1-1 2010 World Cup opener vs South Africa; five-time World Cup participant",
+      "as_of": "2026-06-10",
+      "source": "https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_Group_A",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Rafael_M%C3%A1rquez_2014.jpg",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "attribution": "Presidencia de la Rep\u00fablica Mexicana / CC BY 2.0 via Wikimedia Commons",
+    "as_of": "2026-06-10"
+  },
+  "active_narratives": [
+    "wc2010-opener-echo"
+  ],
+  "last_verified": "2026-06-10"
+}

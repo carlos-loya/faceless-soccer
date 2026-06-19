@@ -1,0 +1,34 @@
+{
+  "slug": "australia",
+  "type": "nation",
+  "name": "Australia",
+  "aliases": [
+    "Socceroos"
+  ],
+  "code": "AUS",
+  "facts": {
+    "wc_role": {
+      "value": "Group D at WC 2026 under manager Tony Popovic; arrived as underdogs but opened with a disciplined deep-block win. Seeking a second straight World Cup knockout-stage run after their 2022 Round of 16.",
+      "as_of": "2026-06-14",
+      "source": "https://www.foxsports.com/live-blog/soccer/australia-vs-turkiye-live-updates-score-top-plays-from-todays-action",
+      "confidence": "med"
+    },
+    "opener_result": {
+      "value": "Beat Türkiye 2-0 in their opener (June 14, 2026, Vancouver): Nestory Irankunda 27', Connor Metcalfe 75'. Sit 2nd in Group D on 3 points behind the USA.",
+      "as_of": "2026-06-14",
+      "source": "https://bolavip.com/en/world-cup/australia-vs-turkiye-live-usas-2026-world-cup-group-rivals-clash-in-vancouver",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1280px-Flag_of_Australia_%28converted%29.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Public domain via Wikimedia Commons",
+    "as_of": "2026-06-14"
+  },
+  "active_narratives": [
+    "australia-shock-turkiye-wc2026"
+  ],
+  "last_verified": "2026-06-14"
+}

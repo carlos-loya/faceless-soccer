@@ -1,0 +1,59 @@
+{
+  "slug": "scotland",
+  "type": "nation",
+  "code": "SCO",
+  "name": "Scotland",
+  "aliases": [
+    "Tartan Army",
+    "The Scots"
+  ],
+  "facts": {
+    "group": {
+      "value": "Group C — opponents Brazil, Morocco, Haiti",
+      "as_of": "2026-06-13",
+      "source": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C",
+      "confidence": "high"
+    },
+    "manager": {
+      "value": "Steve Clarke",
+      "as_of": "2026-06-13",
+      "source": "https://www.uefa.com/european-qualifiers/news/02a6-20d159741fe9-a2a8fac9839d-1000--scotland-at-the-world-cup-2026-squad-fixtures-group-and-hi/",
+      "confidence": "high"
+    },
+    "captain": {
+      "value": "Andy Robertson (Liverpool left-back)",
+      "as_of": "2026-06-13",
+      "source": "https://www.uefa.com/european-qualifiers/news/02a6-20d159741fe9-a2a8fac9839d-1000--scotland-at-the-world-cup-2026-squad-fixtures-group-and-hi/",
+      "confidence": "high"
+    },
+    "key_players": {
+      "value": "Andy Robertson (captain), Scott McTominay, John McGinn, Kieran Tierney. Billy Gilmour withdrew injured (replaced by Man Utd teenager Tyler Fletcher)",
+      "as_of": "2026-06-13",
+      "source": "https://www.uefa.com/european-qualifiers/news/02a6-20d159741fe9-a2a8fac9839d-1000--scotland-at-the-world-cup-2026-squad-fixtures-group-and-hi/",
+      "confidence": "high"
+    },
+    "wc_history": {
+      "value": "First World Cup appearance since 1998 — a 28-year absence ended. Sealed qualification dramatically with two stoppage-time goals to pip Denmark to top spot in their final qualifier",
+      "as_of": "2026-06-13",
+      "source": "https://www.france24.com/en/sport/20260614-world-cup-2026-scotland-edge-past-haiti-with-mcginn-s-opener",
+      "confidence": "high"
+    },
+    "wc_result_md1": {
+      "value": "Beat Haiti 1-0 in their opener on June 13, 2026 (John McGinn, 28') at Gillette Stadium, Foxborough — and went TOP of Group C after Brazil and Morocco drew 1-1",
+      "as_of": "2026-06-13",
+      "source": "https://www.espn.com/soccer/story/_/id/49051974/haiti-scotland-live-world-cup-2026-latest-updates-commentary-score-result-fifa",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/960px-Flag_of_Scotland.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Flag of Scotland (Saltire) — public domain via Wikimedia Commons",
+    "as_of": "2026-06-13"
+  },
+  "active_narratives": [
+    "scotland-28-year-wait"
+  ],
+  "last_verified": "2026-06-13"
+}

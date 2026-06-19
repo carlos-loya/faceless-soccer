@@ -1,0 +1,72 @@
+{
+  "slug": "mexico",
+  "type": "nation",
+  "name": "Mexico",
+  "aliases": [
+    "El Tri",
+    "El Tricolor"
+  ],
+  "facts": {
+    "group": {
+      "value": "Group A — opponents South Africa, South Korea, Czechia",
+      "as_of": "2025-12-05",
+      "source": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_draw",
+      "confidence": "high"
+    },
+    "fifa_ranking": {
+      "value": "15th (highest-ranked side in Group A)",
+      "as_of": "2026-04-01",
+      "source": "https://www.aljazeera.com/sports/2026/6/5/mexico-world-cup-2026-preview-players-to-watch-group-matches-and-squad",
+      "confidence": "med"
+    },
+    "manager": {
+      "value": "Javier Aguirre",
+      "as_of": "2026-05-26",
+      "source": "https://www.aljazeera.com/sports/2026/6/5/mexico-world-cup-2026-preview-players-to-watch-group-matches-and-squad",
+      "confidence": "high"
+    },
+    "qualification": {
+      "value": "Auto-qualified as co-host (USA/Canada/Mexico)",
+      "as_of": "2026-06-05",
+      "source": "https://www.aljazeera.com/sports/2026/6/5/mexico-world-cup-2026-preview-players-to-watch-group-matches-and-squad",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Co-host nation; first country to host three World Cups (1970, 1986, 2026)",
+      "as_of": "2026-06-05",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/estadio-azteca-mexico-city-host-opening-match-world-cup-2026",
+      "confidence": "high"
+    },
+    "opener": {
+      "value": "Hosts the tournament-opening match vs South Africa on June 11, 2026 at Estadio Azteca (Mexico City Stadium)",
+      "as_of": "2026-06-05",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/estadio-azteca-mexico-city-host-opening-match-world-cup-2026",
+      "confidence": "high"
+    },
+    "key_players": {
+      "value": "Edson Álvarez (captain), Raúl Jiménez, Santiago Giménez, Guillermo Ochoa (GK, in line for a record-equalling 6th World Cup), Gilberto Mora (17-year-old prospect)",
+      "as_of": "2026-06-05",
+      "source": "https://www.aljazeera.com/sports/2026/6/5/mexico-world-cup-2026-preview-players-to-watch-group-matches-and-squad",
+      "confidence": "high"
+    },
+    "squad_news": {
+      "value": "Aguirre named his 26-man squad in late May 2026; 40-year-old Guillermo Ochoa included, in line to join Messi and Ronaldo as the only men to play in six World Cups; 17-year-old Gilberto Mora is the bright young hope.",
+      "as_of": "2026-06-05",
+      "source": "https://www.aljazeera.com/sports/2026/6/5/mexico-world-cup-2026-preview-players-to-watch-group-matches-and-squad",
+      "confidence": "med"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1280px-Flag_of_Mexico.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Alex Covarrubias, 9 April 2006. Based on the arms by Juan Manuel Gabino Villascán. / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-10"
+  },
+  "active_narratives": [
+    "mexico-host-opener",
+    "wc2010-opener-echo"
+  ],
+  "last_verified": "2026-06-09",
+  "code": "MEX"
+}

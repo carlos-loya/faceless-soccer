@@ -1,0 +1,30 @@
+{
+  "slug": "cesar-montes",
+  "type": "player",
+  "name": "César Montes",
+  "aliases": ["Montes", "César Montes"],
+  "facts": {
+    "nation": {
+      "value": "Mexico",
+      "as_of": "2026-06-11",
+      "source": "https://www.espn.com/soccer/match/_/gameId/760415/south-africa-mexico",
+      "confidence": "high"
+    },
+    "wc2026": {
+      "value": "Sent off (straight red, 90+2') for denial of an obvious goal-scoring opportunity in Mexico's 2-0 win over South Africa — one of three reds in the opener; suspended for matchday two.",
+      "as_of": "2026-06-11",
+      "source": "https://www.espn.com/soccer/match/_/gameId/760415/south-africa-mexico",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/C%C3%A9sar_Montes.png",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "attribution": "Selección Nacional de México / CC BY 3.0 via Wikimedia Commons",
+    "as_of": "2026-06-11",
+    "note": "Mexico-kit shot — cut out to out/cutouts/cesar-montes.png for the consequences-scene corner sticker."
+  },
+  "active_narratives": ["wc2010-opener-echo"],
+  "last_verified": "2026-06-11"
+}

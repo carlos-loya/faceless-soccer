@@ -1,0 +1,156 @@
+{
+  "format": "player_story",
+  "topic": "Portugal 1-1 DR Congo \u2014 Yoane Wissa scores DR Congo's first-ever World Cup goal, holding Portugal to a draw in Group K",
+  "subject": "",
+  "matchup": [
+    "portugal",
+    "dr-congo"
+  ],
+  "target_duration_seconds": 28,
+  "hook": {
+    "first_frame_text": "52 years. Zero WC goals.",
+    "spoken_hook": "Fifty-two years since their last World Cup. They had never scored a single goal.",
+    "hook_type": "curiosity_gap"
+  },
+  "retention_mechanic": "seamless_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "52 years. Zero WC goals.",
+      "voiceover": "Fifty-two years since their last World Cup. Not one goal in their history. Then Houston happened.",
+      "stat_callout": "52 YEARS",
+      "score": "0-0",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Vertical 9:16, deep black background, gold gradient accents (#F7D774 to #C8881B). Moodly floodlight bokeh behind a bold white number '52' in condensed type. A single white line below: 'YEARS. ZERO GOALS.' Premium broadcast tease, no faces, no logos.",
+      "visual_source": "stock_video",
+      "visual_query": "floodlight-bokeh",
+      "sticker_entity": "",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "Portugal 1-0. Five minutes in.",
+      "voiceover": "Portugal, one of the tournament favorites, scored inside five minutes. Joao Neves, twenty-one years old. Ronaldo's sixth World Cup was off and running.",
+      "stat_callout": "",
+      "score": "1-0",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black with gold accents, a bright white energy line slicing diagonally across the frame, bold condensed caption bar reading 'POR 1-0 COD'. The energy of a favorite striking early. Tense, premium broadcast feel, no faces.",
+      "visual_source": "entity",
+      "visual_query": "cristiano-ronaldo",
+      "sticker_entity": "",
+      "duration_seconds": 5
+    },
+    {
+      "index": 3,
+      "on_screen_text": "Then Wissa wrote history.",
+      "voiceover": "Then a Newcastle forward changed everything. Yoane Wissa \u2014 DR Congo's first ever World Cup goal. Fifty-two years of waiting, over in one swing.",
+      "stat_callout": "",
+      "score": "1-1",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, explosive gold burst on deep black, bold white condensed type reading '1-1', radiant gold light rays emanating from the center, confetti specks. A historic moment rendered in pure brand style with no faces or broadcast imagery.",
+      "visual_source": "entity",
+      "visual_query": "yoane-wissa",
+      "sticker_entity": "",
+      "duration_seconds": 5
+    },
+    {
+      "index": 4,
+      "on_screen_text": "Portugal pushed. DR Congo held.",
+      "voiceover": "Portugal threw everyone at them. Ronaldo, Bruno, Leao. DR Congo would not break.",
+      "stat_callout": "",
+      "score": "1-1",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black with tense gold-edged atmosphere, bold condensed white caption bar reading 'POR 1-1 COD'. A staredown mood \u2014 two shields facing off. Premium broadcast feel, no faces, no logos.",
+      "visual_source": "stock_video",
+      "visual_query": "crowd-erupt",
+      "sticker_entity": "",
+      "duration_seconds": 4
+    },
+    {
+      "index": 5,
+      "on_screen_text": "History made in Houston.",
+      "voiceover": "From Zaire, 1974, to holding Portugal. This was a statement.",
+      "stat_callout": "",
+      "score": "1-1",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Vertical 9:16, deep black fading into gold at the bottom, bold white condensed 'HISTORY' in the center with radiating gold lines. Congratulatory, monumental, premium. Olympian mood, no broadcast imagery.",
+      "visual_source": "stock_video",
+      "visual_query": "gold-confetti",
+      "sticker_entity": "",
+      "duration_seconds": 3
+    },
+    {
+      "index": 6,
+      "on_screen_text": "GROUP K",
+      "voiceover": "One point each. Colombia and Uzbekistan still to come. This group is wide open.",
+      "stat_callout": "",
+      "score": "1-1",
+      "graphic_type": "group_table",
+      "graphic_prompt": "Vertical 9:16, deep black with gold accents, a clean broadcast standings table, bold white condensed type. Premium, no faces, no logos.",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "group_table": [
+        {
+          "team": "portugal",
+          "played": 1,
+          "gd": 0,
+          "points": 1
+        },
+        {
+          "team": "dr-congo",
+          "played": 1,
+          "gd": 0,
+          "points": 1,
+          "highlight": true
+        },
+        {
+          "team": "colombia",
+          "played": 0,
+          "points": 0
+        },
+        {
+          "team": "uzbekistan",
+          "played": 0,
+          "points": 0
+        }
+      ],
+      "duration_seconds": 4
+    },
+    {
+      "index": 7,
+      "on_screen_text": "SUBSCRIBE \u2014 DAILY WORLD CUP",
+      "voiceover": "Your daily World Cup story. Every game, every shock \u2014 don't miss the next one.",
+      "stat_callout": "",
+      "score": "1-1",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Vertical 9:16, deep black, gold gradient accents, bold white condensed 'DAILY WORLD CUP' lockup with the TikiTaka monogram, night-stadium glow behind. Clean, premium, no faces.",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "duration_seconds": 4
+    }
+  ],
+  "comment_bait": "Portugal dropped points to a debutant. Who's actually winning Group K now? Colombia lurking \ud83d\udc40",
+  "cta": "Subscribe for your daily World Cup story",
+  "music_mood": "Cinematic, building \u2014 a tense floodlit intro that swells into a defiant, historic anthem. Underdog energy.",
+  "thumbnail": {
+    "text": "52-YEAR DROUGHT OVER",
+    "concept": "Deep black and gold blowout, bold white 'POR 1-1 COD' scoreboard, a single gold 'FIRST EVER WC GOAL' stamp, DR Congo flag silhouette on the left against an erupting-crowd glow \u2014 statement of history, not two flags."
+  },
+  "youtube_title": "Yoane Wissa scores DR Congo's FIRST EVER World Cup goal in 1-1 draw vs Portugal | WC 2026",
+  "youtube_description": "DR Congo ended a 52-year World Cup drought in style. Playing their first World Cup match since 1974 (when they qualified as Zaire), the Congolese held one of the tournament favorites \u2014 Cristiano Ronaldo's Portugal \u2014 to a 1-1 draw in Houston. Joao Neves gave Portugal a 5th-minute lead, but Yoane Wissa equalized with DR Congo's first ever World Cup goal, writing his name into football history. Portugal pushed for a winner with Ronaldo, Bruno Fernandes, and Rafael Leao \u2014 but DR Congo's defense held firm. Group K is wide open with Colombia and Uzbekistan still to play. Your daily World Cup stories, every day. #worldcup2026 #portugal #drcongo",
+  "instagram_caption": "52 years without a World Cup goal. Then Yoane Wissa changed everything. \ud83c\udde8\ud83c\udde9 Portugal 1-1 DR Congo \u2014 history made in Houston. Portugal dropped points to a debutant \u2014 who's actually winning Group K now? Colombia lurking \ud83d\udc47 Subscribe for your daily World Cup story.",
+  "tiktok_caption": "52 years. Zero World Cup goals. Then Wissa wrote history \ud83c\udde8\ud83c\udde9 Portugal 1-1 DR Congo. First ever WC goal for the Congolese. Who's winning Group K now? Colombia lurking \ud83d\udc40 #worldcup2026",
+  "hashtags": [
+    "#worldcup2026",
+    "#portugal",
+    "#drcongo",
+    "#wissa",
+    "#ronaldo",
+    "#football",
+    "#soccer",
+    "#worldcup",
+    "#tikitakafootytv"
+  ]
+}

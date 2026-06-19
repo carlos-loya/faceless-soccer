@@ -1,0 +1,138 @@
+{
+  "format": "post_match",
+  "topic": "South Africa 1-1 Czechia: Controversial penalty keeps Bafana Bafana alive in Group A",
+  "subject": "south-africa",
+  "matchup": [
+    "czechia",
+    "south-africa"
+  ],
+  "target_duration_seconds": 26,
+  "hook": {
+    "first_frame_text": "83 MINUTES. NOTHING.",
+    "spoken_hook": "Eighty-three minutes. Zero goals. World Cup ending.",
+    "hook_type": "curiosity_gap"
+  },
+  "retention_mechanic": "seamless_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "83 MINUTES. NOTHING.",
+      "voiceover": "Eighty-three minutes. Zero goals. World Cup ending.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Ronwen Williams portrait on deep black, gold gradient, bold white text overlay, broadcast energy",
+      "visual_source": "entity",
+      "visual_query": "ronwen-williams",
+      "sticker_entity": "",
+      "score": "1-0",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "17 SHOTS. 62% BALL. NOTHING.",
+      "voiceover": "South Africa dominated. Seventeen shots. Nothing.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Gold bar chart showing shot dominance, deep black background, crisp white text",
+      "visual_source": "stock_video",
+      "visual_query": "crowd-erupt",
+      "sticker_entity": "",
+      "score": "1-0",
+      "duration_seconds": 4
+    },
+    {
+      "index": 3,
+      "on_screen_text": "SUBSCRIBE \u2014 FOLLOW BAFANA BAFANA",
+      "voiceover": "Subscribe to follow Bafana Bafana.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Lyle Foster portrait on deep black, gold 'SUBSCRIBE' overlay bottom-third, premium broadcast feel",
+      "visual_source": "entity",
+      "visual_query": "lyle-foster",
+      "sticker_entity": "",
+      "score": "1-0",
+      "duration_seconds": 3
+    },
+    {
+      "index": 4,
+      "on_screen_text": "CROSS. ARM. WHISTLE.",
+      "voiceover": "Cross hit a Czechia arm. Controversy in Atlanta.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Tomas Soucek portrait on deep black, gold accent, dramatic tension, bold white text",
+      "visual_source": "entity",
+      "visual_query": "tomas-soucek",
+      "sticker_entity": "",
+      "score": "1-0",
+      "duration_seconds": 4
+    },
+    {
+      "index": 5,
+      "on_screen_text": "MOKOENA. ICE COLD.",
+      "voiceover": "Mokoena. Captain. Sent the keeper wrong. One-one.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Gold '1-1' text filling center frame, burst effect behind it, black background",
+      "visual_source": "stock_video",
+      "visual_query": "gold-confetti",
+      "sticker_entity": "",
+      "score": "1-1",
+      "duration_seconds": 4
+    },
+    {
+      "index": 6,
+      "on_screen_text": "GROUP A",
+      "voiceover": "Group A. Both on one point. Last game decides.",
+      "stat_callout": "",
+      "graphic_type": "group_table",
+      "graphic_prompt": "Clean ranked group table, black and gold, South Africa highlighted",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 5,
+      "group_table": [
+        {"team": "mexico", "points": 3, "played": 1, "gd": 2, "highlight": false},
+        {"team": "south-korea", "points": 3, "played": 1, "gd": 1, "highlight": false},
+        {"team": "czechia", "points": 1, "played": 2, "gd": -1, "highlight": false},
+        {"team": "south-africa", "points": 1, "played": 2, "gd": -2, "highlight": true}
+      ]
+    },
+    {
+      "index": 7,
+      "on_screen_text": "83 MINUTES \u2014 THEN EVERYTHING",
+      "voiceover": "Eighty-three minutes. Then everything.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Ronwen Williams portrait on deep black, gold gradient, same frame as scene 1 for seamless loop",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 3
+    }
+  ],
+  "comment_bait": "Controversial penalty or the right call? And who escapes Group A now? I will be in the replies.",
+  "cta": "Follow for your daily World Cup countdown",
+  "music_mood": "Epic cinematic tension, building to a triumphant resolution",
+  "thumbnail": {
+    "text": "PENALTY DRAMA",
+    "concept": "South Africa flag on deep black, gold '1-1' scoreline, 'CONTROVERSY' overlay in bold white"
+  },
+  "youtube_title": "Czechia 1-1 South Africa: Controversial Penalty Keeps Bafana Bafana Alive | World Cup 2026",
+  "youtube_description": "South Africa were 7 minutes from elimination. Then a controversial penalty changed everything.\n\n83 minutes. 17 shots. 62% possession. And finally \u2014 a lifeline.\n\nTeboho Mokoena's spot-kick keeps Bafana Bafana's World Cup alive in Group A. But was it a handball?\n\n#WorldCup2026 #SouthAfrica #Czechia #BafanaBafana #FIFAWorldCup #TikiTakaFootyTV",
+  "instagram_caption": "83 minutes. Nothing. Then controversy.\n\nTeboho Mokoena's penalty keeps South Africa alive in Group A \ud83c\uddff\ud83c\udde6\n\nControversial penalty or the right call? And who escapes Group A now? I will be in the replies.\n\n#WorldCup2026 #SouthAfrica #Czechia #BafanaBafana #FIFAWorldCup #TikiTakaFootyTV",
+  "tiktok_caption": "83 minutes. Nothing. Then controversy \ud83c\uddff\ud83c\udde6 Teboho Mokoena's penalty keeps South Africa alive. Controversial call or the right one? I will be in the replies.",
+  "hashtags": [
+    "WorldCup2026",
+    "SouthAfrica",
+    "Czechia",
+    "BafanaBafana",
+    "FIFAWorldCup",
+    "TikiTakaFootyTV",
+    "Football",
+    "Soccer",
+    "WorldCup",
+    "PenaltyDrama"
+  ]
+}

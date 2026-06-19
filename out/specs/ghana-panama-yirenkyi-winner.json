@@ -1,0 +1,114 @@
+{
+  "format": "post_match",
+  "topic": "Ghana 1-0 Panama: Caleb Yirenkyi's 95th-minute winner gives Ghana three points in Group L at BMO Field, Toronto",
+  "subject": "ghana",
+  "matchup": ["ghana", "panama"],
+  "target_duration_seconds": 28,
+  "hook": {
+    "first_frame_text": "94TH MINUTE. 0-0.",
+    "spoken_hook": "Ninety-four minutes. Still nil-nil. Then came the ninety-fifth.",
+    "hook_type": "curiosity_gap"
+  },
+  "retention_mechanic": "open_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "94TH MINUTE. 0-0.",
+      "voiceover": "Ninety-four minutes. Still nil-nil. Then came the ninety-fifth.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black and gold gradient, rain-streaked effect, bold white condensed '94TH MINUTE' and '0-0' in gold, shadowy stadium floodlights piercing darkness, vertical 9:16, cinematic tension.",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "PARTEY OUT — 20YO IN",
+      "voiceover": "Partey denied entry. In stepped a twenty-year-old debutant.",
+      "stat_callout": "",
+      "graphic_type": "stat_card",
+      "graphic_prompt": "Premium black-and-gold player profile card, 'CALEB YIRENKYI' in bold condensed white, '20 years old' in gold below, Ghana #3 kit silhouette on the right, clean broadcast style stat card, vertical 9:16.",
+      "visual_source": "stock_video",
+      "visual_query": "floodlight-bokeh",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 4
+    },
+    {
+      "index": 3,
+      "on_screen_text": "GK INJURED. PANAMA PUSHING.",
+      "voiceover": "Keeper went down twice. Panama kept knocking. Looked headed for a stalemate.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black background with motion blur effect, gold '0-0' faded in the background, Ghana kit silhouette in a defensive stance, rain texture overlay, tension-filled broadcast frame, vertical 9:16.",
+      "visual_source": "commons",
+      "visual_query": "Jordan Ayew 24082024 (2).jpg",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 5
+    },
+    {
+      "index": 4,
+      "on_screen_text": "95'. DELIVERED.",
+      "voiceover": "Ninety-fifth minute. Thomas-Asante burst through. Square ball. Yirenkyi slotted it. Stadium erupted.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Explosive gold confetti burst on deep black, bold gold '95' glowing big in the center, 'GHANA 1-0' in white bold condensed below, silhouetted arms-raised celebration figure, vertical 9:16, climactic energy.",
+      "visual_source": "stock_video",
+      "visual_query": "crowd-erupt",
+      "sticker_entity": "",
+      "score": "1-0",
+      "duration_seconds": 5
+    },
+    {
+      "index": 5,
+      "on_screen_text": "QUEIROZ SPRINTS THE PITCH",
+      "voiceover": "Carlos Queiroz, seventy-three, sprinted to celebrate with Ghana's fans.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Cinematic black background, gold motion trail suggesting a sprint across frame, silhouette of an older man in a suit and tie, Ghana flag colors in the background texture, emotional broadcast finish, vertical 9:16.",
+      "visual_source": "commons",
+      "visual_query": "Carlos Queiroz 2017.jpg",
+      "sticker_entity": "",
+      "score": "1-0",
+      "duration_seconds": 5
+    },
+    {
+      "index": 6,
+      "on_screen_text": "GROUP L",
+      "voiceover": "Subscribe for daily World Cup. Ghana second in Group L.",
+      "stat_callout": "",
+      "graphic_type": "group_table",
+      "graphic_prompt": "Clean black-and-gold ranked group-standings table, white condensed type, flag icons and 3-letter codes, Ghana row highlighted in glowing gold, vertical 9:16 broadcast graphic.",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 6,
+      "group_table": [
+        { "team": "england", "played": 1, "points": 3, "gd": 2, "highlight": false },
+        { "team": "ghana", "played": 1, "points": 3, "gd": 1, "highlight": true },
+        { "team": "panama", "played": 1, "points": 0, "gd": -1, "highlight": false },
+        { "team": "croatia", "played": 1, "points": 0, "gd": -2, "highlight": false }
+      ]
+    }
+  ],
+  "comment_bait": "England next for Ghana. Croatia chasing. Can Ghana top Group L? Make your call.",
+  "cta": "Follow for a World Cup story every single day",
+  "music_mood": "cinematic tension building through rain and drums, rising to an explosive triumphant release on the goal, settling into a confident piano outro",
+  "thumbnail": {
+    "text": "95TH. WINNER.",
+    "concept": "Ghana Black Stars crest on deep black background, bold gold '95TH' and 'WINNER' in white condensed stacked below, gold confetti texture, premium broadcast thumbnail style, vertical 9:16."
+  },
+  "youtube_title": "Ghana 1-0 Panama | 95th-Minute Winner! Yirenkyi | World Cup 2026 Group L",
+  "youtube_description": "Ghana 1-0 Panama — Caleb Yirenkyi's 95th-minute stoppage-time winner gives the Black Stars three points in Group L at BMO Field, Toronto. England also beat Croatia 4-2, so Group L is wide open. Ghana's manager Carlos Queiroz (73) sprinted the pitch to celebrate. Thomas Partey was denied entry. A 20-year-old debutant delivered. Subscribe for a World Cup story every day. #WorldCup2026 #Ghana #Panama",
+  "instagram_caption": "94 minutes of nothing. Then the 95th changed everything 🇬🇭 Ghana 1-0 Panama on a Caleb Yirenkyi stoppage-time winner. A 20-year-old debutant. An injured keeper. A 73-year-old manager sprinting the pitch. Group L is wide open — England next. Can Ghana top the group? Make your call — I'll be in the replies 👇 Follow @tikitakafootytv for a World Cup story every day.",
+  "tiktok_caption": "94 minutes of nothing. Then the 95th changed everything 🇬🇭 Ghana 1-0 Panama. Can Ghana top Group L? Make your call 👇 #worldcup2026",
+  "hashtags": [
+    "#worldcup2026", "#ghana", "#panama", "#blackstars", "#worldcup",
+    "#soccer", "#football", "#stoppagetime", "#tikitakafootytv", "#wc2026"
+  ]
+}

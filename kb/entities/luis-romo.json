@@ -1,0 +1,50 @@
+{
+  "slug": "luis-romo",
+  "type": "player",
+  "name": "Luis Romo",
+  "aliases": [
+    "Luis Francisco Romo Barrón",
+    "Romo"
+  ],
+  "facts": {
+    "nation": {
+      "value": "Mexico",
+      "as_of": "2026-06-19",
+      "source": "https://en.wikipedia.org/wiki/Luis_Romo",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Defensive midfielder, centre-back",
+      "as_of": "2026-06-19",
+      "source": "https://en.wikipedia.org/wiki/Luis_Romo",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Guadalajara (Chivas)",
+      "as_of": "2026-06-19",
+      "source": "https://en.wikipedia.org/wiki/Luis_Romo",
+      "confidence": "high"
+    },
+    "wc_history": {
+      "value": "Named in Mexico's 2022 World Cup squad but did not play any minutes. First World Cup start was vs South Korea on June 18, 2026 — scored his first World Cup goal and won Man of the Match in a 1-0 win that sent Mexico to the knockout stage.",
+      "as_of": "2026-06-19",
+      "source": "https://en.wikipedia.org/wiki/Luis_Romo",
+      "confidence": "high"
+    },
+    "caps": {
+      "value": "64 caps, 5 goals (as of June 18, 2026)",
+      "as_of": "2026-06-19",
+      "source": "https://en.wikipedia.org/wiki/Luis_Romo",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Luis_Romo.png",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "attribution": "Selección Nacional de México / CC BY 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-19"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-19"
+}

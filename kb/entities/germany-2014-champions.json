@@ -1,0 +1,20 @@
+{
+  "slug": "germany-2014-champions",
+  "type": "moment",
+  "name": "Germany 2014 World Cup champions",
+  "aliases": [
+    "2014 final celebration"
+  ],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Germany_World_Cup_Champion_-_The_2014_FIFA_World_Cup_Final_140713-9413-jikatu_%2814470338609%29.jpg",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "attribution": "Jimmy Baikovicius from Montevideo, Uruguay / CC BY-SA 2.0 via Wikimedia Commons",
+    "as_of": "2026-06-09",
+    "curated": true,
+    "curated_note": "Vision-vetted: Germany squad celebrating in gold confetti at the 2014 final podium."
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-09"
+}

@@ -1,0 +1,71 @@
+{
+  "slug": "argentina",
+  "type": "nation",
+  "name": "Argentina",
+  "aliases": [
+    "La Albiceleste"
+  ],
+  "facts": {
+    "group": {
+      "value": "Group J — opponents Algeria, Austria, Jordan",
+      "as_of": "2025-12-05",
+      "source": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_draw",
+      "confidence": "high"
+    },
+    "fifa_ranking": {
+      "value": "3rd",
+      "as_of": "2026-04-01",
+      "source": "https://www.espn.com/soccer/story/_/id/46664763/fifa-mens-top-50-world-rankings",
+      "confidence": "high"
+    },
+    "manager": {
+      "value": "Lionel Scaloni (since 2018; led Argentina to 2021 Copa América, 2022 World Cup, 2024 Copa América)",
+      "as_of": "2026-05-26",
+      "source": "https://www.espn.com/soccer/story/_/id/48907909/messi-leads-experienced-argentina-world-cup-squad-scaloni-opts-continuity",
+      "confidence": "high"
+    },
+    "qualification": {
+      "value": "Qualified via CONMEBOL qualifiers; defending champions returning",
+      "as_of": "2026-05-26",
+      "source": "https://www.espn.com/soccer/story/_/id/48904313/lionel-messi-argentina-2026-world-cup-squad",
+      "confidence": "high"
+    },
+    "recent_form": {
+      "value": "Reigning Copa América champions (won 2024, retaining the 2021 title); kept 17 players from the Qatar 2022 winning side — continuity selection",
+      "as_of": "2026-05-26",
+      "source": "https://www.espn.com/soccer/story/_/id/48907909/messi-leads-experienced-argentina-world-cup-squad-scaloni-opts-continuity",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Defending champions (won 2022); aiming to become the first nation since Brazil in 1962 to retain the World Cup",
+      "as_of": "2026-05-26",
+      "source": "https://www.espn.com/soccer/story/_/id/48904313/lionel-messi-argentina-2026-world-cup-squad",
+      "confidence": "high"
+    },
+    "key_players": {
+      "value": "Lionel Messi (captain, record 6th World Cup at 38), Lautaro Martínez, Julián Álvarez, Emiliano Martínez (GK), Alexis Mac Allister, Enzo Fernández, Cristian Romero, Rodrigo De Paul",
+      "as_of": "2026-05-26",
+      "source": "https://www.goal.com/en/lists/argentina-squad-world-cup-2026/bltba570fcb2ec2100e",
+      "confidence": "high"
+    },
+    "squad_news": {
+      "value": "Scaloni named a 26-man squad on 26 May 2026; Messi (38) selected for a record 6th World Cup — a record no male outfield player has matched. Squad blends 2022 winners with newcomers (Nico Paz, Franco Mastantuono-era youth).",
+      "as_of": "2026-05-26",
+      "source": "https://www.espn.com/soccer/story/_/id/48904313/lionel-messi-argentina-2026-world-cup-squad",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/1280px-Flag_of_Argentina.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Manuel Belgrano / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-09"
+  },
+  "active_narratives": [
+    "argentina-title-defense",
+    "messi-ronaldo-last-dance"
+  ],
+  "last_verified": "2026-06-09",
+  "code": "ARG"
+}

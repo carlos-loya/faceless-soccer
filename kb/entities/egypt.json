@@ -1,0 +1,16 @@
+{
+  "slug": "egypt",
+  "type": "nation",
+  "name": "Egypt",
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/1280px-Flag_of_Egypt.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "See File history below for details. / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-15"
+  },
+  "active_narratives": [],
+  "last_verified": "",
+  "code": "EGY"
+}

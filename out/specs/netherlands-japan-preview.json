@@ -1,0 +1,105 @@
+{
+  "format": "news_story",
+  "topic": "Netherlands vs Japan — World Cup 2026 Group F opener preview: Japan's giant-killers meet Van Dijk's last dance",
+  "subject": "virgil-van-dijk",
+  "matchup": ["netherlands", "japan"],
+  "target_duration_seconds": 28,
+  "hook": {
+    "first_frame_text": "JAPAN BEAT ENGLAND AT WEMBLEY",
+    "spoken_hook": "Japan walked into Wembley and beat England.",
+    "hook_type": "shock_number"
+  },
+  "retention_mechanic": "seamless_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "JAPAN BEAT ENGLAND AT WEMBLEY",
+      "voiceover": "Japan walked into Wembley and beat England.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black background, gold gradient accents, bold white condensed type reading JAPAN BEAT ENGLAND AT WEMBLEY, faint floodlit stadium silhouette, premium broadcast feel, vertical 9:16, no faces, no logos",
+      "visual_source": "entity",
+      "visual_query": "wembley-stadium",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "MITOMA SHOCKED ENGLAND",
+      "voiceover": "Kaoru Mitoma's strike did it — the first Asian team ever to beat England.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black and gold, bold white text MITOMA SHOCKED ENGLAND, dramatic rim light, vertical 9:16, no logos",
+      "visual_source": "entity",
+      "visual_query": "kaoru-mitoma",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 5
+    },
+    {
+      "index": 3,
+      "on_screen_text": "NOW THEY MEET VAN DIJK",
+      "voiceover": "Tonight in Dallas, those giant-killers get Van Dijk's Netherlands.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black background, gold rim light, bold white text NOW THEY MEET VAN DIJK, abstract orange Netherlands energy, vertical 9:16, no real faces",
+      "visual_source": "entity",
+      "visual_query": "virgil-van-dijk",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 5
+    },
+    {
+      "index": 4,
+      "on_screen_text": "MAYBE HIS LAST WORLD CUP",
+      "voiceover": "Thirty-four, Holland's most-capped captain ever, and likely his last World Cup.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Moody black and gold, floodlight bokeh, bold white text MAYBE HIS LAST WORLD CUP, tense pre-match mood, vertical 9:16, no faces, no logos",
+      "visual_source": "stock_video",
+      "visual_query": "floodlight-bokeh",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 5
+    },
+    {
+      "index": 5,
+      "on_screen_text": "UPSET ALERT — YES OR NO?",
+      "voiceover": "Form team of Asia against a top-eight giant. Upset written all over it.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black and gold, night stadium glow, bold white text UPSET ALERT YES OR NO, vertical 9:16, no faces, no logos",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 5
+    },
+    {
+      "index": 6,
+      "on_screen_text": "SUBSCRIBE — DAILY WORLD CUP",
+      "voiceover": "Subscribe for daily World Cup stories — before every kickoff.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black and gold, falling gold confetti, bold white text SUBSCRIBE DAILY WORLD CUP, premium, vertical 9:16, no faces, no logos",
+      "visual_source": "stock_video",
+      "visual_query": "gold-confetti",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 5
+    }
+  ],
+  "comment_bait": "Japan beat England this year — can they shock Van Dijk too? Call it before kickoff. 🔵",
+  "cta": "Subscribe for daily World Cup stories — every game, every twist",
+  "music_mood": "tense, building, cinematic pre-match anticipation",
+  "thumbnail": {
+    "text": "VAN DIJK'S LAST STAND",
+    "concept": "Van Dijk CC portrait hard-lit on black/gold, a small Japan flag closing in from the side, bold curiosity text — recognizable face + tension, no scoreline"
+  },
+  "youtube_title": "Japan Beat England — Now Van Dijk Stands in Their Way | Netherlands vs Japan World Cup 2026 Preview",
+  "youtube_description": "Japan stunned England 1-0 at Wembley in March 2026 — their first win over the Three Lions ever, Kaoru Mitoma with the goal — and arrive at the World Cup on a five-game winning streak. Tonight they open Group F against Virgil van Dijk's Netherlands in what's likely Van Dijk's final World Cup. Giant-killers vs a top-eight giant. Upset alert? Generated graphics + voiceover — no broadcast footage. #WorldCup2026",
+  "instagram_caption": "Japan beat England at Wembley. Now they get Van Dijk. Upset alert? 🔵 Subscribe for daily World Cup stories.",
+  "tiktok_caption": "Japan already beat England this year 👀 now they meet Van Dijk's Netherlands. Upset alert? Call it before kickoff. #worldcup2026",
+  "hashtags": ["#football", "#soccer", "#worldcup2026", "#japan", "#netherlands", "#vandijk", "#mitoma", "#tikitakafootytv"]
+}

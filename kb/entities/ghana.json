@@ -1,0 +1,17 @@
+{
+  "slug": "ghana",
+  "type": "nation",
+  "name": "Ghana",
+  "code": "GHA",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/1280px-Flag_of_Ghana.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Theodosia Okoh / via Wikimedia Commons",
+    "as_of": "2026-06-15"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

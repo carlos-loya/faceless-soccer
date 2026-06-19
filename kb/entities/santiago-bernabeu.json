@@ -1,0 +1,20 @@
+{
+  "slug": "santiago-bernabeu",
+  "type": "stadium",
+  "name": "Santiago Bernabéu",
+  "aliases": ["Bernabeu", "Estadio Santiago Bernabéu"],
+  "facts": {
+    "club": { "value": "Home stadium of Real Madrid", "as_of": "2026-06-09", "source": "https://en.wikipedia.org/wiki/Santiago_Bernab%C3%A9u_Stadium", "confidence": "high" }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Estadio_Santiago_Bernab%C3%A9u_-_01.jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution": "Carlos Delgado / CC BY-SA 3.0 via Wikimedia Commons",
+    "as_of": "2026-06-09",
+    "curated": true,
+    "curated_note": "Vision-vetted: portrait dusk interior of the Bernabéu."
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-09"
+}

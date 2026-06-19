@@ -1,0 +1,98 @@
+{
+  "format": "post_match",
+  "topic": "Uruguay 1-1 Saudi Arabia — World Cup 2026 Group H opener; favorites held",
+  "subject": "uruguay",
+  "matchup": ["uruguay", "saudi-arabia"],
+  "target_duration_seconds": 28,
+  "hook": {
+    "first_frame_text": "TROPHY FAVORITES — THEN A SHOCK",
+    "spoken_hook": "Uruguay came in stacked — Champions League stars, trophy dreams. Saudi Arabia didn't care.",
+    "hook_type": "curiosity_gap"
+  },
+  "retention_mechanic": "open_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "TROPHY FAVORITES — THEN A SHOCK",
+      "voiceover": "Uruguay came in stacked — Champions League stars, trophy dreams. Saudi Arabia didn't care.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black background, gold gradient accents (#F7D774 to #C8881B), a lone Uruguayan player silhouette in the sky-blue kit walking out under stadium floodlights, crisp white condensed type space at top, premium broadcast feel, vertical 9:16, no real face, no logos",
+      "visual_source": "entity",
+      "visual_query": "federico-valverde",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "SAUDI ARABIA STRUCK FIRST",
+      "voiceover": "Before half, Alamri pounced on a rebound and stunned them.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black background with gold sparks, a silhouetted crowd erupting in green, abstract energy lines, bold white condensed headline space, premium broadcast feel, vertical 9:16, no real faces, no logos",
+      "visual_source": "stock_video",
+      "visual_query": "crowd-erupt",
+      "sticker_entity": "",
+      "score": "0-1",
+      "duration_seconds": 6
+    },
+    {
+      "index": 3,
+      "on_screen_text": "REAL GROUP OF DEATH?",
+      "voiceover": "Valverde, Nunez, the cavalry — Uruguay threw everything, couldn't break through.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black background, gold gradient glow, a sky-blue-kitted forward silhouette surging forward, motion streaks, white condensed type space, premium broadcast feel, vertical 9:16, no real face, no logos",
+      "visual_source": "entity",
+      "visual_query": "darwin-nunez",
+      "sticker_entity": "",
+      "score": "0-1",
+      "duration_seconds": 6
+    },
+    {
+      "index": 4,
+      "on_screen_text": "ARAUJO RESCUES A POINT — 80'",
+      "voiceover": "Then, eighty minutes in, Maxi Araujo rammed home the rescue.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black background exploding with gold confetti, a sky-blue player silhouette wheeling away in celebration, bright white condensed type space, euphoric premium broadcast feel, vertical 9:16, no real face, no logos",
+      "visual_source": "stock_video",
+      "visual_query": "gold-confetti",
+      "sticker_entity": "",
+      "score": "1-1",
+      "duration_seconds": 6
+    },
+    {
+      "index": 5,
+      "on_screen_text": "GROUP H",
+      "voiceover": "Group H's wide open — all four level on a point. Follow for daily World Cup stories.",
+      "stat_callout": "",
+      "graphic_type": "group_table",
+      "graphic_prompt": "Clean broadcast group-standings table on deep black, gold heading, white condensed type, four teams level on one point, the highlighted row glowing gold, premium feel, vertical 9:16, no logos",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "score": "1-1",
+      "group_table": [
+        { "team": "Cape Verde", "points": 1, "played": 1, "gd": 0, "highlight": false },
+        { "team": "Saudi Arabia", "points": 1, "played": 1, "gd": 0, "highlight": false },
+        { "team": "Spain", "points": 1, "played": 1, "gd": 0, "highlight": false },
+        { "team": "Uruguay", "points": 1, "played": 1, "gd": 0, "highlight": true }
+      ],
+      "duration_seconds": 5
+    }
+  ],
+  "comment_bait": "Both favorites stumbled — who's escaping Group H? Make your pick, I'll see you in the replies.",
+  "cta": "Follow for daily World Cup stories",
+  "music_mood": "tense and dramatic, building from anxiety to release",
+  "thumbnail": {
+    "text": "FAVORITES HELD",
+    "concept": "Federico Valverde's CC portrait looking frustrated on a black/gold background, a bold '1-1' and a small Saudi Arabia flag, white condensed type — a recognizable star face + shock, not two flags and a scoreline"
+  },
+  "youtube_title": "Uruguay 1-1 Saudi Arabia: Favorites STUNNED as Group H Blows Wide Open | World Cup 2026",
+  "youtube_description": "Uruguay's star-studded squad was held to a 1-1 draw by Saudi Arabia in their World Cup 2026 Group H opener. Abdulelah Alamri struck before half-time before Maxi Araujo rescued a point on 80 minutes — and with Spain only drawing Cape Verde, all four teams are level on a point. Daily World Cup stories, copyright-safe. Subscribe for the road through 2026.\n\n#WorldCup2026 #Uruguay #SaudiArabia",
+  "instagram_caption": "Uruguay brought the Champions League stars... Saudi Arabia brought the fight. 1-1, and Group H is chaos. Both favorites stumbled — who's escaping Group H? Make your pick, I'll see you in the replies. Follow for daily World Cup stories.",
+  "tiktok_caption": "Trophy favorites? Held. Maxi Araujo's 80th-minute rescue saved Uruguay's blushes. Both favorites stumbled — who's escaping Group H? Make your pick, I'll see you in the replies. Follow for daily World Cup stories.",
+  "hashtags": ["#worldcup2026", "#uruguay", "#saudiarabia", "#football", "#soccer", "#groupH", "#tikitakafootytv", "#worldcup"]
+}

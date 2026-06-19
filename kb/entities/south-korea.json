@@ -1,0 +1,20 @@
+{
+  "slug": "south-korea",
+  "type": "nation",
+  "name": "South Korea",
+  "aliases": [
+    "Korea Republic",
+    "South Korea"
+  ],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/1280px-Flag_of_South_Korea.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Original: Government of the Republic of Korea Vector:  Great Brightstar and others / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-11"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-11",
+  "code": "KOR"
+}

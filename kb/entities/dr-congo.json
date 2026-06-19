@@ -1,0 +1,19 @@
+{
+  "slug": "dr-congo",
+  "type": "nation",
+  "name": "DR Congo",
+  "code": "COD",
+  "aliases": [
+    "Democratic Republic of the Congo"
+  ],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg/1280px-Flag_of_the_Democratic_Republic_of_the_Congo.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Nightstallion / via Wikimedia Commons",
+    "as_of": "2026-06-15"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

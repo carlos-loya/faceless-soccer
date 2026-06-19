@@ -1,0 +1,70 @@
+{
+  "slug": "england",
+  "type": "nation",
+  "name": "England",
+  "aliases": [
+    "Three Lions"
+  ],
+  "facts": {
+    "group": {
+      "value": "Group L — opponents Croatia, Ghana, Panama",
+      "as_of": "2025-12-05",
+      "source": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_draw",
+      "confidence": "high"
+    },
+    "fifa_ranking": {
+      "value": 4,
+      "as_of": "2026-06-10",
+      "source": "https://football-ranking.com/fifa-world-rankings",
+      "confidence": "med"
+    },
+    "manager": {
+      "value": "Thomas Tuchel",
+      "as_of": "2026-05-22",
+      "source": "https://www.englandfootball.com/articles/2026/May/22/england-mens-world-cup-2026-squad-named-by-thomas-tuchel-20262205",
+      "confidence": "high"
+    },
+    "qualification": {
+      "value": "Qualified as a UEFA group winner (direct) in 2025 European Qualifiers",
+      "as_of": "2025-11-30",
+      "source": "https://www.uefa.com/european-qualifiers/news/029f-1f318027c4dd-8e9bab478b48-1000--world-cup-2026-which-european-teams-have-qualified/",
+      "confidence": "high"
+    },
+    "recent_form": {
+      "value": "Euro 2024 runners-up (lost final to Spain). Enter 2026 ranked top-4 under Tuchel.",
+      "as_of": "2026-05-22",
+      "source": "https://www.uefa.com/european-qualifiers/news/02a6-20d159242c3b-d58c8742586a-1000--england-at-the-world-cup-2026-squad-fixtures-group-and-hi/",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Contender / favorite — top-4 ranked, perennial 'it's coming home' pressure",
+      "as_of": "2026-06-09",
+      "source": "https://www.espn.com/soccer/story/_/id/48677225/fifa-world-cup-power-rankings-spain-brazil-germany-england-argentina",
+      "confidence": "high"
+    },
+    "key_players": {
+      "value": "Harry Kane (captain, No. 9), Jude Bellingham (No. 10), Bukayo Saka, Marcus Rashford",
+      "as_of": "2026-06-02",
+      "source": "https://www.englandfootball.com/articles/2026/Jun/02/england-men-fifa-world-cup-2026-squad-numbers-revealed-20260206",
+      "confidence": "high"
+    },
+    "squad_news": {
+      "value": "Tuchel's 26 led by captain Harry Kane at his 3rd World Cup (equalling Billy Wright's England record). Notable omissions after poor club seasons: Phil Foden, Cole Palmer and Trent Alexander-Arnold all left out.",
+      "as_of": "2026-05-22",
+      "source": "https://www.espn.com/soccer/story/_/id/48823863/meet-england-2026-world-cup-squad-26-players-picked-thomas-tuchel-why",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/1280px-Flag_of_England.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Original: traditional Vector:  Nicholas Shanks / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-09"
+  },
+  "active_narratives": [
+    "england-its-coming-home"
+  ],
+  "last_verified": "2026-06-09",
+  "code": "ENG"
+}

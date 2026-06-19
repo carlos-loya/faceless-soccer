@@ -1,0 +1,63 @@
+{
+  "slug": "lamine-yamal",
+  "type": "player",
+  "name": "Lamine Yamal",
+  "aliases": [
+    "Yamal"
+  ],
+  "facts": {
+    "age": {
+      "value": 18,
+      "as_of": "2026-06-09",
+      "source": "https://www.foxsports.com/stories/soccer/2026-world-cup-young-player-tournament-odds-lamine-yamal-favored",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Barcelona",
+      "as_of": "2026-06-09",
+      "source": "https://everythingbarca.com/spain-preview-lamine-yamal-and-pedri-crucial-to-la-roja-s-chances-01ktce50yw8w",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "Spain",
+      "as_of": "2026-06-09",
+      "source": "https://kashmirobserver.net/2026/06/08/lamine-yamal-to-lead-spain-at-world-cup/",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Winger",
+      "as_of": "2026-06-09",
+      "source": "https://www.aljazeera.com/sports/2026/6/8/yamal-williams-to-be-available-for-spains-world-cup-opener",
+      "confidence": "high"
+    },
+    "fitness": {
+      "value": "Returned from a groin injury; cleared for Spain's World Cup opener",
+      "as_of": "2026-06-08",
+      "source": "https://www.aljazeera.com/sports/2026/6/8/yamal-williams-to-be-available-for-spains-world-cup-opener",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Talisman leading Spain into WC 2026; betting favorite for Young Player of the Tournament",
+      "as_of": "2026-06-08",
+      "source": "https://www.foxsports.com/stories/soccer/2026-world-cup-young-player-tournament-odds-lamine-yamal-favored",
+      "confidence": "high"
+    },
+    "career_records": {
+      "value": "Youngest player and youngest scorer in European Championship history (Euro 2024, aged 16/17); among the youngest to play and score in the Champions League for Barcelona",
+      "as_of": "2026-06-09",
+      "source": "widely-reported historical record (verify exact figures before quoting precise stat lines)",
+      "confidence": "med"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Lamine_Yamal_in_2025.jpg",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "attribution": "Biso / CC BY 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-09"
+  },
+  "active_narratives": [
+    "yamal-next-messi"
+  ],
+  "last_verified": "2026-06-09"
+}

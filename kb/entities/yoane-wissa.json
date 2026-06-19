@@ -1,0 +1,43 @@
+{
+  "slug": "yoane-wissa",
+  "type": "player",
+  "name": "Yoane Wissa",
+  "aliases": [
+    "Wissa"
+  ],
+  "facts": {
+    "club": {
+      "value": "Brentford (Premier League)",
+      "as_of": "2026-06-17",
+      "source": "https://www.transfermarkt.com/yoane-wissa/profil/spieler/519822",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "DR Congo",
+      "as_of": "2026-06-17",
+      "source": "https://www.transfermarkt.com/yoane-wissa/profil/spieler/519822",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Forward / Winger",
+      "as_of": "2026-06-17",
+      "source": "https://www.transfermarkt.com/yoane-wissa/profil/spieler/519822",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Scored DR Congo's first-ever World Cup goal in the 1-1 draw vs Portugal on 17 June 2026 at NRG Stadium, Houston. Equalized in the first half to earn DR Congo their first World Cup point since 1974.",
+      "as_of": "2026-06-17",
+      "source": "https://www.ndtvprofit.com/sports/yoane-wissa-dr-congo-first-ever-world-cup-goal-portugal-fifa-world-cup-2026-11651410",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/RC_Lens_-_FC_Lorient_%2823-04-2019%29_20.jpg",
+    "license": "CC0",
+    "license_url": "",
+    "attribution": "Supporterhéninois / CC0 via Wikimedia Commons",
+    "as_of": "2026-06-17"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-17"
+}

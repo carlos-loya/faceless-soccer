@@ -1,0 +1,124 @@
+{
+  "format": "post_match",
+  "topic": "Norway 4-1 Iraq: Haaland's brace on World Cup debut",
+  "subject": "erling-haaland",
+  "matchup": ["iraq", "norway"],
+  "target_duration_seconds": 28,
+  "hook": {
+    "first_frame_text": "55 goals for Norway. Zero at a World Cup.",
+    "spoken_hook": "Fifty-five goals for Norway. Not one at a World Cup. Tonight changed that.",
+    "hook_type": "shock_number"
+  },
+  "retention_mechanic": "seamless_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "55 GOALS. ZERO WORLD CUP MINUTES.",
+      "voiceover": "55 goals for Norway. Zero at a World Cup. Until tonight.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Floodlights in a dark stadium, moody blue atmosphere, bokeh effect, anticipation before a big match.",
+      "visual_source": "stock_video",
+      "visual_query": "floodlight-bokeh",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "28 YEARS. ONE STAGE.",
+      "voiceover": "28 years Norway waited. Their superstar finally arrived.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Erling Haaland in Norway kit, dramatic stadium lighting, dark moody tones.",
+      "visual_source": "entity",
+      "visual_query": "erling-haaland",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 4
+    },
+    {
+      "index": 3,
+      "on_screen_text": "29' — FIRST WORLD CUP GOAL",
+      "voiceover": "29 minutes. His first World Cup shot hit the net.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Crowd erupting in a stadium, gold and black atmosphere, silhouette celebration.",
+      "visual_source": "stock_video",
+      "visual_query": "crowd-erupt",
+      "sticker_entity": "",
+      "score": "0-1",
+      "duration_seconds": 4
+    },
+    {
+      "index": 4,
+      "on_screen_text": "HUSSEIN ANSWERS — 39'",
+      "voiceover": "Iraq fought back. Hussein leveled it.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Night stadium under floodlights, tense atmosphere, two silhouetted players jumping for a header.",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "score": "1-1",
+      "duration_seconds": 4
+    },
+    {
+      "index": 5,
+      "on_screen_text": "HAALAND POUNCES. NORWAY ROLLS.",
+      "voiceover": "A gift. Haaland pounced. Header. Own goal. 4-1.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Gold confetti falling on a dark stadium, celebration atmosphere, Norway colors.",
+      "visual_source": "stock_video",
+      "visual_query": "gold-confetti",
+      "sticker_entity": "",
+      "score": "1-4",
+      "duration_seconds": 5
+    },
+    {
+      "index": 6,
+      "on_screen_text": "GROUP I",
+      "voiceover": "Norway top on goal difference. Wide open.",
+      "stat_callout": "",
+      "graphic_type": "group_table",
+      "graphic_prompt": "Night stadium atmosphere as background for group standings table.",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "score": "",
+      "group_table": [
+        {"team": "norway", "points": 3, "played": 1, "gd": 3, "highlight": true},
+        {"team": "france", "points": 3, "played": 1, "gd": 2},
+        {"team": "senegal", "points": 0, "played": 1, "gd": -2},
+        {"team": "iraq", "points": 0, "played": 1, "gd": -3}
+      ],
+      "duration_seconds": 5
+    },
+    {
+      "index": 7,
+      "on_screen_text": "SUBSCRIBE — DAILY WORLD CUP",
+      "voiceover": "Subscribe for your daily World Cup stories.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Gold confetti falling on a dark stadium background. Overlaid: 'SUBSCRIBE — DAILY WORLD CUP'. TikiTakaFootyTV gold branding.",
+      "visual_source": "stock_video",
+      "visual_query": "gold-confetti",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 3
+    }
+  ],
+  "comment_bait": "Norway and France both won. Who tops Group I? Screenshot this and check back in a week.",
+  "cta": "Follow for your daily World Cup stories",
+  "music_mood": "epic build-up with a triumphant drop",
+  "thumbnail": {
+    "text": "HIS FIRST WORLD CUP",
+    "concept": "Erling Haaland portrait in Norway kit, dramatic lighting, title text bottom-right in gold"
+  },
+  "youtube_title": "Norway 4-1 Iraq: Haaland's Brace on World Cup Debut | Group I | World Cup 2026",
+  "youtube_description": "Erling Haaland scored twice on his World Cup debut as Norway beat Iraq 4-1 in Boston. Norway return to the World Cup for the first time since 1998 — and their superstar striker made it a night to remember.\n\nScorers:\n🇳🇴 Haaland 29', 43'\n🇮🇶 Hussein 39'\n🇳🇴 Østigård 76'\n🇳🇴 OG 90+6'\n\nGroup I standings:\nNorway — 3pts (+3)\nFrance — 3pts (+2)\nSenegal — 0pts (-2)\nIraq — 0pts (-3)\n\n#WorldCup2026 #Norway #Haaland",
+  "instagram_caption": "55 goals for Norway. Zero at a World Cup. Until tonight. 🖤💛\n\nErling Haaland announced himself on the biggest stage with a brace as Norway beat Iraq 4-1 in Boston. 28 years of waiting, and the superstar delivered.\n\nWho tops Group I — Norway or France? Screenshot this and prove me wrong in a week 👇",
+  "tiktok_caption": "55 goals. Zero World Cup minutes. Until tonight. Erling Haaland's World Cup debut was worth the wait 🖤💛 Norway 4-1 Iraq. Who tops Group I?",
+  "hashtags": ["WorldCup2026", "Haaland", "Norway", "FIFAWorldCup", "Soccer", "Football", "ErlingHaaland", "GroupI", "Boston", "TikiTakaFootyTV", "WorldCupShorts"]
+}

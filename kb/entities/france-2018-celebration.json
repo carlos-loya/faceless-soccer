@@ -1,0 +1,20 @@
+{
+  "slug": "france-2018-celebration",
+  "type": "moment",
+  "name": "France 2018 World Cup celebration",
+  "aliases": [
+    "Paris celebration"
+  ],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Finale_2018_sur_le_perchoir_%2843608847802%29.jpg",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "attribution": "Fr\u00e9d\u00e9rik Vuille / CC BY 2.0 via Wikimedia Commons",
+    "as_of": "2026-06-09",
+    "curated": true,
+    "curated_note": "Vision-vetted: Paris boulevard crowd celebrating the 2018 final."
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-09"
+}

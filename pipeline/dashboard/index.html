@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TIKITAKAFOOTYTV · MISSION CONTROL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#08080a; --bg-soft:#0e0e12; --panel:#121217; --panel-2:#16161c;
+    --line:rgba(255,255,255,.08); --line-2:rgba(255,255,255,.14);
+    --ink:#f4f1e9; --dim:#8c8c97; --faint:#5b5b66;
+    --gold:#f6c945; --gold-deep:#caa12e;
+    --live:#ff3b3b; --amber:#ffae35; --cyan:#46d8ff; --green:#39d98a; --violet:#b78bff;
+    --r:14px; --mono:"IBM Plex Mono",monospace; --disp:"Anton",sans-serif; --body:"Archivo",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%}
+  body{
+    background:var(--bg); color:var(--ink); font-family:var(--mono);
+    -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  }
+  /* floodlight + grid + grain atmosphere */
+  body::before{
+    content:""; position:fixed; inset:0; pointer-events:none; z-index:0;
+    background:
+      radial-gradient(120% 75% at 18% -10%, rgba(246,201,69,.13), transparent 55%),
+      radial-gradient(90% 60% at 92% 0%, rgba(70,216,255,.06), transparent 50%),
+      linear-gradient(180deg, #0b0b0f 0%, #08080a 60%, #060608 100%);
+  }
+  body::after{
+    content:""; position:fixed; inset:0; pointer-events:none; z-index:1; opacity:.5;
+    background-image:
+      linear-gradient(rgba(255,255,255,.022) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.022) 1px, transparent 1px);
+    background-size:46px 46px;
+    -webkit-mask-image:radial-gradient(120% 100% at 50% 0%, #000 30%, transparent 90%);
+            mask-image:radial-gradient(120% 100% at 50% 0%, #000 30%, transparent 90%);
+  }
+  .scan{position:fixed; inset:0; pointer-events:none; z-index:2; opacity:.35; mix-blend-mode:overlay;
+    background:repeating-linear-gradient(0deg, rgba(255,255,255,.04) 0 1px, transparent 1px 3px);}
+  #app{position:relative; z-index:3}
+
+  a{color:inherit}
+  ::selection{background:var(--gold); color:#000}
+
+  /* ---------- top bar ---------- */
+  header{
+    position:sticky; top:0; z-index:30; backdrop-filter:blur(10px);
+    background:linear-gradient(180deg, rgba(8,8,10,.92), rgba(8,8,10,.74));
+    border-bottom:1px solid var(--line);
+    display:flex; align-items:center; gap:18px; padding:14px 22px;
+  }
+  .brand{display:flex; align-items:center; gap:13px; min-width:0}
+  .monogram{
+    width:46px; height:46px; border-radius:11px; flex:none;
+    background:linear-gradient(145deg, var(--gold), var(--gold-deep));
+    color:#1a1305; font-family:var(--disp); font-size:23px; letter-spacing:-1px;
+    display:grid; place-items:center; box-shadow:0 6px 22px rgba(246,201,69,.32), inset 0 1px 0 rgba(255,255,255,.4);
+  }
+  .brand h1{font-family:var(--disp); font-size:20px; letter-spacing:.5px; margin:0; line-height:1}
+  .brand .sub{font-size:10.5px; color:var(--dim); letter-spacing:3px; margin-top:4px}
+  .onair{
+    display:flex; align-items:center; gap:8px; font-size:11px; letter-spacing:2.5px;
+    color:var(--live); border:1px solid rgba(255,59,59,.35); background:rgba(255,59,59,.07);
+    padding:7px 12px; border-radius:999px; font-weight:700;
+  }
+  .onair .dot{width:9px; height:9px; border-radius:50%; background:var(--live);
+    box-shadow:0 0 0 0 rgba(255,59,59,.6); animation:pulse 1.8s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,59,59,.55)}70%{box-shadow:0 0 0 9px rgba(255,59,59,0)}100%{box-shadow:0 0 0 0 rgba(255,59,59,0)}}
+  .spacer{flex:1}
+  .telem{display:flex; gap:10px; flex-wrap:wrap}
+  .chip{
+    border:1px solid var(--line); background:var(--panel); border-radius:10px;
+    padding:7px 12px; display:flex; flex-direction:column; align-items:center; min-width:62px;
+  }
+  .chip b{font-family:var(--disp); font-size:21px; line-height:.9; color:var(--ink)}
+  .chip span{font-size:9px; letter-spacing:1.6px; color:var(--dim); margin-top:4px}
+  .chip.live b{color:var(--green)}
+  .clock{font-size:12px; color:var(--gold); letter-spacing:1px; text-align:right; min-width:96px}
+  .clock small{display:block; color:var(--faint); font-size:9px; letter-spacing:2px; margin-top:3px}
+
+  /* ---------- signal chain ---------- */
+  .chain{display:flex; align-items:center; gap:0; padding:11px 22px; border-bottom:1px solid var(--line);
+    background:rgba(255,255,255,.012); overflow-x:auto}
+  .stage{display:flex; align-items:center; gap:9px; font-size:10.5px; letter-spacing:2px; color:var(--dim); white-space:nowrap}
+  .stage i{width:7px; height:7px; border-radius:50%; background:var(--faint); flex:none}
+  .stage.t i{background:var(--violet)} .stage.s i{background:var(--gold)}
+  .stage.b i{background:var(--cyan)} .stage.d i{background:var(--amber)}
+  .stage.p i{background:var(--live)} .stage.l i{background:var(--green)}
+  .arrow{flex:1; min-width:24px; height:1px; margin:0 14px;
+    background:linear-gradient(90deg, var(--line-2), transparent)}
+
+  /* ---------- layout ---------- */
+  main{display:grid; grid-template-columns:380px 1fr; gap:20px; padding:22px; max-width:1500px; margin:0 auto;
+    padding-bottom:230px;}
+  @media(max-width:1080px){main{grid-template-columns:1fr}}
+  .col{display:flex; flex-direction:column; gap:18px}
+
+  .card{background:linear-gradient(180deg, var(--panel), var(--bg-soft)); border:1px solid var(--line);
+    border-radius:var(--r); overflow:hidden}
+  .card > .head{display:flex; align-items:center; gap:10px; padding:13px 16px; border-bottom:1px solid var(--line)}
+  .card > .head h2{font-family:var(--disp); font-size:15px; letter-spacing:1.5px; margin:0}
+  .card > .head .tag{font-size:9px; letter-spacing:2px; color:var(--dim)}
+  .card > .body{padding:16px}
+
+  /* buttons */
+  .btn{font-family:var(--mono); font-weight:600; font-size:11px; letter-spacing:1.3px;
+    border:1px solid var(--line-2); background:var(--panel-2); color:var(--ink);
+    padding:9px 13px; border-radius:9px; cursor:pointer; transition:.16s; display:inline-flex;
+    align-items:center; gap:7px; text-transform:uppercase; white-space:nowrap}
+  .btn:hover{transform:translateY(-1px); border-color:var(--ink)}
+  .btn:disabled{opacity:.35; cursor:not-allowed; transform:none}
+  .btn .ic{font-size:12px}
+  .btn.gold{background:linear-gradient(145deg,var(--gold),var(--gold-deep)); color:#1a1305; border-color:transparent; box-shadow:0 4px 16px rgba(246,201,69,.22)}
+  .btn.cyan{border-color:rgba(70,216,255,.4); color:var(--cyan)}
+  .btn.cyan:hover{background:rgba(70,216,255,.1)}
+  .btn.amber{border-color:rgba(255,174,53,.4); color:var(--amber)}
+  .btn.amber:hover{background:rgba(255,174,53,.1)}
+  .btn.live{border-color:rgba(255,59,59,.45); color:var(--live)}
+  .btn.live:hover{background:rgba(255,59,59,.1)}
+  .btn.green{border-color:rgba(57,217,138,.45); color:var(--green)}
+  .btn.green:hover{background:rgba(57,217,138,.1)}
+  .btn.ghost{background:transparent; border-color:var(--line)}
+  .btn.sm{padding:6px 9px; font-size:10px}
+  .btn.block{width:100%; justify-content:center}
+
+  input,textarea,select{font-family:var(--mono); font-size:12px; color:var(--ink);
+    background:#0a0a0d; border:1px solid var(--line-2); border-radius:9px; padding:10px 11px; width:100%; outline:none}
+  input:focus,textarea:focus,select:focus{border-color:var(--gold)}
+  textarea{resize:vertical; min-height:74px; line-height:1.5}
+  label.lbl{font-size:10px; letter-spacing:2px; color:var(--dim); display:block; margin:0 0 7px}
+
+  /* intake topic list */
+  .topiclist{display:flex; flex-direction:column; gap:8px; margin-top:14px; max-height:42vh; overflow:auto}
+  .topicrow{display:flex; align-items:center; gap:10px; padding:11px 12px; border:1px solid var(--line);
+    border-radius:10px; cursor:pointer; transition:.15s; background:rgba(255,255,255,.012)}
+  .topicrow:hover{border-color:var(--violet); background:rgba(183,139,255,.06)}
+  .topicrow .pin{color:var(--violet); font-size:13px}
+  .topicrow .nm{flex:1; font-size:11.5px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+  .topicrow .when{font-size:9.5px; color:var(--faint)}
+  .empty{color:var(--faint); font-size:11px; text-align:center; padding:22px 8px; letter-spacing:.5px}
+
+  /* board */
+  .boardhead{display:flex; align-items:center; gap:12px; margin-bottom:4px}
+  .boardhead h2{font-family:var(--disp); font-size:22px; letter-spacing:1px; margin:0}
+  .boardhead .ct{font-size:11px; color:var(--dim); letter-spacing:1px}
+  .filters{display:flex; gap:7px; margin-left:auto; flex-wrap:wrap}
+  .fbtn{font-size:10px; letter-spacing:1.5px; padding:6px 11px; border-radius:999px; cursor:pointer;
+    border:1px solid var(--line); background:var(--panel); color:var(--dim); text-transform:uppercase}
+  .fbtn.on{color:#1a1305; background:var(--gold); border-color:transparent; font-weight:700}
+
+  .vid{background:linear-gradient(180deg, var(--panel), var(--bg-soft)); border:1px solid var(--line);
+    border-radius:var(--r); padding:16px 17px; transition:.18s; position:relative; overflow:hidden;
+    opacity:0; transform:translateY(8px); animation:rise .5s forwards}
+  @keyframes rise{to{opacity:1; transform:none}}
+  .vid:hover{border-color:var(--line-2)}
+  .vid::before{content:""; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--accent,var(--faint))}
+  .vid .top{display:flex; align-items:flex-start; gap:12px}
+  .vid .stem{font-family:var(--disp); font-size:18px; letter-spacing:.5px; line-height:1.05; flex:1; word-break:break-word}
+  .fmt{font-size:9px; letter-spacing:1.6px; color:var(--gold); border:1px solid rgba(246,201,69,.3);
+    border-radius:6px; padding:4px 7px; white-space:nowrap; text-transform:uppercase}
+  .vid .hook{font-family:var(--body); font-size:13.5px; color:var(--ink); margin:10px 0 4px; line-height:1.4}
+  .vid .hook::before{content:"“"; color:var(--gold)} .vid .hook::after{content:"”"; color:var(--gold)}
+  .vid .meta{font-size:10px; color:var(--dim); letter-spacing:.5px; display:flex; gap:14px; flex-wrap:wrap; margin-bottom:13px}
+  .vid .meta b{color:var(--ink)}
+
+  /* per-card pipeline track */
+  .track{display:flex; align-items:center; gap:0; margin:0 0 14px}
+  .node{display:flex; flex-direction:column; align-items:center; gap:6px; flex:none}
+  .node .dot{width:13px; height:13px; border-radius:50%; border:1.5px solid var(--faint); background:transparent; position:relative}
+  .node.on .dot{background:var(--c); border-color:var(--c); box-shadow:0 0 10px -1px var(--c)}
+  .node.run .dot{border-color:var(--c); animation:spinp 1s linear infinite}
+  @keyframes spinp{0%{box-shadow:0 0 0 0 var(--c)}100%{box-shadow:0 0 0 7px transparent}}
+  .node small{font-size:8px; letter-spacing:1px; color:var(--faint)}
+  .node.on small{color:var(--ink)}
+  .link{flex:1; height:2px; background:var(--faint); opacity:.3; min-width:14px}
+  .link.on{opacity:1; background:linear-gradient(90deg,var(--green),var(--cyan))}
+
+  .actions{display:flex; flex-wrap:wrap; gap:8px}
+  .actions .gap{flex-basis:100%; height:0}
+  .warn{font-size:10px; color:var(--amber); margin-top:10px; letter-spacing:.3px}
+  .pubrow{display:flex; gap:8px; flex-wrap:wrap; margin-top:11px; font-size:10px}
+  .plink{display:inline-flex; align-items:center; gap:6px; border:1px solid var(--line); border-radius:7px;
+    padding:6px 9px; color:var(--green); letter-spacing:1px; text-decoration:none}
+  .plink.tt{color:var(--cyan)} .plink:hover{border-color:currentColor}
+
+  /* ---------- transmission dock ---------- */
+  .dock{position:fixed; left:0; right:0; bottom:0; z-index:40; border-top:1px solid var(--line-2);
+    background:linear-gradient(180deg, rgba(10,10,13,.97), rgba(6,6,8,.99)); backdrop-filter:blur(8px);
+    transition:transform .25s; transform:translateY(calc(100% - 42px))}
+  .dock.open{transform:translateY(0)}
+  .dockbar{height:42px; display:flex; align-items:center; gap:14px; padding:0 18px; cursor:pointer}
+  .dockbar h3{font-size:11px; letter-spacing:2.5px; margin:0; color:var(--gold)}
+  .dockbar .led{width:8px;height:8px;border-radius:50%;background:var(--faint)}
+  .dockbar .led.busy{background:var(--amber); animation:pulse 1.4s infinite}
+  .dockbar .summary{font-size:10.5px; color:var(--dim); letter-spacing:.5px}
+  .dockbar .chev{margin-left:auto; color:var(--dim); font-size:12px; transition:.25s}
+  .dock.open .chev{transform:rotate(180deg)}
+  .dockbody{height:min(46vh,360px); display:grid; grid-template-columns:240px 1fr}
+  .joblist{border-right:1px solid var(--line); overflow:auto; padding:8px}
+  .jrow{padding:9px 10px; border-radius:8px; cursor:pointer; margin-bottom:5px; border:1px solid transparent}
+  .jrow:hover{background:rgba(255,255,255,.03)}
+  .jrow.sel{background:rgba(246,201,69,.08); border-color:rgba(246,201,69,.25)}
+  .jrow .l1{display:flex; align-items:center; gap:8px; font-size:11px}
+  .jrow .l1 .k{color:var(--ink); font-weight:600; letter-spacing:1px; text-transform:uppercase; font-size:9.5px}
+  .jrow .l2{font-size:10px; color:var(--dim); margin-top:4px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+  .st{font-size:9px; padding:2px 6px; border-radius:5px; letter-spacing:1px; text-transform:uppercase; margin-left:auto}
+  .st.running{color:var(--amber); background:rgba(255,174,53,.12)}
+  .st.done{color:var(--green); background:rgba(57,217,138,.12)}
+  .st.failed{color:var(--live); background:rgba(255,59,59,.12)}
+  .console{padding:14px 16px; overflow:auto; font-size:11.5px; line-height:1.55; color:#cfcfd6; white-space:pre-wrap; word-break:break-word}
+  .console .blink{color:var(--green); animation:bk 1s steps(2) infinite}
+  @keyframes bk{50%{opacity:0}}
+
+  /* ---------- modal ---------- */
+  .overlay{position:fixed; inset:0; z-index:60; background:rgba(4,4,6,.82); backdrop-filter:blur(4px);
+    display:none; align-items:center; justify-content:center; padding:28px}
+  .overlay.show{display:flex}
+  .modal{background:var(--panel); border:1px solid var(--line-2); border-radius:16px; max-width:min(94vw,1000px);
+    width:100%; max-height:92vh; overflow:hidden; display:flex; flex-direction:column;
+    box-shadow:0 30px 90px rgba(0,0,0,.6)}
+  .modal .mh{display:flex; align-items:center; gap:12px; padding:14px 18px; border-bottom:1px solid var(--line)}
+  .modal .mh h3{font-family:var(--disp); font-size:16px; letter-spacing:1px; margin:0; flex:1}
+  .modal .mb{overflow:auto; padding:0}
+  .modal iframe{width:100%; height:78vh; border:0; background:#000}
+  .modal video{width:100%; max-height:80vh; background:#000; display:block}
+  .x{cursor:pointer; color:var(--dim); font-size:20px; line-height:1; padding:4px 8px; border-radius:8px}
+  .x:hover{color:var(--ink); background:rgba(255,255,255,.06)}
+  .reader{padding:24px 30px; font-family:var(--body); line-height:1.65; max-width:760px}
+  .reader h1,.reader h2,.reader h3{font-family:var(--disp); letter-spacing:.5px; color:var(--gold)}
+  .reader h1{font-size:24px} .reader h2{font-size:19px; margin-top:26px} .reader h3{font-size:15px}
+  .reader code{font-family:var(--mono); background:#0a0a0d; padding:2px 6px; border-radius:5px; font-size:.9em; color:var(--cyan)}
+  .reader ul{padding-left:20px} .reader li{margin:6px 0}
+  .reader strong{color:var(--ink)}
+  .reader hr{border:0; border-top:1px solid var(--line); margin:22px 0}
+
+  /* confirm */
+  .confirm{max-width:440px}
+  .confirm .mb{padding:20px}
+  .confirm p{font-family:var(--body); line-height:1.55; color:var(--dim); font-size:13.5px}
+  .confirm .danger{color:var(--ink)} .confirm .danger b{color:var(--gold)}
+  .confirm .row{display:flex; gap:10px; margin-top:18px; justify-content:flex-end}
+  .toast{position:fixed; bottom:58px; left:50%; transform:translateX(-50%); z-index:80;
+    background:var(--panel-2); border:1px solid var(--line-2); padding:11px 18px; border-radius:10px;
+    font-size:11.5px; letter-spacing:.5px; box-shadow:0 12px 40px rgba(0,0,0,.5); opacity:0; transition:.25s; pointer-events:none}
+  .toast.show{opacity:1; transform:translateX(-50%) translateY(-4px)}
+  .toast.err{border-color:rgba(255,59,59,.5); color:var(--live)}
+  .toast.ok{border-color:rgba(57,217,138,.5); color:var(--green)}
+</style>
+</head>
+<body>
+<div class="scan"></div>
+<div id="app">
+
+  <header>
+    <div class="brand">
+      <div class="monogram">TT</div>
+      <div>
+        <h1>MISSION CONTROL</h1>
+        <div class="sub">TIKITAKAFOOTYTV · DAILY WORLD CUP</div>
+      </div>
+    </div>
+    <div class="onair"><span class="dot"></span>ON AIR</div>
+    <div class="spacer"></div>
+    <div class="telem" id="telem"></div>
+    <div class="clock" id="clock">--:--:--<small>MATCHDAY CLOCK</small></div>
+  </header>
+
+  <div class="chain">
+    <div class="stage t"><i></i>TOPIC</div><div class="arrow"></div>
+    <div class="stage s"><i></i>SPEC</div><div class="arrow"></div>
+    <div class="stage b"><i></i>STORYBOARD</div><div class="arrow"></div>
+    <div class="stage d"><i></i>DRAFT</div><div class="arrow"></div>
+    <div class="stage p"><i></i>PRODUCTION</div><div class="arrow"></div>
+    <div class="stage l"><i></i>LIVE</div>
+  </div>
+
+  <main>
+    <!-- LEFT: ideation intake -->
+    <div class="col">
+      <div class="card">
+        <div class="head"><h2>TOPIC INTAKE</h2><span class="tag" style="margin-left:auto">WHAT'S VIRAL</span></div>
+        <div class="body">
+          <button class="btn gold block" id="gatherBtn" onclick="gatherTopics()">
+            <span class="ic">⚡</span> RUN OUTLIER FEED
+          </button>
+          <div style="font-size:9.5px;color:var(--faint);letter-spacing:.5px;margin-top:8px">
+            outlier_ingest.py · deterministic · free (YT Data API)
+          </div>
+          <label class="lbl" style="margin-top:16px">CACHED BRIEFS <span style="color:var(--faint)">· out/topics</span></label>
+          <div class="topiclist" id="topiclist"></div>
+          <div style="font-size:9.5px;color:var(--faint);letter-spacing:.5px;margin-top:10px;line-height:1.5">
+            grounded <b style="color:var(--dim)">/find-topics</b> briefs you save here appear above automatically.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="head"><h2>STORYBOARDS</h2><span class="tag" id="sbcount" style="margin-left:auto"></span></div>
+        <div class="body">
+          <div class="topiclist" id="sblist" style="max-height:34vh"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: production board -->
+    <div class="col">
+      <div class="boardhead">
+        <h2>PRODUCTION BOARD</h2>
+        <span class="ct" id="boardct"></span>
+        <div class="filters" id="filters">
+          <span class="fbtn on" data-f="all" onclick="setFilter('all')">ALL</span>
+          <span class="fbtn" data-f="todo" onclick="setFilter('todo')">NEEDS WORK</span>
+          <span class="fbtn" data-f="ready" onclick="setFilter('ready')">READY TO POST</span>
+          <span class="fbtn" data-f="live" onclick="setFilter('live')">LIVE</span>
+        </div>
+      </div>
+      <div id="board" class="col"></div>
+    </div>
+  </main>
+</div>
+
+<!-- transmission dock -->
+<div class="dock" id="dock">
+  <div class="dockbar" onclick="toggleDock()">
+    <span class="led" id="dockled"></span>
+    <h3>TRANSMISSION LOG</h3>
+    <span class="summary" id="docksummary">idle</span>
+    <span class="chev">▲</span>
+  </div>
+  <div class="dockbody">
+    <div class="joblist" id="joblist"></div>
+    <div class="console" id="console"><span style="color:var(--faint)">Select a transmission to view its output…</span></div>
+  </div>
+</div>
+
+<!-- modals -->
+<div class="overlay" id="overlay">
+  <div class="modal" id="modalShell">
+    <div class="mh"><h3 id="modalTitle"></h3><span class="x" onclick="closeModal()">✕</span></div>
+    <div class="mb" id="modalBody"></div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const $ = s => document.querySelector(s);
+let STATE = null, FILTER = 'all', SELJOB = null, JOBOFF = {}, POLL = null;
+
+// only touch the DOM when the underlying data actually changes — stops the poll
+// from re-rendering (and re-animating) identical content every few seconds.
+const SIG = {};
+let boardRendered = false;
+function changed(key, data){
+  const s = JSON.stringify(data);
+  if(SIG[key] === s) return false;
+  SIG[key] = s; return true;
+}
+
+// ---------------- clock ----------------
+setInterval(()=>{
+  const d = new Date();
+  $('#clock').innerHTML = d.toTimeString().slice(0,8) + '<small>MATCHDAY CLOCK</small>';
+}, 1000);
+
+// ---------------- fetch + render ----------------
+async function loadState(){
+  try{
+    const r = await fetch('/api/state'); STATE = await r.json();
+    renderTelem(); renderTopics(); renderStoryboards(); renderBoard(); renderJobs();
+  }catch(e){ /* server down */ }
+}
+function ago(ts){
+  if(!ts) return '';
+  const s = Math.max(0,(Date.now()/1000)-ts);
+  if(s<60) return Math.floor(s)+'s ago';
+  if(s<3600) return Math.floor(s/60)+'m ago';
+  if(s<86400) return Math.floor(s/3600)+'h ago';
+  return Math.floor(s/86400)+'d ago';
+}
+function esc(s){return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+
+function renderTelem(){
+  const t = STATE.telemetry;
+  if(!changed('telem', t)) return;
+  $('#telem').innerHTML = [
+    ['SPECS', t.specs, ''], ['BOARDS', t.storyboards, ''], ['DRAFTS', t.drafts, ''],
+    ['MASTERS', t.productions, ''], ['LIVE', t.published, 'live'], ['TOPICS', t.topics, '']
+  ].map(([l,v,c])=>`<div class="chip ${c}"><b>${v}</b><span>${l}</span></div>`).join('');
+}
+
+function renderTopics(){
+  const el = $('#topiclist');
+  if(!changed('topics', STATE.topics.map(t=>[t.path,t.mtime]))) return;
+  if(!STATE.topics.length){ el.innerHTML='<div class="empty">no topic briefs yet —<br>gather today\'s topics ↑</div>'; return; }
+  el.innerHTML = STATE.topics.map(t=>`
+    <div class="topicrow" onclick="openTopic('${t.path}','${esc(t.name)}')">
+      <span class="pin">◆</span>
+      <span class="nm">${esc(t.name)}</span>
+      <span class="when">${ago(t.mtime)}</span>
+    </div>`).join('');
+}
+
+function renderStoryboards(){
+  const sbs = STATE.cards.filter(c=>c.storyboard)
+    .sort((a,b)=>b.storyboard.mtime-a.storyboard.mtime);
+  if(!changed('sb', sbs.map(c=>[c.stem,c.storyboard.mtime,c.storyboard.unresolved]))) return;
+  $('#sbcount').textContent = sbs.length+' BOARDS';
+  const el = $('#sblist');
+  if(!sbs.length){ el.innerHTML='<div class="empty">no storyboards yet —<br>hit ◱ STORYBOARD on a video</div>'; return; }
+  el.innerHTML = sbs.map(c=>{
+    const bad = c.storyboard.unresolved>0;
+    return `<div class="topicrow" onclick="openBoard('${c.storyboard.html}','${esc(c.stem)}')">
+      <span class="pin" style="color:${bad?'var(--amber)':'var(--cyan)'}">${bad?'⚠':'◱'}</span>
+      <span class="nm">${esc(c.stem)}</span>
+      <span class="when">${ago(c.storyboard.mtime)}</span>
+    </div>`;
+  }).join('');
+}
+
+const ACCENT = c => c.published.youtube ? 'var(--green)' :
+  c.production ? 'var(--live)' : c.draft ? 'var(--amber)' :
+  c.storyboard ? 'var(--cyan)' : 'var(--faint)';
+
+function cardStage(c){
+  if(c.published.youtube) return 'live';
+  if(c.production) return 'ready';
+  return 'todo';
+}
+
+function renderBoard(){
+  let cards = STATE.cards;
+  if(FILTER==='todo') cards = cards.filter(c=>cardStage(c)==='todo');
+  if(FILTER==='ready') cards = cards.filter(c=>cardStage(c)==='ready');
+  if(FILTER==='live') cards = cards.filter(c=>cardStage(c)==='live');
+
+  // signature of everything that affects how a card looks (incl. the active filter)
+  const sig = [FILTER, cards.map(c=>[
+    c.stem, c.format, c.hook, c.scenes, c.duration, c.matchup, c.subject,
+    !!c.storyboard, c.storyboard&&c.storyboard.unresolved, c.storyboard&&c.storyboard.warnings,
+    !!c.draft, !!c.production, Object.keys(c.published).sort(), c.running
+  ])];
+  if(!changed('board', sig)) return;
+
+  $('#boardct').textContent = `${cards.length} / ${STATE.cards.length} VIDEOS`;
+  const anim = !boardRendered;           // entry animation runs once, never on a poll re-render
+  const board = $('#board');
+  board.innerHTML = cards.map((c,i)=>cardHTML(c,i,anim)).join('') ||
+    '<div class="empty">no specs match this filter</div>';
+  boardRendered = true;
+}
+
+function node(label, key, on, running, color){
+  const cls = on ? 'on' : (running ? 'run' : '');
+  return `<div class="node ${cls}" style="--c:${color}"><div class="dot"></div><small>${label}</small></div>`;
+}
+function link(on){return `<div class="link ${on?'on':''}"></div>`;}
+
+function cardHTML(c,i,anim){
+  const run = c.running||[];
+  const isRun = k => run.includes(k);
+  const anyRun = run.length>0;
+  const sb=!!c.storyboard, dr=!!c.draft, pr=!!c.production, lv=!!c.published.youtube;
+
+  const track = `<div class="track">
+    ${node('SPEC','spec',true,false,'var(--gold)')}${link(sb||true)}
+    ${node('BOARD','sb',sb,isRun('storyboard'),'var(--cyan)')}${link(dr)}
+    ${node('DRAFT','dr',dr,isRun('draft'),'var(--amber)')}${link(pr)}
+    ${node('MASTER','pr',pr,isRun('production'),'var(--live)')}${link(lv)}
+    ${node('LIVE','lv',lv,isRun('publish'),'var(--green)')}
+  </div>`;
+
+  const meta = [
+    c.scenes?`<span><b>${c.scenes}</b> scenes</span>`:'',
+    c.duration?`<span><b>${c.duration}s</b> target</span>`:'',
+    c.matchup&&c.matchup.length?`<span>${c.matchup.map(esc).join(' v ').toUpperCase()}</span>`:'',
+    c.subject?`<span>subj <b>${esc(c.subject)}</b></span>`:''
+  ].filter(Boolean).join('');
+
+  // view buttons
+  const views=[];
+  if(sb) views.push(`<button class="btn ghost sm" onclick="openBoard('${c.storyboard.html}','${esc(c.stem)}')">◱ BOARD</button>`);
+  if(dr) views.push(`<button class="btn ghost sm" onclick="openVideo('${c.draft.path}','${esc(c.stem)} · DRAFT')">▷ DRAFT</button>`);
+  if(pr) views.push(`<button class="btn ghost sm" onclick="openVideo('${c.production.path}','${esc(c.stem)} · MASTER')">▷ MASTER</button>`);
+
+  // published links
+  const pubs=[];
+  if(c.published.youtube){
+    const u=c.published.youtube.url; const href=u.startsWith('http')?u:'#';
+    pubs.push(`<a class="plink" href="${href}" target="_blank">▶ YOUTUBE</a>`);
+  }
+  if(c.published.tiktok){
+    const u=c.published.tiktok.url; const href=u.startsWith('http')?u:'#';
+    pubs.push(`<a class="plink tt" href="${href}" target="_blank">♪ TIKTOK</a>`);
+  }
+
+  const warn = (sb && c.storyboard.unresolved>0)
+    ? `<div class="warn">⚠ ${c.storyboard.unresolved} scene(s) unresolved on the board</div>`
+    : (sb && c.storyboard.warnings && c.storyboard.warnings.length)
+    ? `<div class="warn">⚠ ${esc(c.storyboard.warnings.join(' · '))}</div>` : '';
+
+  const animStyle = anim ? `animation-delay:${i*45}ms` : `animation:none;opacity:1;transform:none`;
+  return `<div class="vid" style="--accent:${ACCENT(c)}; ${animStyle}">
+    <div class="top">
+      <div class="stem">${esc(c.stem)}</div>
+      <div class="fmt">${esc(c.format)}</div>
+    </div>
+    ${c.hook?`<div class="hook">${esc(c.hook)}</div>`:''}
+    <div class="meta">${meta}</div>
+    ${track}
+    <div class="actions">
+      <button class="btn cyan sm" ${isRun('storyboard')?'disabled':''} onclick="act('storyboard','${c.stem}')">
+        ${isRun('storyboard')?'◴ BOARDING…':'◱ STORYBOARD'}</button>
+      <button class="btn amber sm" ${anyRun?'disabled':''} onclick="act('draft','${c.stem}')">
+        ${isRun('draft')?'◴ RENDERING…':'▣ DRAFT'}</button>
+      <button class="btn live sm" ${anyRun?'disabled':''} onclick="confirmProd('${c.stem}')">
+        ${isRun('production')?'◴ MASTERING…':'● PRODUCTION'}</button>
+      <button class="btn green sm" ${(!pr||isRun('publish'))?'disabled':''} onclick="confirmPublish('${esc(c.stem)}')">
+        ${isRun('publish')?'◴ UPLOADING…':'▲ PUBLISH YT'}</button>
+      ${views.length?'<span class="gap"></span>'+views.join(''):''}
+    </div>
+    ${pubs.length?`<div class="pubrow">${pubs.join('')}</div>`:''}
+    ${warn}
+  </div>`;
+}
+
+// ---------------- actions ----------------
+async function act(action, stem, extra={}){
+  const r = await fetch('/api/action',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({action, stem, ...extra})});
+  const d = await r.json();
+  if(d.error){ toast(d.error,'err'); return null; }
+  toast(action.replace('_',' ')+' started','ok');
+  openDock(); SELJOB=d.job; await loadState(); renderJobs(); selectJob(d.job); fastPoll();
+  return d.job;
+}
+
+function gatherTopics(){
+  $('#gatherBtn').disabled=true; setTimeout(()=>$('#gatherBtn').disabled=false,2000);
+  act('gather_topics','');
+}
+
+// confirm dialogs (money / public)
+function confirmProd(stem){
+  showConfirm(
+    `PRODUCTION RENDER`,
+    `<p class="danger">This runs the <b>real ElevenLabs</b> voiceover for <b>${esc(stem)}</b> — it <b>spends credits</b>. Only do this once the draft + storyboard look right.</p>`,
+    [{label:'CANCEL',cls:'ghost'},{label:'● RENDER MASTER',cls:'live',go:()=>act('production',stem)}]
+  );
+}
+function toggleSched(){
+  $('#schedRow').style.display = $('#schedCb').checked ? 'block' : 'none';
+}
+function confirmPublish(stem){
+  const card = (STATE&&STATE.cards||[]).find(c=>c.stem===stem);
+  const title = card ? card.youtube_title : '';
+  const body = `<p class="danger">Publish <b>${esc(stem)}</b> to YouTube — this is <b>public and hard to undo</b>.</p>
+    <p style="margin-top:6px">${title?('"'+esc(title)+'"'):''}</p>
+    <label class="lbl" style="margin-top:14px">VISIBILITY</label>
+    <select id="visSel"><option value="public">public</option><option value="unlisted">unlisted</option><option value="private">private</option></select>
+    <label class="chk" style="margin-top:10px;display:flex;align-items:center;gap:6px">
+      <input type="checkbox" id="schedCb" onchange="toggleSched()"> Schedule for later
+    </label>
+    <div id="schedRow" style="display:none;margin-top:6px">
+      <input type="datetime-local" id="schedDt" style="width:100%">
+    </div>`;
+  showConfirm('PUBLISH TO YOUTUBE', body,
+    [{label:'CANCEL',cls:'ghost'},
+     {label:'▲ PUBLISH',cls:'green',go:()=>{
+       const extra = {visibility:$('#visSel').value};
+       if ($('#schedCb').checked && $('#schedDt').value) {
+         extra.publish_at = new Date($('#schedDt').value).toISOString();
+       }
+       act('publish',stem,extra);
+     }}]);
+}
+
+// ---------------- jobs / console ----------------
+function renderJobs(){
+  const jobs = (STATE&&STATE.jobs)||[];
+  const busy = jobs.some(j=>j.status==='running');
+  $('#dockled').className = 'led'+(busy?' busy':'');
+  const running = jobs.filter(j=>j.status==='running');
+  $('#docksummary').textContent = busy
+    ? `${running.length} transmission(s) live · ${running.map(j=>j.kind).join(', ')}`
+    : (jobs.length?`${jobs.length} in log · idle`:'idle');
+
+  if(!changed('jobs', [SELJOB, jobs.map(j=>[j.id,j.kind,j.stem,j.status,j.returncode])])) return;
+  $('#joblist').innerHTML = jobs.length ? jobs.map(j=>`
+    <div class="jrow ${SELJOB===j.id?'sel':''}" onclick="selectJob('${j.id}')">
+      <div class="l1"><span class="k">${j.kind.replace('_',' ')}</span>
+        <span class="st ${j.status}">${j.status}</span></div>
+      <div class="l2">${esc(j.stem||'—')} · ${ago(j.started)}</div>
+    </div>`).join('') : '<div class="empty">no transmissions yet</div>';
+}
+
+async function selectJob(id){
+  SELJOB=id; JOBOFF[id]=0; $('#console').innerHTML='';
+  renderJobs(); await tailJob(true);
+}
+async function tailJob(reset){
+  if(!SELJOB) return;
+  const off = reset?0:(JOBOFF[SELJOB]||0);
+  try{
+    const r = await fetch(`/api/job?id=${SELJOB}&offset=${off}`);
+    const d = await r.json();
+    if(d.error){ return; }
+    JOBOFF[SELJOB]=d.offset;
+    const con=$('#console');
+    if(reset) con.innerHTML='';
+    if(d.text){ con.append(document.createTextNode(d.text)); con.scrollTop=con.scrollHeight; }
+    // cursor
+    const old=con.querySelector('.blink'); if(old) old.remove();
+    if(d.status==='running'){ const b=document.createElement('span'); b.className='blink'; b.textContent='▋'; con.append(b); }
+  }catch(e){}
+}
+
+function fastPoll(){
+  clearInterval(POLL);
+  POLL=setInterval(async()=>{
+    await loadState();
+    if(SELJOB) await tailJob(false);
+    const busy=(STATE&&STATE.jobs||[]).some(j=>j.status==='running');
+    if(!busy){ clearInterval(POLL); POLL=setInterval(slowTick,4000); }
+  }, 1400);
+}
+async function slowTick(){ await loadState(); if(SELJOB) await tailJob(false); }
+
+// ---------------- dock + modal + toast ----------------
+function toggleDock(){ $('#dock').classList.toggle('open'); }
+function openDock(){ $('#dock').classList.add('open'); }
+
+function openModal(title, html, shellClass=''){
+  $('#modalTitle').textContent=title; $('#modalBody').innerHTML=html;
+  $('#modalShell').className='modal '+shellClass;
+  $('#overlay').classList.add('show');
+}
+function closeModal(){ $('#overlay').classList.remove('show'); $('#modalBody').innerHTML=''; }
+$('#overlay').addEventListener('click',e=>{ if(e.target.id==='overlay') closeModal(); });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeModal(); });
+
+function openBoard(path,title){ openModal(title+' · STORYBOARD', `<iframe src="/${path}"></iframe>`); }
+function openVideo(path,title){ openModal(title, `<video src="/${path}" controls autoplay playsinline></video>`); }
+async function openTopic(path,name){
+  openModal(name+' · TOPIC BRIEF', '<div class="reader">loading…</div>');
+  try{
+    const r=await fetch('/'+path); const md=await r.text();
+    $('#modalBody').innerHTML = `<div class="reader">${mdToHtml(md)}</div>`;
+  }catch(e){ $('#modalBody').innerHTML='<div class="reader">could not load brief</div>'; }
+}
+
+function showConfirm(title, bodyHtml, buttons){
+  const btns = buttons.map((b,i)=>`<button class="btn ${b.cls}" data-i="${i}">${b.label}</button>`).join('');
+  openModal(title, `<div class="mb"></div>`, 'confirm');
+  $('#modalBody').innerHTML = `${bodyHtml}<div class="row">${btns}</div>`;
+  $('#modalShell').className='modal confirm';
+  $('#modalBody').querySelectorAll('button').forEach((el,i)=>{
+    // Run the action BEFORE closeModal() — closeModal wipes #modalBody, so any
+    // input the action reads (e.g. #visSel for publish) must still be in the DOM.
+    el.onclick=()=>{ const b=buttons[i]; if(b.go){ const fn=b.go; try{ fn(); } finally { closeModal(); } } else closeModal(); };
+  });
+}
+
+let toastT;
+function toast(msg,kind=''){
+  const t=$('#toast'); t.textContent=msg; t.className='toast show '+kind;
+  clearTimeout(toastT); toastT=setTimeout(()=>t.className='toast '+kind,2600);
+}
+
+function setFilter(f){
+  FILTER=f; document.querySelectorAll('.fbtn').forEach(b=>b.classList.toggle('on',b.dataset.f===f));
+  renderBoard();
+}
+
+// tiny markdown renderer for topic briefs
+function mdToHtml(md){
+  const lines=md.split('\n'); let html=''; let inList=false, inCode=false;
+  const inline=s=>esc(s)
+    .replace(/`([^`]+)`/g,'<code>$1</code>')
+    .replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank" style="color:var(--cyan)">$1</a>');
+  for(let raw of lines){
+    if(raw.trim().startsWith('```')){ inCode=!inCode; html+=inCode?'<pre style="background:#0a0a0d;padding:12px;border-radius:8px;overflow:auto"><code>':'</code></pre>'; continue; }
+    if(inCode){ html+=esc(raw)+'\n'; continue; }
+    const li=raw.match(/^\s*[-*]\s+(.*)/);
+    if(li){ if(!inList){html+='<ul>';inList=true;} html+=`<li>${inline(li[1])}</li>`; continue; }
+    if(inList){html+='</ul>';inList=false;}
+    if(/^###\s/.test(raw)){html+=`<h3>${inline(raw.replace(/^###\s/,''))}</h3>`;}
+    else if(/^##\s/.test(raw)){html+=`<h2>${inline(raw.replace(/^##\s/,''))}</h2>`;}
+    else if(/^#\s/.test(raw)){html+=`<h1>${inline(raw.replace(/^#\s/,''))}</h1>`;}
+    else if(/^---+$/.test(raw.trim())){html+='<hr>';}
+    else if(raw.trim()===''){html+='';}
+    else{html+=`<p style="margin:10px 0">${inline(raw)}</p>`;}
+  }
+  if(inList)html+='</ul>';
+  return html;
+}
+
+// boot
+loadState();
+POLL=setInterval(slowTick,4000);
+</script>
+</body>
+</html>

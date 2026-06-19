@@ -1,0 +1,20 @@
+{
+  "slug": "spain-2010-trophy-lift",
+  "type": "moment",
+  "name": "Spain 2010 World Cup trophy lift",
+  "aliases": [
+    "Spain with cup"
+  ],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/FIFA_World_Cup_2010_Spain_with_cup.jpg",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "attribution": "Anthony  Stanley / CC BY-SA 2.0 via Wikimedia Commons",
+    "as_of": "2026-06-09",
+    "curated": true,
+    "curated_note": "Vision-vetted: the Spain squad lifting the actual World Cup trophy, 2010 final."
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-09"
+}

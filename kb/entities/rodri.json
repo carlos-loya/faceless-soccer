@@ -1,0 +1,65 @@
+{
+  "slug": "rodri",
+  "type": "player",
+  "name": "Rodri",
+  "aliases": [
+    "Rodrigo Hernandez",
+    "Rodrigo Hernandez Cascante"
+  ],
+  "facts": {
+    "age": {
+      "value": 29,
+      "as_of": "2026-06-09",
+      "source": "https://www.aljazeera.com/sports/2026/6/6/spains-world-cup-2026-team-preview-players-to-watch-group-matches-squad",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Manchester City",
+      "as_of": "2026-06-09",
+      "source": "https://www.espn.com/soccer/story/_/id/45240794/rodri-man-city-squad-acl-tear-injury-bournemouth",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "Spain",
+      "as_of": "2026-06-09",
+      "source": "https://www.aljazeera.com/sports/2026/6/6/spains-world-cup-2026-team-preview-players-to-watch-group-matches-squad",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Defensive midfielder",
+      "as_of": "2026-06-09",
+      "source": "https://www.aljazeera.com/sports/2026/6/6/spains-world-cup-2026-team-preview-players-to-watch-group-matches-squad",
+      "confidence": "high"
+    },
+    "current_form": {
+      "value": "2024 Ballon d'Or winner. Ruptured his ACL in September 2024 (vs Arsenal), missing almost the entire 2024-25 season; returned to first-team action for Man City in April 2025. Back to fitness through 2025-26 but, per analysts, 'has not quite been the same force since' the injury.",
+      "as_of": "2026-06-06",
+      "source": "https://www.aljazeera.com/sports/2026/6/6/spains-world-cup-2026-team-preview-players-to-watch-group-matches-squad",
+      "confidence": "med"
+    },
+    "fitness": {
+      "value": "Returned to full fitness after the September 2024 ACL rupture. Took a knock in a training-ground collision with Gavi in early June 2026 (finished the session with a slight limp), but initial fears of a tournament-ending injury subsided and he is expected to start the opener.",
+      "as_of": "2026-06-06",
+      "source": "https://www.aljazeera.com/sports/2026/6/6/spains-world-cup-2026-team-preview-players-to-watch-group-matches-squad",
+      "confidence": "med"
+    },
+    "wc_role": {
+      "value": "Expected first-choice defensive-midfield anchor and one of the first names on De la Fuente's sheet; the spine around which Spain is organised. In Spain's final 26-man squad (announced 2026-05-25). His return from ACL injury is framed as possibly the most important development of Spain's WC campaign.",
+      "as_of": "2026-06-06",
+      "source": "https://www.aljazeera.com/sports/2026/6/6/spains-world-cup-2026-team-preview-players-to-watch-group-matches-squad",
+      "confidence": "high"
+    },
+    "records": {
+      "value": "2024 Ballon d'Or winner.",
+      "as_of": "2026-06-09",
+      "source": "https://www.espn.com/soccer/story/_/id/45240794/rodri-man-city-squad-acl-tear-injury-bournemouth",
+      "confidence": "high"
+    }
+  },
+  "image": null,
+  "image_todo": "fetch + verify a Creative-Commons portrait; no fabricated URLs",
+  "active_narratives": [
+    "spain-favorites-golden-gen"
+  ],
+  "last_verified": "2026-06-09"
+}

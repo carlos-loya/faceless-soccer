@@ -1,0 +1,18 @@
+{
+  "slug": "uzbekistan",
+  "type": "nation",
+  "name": "Uzbekistan",
+  "code": "UZB",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/1280px-Flag_of_Uzbekistan.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Farhod Yo\u02bbldoshev / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-15"
+  },
+  "active_narratives": [],
+  "last_verified": "",
+  "_flag_wiki": "Uzbekistan"
+}

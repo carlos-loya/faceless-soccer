@@ -1,0 +1,37 @@
+{
+  "slug": "petar-musa",
+  "type": "player",
+  "name": "Petar Musa",
+  "aliases": [
+    "Musa"
+  ],
+  "facts": {
+    "club": {
+      "value": "FC Dallas",
+      "as_of": "2026-06-17",
+      "source": "https://commons.wikimedia.org/wiki/File:Petar_Musa_NY_Red_Bulls_v_FC_Dallas_2_May_2026-53_(cropped).jpg",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "Croatia",
+      "as_of": "2026-06-17",
+      "source": "https://en.wikipedia.org/wiki/Petar_Musa",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Forward",
+      "as_of": "2026-06-17",
+      "source": "https://en.wikipedia.org/wiki/Petar_Musa",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Petar_Musa_NY_Red_Bulls_v_FC_Dallas_2_May_2026-53_%28cropped%29.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "Bryan Berlin / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-17"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-17"
+}

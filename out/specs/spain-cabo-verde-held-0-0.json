@@ -1,0 +1,146 @@
+{
+  "format": "post_match",
+  "topic": "Cape Verde hold Spain to a 0-0 draw on their first-ever World Cup appearance (2026, Group H)",
+  "subject": "cape-verde",
+  "matchup": [
+    "spain",
+    "cape-verde"
+  ],
+  "target_duration_seconds": 28,
+  "hook": {
+    "first_frame_text": "SPAIN. 90 MINUTES. NO GOALS.",
+    "spoken_hook": "Spain played ninety minutes — and couldn't score once.",
+    "hook_type": "shock_number"
+  },
+  "retention_mechanic": "open_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "90 MINUTES. ZERO GOALS.",
+      "voiceover": "Spain played ninety minutes — and couldn't score once.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black 9:16 frame, gold gradient accents, a lone Spain shirt silhouette facing a wall of defenders rendered as abstract dark forms, bold white condensed type space at top, premium broadcast feel, no faces, no logos",
+      "visual_source": "entity",
+      "visual_query": "lamine-yamal",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "THEIR FIRST WORLD CUP",
+      "voiceover": "Stopped by Cape Verde — at their first ever World Cup.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black background, gold confetti and stadium light bokeh, an underdog crowd silhouette erupting, bold white condensed caption space, cinematic, no faces, no logos",
+      "visual_source": "stock_video",
+      "visual_query": "crowd-erupt",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 5
+    },
+    {
+      "index": 3,
+      "on_screen_text": "EVEN YAMAL COULDN'T",
+      "voiceover": "Spain had the chances, even brought on Yamal. Nothing.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black 9:16, gold accents, a single attacking silhouette firing at a packed wall of defenders, motion lines, frustration energy, white condensed type space, no faces, no logos",
+      "visual_source": "entity",
+      "visual_query": "lamine-yamal",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 4
+    },
+    {
+      "index": 4,
+      "on_screen_text": "CAPE VERDE: STORY OF THE GROUP?",
+      "voiceover": "The debutants held, and grabbed a point nobody predicted.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black background, rain streaks lit gold, an empty goal and a defensive wall holding firm, dramatic floodlight, white bold condensed caption space, cinematic underdog tone, no faces, no logos",
+      "visual_source": "stock_video",
+      "visual_query": "empty-net-rain",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 5
+    },
+    {
+      "index": 5,
+      "on_screen_text": "GROUP H",
+      "voiceover": "Group H's wide open — Spain and Cape Verde share the points.",
+      "stat_callout": "",
+      "graphic_type": "group_table",
+      "graphic_prompt": "Clean black-and-gold ranked group table, position, flag, three-letter code, played, goal difference, points columns, premium broadcast scoreboard styling, vertical 9:16",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "score": "0-0",
+      "group_table": [
+        {
+          "team": "spain",
+          "points": 1,
+          "played": 1,
+          "gd": 0,
+          "highlight": false
+        },
+        {
+          "team": "cape-verde",
+          "points": 1,
+          "played": 1,
+          "gd": 0,
+          "highlight": true
+        },
+        {
+          "team": "uruguay",
+          "points": 0,
+          "played": 0,
+          "gd": 0,
+          "highlight": false
+        },
+        {
+          "team": "saudi-arabia",
+          "points": 0,
+          "played": 0,
+          "gd": 0,
+          "highlight": false
+        }
+      ],
+      "duration_seconds": 5
+    },
+    {
+      "index": 6,
+      "on_screen_text": "SUBSCRIBE — DAILY WORLD CUP",
+      "voiceover": "Every World Cup shock, daily — subscribe so you don't miss one.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Black background with rich gold confetti falling, TikiTakaFootyTV gold wordmark energy, bold white condensed subscribe prompt space, celebratory premium broadcast outro, no faces, no logos",
+      "visual_source": "stock_video",
+      "visual_query": "gold-confetti",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 4
+    }
+  ],
+  "comment_bait": "Spain's wake-up call, or are Cape Verde the group's story? Who's winning Group H?",
+  "cta": "Subscribe for daily World Cup stories",
+  "music_mood": "tense, building, underdog triumph — minor-key strings over a steady pulse",
+  "thumbnail": {
+    "text": "SPAIN HELD 0-0",
+    "concept": "Lamine Yamal's face mid-frustration on the left over a deep-black/gold frame, huge white 'SPAIN HELD 0-0' text right, small Cape Verde flag accent — curiosity + shock, no scoreline-only flags"
+  },
+  "youtube_title": "Cape Verde Held Spain to 0-0 in Their First-Ever World Cup Game",
+  "youtube_description": "World Cup debutants Cape Verde shocked the tournament favourites, holding Spain to a goalless draw in Group H at the 2026 World Cup. Even Lamine Yamal off the bench couldn't break them down. Spain's title bid stumbles out of the gate. No-footage, original-graphic recap. Subscribe for daily World Cup stories. #worldcup2026 #spain #capeverde",
+  "instagram_caption": "Spain. The favourites. 90 minutes. Zero goals. Cape Verde just held them on their FIRST ever World Cup appearance. Spain's wake-up call, or are Cape Verde the story of this group? Tell me who's winning Group H. Subscribe for daily World Cup stories.",
+  "tiktok_caption": "Spain couldn't score on World Cup debutants Cape Verde. 0-0. Are they the story of the group? Who's winning Group H?",
+  "hashtags": [
+    "#worldcup2026",
+    "#football",
+    "#soccer",
+    "#spain",
+    "#capeverde",
+    "#yamal",
+    "#tikitakafootytv"
+  ]
+}

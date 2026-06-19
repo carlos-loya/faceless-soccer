@@ -1,0 +1,119 @@
+{
+  "format": "quiz_top5",
+  "topic": "Can you name the last 5 World Cup Golden Boot winners?",
+  "subject": "",
+  "target_duration_seconds": 29,
+  "hook": {
+    "first_frame_text": "Name the last 5 Golden Boots",
+    "spoken_hook": "Name the last five World Cup Golden Boot winners. Bet you miss one.",
+    "hook_type": "question"
+  },
+  "retention_mechanic": "reveal",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "NAME THE LAST 5 GOLDEN BOOTS",
+      "voiceover": "Name the last five World Cup Golden Boot winners. Bet you miss one.",
+      "stat_callout": "5",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Deep black bg, a glowing GOLDEN BOOT trophy icon, 'NAME ALL 5?' header, five gold question-mark cards in a row, premium quiz look, vertical 9:16. No faces.",
+      "visual_source": "stock_video",
+      "visual_query": "epic-stadium",
+      "sticker_entity": "",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "LOCK IN YOUR 5 NOW",
+      "voiceover": "No Googling. Lock in your five top scorers right now. Here we go.",
+      "stat_callout": "GUESS",
+      "graphic_type": "quiz_board",
+      "graphic_prompt": "Five numbered slots 2022 down to 2006 with gold borders on black, hidden behind question marks, a ticking-clock motif, premium broadcast quiz board, vertical 9:16.",
+      "visual_source": "stock_video",
+      "visual_query": "floodlights",
+      "sticker_entity": "",
+      "duration_seconds": 3
+    },
+    {
+      "index": 3,
+      "on_screen_text": "2022 — MBAPPÉ",
+      "voiceover": "Twenty twenty-two. Kylian Mbappé. Eight goals, including a hat-trick in the final.",
+      "stat_callout": "8",
+      "graphic_type": "quiz_board",
+      "graphic_prompt": "'2022 MBAPPÉ — 8 GOALS' in gold on black with a green check mark. No faces in the graphic.",
+      "visual_source": "entity",
+      "visual_query": "kylian-mbappe",
+      "sticker_entity": "france",
+      "duration_seconds": 4
+    },
+    {
+      "index": 4,
+      "on_screen_text": "2018 — HARRY KANE",
+      "voiceover": "Twenty eighteen. Harry Kane. Six goals — most of them penalties, but they count.",
+      "stat_callout": "6",
+      "graphic_type": "quiz_board",
+      "graphic_prompt": "'2018 KANE — 6 GOALS' gold on black, green check mark. No faces in the graphic.",
+      "visual_source": "entity",
+      "visual_query": "harry-kane",
+      "sticker_entity": "england",
+      "duration_seconds": 4
+    },
+    {
+      "index": 5,
+      "on_screen_text": "2014 — JAMES RODRÍGUEZ",
+      "voiceover": "Twenty fourteen. James Rodríguez. Six goals — and that volley against Uruguay.",
+      "stat_callout": "6",
+      "graphic_type": "quiz_board",
+      "graphic_prompt": "'2014 JAMES — 6 GOALS' gold on black, green check mark. No faces in the graphic.",
+      "visual_source": "entity",
+      "visual_query": "james-rodriguez",
+      "sticker_entity": "colombia",
+      "duration_seconds": 4
+    },
+    {
+      "index": 6,
+      "on_screen_text": "2010 — THOMAS MÜLLER",
+      "voiceover": "Twenty ten. Thomas Müller. Five goals — he won it on assists. This is the one everyone forgets.",
+      "stat_callout": "5",
+      "graphic_type": "quiz_board",
+      "graphic_prompt": "'2010 MÜLLER — 5 GOALS' gold on black, green check mark, a small 'won on assists' note. No faces.",
+      "visual_source": "entity",
+      "visual_query": "thomas-muller",
+      "sticker_entity": "germany",
+      "duration_seconds": 4
+    },
+    {
+      "index": 7,
+      "on_screen_text": "2006 — KLOSE. HOW MANY?",
+      "voiceover": "And two thousand and six, Miroslav Klose, five. That's all five — so how many did you actually get?",
+      "stat_callout": "5",
+      "graphic_type": "quiz_board",
+      "graphic_prompt": "'2006 KLOSE — 5 GOALS' gold on black, all five winners now lit in a column with check marks, big 'HOW MANY?' prompt. No faces.",
+      "visual_source": "entity",
+      "visual_query": "miroslav-klose",
+      "sticker_entity": "germany",
+      "duration_seconds": 4
+    },
+    {
+      "index": 8,
+      "on_screen_text": "SUBSCRIBE — DAILY WORLD CUP",
+      "voiceover": "Four or more and you really know your football. Follow for your daily World Cup countdown.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Black to gold fade, bold white 'SUBSCRIBE' with a gold 'DAILY WORLD CUP' tag, a golden boot icon, a drawn subscribe-arrow, premium broadcast outro, vertical 9:16. No faces.",
+      "visual_source": "stock_video",
+      "visual_query": "crowd",
+      "sticker_entity": "",
+      "duration_seconds": 3
+    }
+  ],
+  "comment_bait": "How many out of 5 did you get? Be honest 👇",
+  "cta": "Follow for your daily World Cup countdown",
+  "music_mood": "playful tense quiz ticking that resolves triumphant on each reveal",
+  "thumbnail": { "text": "NAME ALL 5?", "concept": "A golden boot trophy, five gold slots with four years revealed and the most recent hidden behind a question mark" },
+  "youtube_title": "Can You Name the Last 5 World Cup Golden Boot Winners?",
+  "youtube_description": "Name the last five World Cup Golden Boot winners — 2022 back to 2006. Most people miss the 2010 one (Müller won it on assists). How many did you get? Subscribe for a daily World Cup countdown. #worldcup #goldenboot #football",
+  "instagram_caption": "Name the last 5 World Cup Golden Boot winners… no Googling. The 2010 one gets everybody. How many did you get? Comment below and tag someone who'd fail.",
+  "tiktok_caption": "bet you can't name all 5 World Cup Golden Boot winners 🥇 the 2010 one is brutal… how many did you get?",
+  "hashtags": ["#worldcup", "#goldenboot", "#football", "#soccer", "#footballquiz", "#worldcup2026", "#tikitakafootytv"]
+}

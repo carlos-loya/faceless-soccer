@@ -1,0 +1,41 @@
+{
+  "slug": "romano-schmid",
+  "type": "player",
+  "name": "Romano Schmid",
+  "aliases": ["Schmid"],
+  "facts": {
+    "age": {
+      "value": 26,
+      "as_of": "2026-06-17",
+      "source": "https://www.transfermarkt.com/romano-schmid/profil/spieler/391516",
+      "confidence": "med"
+    },
+    "club": {
+      "value": "Werder Bremen",
+      "as_of": "2026-06-17",
+      "source": "https://www.transfermarkt.com/romano-schmid/profil/spieler/391516",
+      "confidence": "med"
+    },
+    "nation": {
+      "value": "Austria",
+      "as_of": "2026-06-17",
+      "source": "https://www.transfermarkt.com/romano-schmid/profil/spieler/391516",
+      "confidence": "med"
+    },
+    "wc_role": {
+      "value": "Scored Austria's first goal on their World Cup return in 28 years — opener vs Jordan, 20th minute, San Francisco.",
+      "as_of": "2026-06-17",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/austria-jordan-highlights-match-report",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/UEFA_Euro_2023_Qualifiers_Austria_vs._Finland_%282022-06-03%29_30.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "Wikimedia Commons / UEFA Euro 2023 Qualifiers Austria vs. Finland",
+    "as_of": "2026-06-17"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-17"
+}

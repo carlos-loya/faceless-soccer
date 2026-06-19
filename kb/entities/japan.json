@@ -1,0 +1,63 @@
+{
+  "slug": "japan",
+  "type": "nation",
+  "name": "Japan",
+  "aliases": [
+    "Samurai Blue",
+    "JPN"
+  ],
+  "code": "JPN",
+  "facts": {
+    "group": {
+      "value": "Group F — opponents Netherlands, Sweden, Tunisia; open vs Netherlands on 14 June 2026 at AT&T Stadium, Arlington (Dallas)",
+      "as_of": "2026-06-14",
+      "source": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F",
+      "confidence": "high"
+    },
+    "fifa_ranking": {
+      "value": 18,
+      "as_of": "2026-06-14",
+      "source": "https://theanalyst.com/articles/netherlands-vs-japan-prediction-world-cup-2026-match-preview",
+      "confidence": "med"
+    },
+    "manager": {
+      "value": "Hajime Moriyasu (3-4-2-1 pressing system)",
+      "as_of": "2026-06-14",
+      "source": "https://theanalyst.com/articles/netherlands-vs-japan-prediction-world-cup-2026-match-preview",
+      "confidence": "med"
+    },
+    "recent_form": {
+      "value": "Arrived at WC2026 on a five-game winning streak — capped by a historic 1-0 win over England at Wembley on 31 March 2026 (Kaoru Mitoma, 23'). It was Japan's FIRST EVER win over England and the first time an Asian nation beat England. Verified across England Football (official), ESPN, OneFootball.",
+      "as_of": "2026-06-14",
+      "source": "https://www.englandfootball.com/england/mens-senior-team/fixtures-results/2025-26/internationals/england-v-japan-international-match-tuesday-31-march-2026-match-centre",
+      "confidence": "high"
+    },
+    "wembley_win": {
+      "value": "Japan 1-0 England, Wembley, 31 March 2026 — Kaoru Mitoma 23'. Japan's first-ever victory over England; first Asian team to beat England.",
+      "as_of": "2026-06-14",
+      "source": "https://www.espn.com/soccer/story/_/id/48376117/historic-win-england-how-far-japan-go-fifa-world-cup",
+      "confidence": "high"
+    },
+    "key_players": {
+      "value": "Takefusa Kubo, Ritsu Doan, Daichi Kamada, striker Ayase Ueda; GK Zion Suzuki",
+      "as_of": "2026-06-14",
+      "source": "https://sports.yahoo.com/articles/netherlands-vs-japan-predicted-lineup-055500940.html",
+      "confidence": "med"
+    },
+    "wc2026_match1_result": {
+      "value": "Netherlands 2-2 Japan (Group F opener, 14 June 2026, AT&T Stadium, Dallas). Japan came from behind TWICE: Van Dijk 51' (NED), Keito Nakamura 57' (JPN), Crysencio Summerville 64' (NED), Daichi Kamada 88' (JPN). Japan dug out a point despite trailing twice; the Dutch dominated possession (60%) and xG (0.79 to 0.54) but couldn't hold the lead. Caps Japan's run: arrived on a 5-game win streak incl. first-ever win over England (Wembley, Mar 2026).",
+      "as_of": "2026-06-14",
+      "source": "https://www.espn.com/soccer/match/_/gameId/760425/japan-netherlands",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/1280px-Flag_of_Japan.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Public domain via Wikimedia Commons",
+    "as_of": "2026-06-14"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-14"
+}

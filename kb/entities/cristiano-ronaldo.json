@@ -1,0 +1,70 @@
+{
+  "slug": "cristiano-ronaldo",
+  "type": "player",
+  "name": "Cristiano Ronaldo",
+  "aliases": [
+    "Ronaldo",
+    "CR7"
+  ],
+  "facts": {
+    "age": {
+      "value": 41,
+      "as_of": "2026-06-09",
+      "source": "https://www.aljazeera.com/sports/2026/6/8/portugal-world-cup-2026-preview-players-to-watch-group-matches-and-squad",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Al-Nassr (Saudi Pro League)",
+      "as_of": "2026-06-09",
+      "source": "https://www.aljazeera.com/sports/2026/6/8/portugal-world-cup-2026-preview-players-to-watch-group-matches-and-squad",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "Portugal",
+      "as_of": "2026-06-09",
+      "source": "https://www.aljazeera.com/sports/2026/6/8/portugal-world-cup-2026-preview-players-to-watch-group-matches-and-squad",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Forward",
+      "as_of": "2026-06-09",
+      "source": "https://www.aljazeera.com/sports/2026/6/8/portugal-world-cup-2026-preview-players-to-watch-group-matches-and-squad",
+      "confidence": "high"
+    },
+    "current_form": {
+      "value": "Captains Portugal at Al-Nassr; remains the most-capped player and leading scorer in men's international football (reported 143 goals from 226 caps). Finished as top scorer at the 2025 Nations League, which Portugal won.",
+      "as_of": "2026-06-09",
+      "source": "https://rg.org/en-ca/sportsbooks/world-cup-2026/portugal",
+      "confidence": "med"
+    },
+    "fitness": {
+      "value": "Missed Portugal's March 2026 friendlies with a hamstring strain picked up at Al-Nassr, but named in the World Cup squad and expected to start (lead the line in Houston).",
+      "as_of": "2026-06-09",
+      "source": "https://rg.org/en-ca/sportsbooks/world-cup-2026/portugal",
+      "confidence": "med"
+    },
+    "wc_role": {
+      "value": "Captains Portugal at a RECORD sixth World Cup, more than any man in tournament history (he shares the previous joint-record of 5 with Lionel Messi, who is also at 2026). At 41, expected to start; the World Cup is the one major trophy he has never won. Reported to need 2 goals to pass Eus\u00e9bio's Portugal World Cup record of 9. Portugal in Group K with DR Congo, Uzbekistan and Colombia; open vs DR Congo on 17 June in Houston.",
+      "as_of": "2026-06-09",
+      "source": "https://www.uefa.com/european-qualifiers/news/02a6-20d15939ace8-5cc9254d0851-1000--portugal-at-the-world-cup-2026-squad-fixtures-group-and-hi/",
+      "confidence": "high"
+    },
+    "records": {
+      "value": "First man to play in six World Cups (record). Most-capped player and all-time leading scorer in men's international football. Won UEFA Euro 2016 and two UEFA Nations League titles; World Cup is the missing major.",
+      "as_of": "2026-06-09",
+      "source": "https://www.uefa.com/european-qualifiers/news/02a6-20d15939ace8-5cc9254d0851-1000--portugal-at-the-world-cup-2026-squad-fixtures-group-and-hi/",
+      "confidence": "med"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Cristiano_Ronaldo_2275_%28cropped%29.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "YantsImages / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-17"
+  },
+  "active_narratives": [
+    "messi-ronaldo-last-dance"
+  ],
+  "last_verified": "2026-06-09"
+}

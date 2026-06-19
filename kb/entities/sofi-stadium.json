@@ -1,0 +1,31 @@
+{
+  "slug": "sofi-stadium",
+  "type": "stadium",
+  "name": "SoFi Stadium",
+  "aliases": ["SoFi", "SoFi Stadium", "Los Angeles Stadium"],
+  "facts": {
+    "location": {
+      "value": "Inglewood, Los Angeles, California, USA",
+      "as_of": "2026-06-11",
+      "source": "https://en.wikipedia.org/wiki/SoFi_Stadium",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "A 2026 World Cup venue (listed as 'Los Angeles Stadium'); hosts the USA's Group D opener vs Paraguay on June 12, 2026.",
+      "as_of": "2026-06-11",
+      "source": "https://www.ussoccer.com/stories/2026/05/usmnt/us-mens-national-team-head-coach-mauricio-pochettino-names-26-player-roster-for-fifa-world-cup-2026",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/SoFi_Stadium_2021.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "Troutfarm27 / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-11",
+    "note": "Exterior golden-hour establishing shot (no field shown) — avoids the American-football-vs-soccer 'mode' tell that an interior bowl photo has."
+  },
+  "curated": true,
+  "active_narratives": ["usmnt-home-world-cup"],
+  "last_verified": "2026-06-11"
+}

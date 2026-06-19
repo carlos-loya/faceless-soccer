@@ -1,0 +1,79 @@
+{
+  "format": "player_story",
+  "topic": "Harry Kane's World Cup knockout drought with England kicks off against Croatia",
+  "subject": "harry-kane",
+  "matchup": ["england", "croatia"],
+  "target_duration_seconds": 26,
+  "hook": {
+    "first_frame_text": "61 goals. Zero World Cups.",
+    "spoken_hook": "Sixty-one goals this season. Zero World Cup knockout contributions from England's captain.",
+    "hook_type": "shock_number"
+  },
+  "retention_mechanic": "seamless_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "61 GOALS. ZERO KNOCKOUTS.",
+      "voiceover": "Sixty-one goals for Bayern this season. Not one World Cup knockout goal or assist.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black and gold broadcast intro. Harry Kane in England kit center-framed. Bold white condensed type above and below. Vertical 9:16, premium World Cup feel.",
+      "visual_source": "entity",
+      "visual_query": "harry-kane",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 4
+    },
+    {
+      "index": 2,
+      "on_screen_text": "2018. 2022. NOTHING.",
+      "voiceover": "2018 quarter-final blanked. 2022 quarter-final blanked. Eight World Cup goals — zero from a last-eight match on.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Moody floodlit stadium at night, deep shadows, gold ambient light. Text '2018 — 2022' fades between. Vertical 9:16.",
+      "visual_source": "stock_video",
+      "visual_query": "floodlight-bokeh",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 5
+    },
+    {
+      "index": 3,
+      "on_screen_text": "CROATIA. TONIGHT. DALLAS.",
+      "voiceover": "Croatia at the Cotton Bowl. Tuchel's golden generation starts now. Kane's moment.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Harry Kane in England kit, determined expression, England crest visible. Gold and white text overlay. Vertical 9:16.",
+      "visual_source": "entity",
+      "visual_query": "harry-kane",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 5
+    },
+    {
+      "index": 4,
+      "on_screen_text": "SUBSCRIBE — DAILY WORLD CUP",
+      "voiceover": "England's story starts tonight. Subscribe for every matchday.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Gold confetti falling on black background. Bold white condensed text centered. Premium World Cup broadcast feel. Vertical 9:16.",
+      "visual_source": "stock_video",
+      "visual_query": "gold-confetti",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 4
+    }
+  ],
+  "comment_bait": "England's best chance in decades, or more heartbreak? Convince me they're different this time — I'll be in the replies.",
+  "cta": "Follow for your daily World Cup stories",
+  "music_mood": "epic orchestral, building tension",
+  "thumbnail": {
+    "text": "61 GOALS. 0 KNOCKOUTS.",
+    "concept": "Harry Kane in England kit, intense stare, black and gold border, bold white text top and bottom"
+  },
+  "youtube_title": "Harry Kane: 61 Goals, Zero World Cup Knockout Contributions — England Starts Tonight",
+  "youtube_description": "Harry Kane just had a 61-goal season for Bayern Munich. He's England's all-time top scorer. But in two World Cups, he's never scored from a quarter-final onward. Tonight against Croatia, England's golden generation begins its campaign. Can Kane finally break his knockout curse?\n\n#FIFAWorldCup2026 #England #HarryKane #ThreeLions #WorldCup",
+  "instagram_caption": "61 goals this season. Zero World Cup knockouts. Tonight changes everything. 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Convince me England's different this time — I'll be in the replies.",
+  "tiktok_caption": "61 goals this season. Zero World Cup knockouts. Tonight changes everything. Convince me England's different this time — I'll be in the replies.",
+  "hashtags": ["#FIFAWorldCup2026", "#England", "#HarryKane", "#ThreeLions", "#WorldCup", "#Football", "#Soccer", "#TikitakaFootyTV", "#ENGvCRO"]
+}

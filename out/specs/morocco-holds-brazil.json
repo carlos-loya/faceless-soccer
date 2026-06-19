@@ -1,0 +1,117 @@
+{
+  "format": "news_story",
+  "topic": "Morocco hold five-time champions Brazil to a 1-1 draw in their WC2026 Group C opener",
+  "subject": "achraf-hakimi",
+  "matchup": [
+    "morocco",
+    "brazil"
+  ],
+  "target_duration_seconds": 22,
+  "hook": {
+    "first_frame_text": "Morocco just stopped Brazil.",
+    "spoken_hook": "Five-time champions. And Morocco just stopped them.",
+    "hook_type": "bold_claim"
+  },
+  "retention_mechanic": "seamless_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "MOROCCO STOPPED BRAZIL",
+      "voiceover": "Five-time champions. And Morocco just stopped them.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black background, gold gradient energy streaks, bold white condensed headline space, premium broadcast intro, vertical 9:16, no faces drawn",
+      "visual_source": "entity",
+      "visual_query": "vinicius-junior",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "24 YEARS, NO TITLE",
+      "voiceover": "Brazil haven't won it since two thousand two. Twenty-four years. Now Ancelotti has to end the wait.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Moody gold-rim lighting over deep black, premium broadcast portrait framing, bold white type space, vertical 9:16, no faces drawn",
+      "visual_source": "entity",
+      "visual_query": "carlo-ancelotti",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 4
+    },
+    {
+      "index": 3,
+      "on_screen_text": "SAIBARI CHIPS ALISSON",
+      "voiceover": "Then the underdogs struck. Saibari chipped Alisson. One-nil Morocco.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Silhouetted crowd erupting in gold light, motion energy, deep black and gold, vertical 9:16, no faces, no logos",
+      "visual_source": "stock_video",
+      "visual_query": "crowd-erupt",
+      "sticker_entity": "",
+      "score": "1-0",
+      "duration_seconds": 4
+    },
+    {
+      "index": 4,
+      "on_screen_text": "VINICIUS LEVELS IT",
+      "voiceover": "But Brazil have Vinicius. He levelled it before half-time. Game on.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Gold spotlight, dramatic broadcast tension, deep black with gold accents, bold white type space, vertical 9:16, no faces drawn",
+      "visual_source": "entity",
+      "visual_query": "vinicius-junior",
+      "sticker_entity": "",
+      "score": "1-1",
+      "duration_seconds": 4
+    },
+    {
+      "index": 5,
+      "on_screen_text": "DARK HORSE? OR BRAZIL BOUNCES BACK?",
+      "voiceover": "Ten minutes of stoppage. Bounou wouldn't break. Morocco held the giants.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Moody floodlight bokeh, golden glow over deep black, tension and anticipation, vertical 9:16, no faces, no logos",
+      "visual_source": "stock_video",
+      "visual_query": "floodlight-bokeh",
+      "sticker_entity": "",
+      "score": "1-1",
+      "duration_seconds": 4
+    },
+    {
+      "index": 6,
+      "on_screen_text": "SUBSCRIBE - DAILY WORLD CUP",
+      "voiceover": "Your daily World Cup story. Subscribe so you never miss a shock. Morocco just stopped Brazil.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Gold confetti falling over deep black, triumphant premium broadcast outro, bold white type space, vertical 9:16, no faces",
+      "visual_source": "entity",
+      "visual_query": "vinicius-junior",
+      "sticker_entity": "",
+      "score": "1-1",
+      "duration_seconds": 4
+    }
+  ],
+  "comment_bait": "Dark-horse run for real, or does Brazil still win the group? Make your call 👇",
+  "cta": "Subscribe for your daily World Cup stories",
+  "music_mood": "tense cinematic build with a triumphant underdog swell",
+  "thumbnail": {
+    "text": "MOROCCO STOPPED BRAZIL",
+    "concept": "Vinicius's face mid-frustration on the left, Morocco flag and 1-1 scoreline glowing gold on the right, deep black background, high-contrast tension"
+  },
+  "youtube_title": "Morocco Just Held Brazil 1-1 at the World Cup 😳",
+  "youtube_description": "Five-time champions Brazil were held 1-1 by Morocco in their 2026 World Cup Group C opener. Ismael Saibari chipped Alisson, Vinicius Junior leveled it, and Bounou stood tall through 10 minutes of stoppage. The Atlas Lions roar again. Your daily World Cup stories, every day. #worldcup2026 #morocco #brazil",
+  "instagram_caption": "The Atlas Lions held the five-time champions. Morocco 1-1 Brazil. Dark-horse run again, or does Brazil still bury this group? Call it now and I'll come find the doubters in two weeks 👇 Subscribe for your daily World Cup stories.",
+  "tiktok_caption": "Morocco just held Brazil 1-1 at the World Cup. Fluke or the real deal again? Call it now and I'll come find the doubters in two weeks 👇 #worldcup2026",
+  "hashtags": [
+    "#football",
+    "#soccer",
+    "#worldcup2026",
+    "#morocco",
+    "#brazil",
+    "#viniciusjr",
+    "#atlaslions",
+    "#tikitakafootytv"
+  ]
+}

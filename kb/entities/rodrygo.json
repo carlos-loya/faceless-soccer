@@ -1,0 +1,69 @@
+{
+  "slug": "rodrygo",
+  "type": "player",
+  "name": "Rodrygo",
+  "aliases": [
+    "Rodrygo Goes"
+  ],
+  "facts": {
+    "age": {
+      "value": 25,
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Rodrygo",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Real Madrid",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Rodrygo",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "Brazil",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Rodrygo",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Forward / winger",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Rodrygo",
+      "confidence": "high"
+    },
+    "current_form": {
+      "value": "Difficult 2025-26 season at Real Madrid: out of favour early and limited starts, then his campaign ended in March 2026 with a serious knee injury",
+      "as_of": "2026-03-03",
+      "source": "https://www.cbssports.com/soccer/news/rodrygo-injury-real-madrid-2026-world-cup-brazil/",
+      "confidence": "med"
+    },
+    "fitness": {
+      "value": "RULED OUT of the 2026 World Cup. Torn ACL and torn lateral meniscus in his right knee, suffered vs Getafe on 3 March 2026; required surgery, expected out ~7 months",
+      "as_of": "2026-03-03",
+      "source": "https://www.cbssports.com/soccer/news/rodrygo-injury-real-madrid-2026-world-cup-brazil/",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Will NOT participate \u2014 missing the tournament through injury; not in Brazil's 26-man squad. His absence shifts attacking weight onto Vin\u00edcius Jr and Raphinha",
+      "as_of": "2026-05-18",
+      "source": "https://www.beinsports.com/en-us/soccer/la-liga/articles/rodrygo-ruled-out-of-2026-world-cup-with-acl-injury-2026-03-03",
+      "confidence": "high"
+    },
+    "records": {
+      "value": "Multiple-time UEFA Champions League winner with Real Madrid, known for decisive knockout goals",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Rodrygo",
+      "confidence": "med"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Rodrygo_2023_%28cropped%29.jpg",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "attribution": "Junta de Andaluc\u00eda / CC BY-SA 2.0 via Wikimedia Commons",
+    "as_of": "2026-06-09"
+  },
+  "active_narratives": [
+    "brazil-ending-the-drought"
+  ],
+  "last_verified": "2026-06-09"
+}

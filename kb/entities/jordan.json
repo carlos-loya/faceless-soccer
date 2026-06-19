@@ -1,0 +1,18 @@
+{
+  "slug": "jordan",
+  "type": "nation",
+  "name": "Jordan",
+  "code": "JOR",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Jordan.svg/1280px-Flag_of_Jordan.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Unknown / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-15"
+  },
+  "active_narratives": [],
+  "last_verified": "",
+  "_flag_wiki": "Jordan"
+}

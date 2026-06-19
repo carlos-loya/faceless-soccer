@@ -1,0 +1,61 @@
+{
+  "slug": "jude-bellingham",
+  "type": "player",
+  "name": "Jude Bellingham",
+  "aliases": [
+    "Bellingham"
+  ],
+  "facts": {
+    "age": {
+      "value": 22,
+      "as_of": "2026-06-09",
+      "source": "https://sports.yahoo.com/articles/official-jude-bellingham-england-squad-101500883.html",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Real Madrid",
+      "as_of": "2026-06-09",
+      "source": "https://sports.yahoo.com/articles/official-jude-bellingham-england-squad-101500883.html",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "England",
+      "as_of": "2026-06-09",
+      "source": "https://www.englandfootball.com/articles/2026/May/22/england-mens-world-cup-2026-squad-named-by-thomas-tuchel-20262205",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Midfielder",
+      "as_of": "2026-06-09",
+      "source": "https://sports.yahoo.com/articles/official-jude-bellingham-england-squad-101500883.html",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Wears No. 10 at his 2nd World Cup; a likely starter under Thomas Tuchel; recently captained England in a warm-up",
+      "as_of": "2026-06-09",
+      "source": "https://www.sportsmole.co.uk/football/england/world-cup/news/one-of-the-starters-tuchel-confirms-bellingham-stance-ahead-of-tournament-opener-vs-croatia_598820.html",
+      "confidence": "high"
+    },
+    "fitness": {
+      "value": "Returned to form following an injury; Tuchel encouraged by recent displays",
+      "as_of": "2026-06-09",
+      "source": "https://www.royston-crow.co.uk/sport/national/26172946.jude-bellingham-heads-world-cup-sweet-spot---thomas-tuchel/",
+      "confidence": "med"
+    },
+    "group": {
+      "value": "Group L with Croatia, Ghana and Panama; opens vs Croatia on June 17 (AT&T Stadium, Texas)",
+      "as_of": "2026-06-09",
+      "source": "https://www.sportsmole.co.uk/football/england/world-cup/news/one-of-the-starters-tuchel-confirms-bellingham-stance-ahead-of-tournament-opener-vs-croatia_598820.html",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/2022_FIFA_World_Cup_-_Bellingham_%28cropped%29.jpg",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "attribution": "Hossein Zohrevand / CC BY 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-17"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-09"
+}

@@ -1,0 +1,78 @@
+{
+  "format": "shock_stat",
+  "topic": "Lionel Messi's record sixth World Cup — the last dance",
+  "subject": "lionel-messi",
+  "target_duration_seconds": 26,
+  "hook": {
+    "first_frame_text": "His sixth World Cup.",
+    "spoken_hook": "Lionel Messi is about to play in a record sixth World Cup.",
+    "hook_type": "shock_number"
+  },
+  "retention_mechanic": "open_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "SIX WORLD CUPS",
+      "voiceover": "Lionel Messi is about to play in a sixth World Cup — something only three men in history will ever have done.",
+      "stat_callout": "6",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Vertical 9:16 title card, black bg, huge gold-gradient '6'",
+      "visual_source": "entity",
+      "visual_query": "lionel-messi",
+      "duration_seconds": 5
+    },
+    {
+      "index": 2,
+      "on_screen_text": "AND HE'S 38",
+      "voiceover": "He's thirty-eight, turning thirty-nine during the tournament. And he is still Argentina's talisman.",
+      "stat_callout": "38",
+      "graphic_type": "stat_card",
+      "graphic_prompt": "Vertical 9:16 stat card, black bg, gold accents",
+      "visual_source": "entity",
+      "visual_query": "lionel-messi",
+      "duration_seconds": 5
+    },
+    {
+      "index": 3,
+      "on_screen_text": "DEFENDING CHAMPIONS",
+      "voiceover": "And he's not here to wave goodbye. He's leading the defending champions, chasing it all over again.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Vertical 9:16 card, black bg, gold text",
+      "visual_source": "stock",
+      "visual_query": "argentina football fans flags celebration crowd",
+      "duration_seconds": 5
+    },
+    {
+      "index": 4,
+      "on_screen_text": "ONE LAST DANCE",
+      "voiceover": "And by his own words, this is almost certainly the last time we will ever see him at a World Cup.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Vertical 9:16 card, black bg, gold text 'ONE LAST DANCE'",
+      "visual_source": "entity",
+      "visual_query": "lionel-messi",
+      "duration_seconds": 5
+    },
+    {
+      "index": 5,
+      "on_screen_text": "CAN HE WIN IT AGAIN?",
+      "voiceover": "Thirty-nine years old, chasing one final, impossible trophy. So tell me this.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Vertical 9:16 card, black bg, gold World Cup trophy silhouette",
+      "visual_source": "entity",
+      "visual_query": "fifa-world-cup-trophy",
+      "duration_seconds": 6
+    }
+  ],
+  "comment_bait": "Messi at 39 — does he lift it one last time? Yes or no 👇",
+  "cta": "Follow @tikitakafootytv for every World Cup story.",
+  "music_mood": "emotional, building strings, swell on the final line",
+  "thumbnail": { "text": "ONE LAST DANCE", "concept": "black bg, giant gold '6', no face" },
+  "youtube_title": "Lionel Messi Is About to Do Something No Player in History Ever Has",
+  "youtube_description": "A record sixth World Cup, at 38 turning 39, leading the defending champions — almost certainly Messi's last. Does he win it one final time? #TikiTakaFootyTV",
+  "instagram_caption": "A SIXTH World Cup. Nobody has ever done it. 🐐 Does Messi lift it one last time at 39? Yes or no 👇 Follow @tikitakafootytv",
+  "tiktok_caption": "bro is about to play his 6th World Cup at 39 😭🐐 does he win it again? 👇 #tikitakafootytv",
+  "hashtags": ["#messi", "#argentina", "#intermiami", "#worldcup2026", "#football", "#soccer", "#goat", "#tikitakafootytv"]
+}

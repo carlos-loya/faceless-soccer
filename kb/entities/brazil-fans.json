@@ -1,0 +1,18 @@
+{
+  "slug": "brazil-fans",
+  "type": "moment",
+  "name": "Brazil fans celebrating",
+  "aliases": ["Brazil fans"],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Brazil_fans_2.jpg",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Kaster at Serbian Wikipedia / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-10",
+    "curated": true,
+    "curated_note": "Vision-vetted: Brazilian fans in full green-and-yellow regalia with flags, festive. Represents Brazil's football passion for the #1 (5 titles) reveal."
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-10"
+}

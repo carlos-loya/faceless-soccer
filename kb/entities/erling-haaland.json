@@ -1,0 +1,63 @@
+{
+  "slug": "erling-haaland",
+  "type": "player",
+  "name": "Erling Haaland",
+  "aliases": [
+    "Haaland"
+  ],
+  "facts": {
+    "age": {
+      "value": 25,
+      "as_of": "2026-06-09",
+      "source": "https://www.olympics.com/en/news/fifa-world-cup-2026-norway-all-players-full-squad-list-key-stats-and-schedule",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Manchester City",
+      "as_of": "2026-06-09",
+      "source": "https://www.olympics.com/en/news/fifa-world-cup-2026-norway-all-players-full-squad-list-key-stats-and-schedule",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "Norway",
+      "as_of": "2026-06-09",
+      "source": "https://www.olympics.com/en/news/fifa-world-cup-2026-norway-all-players-full-squad-list-key-stats-and-schedule",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Striker",
+      "as_of": "2026-06-09",
+      "source": "https://www.olympics.com/en/news/fifa-world-cup-2026-norway-all-players-full-squad-list-key-stats-and-schedule",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "Leads Norway at its first World Cup since 1998 (ending a 28-year absence) \u2014 his FIRST major international tournament; Norway's all-time leading scorer (55 in 48)",
+      "as_of": "2026-06-09",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/erling-haaland-interview-norway",
+      "confidence": "high"
+    },
+    "qualifying": {
+      "value": "Scored 16 goals in qualifying \u2014 more than double any other European player \u2014 as Norway won all 8 qualifiers",
+      "as_of": "2026-06-09",
+      "source": "https://www.olympics.com/en/news/fifa-world-cup-2026-norway-all-players-full-squad-list-key-stats-and-schedule",
+      "confidence": "high"
+    },
+    "group": {
+      "value": "Group I with Iraq, Senegal and France",
+      "as_of": "2026-06-09",
+      "source": "https://www.aljazeera.com/sports/2026/5/26/norway-world-cup-2026-preview-players-to-watch-group-matches-squad-list",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Erling_Haaland_June_2025.jpg",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "attribution": "MichaelEmilio / CC BY 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-09"
+  },
+  "active_narratives": [
+    "haaland-first-world-cup"
+  ],
+  "last_verified": "2026-06-09"
+}

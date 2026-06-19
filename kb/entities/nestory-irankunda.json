@@ -1,0 +1,57 @@
+{
+  "slug": "nestory-irankunda",
+  "type": "player",
+  "name": "Nestory Irankunda",
+  "aliases": [
+    "Irankunda"
+  ],
+  "facts": {
+    "age": {
+      "value": 20,
+      "as_of": "2026-06-14",
+      "source": "https://cryptobriefing.com/irankunda-australia-world-cup-goal-turkiye/",
+      "confidence": "high"
+    },
+    "birthdate": {
+      "value": "2006-02-09 (born in Tanzania to Burundian parents; came to Australia as a refugee)",
+      "as_of": "2026-06-14",
+      "source": "https://www.fourfourtwo.com/competition/the-new-michael-owen-australia-starlet-nestory-irankunda-announces-himself-in-style-with-fabulous-world-cup-goal",
+      "confidence": "med"
+    },
+    "club": {
+      "value": "Watford (Championship) \u2014 joined summer 2025 from Bayern Munich; came up through Adelaide United",
+      "as_of": "2026-06-14",
+      "source": "https://www.fourfourtwo.com/competition/the-new-michael-owen-australia-starlet-nestory-irankunda-announces-himself-in-style-with-fabulous-world-cup-goal",
+      "confidence": "med"
+    },
+    "nation": {
+      "value": "Australia (Socceroos)",
+      "as_of": "2026-06-14",
+      "source": "https://cryptobriefing.com/irankunda-australia-world-cup-goal-turkiye/",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Winger (pace + low centre of gravity)",
+      "as_of": "2026-06-14",
+      "source": "https://www.fourfourtwo.com/competition/the-new-michael-owen-australia-starlet-nestory-irankunda-announces-himself-in-style-with-fabulous-world-cup-goal",
+      "confidence": "med"
+    },
+    "wc_record": {
+      "value": "Became the YOUNGEST Australian ever to score at a World Cup \u2014 20 years 125 days \u2014 with his 27' goal vs T\u00fcrkiye on June 14, 2026, smashing Brett Holman's previous record by almost six years. Also only the 4th Australian to score on his World Cup debut. Latched onto Paul Okon-Engstler's long ball, beat Merih Demiral and finished past Ugurcan Cakir; drew Michael Owen (vs Argentina 1998) comparisons.",
+      "as_of": "2026-06-14",
+      "source": "https://theanalyst.com/articles/australia-vs-turkiye-stats-world-cup-2026",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "assets/source/irankunda.jpg",
+    "license": "owner-provided",
+    "attribution": "",
+    "as_of": "2026-06-14",
+    "note": "Owner-supplied front-on action shot (Adelaide United A-League kit) replacing the only free-CC option, a back-turned Commons shot. License is the owner's responsibility — not from the free CC pipeline. Attribution blank so no credit burns into the render."
+  },
+  "active_narratives": [
+    "australia-shock-turkiye-wc2026"
+  ],
+  "last_verified": "2026-06-14"
+}

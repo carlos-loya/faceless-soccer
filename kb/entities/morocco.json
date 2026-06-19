@@ -1,0 +1,48 @@
+{
+  "slug": "morocco",
+  "type": "nation",
+  "name": "Morocco",
+  "code": "MAR",
+  "aliases": [
+    "Atlas Lions",
+    "Les Lions de l'Atlas",
+    "MAR"
+  ],
+  "facts": {
+    "group": {
+      "value": "Group C — opponents Brazil, Haiti, Scotland",
+      "as_of": "2025-12-05",
+      "source": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_draw",
+      "confidence": "high"
+    },
+    "wc_2022": {
+      "value": "First African and first Arab nation to reach a World Cup semifinal (2022), beating Belgium, Spain and Portugal en route",
+      "as_of": "2022-12-14",
+      "source": "https://en.wikipedia.org/wiki/Morocco_at_the_2022_FIFA_World_Cup",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "2022 semifinalists and Africa's standard-bearer; dark-horse contenders captained by Achraf Hakimi",
+      "as_of": "2026-06-12",
+      "source": "https://en.wikipedia.org/wiki/Morocco_national_football_team",
+      "confidence": "med"
+    },
+    "wc2026_match1": {
+      "value": "Opened WC2026 with a 1-1 draw vs Brazil (13 Jun, MetLife). Ismael Saibari put Morocco ahead in the 21st (chipped Alisson off a Brahim Diaz through ball); Vinicius Junior equalized in the 32nd. Keeper Bounou made crucial late saves; ~10 min stoppage time. Morocco held five-time champions Brazil — a statement point for the Atlas Lions.",
+      "as_of": "2026-06-13",
+      "source": "https://www.cbssports.com/soccer/news/brazil-vs-morocco-live-updates-world-cup-2026-score-result/live/",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/1280px-Flag_of_Morocco.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Public domain (national flag) via Wikimedia Commons",
+    "as_of": "2026-06-12"
+  },
+  "active_narratives": [
+    "morocco-holds-brazil-wc2026"
+  ],
+  "last_verified": "2026-06-13"
+}

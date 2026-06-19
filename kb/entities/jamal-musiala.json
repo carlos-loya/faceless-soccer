@@ -1,0 +1,61 @@
+{
+  "slug": "jamal-musiala",
+  "type": "player",
+  "name": "Jamal Musiala",
+  "aliases": [
+    "Musiala"
+  ],
+  "facts": {
+    "age": {
+      "value": 23,
+      "as_of": "2026-06-09",
+      "source": "https://www.espn.com/soccer/story/_/id/47632599/bayern-munich-jamal-musiala-return-injury-germany-leipzig",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Bayern Munich",
+      "as_of": "2026-06-09",
+      "source": "https://www.espn.com/soccer/story/_/id/47632599/bayern-munich-jamal-musiala-return-injury-germany-leipzig",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "Germany",
+      "as_of": "2026-06-09",
+      "source": "https://www.aljazeera.com/sports/2026/5/31/germany-world-cup-2026-team-preview-players-to-watch-group-and-squad-list",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Attacking midfielder / forward",
+      "as_of": "2026-06-09",
+      "source": "https://www.bundesliga.com/en/bundesliga/news/how-will-germany-line-up-havertz-musiala-wirtz-nagelsmann-world-cup-2026-28807",
+      "confidence": "high"
+    },
+    "current_form": {
+      "value": "Returned from a long injury layoff late in 2025-26; primary creative threat for both Bayern and Germany. Nagelsmann said even at 95% he is one of the best players in the world, so the question is sharpness rather than availability.",
+      "as_of": "2026-06-09",
+      "source": "https://rg.org/en-ca/sportsbooks/world-cup-2026/germany",
+      "confidence": "med"
+    },
+    "fitness": {
+      "value": "Recovered from a fractured fibula and dislocated ankle suffered at the July 2025 Club World Cup; out ~6 months, returned to club action (comeback vs RB Leipzig 18 Jan 2026). Match-fit and named in the World Cup squad.",
+      "as_of": "2026-06-09",
+      "source": "https://www.espn.com/soccer/story/_/id/47632599/bayern-munich-jamal-musiala-return-injury-germany-leipzig",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "In Germany's 26-man World Cup 2026 squad (named 21 May 2026) as a key attacker. Germany in Group E with Cura\u00e7ao, C\u00f4te d'Ivoire and Ecuador; open vs Cura\u00e7ao on 14 June in Houston.",
+      "as_of": "2026-06-09",
+      "source": "https://www.aljazeera.com/sports/2026/5/31/germany-world-cup-2026-team-preview-players-to-watch-group-and-squad-list",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Jamal_Musiala_2022_%28cropped%29.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "crop by ArsenalGhanaPartey / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-14"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-09"
+}

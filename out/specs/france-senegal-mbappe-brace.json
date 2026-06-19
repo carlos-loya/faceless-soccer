@@ -1,0 +1,135 @@
+{
+  "format": "post_match",
+  "topic": "France 3-1 Senegal — Mbappé brace avenges 2002",
+  "subject": "kylian-mbappe",
+  "matchup": ["france", "senegal"],
+  "target_duration_seconds": 30,
+  "hook": {
+    "first_frame_text": "24 years. Avenge 2002?",
+    "spoken_hook": "24 years since Senegal stunned France. Tonight Mbappé answered.",
+    "hook_type": "curiosity_gap"
+  },
+  "retention_mechanic": "seamless_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "2002: SENEGAL 1-0 FRANCE",
+      "voiceover": "2002. Defending champs France. Senegal 1-0. Biggest WC shock ever.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "2002 World Cup poster style, France vs Senegal, bold gold text on black, 'THE SHOCK' watermark",
+      "visual_source": "entity",
+      "visual_query": "kylian-mbappe",
+      "sticker_entity": "",
+      "score": "0-0",
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "MBAPPÉ. 66 MINUTES.",
+      "voiceover": "24 years later. 66 minutes. Mbappé breaks the deadlock. Clinical.",
+      "stat_callout": "",
+      "graphic_type": "scorers_split",
+      "graphic_prompt": "Mbappé vs Senegal, goal moment, gold score 1-0 between them, black background gold accents",
+      "visual_source": "entity",
+      "visual_query": "kylian-mbappe",
+      "sticker_entity": "",
+      "score": "1-0",
+      "duration_seconds": 3
+    },
+    {
+      "index": 3,
+      "on_screen_text": "BARCOLA. 82 MINUTES.",
+      "voiceover": "Dembélé off, Barcola on. Sub wins it. Mbappé assist, Barcola finish. 2-0.",
+      "stat_callout": "",
+      "graphic_type": "scorers_split",
+      "graphic_prompt": "Barcola vs Senegal, celebration, gold score 2-0 between them, black background gold accents",
+      "visual_source": "entity",
+      "visual_query": "bradley-barcola",
+      "sticker_entity": "",
+      "score": "2-0",
+      "duration_seconds": 3
+    },
+    {
+      "index": 4,
+      "on_screen_text": "MBAYE PULLS ONE BACK. 90+5'",
+      "voiceover": "90+5. Mbaye pulls one back. Senegal sniffing a point.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Senegal player scoring late, gold score 2-1, tension, night stadium atmosphere",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "score": "2-1",
+      "duration_seconds": 3
+    },
+    {
+      "index": 5,
+      "on_screen_text": "MBAPPÉ AGAIN. 90+6'",
+      "voiceover": "One minute later. Mbappé again. Answer delivered. 3-1. 2002 ghost exorcised.",
+      "stat_callout": "",
+      "graphic_type": "scorers_split",
+      "graphic_prompt": "Mbappé brace celebration, gold score 3-1 between him and Senegal crest, black background gold accents",
+      "visual_source": "entity",
+      "visual_query": "kylian-mbappe",
+      "sticker_entity": "",
+      "score": "3-1",
+      "duration_seconds": 3
+    },
+    {
+      "index": 6,
+      "on_screen_text": "GROUP I STANDINGS",
+      "voiceover": "Group I after matchday one. France top on three. Norway-Iraq next. Can Les Bleus go all the way?",
+      "stat_callout": "",
+      "graphic_type": "group_table",
+      "graphic_prompt": "Group I table: France 3pts, Norway 0, Iraq 0, Senegal 0. France row highlighted gold. Night stadium background.",
+      "visual_source": "stock_video",
+      "visual_query": "night-stadium",
+      "sticker_entity": "",
+      "score": "3-1",
+      "group_table": [
+        {"team": "france", "played": 1, "points": 3, "gd": 2, "highlight": true},
+        {"team": "norway", "played": 0, "points": 0, "gd": 0, "highlight": false},
+        {"team": "iraq", "played": 0, "points": 0, "gd": 0, "highlight": false},
+        {"team": "senegal", "played": 1, "points": 0, "gd": -2, "highlight": false}
+      ],
+      "duration_seconds": 4
+    },
+    {
+      "index": 7,
+      "on_screen_text": "SUBSCRIBE — DAILY WORLD CUP",
+      "voiceover": "Daily World Cup stories. Subscribe — don't miss the next one.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Mbappé celebration close-up, gold confetti burst, 'DAILY WORLD CUP' bold, black background gold accents",
+      "visual_source": "stock_video",
+      "visual_query": "gold-confetti",
+      "sticker_entity": "",
+      "score": "3-1",
+      "duration_seconds": 3
+    }
+  ],
+  "comment_bait": "France to win Group I — yes or no? Make your case 👇",
+  "cta": "Follow for your daily World Cup stories",
+  "music_mood": "cinematic tension building to triumphant",
+  "thumbnail": {
+    "text": "MBAPPÉ AVENGES 2002",
+    "concept": "Mbappé face close-up, gold confetti, '3-1' scoreline, 2002 ghosted behind him fading"
+  },
+  "youtube_title": "France 3-1 Senegal: Mbappé Brace Avenge 2002 Shock | World Cup 2026 Group I",
+  "youtube_description": "France open their World Cup 2026 campaign with a 3-1 win over Senegal at MetLife Stadium — 24 years after the Lions of Teranga stunned Les Bleus in the 2002 opener. Kylian Mbappé scores twice (66', 90+6'), Bradley Barcola adds a third (82'). Group I standings and what it means for the road ahead. #WorldCup2026 #France #Senegal #Mbappe #TikiTakaFootyTV",
+  "instagram_caption": "24 years later. Mbappé answers. 🇫🇷\n\nFrance 3-1 Senegal. The 2002 ghost exorcised at MetLife.\n\nFrance to win Group I — yes or no? Make your case 👇\n\n#WorldCup2026 #France #Senegal #Mbappe #WorldCup #Football #Soccer #TikiTakaFootyTV",
+  "tiktok_caption": "24 years. Mbappé answers. France 3-1 Senegal 🇫🇷\n\nThe 2002 shock — avenged.\n\nFrance to win Group I? Make your case 👇\n\n#WorldCup2026 #France #Senegal #Mbappe #WorldCup #Football #TikiTakaFootyTV",
+  "hashtags": [
+    "worldcup2026",
+    "france",
+    "senegal",
+    "mbappe",
+    "worldcup",
+    "football",
+    "soccer",
+    "tikitakafootytv",
+    "groupi",
+    "metlife"
+  ]
+}

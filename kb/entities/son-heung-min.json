@@ -1,0 +1,19 @@
+{
+  "slug": "son-heung-min",
+  "type": "player",
+  "name": "Son Heung-min",
+  "aliases": [
+    "Son",
+    "Heung-min Son"
+  ],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/BFA_2023_-2_Heung-Min_Son_%28cropped%29.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "Ujishadow / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-11"
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-11"
+}

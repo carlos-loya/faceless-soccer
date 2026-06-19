@@ -1,0 +1,104 @@
+{
+  "format": "player_story",
+  "topic": "Vinícius Júnior carries Brazil into their World Cup 2026 opener vs Morocco with Neymar injured",
+  "subject": "vinicius-junior",
+  "matchup": [
+    "brazil",
+    "morocco"
+  ],
+  "target_duration_seconds": 34,
+  "hook": {
+    "first_frame_text": "Neymar's gone. It's all on Vini.",
+    "spoken_hook": "Neymar's out — and now Brazil's whole World Cup rests on one man.",
+    "hook_type": "bold_claim"
+  },
+  "retention_mechanic": "seamless_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "NEYMAR'S OUT. IT'S ALL ON VINI.",
+      "voiceover": "Neymar's out. Now Brazil's whole World Cup rests on one man.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Deep black background, gold gradient accents (#F7D774 to #C8881B), a lone gold spotlight beam, vertical 9:16, premium broadcast feel, no faces, no logos",
+      "visual_source": "entity",
+      "visual_query": "vinicius-junior",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 4
+    },
+    {
+      "index": 2,
+      "on_screen_text": "NO NEYMAR. NO RODRYGO.",
+      "voiceover": "Neymar's hurt. Rodrygo's injured. He's on his own now.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Moody black-and-gold stadium floodlights in bokeh, tension before kickoff, vertical 9:16, no faces, no logos",
+      "visual_source": "stock_video",
+      "visual_query": "floodlight-bokeh",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 5
+    },
+    {
+      "index": 3,
+      "on_screen_text": "24 YEARS OF HURT",
+      "voiceover": "A Ballon d'Or runner-up who's scored in two Champions League finals — now carrying a nation that hasn't won this since two thousand and two.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black background with a faded gold World Cup trophy, premium broadcast feel, vertical 9:16, no faces, no logos",
+      "visual_source": "entity",
+      "visual_query": "fifa-world-cup-trophy",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 8
+    },
+    {
+      "index": 4,
+      "on_screen_text": "HERO OR HEARTBREAK?",
+      "voiceover": "And the opener's a trap. Morocco beat Spain and Portugal to reach the twenty twenty-two semis. So which Vini shows up?",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black background, gold gradient accents, a faint red and green energy sweep, vertical 9:16, premium broadcast feel, no faces, no logos",
+      "visual_source": "entity",
+      "visual_query": "achraf-hakimi",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 8
+    },
+    {
+      "index": 5,
+      "on_screen_text": "SUBSCRIBE — DAILY WORLD CUP",
+      "voiceover": "Follow for your daily World Cup story — every hero, every twist.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Deep black background, gold gradient accents (#F7D774 to #C8881B), a single gold spotlight, vertical 9:16, premium broadcast feel, no faces, no logos",
+      "visual_source": "entity",
+      "visual_query": "vinicius-junior",
+      "sticker_entity": "",
+      "score": "",
+      "duration_seconds": 4
+    }
+  ],
+  "comment_bait": "Hero or heartbreak for Vini tonight? Make your case — I'll be in the replies.",
+  "cta": "Follow for your daily World Cup story",
+  "music_mood": "Tense, cinematic, building anticipation with a heroic gold-tinged swell",
+  "thumbnail": {
+    "text": "IT'S ALL ON VINI",
+    "concept": "Vinícius CC portrait lit gold against deep black, Brazil-vs-Morocco flag badge corner, bold white 'IT'S ALL ON VINI' with a small 'Neymar OUT' tag"
+  },
+  "youtube_title": "Neymar's OUT — Now Brazil's World Cup Is All On Vinícius vs Morocco",
+  "youtube_description": "With Neymar ruled out (calf) and Rodrygo missing the squad, Vinícius Júnior carries Brazil into their 2026 World Cup opener against Morocco — the first African side to reach a World Cup semifinal. Five-time champions Brazil haven't won it since 2002. Can Vini end 24 years of hurt, or does Morocco spring the upset? #worldcup2026 #brazil #viniciusjr",
+  "instagram_caption": "Neymar's out. Rodrygo's out. It's all on Vini now. 🇧🇷 Brazil's first test? Morocco — the team that knocked out Spain AND Portugal in 2022. Hero or heartbreak for Vini tonight? Make your case — I'll be in the replies. 🇧🇷 Follow for your daily World Cup story.",
+  "tiktok_caption": "It's all on Vini now 🇧🇷 Neymar out, Rodrygo out, and Morocco waiting. Hero or heartbreak tonight? Make your case 👀 Follow for daily World Cup stories.",
+  "hashtags": [
+    "#worldcup2026",
+    "#brazil",
+    "#viniciusjr",
+    "#morocco",
+    "#football",
+    "#soccer",
+    "#seleção",
+    "#tikitakafootytv"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "quinones",
+  "type": "player",
+  "name": "Julián Quiñones",
+  "aliases": ["Quiñones", "Julián Quiñones"],
+  "facts": {
+    "nation": {
+      "value": "Mexico (Colombian-born, naturalized)",
+      "as_of": "2026-06-11",
+      "source": "https://www.espn.com/soccer/match/_/gameId/760415/south-africa-mexico",
+      "confidence": "high"
+    },
+    "wc2026": {
+      "value": "Scored the first goal of the 2026 World Cup (9') in Mexico's 2-0 win over South Africa in the opener.",
+      "as_of": "2026-06-11",
+      "source": "https://www.espn.com/soccer/match/_/gameId/760415/south-africa-mexico",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Juli%C3%A1n_Qui%C3%B1ones_%281%29.png",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "attribution": "Selección Nacional de México / CC BY 3.0 via Wikimedia Commons",
+    "as_of": "2026-06-11",
+    "note": "Clean Mexico-kit portrait — vision-picked for a cutout (out/cutouts/quinones.png)."
+  },
+  "active_narratives": ["wc2010-opener-echo"],
+  "last_verified": "2026-06-11"
+}

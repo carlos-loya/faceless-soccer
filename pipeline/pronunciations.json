@@ -1,0 +1,3 @@
+{
+  "_comment": "Pronunciation respellings are OFF by default (owner pref 2026-06-13). Only add an entry here when a specific name comes out REALLY BAD in the actual VO — don't pre-load names speculatively. The full prior dictionary is archived in pronunciations.archive.json if you need to restore one. Keys = exact phrase as written in the VO; values = phonetic respelling (applied to voiceover audio only, never on-screen text)."
+}

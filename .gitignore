@@ -1,0 +1,38 @@
+# secrets
+.env
+pipeline/.secrets/
+# real Postiz compose holds live OAuth/JWT secrets — commit docker-compose.example.yaml instead
+deploy/postiz/docker-compose.yaml
+
+# python (uv)
+.venv/
+__pycache__/
+*.pyc
+
+# node / remotion
+node_modules/
+
+# browser automation session
+.playwright-mcp/
+
+# build/render logs
+logs/
+
+# generated render bundles (regenerated per render by prepare.mjs)
+pipeline/remotion/public/
+
+# generated output — keep specs + small text artifacts, drop heavy media
+out/.piper/
+out/renders/
+out/candidates/
+out/cutouts/
+out/assets/
+out/preview/
+out/voice-samples/
+out/storyboards/
+out/dashboard/
+
+# rendered video history (regenerable; keep only the post-log)
+out/published/*
+!out/published/
+!out/published/post-log.jsonl

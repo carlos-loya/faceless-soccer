@@ -1,0 +1,43 @@
+{
+  "note": "Canonical scope for the grounding KB — who/what to track. The soccer-news skill refreshes these. Grow the list over time; slugs are the file names under entities/ and narratives/.",
+  "refresh_policy": {
+    "facts_days": 7,
+    "narratives_days": 1,
+    "wc_mode": "daily",
+    "wc_window": ["2026-06-11", "2026-07-19"]
+  },
+  "players": [
+    "lamine-yamal", "pedri", "rodri",
+    "kylian-mbappe", "ousmane-dembele",
+    "jude-bellingham", "harry-kane", "bukayo-saka", "phil-foden",
+    "erling-haaland",
+    "vinicius-junior", "rodrygo", "raphinha",
+    "lionel-messi", "lautaro-martinez", "julian-alvarez", "emiliano-martinez",
+    "jamal-musiala", "florian-wirtz",
+    "cristiano-ronaldo", "bruno-fernandes",
+    "virgil-van-dijk",
+    "christian-pulisic", "guillermo-ochoa"
+  ],
+  "nations": [
+    "spain", "france", "england", "brazil", "argentina", "germany",
+    "portugal", "netherlands", "usa", "mexico", "canada", "norway"
+  ],
+  "clubs": [
+    "real-madrid", "barcelona", "manchester-city", "arsenal",
+    "liverpool", "bayern-munich", "psg"
+  ],
+  "narratives": [
+    "yamal-next-messi",
+    "messi-ronaldo-last-dance",
+    "haaland-first-world-cup",
+    "mbappe-france-crown",
+    "spain-favorites-golden-gen",
+    "england-its-coming-home",
+    "argentina-title-defense",
+    "brazil-ending-the-drought",
+    "usmnt-home-world-cup",
+    "mexico-host-opener",
+    "wc2026-48-team-format",
+    "australia-shock-turkiye-wc2026"
+  ]
+}

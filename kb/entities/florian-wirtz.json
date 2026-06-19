@@ -1,0 +1,54 @@
+{
+  "slug": "florian-wirtz",
+  "type": "player",
+  "name": "Florian Wirtz",
+  "aliases": ["Wirtz"],
+  "facts": {
+    "age": {
+      "value": 23,
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Florian_Wirtz",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "Liverpool",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Florian_Wirtz",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "Germany",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Florian_Wirtz",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Attacking midfielder",
+      "as_of": "2026-06-09",
+      "source": "https://www.bundesliga.com/en/bundesliga/news/how-will-germany-line-up-havertz-musiala-wirtz-nagelsmann-world-cup-2026-28807",
+      "confidence": "high"
+    },
+    "current_form": {
+      "value": "Joined Liverpool in 2025 for a club-record fee (~£100m plus bonuses, a Premier League record). His debut 2025-26 season was a difficult adaptation as Liverpool struggled for consistency; reported ~17 goal contributions in ~49 appearances across all competitions, with only 5 Premier League goals. Has become Germany's primary creator alongside Musiala.",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Florian_Wirtz",
+      "confidence": "med"
+    },
+    "fitness": {
+      "value": "Fit; no reported injury concerns ahead of the tournament. Named in Germany's 26-man squad.",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Florian_Wirtz",
+      "confidence": "med"
+    },
+    "wc_role": {
+      "value": "Selected in Germany's 26-man World Cup 2026 squad on 21 May 2026; his first World Cup. A primary creator for Nagelsmann's side. Germany in Group E with Curaçao, Côte d'Ivoire and Ecuador.",
+      "as_of": "2026-06-09",
+      "source": "https://en.wikipedia.org/wiki/Florian_Wirtz",
+      "confidence": "high"
+    }
+  },
+  "image": null,
+  "image_todo": "fetch + verify a Creative-Commons portrait; no fabricated URLs",
+  "active_narratives": [],
+  "last_verified": "2026-06-09"
+}

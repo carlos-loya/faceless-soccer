@@ -1,0 +1,80 @@
+{
+  "slug": "christian-pulisic",
+  "type": "player",
+  "name": "Christian Pulisic",
+  "aliases": [
+    "Pulisic",
+    "Captain America"
+  ],
+  "facts": {
+    "age": {
+      "value": "27 (turns 28 in September)",
+      "as_of": "2026-06-09",
+      "source": "https://www.vavel.com/en/international-football/2026/06/06/1262881-becoming-captain-america-christian-pulisic-at-the-2026-world-cup.html",
+      "confidence": "high"
+    },
+    "club": {
+      "value": "AC Milan",
+      "as_of": "2026-06-09",
+      "source": "https://www.vavel.com/en/international-football/2026/06/06/1262881-becoming-captain-america-christian-pulisic-at-the-2026-world-cup.html",
+      "confidence": "high"
+    },
+    "nation": {
+      "value": "USA (co-host)",
+      "as_of": "2026-06-09",
+      "source": "https://www.hitc.com/everything-you-need-to-know-about-usmnt-star-man-christian-pulisic-ahead-of-world-cup-2026/",
+      "confidence": "high"
+    },
+    "position": {
+      "value": "Left winger",
+      "as_of": "2026-06-09",
+      "source": "https://www.vavel.com/en/international-football/2026/06/06/1262881-becoming-captain-america-christian-pulisic-at-the-2026-world-cup.html",
+      "confidence": "high"
+    },
+    "wc_role": {
+      "value": "USA's talisman and on-field leader for the host nation's World Cup; ~85 caps, leading attacker. Nicknamed 'Captain America'. NOTE: 'Captain America' is a persona/nickname — Tim Ream is widely reported as the player expected to wear the armband as the WC 2026 captain, so do NOT assert Pulisic is the official tournament captain.",
+      "as_of": "2026-06-11",
+      "source": "https://sports.yahoo.com/articles/usmnt-leading-scorers-christian-pulisic-134000574.html",
+      "confidence": "med"
+    },
+    "captaincy_flag": {
+      "value": "Tim Ream is expected to be the USMNT's WC 2026 captain (armband). Pulisic has captaincy experience (youngest USMNT captain in the modern era, Nov 2018, aged 20) but the 2026 armband is reported to be Ream's. SUPERLATIVE/FACT-CHECK FLAG: avoid 'Pulisic, USA's captain'.",
+      "as_of": "2026-06-11",
+      "source": "https://www.nbcsports.com/soccer/news/usmnt-records-all-time-scoring-leaders-cap-winners-coaches",
+      "confidence": "med"
+    },
+    "form": {
+      "value": "Snapped a 27-game club-and-country goal skid (a 5-month drought; last scored Dec 28, 2025 for AC Milan, and finished his Milan season scoreless in a career-high 19 club games) with a goal AND an assist in the 3-2 win over Senegal on May 31, 2026 — the next-to-last warmup. Set up Sergino Dest's opener, then scored in the 20th minute. (NOTE: USA then LOST 2-1 to Germany on June 6, their actual final tune-up — do NOT call Senegal the 'last game before the World Cup'.)",
+      "as_of": "2026-06-11",
+      "source": "https://www.espn.com/soccer/report/_/gameId/762592",
+      "confidence": "high"
+    },
+    "scoring_rank": {
+      "value": "33 goals in ~85 caps — 5th on the USMNT all-time scorers list, behind Clint Dempsey (57), Landon Donovan (57), Jozy Altidore (42) and Eric Wynalda (34). 'On pace' to become the all-time leading scorer around his 151st cap. SUPERLATIVE FLAG: he is NOT currently the all-time top scorer — only chasing it.",
+      "as_of": "2026-06-11",
+      "source": "https://sports.yahoo.com/articles/usmnt-leading-scorers-christian-pulisic-134000574.html",
+      "confidence": "med"
+    },
+    "opener": {
+      "value": "USA open vs Paraguay on June 12 in Los Angeles",
+      "as_of": "2026-06-09",
+      "source": "https://worldsoccertalk.com/news/when-is-christian-pulisic-next-game/",
+      "confidence": "high"
+    },
+    "opener_performance": {
+      "value": "Architect of the USA's 4-1 win over Paraguay in the WC opener (June 12, 2026). Did not score but ran the first half: involved in the 7' move that forced Bobadilla's own goal, and set up Balogun's 31' goal with a cutback. Pochettino subbed him at halftime with the USA 3-0 up — said he'd explain after the game; reported as a planned rest/management call, NOT an injury. Pulisic appeared fine on the bench.",
+      "as_of": "2026-06-12",
+      "source": "https://sports.yahoo.com/soccer/live/usmnt-vs-paraguay-score-live-updates-where-to-watch-box-score-214536754.html",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Christian_Pulisic_USMNT_v_Belgium_Mar_28_2026-73_%28cropped%29.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "Bryan Berlin / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-06-09"
+  },
+  "active_narratives": ["usmnt-home-world-cup", "usmnt-opener-paraguay-rout"],
+  "last_verified": "2026-06-12"
+}

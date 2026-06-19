@@ -1,0 +1,18 @@
+{
+  "slug": "italy-2006-champions",
+  "type": "moment",
+  "name": "Italy 2006 World Cup champions",
+  "aliases": ["Italy 2006", "Azzurri 2006"],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/FIFA_World_Cup_2006_-_Italian_celebrations_at_Colosseum.jpg",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "attribution": "m@moo from Rome, Italy / CC BY 2.0 via Wikimedia Commons",
+    "as_of": "2026-06-10",
+    "curated": true,
+    "curated_note": "Vision-vetted: Italian fans celebrating with flags in front of the lit Colosseum at night after winning the 2006 World Cup. Iconic + unmistakably Italy."
+  },
+  "active_narratives": [],
+  "last_verified": "2026-06-10"
+}

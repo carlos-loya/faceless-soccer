@@ -1,0 +1,78 @@
+{
+  "slug": "brazil",
+  "type": "nation",
+  "name": "Brazil",
+  "code": "BRA",
+  "aliases": [
+    "Seleção",
+    "A Seleção",
+    "Canarinho"
+  ],
+  "facts": {
+    "group": {
+      "value": "Group C — opponents Morocco, Haiti, Scotland",
+      "as_of": "2025-12-05",
+      "source": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_draw",
+      "confidence": "high"
+    },
+    "fifa_ranking": {
+      "value": "6th",
+      "as_of": "2026-04-01",
+      "source": "https://www.espn.com/soccer/story/_/id/46664763/fifa-mens-top-50-world-rankings",
+      "confidence": "high"
+    },
+    "manager": {
+      "value": "Carlo Ancelotti (took over 2025; first non-Brazilian to coach Brazil at a World Cup)",
+      "as_of": "2026-05-18",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/brazil-squad-announcement-carlo-ancelotti",
+      "confidence": "high"
+    },
+    "qualification": {
+      "value": "Qualified via CONMEBOL qualifiers",
+      "as_of": "2026-05-18",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/brazil-squad-announcement-carlo-ancelotti",
+      "confidence": "high"
+    },
+    "recent_form": {
+      "value": "Chasing a first World Cup title since 2002; Raphinha arrives in form after a strong season at La Liga champions Barcelona",
+      "as_of": "2026-05-28",
+      "source": "https://www.aljazeera.com/sports/2026/5/28/brazils-world-cup-2026-team-preview-players-to-watch-group-matches-squad",
+      "confidence": "med"
+    },
+    "wc_role": {
+      "value": "Five-time champions and contender; seeking a record-extending 6th title and first since 2002",
+      "as_of": "2026-05-18",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/brazil-squad-announcement-carlo-ancelotti",
+      "confidence": "high"
+    },
+    "key_players": {
+      "value": "Vinícius Júnior, Raphinha, Bruno Guimarães, Marquinhos, Alisson (GK), Neymar (recalled at 34 after ~2.5-year international absence)",
+      "as_of": "2026-05-18",
+      "source": "https://www.goal.com/en-us/lists/brazil-squad-world-cup-2026/blt08d5bff83176ff6a",
+      "confidence": "high"
+    },
+    "squad_news": {
+      "value": "Ancelotti named the 26-man squad on 18 May 2026; recalled Neymar after a ~2.5-year national-team absence; left out veteran Thiago Silva, plus Richarlison and João Pedro; Rodrygo and Estêvão miss out through injury.",
+      "as_of": "2026-05-18",
+      "source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/brazil-squad-announcement-carlo-ancelotti",
+      "confidence": "high"
+    },
+    "wc2026_match1": {
+      "value": "Stumbled to a 1-1 draw vs Morocco in their WC2026 opener (13 Jun, MetLife) under Ancelotti. Fell behind to Saibari (21'); Vinicius Junior rescued a point (32'). Casemiro and Ibanez booked; Brazil pressed late (Paqueta, Raphinha) but Bounou held firm. Dropped points to Africa's 2022 semifinalists in game one.",
+      "as_of": "2026-06-13",
+      "source": "https://www.cbssports.com/soccer/news/brazil-vs-morocco-live-updates-world-cup-2026-score-result/live/",
+      "confidence": "high"
+    }
+  },
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Raimundo Teixeira Mendes / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-09"
+  },
+  "active_narratives": [
+    "brazil-ending-the-drought"
+  ],
+  "last_verified": "2026-06-09"
+}

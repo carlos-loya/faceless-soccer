@@ -1,0 +1,18 @@
+{
+  "slug": "iraq",
+  "type": "nation",
+  "name": "Iraq",
+  "code": "IRQ",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Iraq.svg/1280px-Flag_of_Iraq.svg.png",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "See File history below for details. / Public domain via Wikimedia Commons",
+    "as_of": "2026-06-15"
+  },
+  "active_narratives": [],
+  "last_verified": "",
+  "_flag_wiki": "Iraq"
+}

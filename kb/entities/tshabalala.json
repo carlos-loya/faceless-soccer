@@ -1,0 +1,18 @@
+{
+  "slug": "tshabalala",
+  "type": "player",
+  "name": "Siphiwe Tshabalala",
+  "aliases": ["Shabba"],
+  "facts": {
+    "claim_to_fame": {
+      "value": "Scored the opening goal of the 2010 World Cup (55', South Africa vs Mexico) — the first goal of the tournament",
+      "as_of": "2026-06-10",
+      "source": "https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_Group_A",
+      "confidence": "high"
+    }
+  },
+  "image": null,
+  "image_todo": "fetch CC portrait via fetch_images",
+  "active_narratives": ["wc2010-opener-echo"],
+  "last_verified": "2026-06-10"
+}
