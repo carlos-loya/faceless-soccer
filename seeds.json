@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "note": "Seed list for the outlier-discovery engine (see OUTLIER-ENGINE-SPEC.md). channel_id is filled where confirmed; null means resolve from handle/name at first ingest via channels.list?forHandle (1 unit) and cache it. priority = how directly the lane maps to our copyright-safe strategy (high = stats/trivia/tactics we'll emulate; medium = edits/highlights/banter we study for viral MECHANICS only).",
+  "note": "Seed list for the outlier-discovery engine (see docs/OUTLIER-ENGINE-SPEC.md). channel_id is filled where confirmed; null means resolve from handle/name at first ingest via channels.list?forHandle (1 unit) and cache it. priority = how directly the lane maps to our copyright-safe strategy (high = stats/trivia/tactics we'll emulate; medium = edits/highlights/banter we study for viral MECHANICS only).",
   "lanes": {
     "stats": "Stats/graphics/data \u2014 our core copyright-safe lane",
     "trivia_lists": "Trivia, ranking lists, did-you-know \u2014 core copyright-safe lane",

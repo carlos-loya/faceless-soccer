@@ -23,7 +23,7 @@ from pathlib import Path
 import requests
 
 WD_API = "https://www.wikidata.org/w/api.php"
-UA = {"User-Agent": "TikiTakaFootyTV/1.0 (faceless-soccer content tool; contact: exafterdev@gmail.com)"}
+UA = {"User-Agent": "TikiTakaFootyTV/1.0 (faceless-soccer content tool; +https://github.com/carlos-loya/faceless-soccer)"}
 LANGS = ["en", "ko", "cs", "de", "es", "tr"]  # languages whose Wikipedia leads we harvest
 MIN_W = 500
 

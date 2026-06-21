@@ -27,7 +27,7 @@ import requests
 
 COMMONS = "https://commons.wikimedia.org/w/api.php"
 OPENVERSE = "https://api.openverse.org/v1/images/"
-UA = {"User-Agent": "TikiTakaFootyTV/1.0 (faceless-soccer content tool; contact: exafterdev@gmail.com)"}
+UA = {"User-Agent": "TikiTakaFootyTV/1.0 (faceless-soccer content tool; +https://github.com/carlos-loya/faceless-soccer)"}
 FREE = re.compile(r"\b(cc0|pdm|public domain|cc by|cc-by|by-sa|by 2|by 3|by 4|attribution)\b", re.I)
 MIN_W = 500
 

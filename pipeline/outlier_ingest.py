@@ -8,7 +8,7 @@ Outlier-discovery engine — MVP ingest (the viral engine, deterministic stage).
 seeds.json -> resolve channels -> pull recent uploads + stats -> per-channel median
 baseline (Shorts vs long-form) -> rank outliers (views / baseline) -> print "what's hot".
 
-Quota-aware by design (see OUTLIER-ENGINE-SPEC.md): NO search.list (100 units). Uses
+Quota-aware by design (see docs/OUTLIER-ENGINE-SPEC.md): NO search.list (100 units). Uses
 channels.list + playlistItems.list + videos.list (~1 unit each). ~7 channels ≈ ~21 units
 of the 10k/day budget. Persists to SQLite so later runs can track velocity.
 

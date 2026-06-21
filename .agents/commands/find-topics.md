@@ -1,0 +1,48 @@
+---
+description: Surface today's best video ideas — what's TRUE now (soccer-news) × what's VIRAL (outlier engine) × what WORKS on our channel (learnings)
+argument-hint: "[optional: a lane/theme to focus on, e.g. 'USMNT' or 'upsets']"
+allowed-tools: Bash, Read, Skill, AskUserQuestion
+---
+
+Generate today's ranked shortlist of TikiTakaFootyTV video ideas — the "grounded × viral"
+idea engine. Optional focus: $ARGUMENTS
+
+This is the ideation step that feeds `/daily`. It does NOT script, render, or post — it
+produces a ranked idea list you (or `/daily`) can act on.
+
+Pull from all three engines, then synthesize:
+
+1. **What's TRUE now** — invoke the **`soccer-news`** skill: `refresh stale` and
+   `refresh narratives` to bring the KB current, then read the hottest, most *topical* World
+   Cup storylines for today (heroes, upsets, redemption arcs, selection/injury drama, talking
+   points). This is the channel's identity — **daily news & stories** — so lead here.
+
+2. **What's VIRAL** — run `uv run pipeline/outlier_ingest.py` for the deterministic outlier
+   feed: which videos/formats are overperforming their channel baseline on the seed channels
+   (≥ outlier-× of median, recent). Use it for *format/angle* signal — what's catching fire —
+   NOT to copy anyone's footage (the no-footage rule stands). Note the quota line it prints.
+
+3. **What WORKS for US** — read `kb/learnings.json`. Bias the list toward what the channel's
+   own analytics reward: narrative formats (`news_story` / `player_story` / `shock_stat`),
+   ≤~35s, a hook that wins the first second AND a tight body/ending; **demote `quiz_top5`**
+   (it lags here, though its "name/pick" comment-bait can graft onto a narrative).
+
+**Synthesize → a ranked shortlist of ~5 ideas.** For each, give:
+- **Hook** — the `first_frame_text` (≤7 words, scroll-stopping, sound-off readable).
+- **Format** — the `Format` enum value, and a one-line why-this-format.
+- **Grounded fact** — the specific, dated, sourced thing it rests on (from the KB) so it's
+  not built on stale memory. Flag if a key claim still needs verification.
+- **Why it'll land today** — the viral pattern it borrows (from the outlier feed) + the
+  channel learning it leans on.
+- **Comment-bait** — the contestable debate/prediction it ends on.
+- **Subject** — the KB entity slug for the corner sticker / thumbnail face (or note one needs
+  onboarding).
+
+Rank by: topicality today × fit with what's working × recognizable-name pull. Lead with the
+most magnetic name even as a foil (recognition stops the scroll). Keep every idea
+copyright-safe (generated graphics + CC portraits + VO — never broadcast footage or
+AI-generated faces).
+
+End by offering to hand the top pick to **`/daily`** (or the `videospec` skill) to script it.
+If grounding turns up nothing fresh, say so plainly and offer evergreen angles instead of
+forcing a weak news beat.

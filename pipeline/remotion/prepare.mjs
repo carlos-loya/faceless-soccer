@@ -74,7 +74,7 @@ const isImage = (b) =>
 const cache = new Map(); // url -> local filename (dedupe downloads)
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 // Descriptive UA + 429/error backoff — Wikimedia throttles rapid bursts (returns HTML error pages).
-const DL_UA = "TikiTakaFootyTV/1.0 (faceless-soccer content tool; contact: exafterdev@gmail.com)";
+const DL_UA = "TikiTakaFootyTV/1.0 (faceless-soccer content tool; +https://github.com/carlos-loya/faceless-soccer)";
 async function download(url, name) {
   if (cache.has(url)) return cache.get(url);
   // Owner-provided LOCAL asset (e.g. assets/source/<slug>.jpg) — copy from disk, don't fetch.
