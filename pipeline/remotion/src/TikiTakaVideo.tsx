@@ -44,6 +44,7 @@ type Scene = {
   sticker?: { img: string; flag?: boolean; cutout?: boolean; name?: string };  // per-scene corner sticker (flag chip, or a player cutout)
   score?: string;    // running scoreboard score for this beat, "HOME-AWAY" (match summaries)
   group_table?: GroupRow[];  // ranked group-standings table for this beat (hides the scoreboard here)
+  subscribe_chip?: boolean;  // pop a small "SUBSCRIBE" pill overlay on THIS beat (the climax) for ~2s
 };
 type GroupRow = { code: string; flag: string; name?: string; points: number; played?: number | null; gd?: number | null; highlight?: boolean };
 type Props = {
@@ -487,8 +488,43 @@ const Card: React.FC<{ scene: Scene; durationFrames: number; dir: number; index:
           and no per-scene flag chip. The matchup scoreboard/VS badge already carries the flags,
           so a corner sticker is redundant and crowds the frame. (FlagSticker + Props.sticker
           are left defined but intentionally never rendered.) */}
+      {scene.subscribe_chip && <SubscribeChip durationFrames={durationFrames} />}
       {scene.credit && <Credit text={scene.credit} top={creditTop} />}
     </AbsoluteFill>
+  );
+};
+
+// Small "SUBSCRIBE" pill that pops on the CLIMAX beat for ~2s (no dedicated subscribe scene —
+// that converted ~0% and leaked). Centered low, clear of the lower-RIGHT action rail and the
+// lower-middle scoreboard; a subject-tied subscribe line is voiced over this same beat.
+const SubscribeChip: React.FC<{ durationFrames: number }> = ({ durationFrames }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const inS = spring({ frame, fps, config: { damping: 14, stiffness: 160 } });
+  const scale = interpolate(inS, [0, 1], [0.5, 1]);
+  const holdEnd = Math.min(Math.round(fps * 2.2), durationFrames - 6);
+  const op = interpolate(frame, [0, 4, holdEnd, holdEnd + 8], [0, 1, 1, 0], { extrapolateRight: "clamp" });
+  const pulse = 1 + 0.04 * Math.sin(frame / 4);
+  return (
+    <div style={{
+      position: "absolute", left: 0, right: 0, bottom: 300,
+      display: "flex", justifyContent: "center", opacity: op,
+    }}>
+      <div style={{
+        transform: `scale(${scale * pulse})`, display: "flex", alignItems: "center", gap: 14,
+        padding: "16px 32px", borderRadius: 999, background: GOLD,
+        boxShadow: "0 8px 30px rgba(0,0,0,0.55)", border: "2px solid rgba(255,255,255,0.85)",
+      }}>
+        <div style={{
+          width: 0, height: 0, borderTop: "13px solid transparent",
+          borderBottom: "13px solid transparent", borderLeft: "20px solid #111",
+        }} />
+        <span style={{
+          fontFamily: FONT, fontWeight: 800, fontSize: 46, letterSpacing: 2,
+          color: "#111", textTransform: "uppercase",
+        }}>Subscribe</span>
+      </div>
+    </div>
   );
 };
 

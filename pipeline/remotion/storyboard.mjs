@@ -42,6 +42,17 @@ const cards = props.scenes.map((s, i) => {
   if ((s.graphic_type === "scorers_split" || s.graphic_type === "comparison_split") && Array.isArray(s.vsImages) && s.vsImages.some((f) => !f))
     warnings.push("A vs-split side has no flag image (renders a silhouette/blank). Check the on-screen 'A vs B' labels match KB slugs.");
 
+  // SCENE 2 is the retention cliff (41% of videos leak hardest here) — it MUST escalate the hook.
+  // Heuristic deflate-detector + an always-on audit reminder (see videospec rule 1b).
+  let auditHtml = "";
+  if (i === 1) {
+    const t2 = `${s.on_screen_text || ""} ${s.voiceover || ""}`;
+    const timeline = /\b\d{1,3}\s*['′’]/.test(t2) || /\b\d{1,2}\s*[-–]\s*\d{1,2}\b/.test(t2); // "20'" / "1-0"
+    if (timeline)
+      warnings.push("SCENE 2 looks like a chronological timeline (a minute mark or scoreline). Scene 2 is the #1 retention cliff — make it ESCALATE the hook's stakes, don't narrate the clock (videospec rule 1b).");
+    auditHtml = `<div class="audit">⚠ AUDIT scene 2 (retention cliff): does this ESCALATE the hook, or hand the story to the opponent / go abstract / narrate the clock? Raise the subject's specific stake.</div>`;
+  }
+
   const media = s.bgVideo
     ? `<video class="bg" src="${asset(s.bgVideo)}" muted autoplay loop playsinline></video>`
     : s.bg
@@ -49,6 +60,7 @@ const cards = props.scenes.map((s, i) => {
       : `<div class="bg nobg">no background<br><small>brand graphic</small></div>`;
 
   const scoreBadge = s.score ? `<span class="score">${esc(s.score)}</span>` : "";
+  const subBadge = (s.subscribe_chip || spec.scenes[i]?.subscribe_chip) ? `<span class="subchip">▶ SUB CHIP</span>` : "";
   // Only per-scene FLAG stickers render now (the subject/foil corner cutouts were removed).
   const stickerImg = s.sticker?.flag ? `<img class="sticker" src="${asset(s.sticker.img)}" alt="">` : "";
   const creditLine = s.credit ? `<div class="credit">${esc(s.credit)}</div>` : "";
@@ -61,7 +73,7 @@ const cards = props.scenes.map((s, i) => {
     <div class="phone">
       ${media}
       ${stickerImg}
-      <div class="topbar"><span class="num">#${n}</span><span class="gt">${esc(s.graphic_type || "graphic")}</span>${scoreBadge}</div>
+      <div class="topbar"><span class="num">#${n}</span><span class="gt">${esc(s.graphic_type || "graphic")}</span>${subBadge}${scoreBadge}</div>
       <div class="cap">${esc(s.on_screen_text)}</div>
       ${creditLine}
     </div>
@@ -70,6 +82,7 @@ const cards = props.scenes.map((s, i) => {
       <div class="vo">“${esc(s.voiceover || "")}”</div>
       <div class="dur">~${s.seconds}s (planned)</div>
       ${warnHtml}
+      ${auditHtml}
     </div>
   </div>`;
 }).join("\n");
@@ -78,6 +91,13 @@ const cards = props.scenes.map((s, i) => {
 const headerWarn = [];
 if (Array.isArray(spec.matchup) && spec.matchup.length === 2 && !(Array.isArray(props.matchup) && props.matchup.length === 2))
   headerWarn.push(`Matchup [${spec.matchup.join(", ")}] did not fully resolve → the scoreboard/VS badge will NOT render (a nation entity is missing a flag image).`);
+
+// Subscribe capture (videospec rule 5): exactly one beat — the climax — should carry subscribe_chip.
+const chipCount = (spec.scenes || []).filter((sc) => sc.subscribe_chip).length;
+if (chipCount === 0)
+  headerWarn.push(`No scene has subscribe_chip → no SUBSCRIBE pill will show. Set subscribe_chip:true on the CLIMAX beat + weave a subject-tied subscribe line into its voiceover (videospec rule 5).`);
+else if (chipCount > 1)
+  headerWarn.push(`${chipCount} scenes have subscribe_chip — use exactly ONE (the climax).`);
 
 const totalPlanned = props.scenes.reduce((t, s) => t + (s.seconds || 0), 0);
 const matchHdr = Array.isArray(props.matchup) && props.matchup.length === 2
@@ -122,6 +142,8 @@ const html = `<!doctype html>
   .warn { margin:0; padding-left:18px; color:#ffcdb6; }
   .warn li { margin:4px 0; }
   .ok { color:#6fbf8a; font-size:12px; }
+  .audit { margin-top:8px; padding:8px 10px; border-left:3px solid var(--gold2); background:#1a1505; color:#f0d79a; border-radius:4px; font-size:12px; }
+  .subchip { margin-left:auto; background:var(--gold); color:#111; font-weight:800; border-radius:6px; padding:2px 9px; font-size:11px; }
   footer { padding:18px 24px 40px; color:#999; border-top:1px solid var(--line); }
   footer b { color:var(--gold); }
 </style></head>

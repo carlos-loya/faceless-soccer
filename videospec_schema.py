@@ -109,6 +109,14 @@ class Scene(BaseModel):
         "nation slug + points. The running scoreboard is auto-HIDDEN on any scene that has a "
         "group_table (and on the comment-bait end card), so use it for the standings/wrap-up beat.",
     )
+    subscribe_chip: bool = Field(
+        default=False,
+        description="Set True on exactly ONE beat — the CLIMAX (the payoff/goal/peak-emotion "
+        "moment) — to pop a small animated 'SUBSCRIBE' pill overlay for ~2s. This REPLACES the old "
+        "dedicated subscribe scene (which converted ~0% and leaked). Pair it with a short, "
+        "subject-tied subscribe phrase woven into THIS beat's voiceover (e.g. 'subscribe to follow "
+        "Haaland's run'); do NOT spend a whole scene or the on_screen_text on subscribing.",
+    )
     duration_seconds: float
 
 
