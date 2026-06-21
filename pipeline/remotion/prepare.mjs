@@ -364,6 +364,7 @@ for (let i = 0; i < assetsProps.scenes.length; i++) {
     ...(v.camera ? { camera: v.camera } : {}),
     ...(v.score ? { score: v.score } : {}),
     ...(groupTable ? { group_table: groupTable } : {}),
+    ...(v.subscribe_chip ? { subscribe_chip: true } : {}),
   });
 }
 

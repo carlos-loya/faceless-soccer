@@ -466,6 +466,11 @@ def _design_from_spec(spec: dict) -> dict:
     blob = " ".join(
         (s.get("on_screen_text", "") + " " + s.get("voiceover", "")) for s in scenes_in
     ).lower()
+    # Subscribe approach, so the loop can A/B it: "chip_climax" = the new small overlay on the
+    # climax beat (subscribe_chip flag, 2026-06-21); "final_beat" = the old dedicated end ask;
+    # "none" = no subscribe ask present.
+    has_chip = any(s.get("subscribe_chip") for s in scenes_in)
+    subscribe_style = "chip_climax" if has_chip else ("final_beat" if "subscribe" in blob else "none")
     return {
         "format": spec.get("format"),
         "hook_type": hook.get("hook_type"),
@@ -480,6 +485,7 @@ def _design_from_spec(spec: dict) -> dict:
         "scenes": scenes,
         "comment_bait": spec.get("comment_bait"),
         "has_subscribe_scene": "subscribe" in blob,
+        "subscribe_style": subscribe_style,
     }
 
 

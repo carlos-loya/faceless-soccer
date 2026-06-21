@@ -2,7 +2,6 @@
 description: Fetch YouTube comments we haven't replied to and draft replies for me to post manually
 argument-hint: "[optional: a video URL/id, or 'days=3', 'min-likes=2']"
 allowed-tools: Bash, Read, Skill
-model: claude-haiku-4-5
 ---
 
 Find the comments on our YouTube videos that we haven't answered yet, then draft a reply for
