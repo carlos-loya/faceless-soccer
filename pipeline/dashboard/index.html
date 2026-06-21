@@ -264,6 +264,10 @@
       </div>
     </div>
     <div class="onair"><span class="dot"></span>ON AIR</div>
+    <button class="btn" id="schedBtn" onclick="showScheduled()"
+            style="margin-left:14px;width:auto;padding:7px 12px;font-size:10px">
+      <span class="ic">🗓</span> SCHEDULED <span id="schedCount" class="tag" style="display:none;margin-left:4px"></span>
+    </button>
     <div class="spacer"></div>
     <div class="telem" id="telem"></div>
     <div class="clock" id="clock">--:--:--<small>MATCHDAY CLOCK</small></div>
@@ -535,6 +539,8 @@ async function act(action, stem, extra={}){
   if(d.error){ toast(d.error,'err'); return null; }
   toast(action.replace('_',' ')+' started','ok');
   openDock(); SELJOB=d.job; await loadState(); renderJobs(); selectJob(d.job); fastPoll();
+  // Scheduling actions change the queue — refresh the header chip shortly after they finish.
+  if(['publish','cancel_schedule','reschedule'].includes(action)){ setTimeout(loadScheduled, 4000); }
   return d.job;
 }
 
@@ -551,31 +557,103 @@ function confirmProd(stem){
     [{label:'CANCEL',cls:'ghost'},{label:'● RENDER MASTER',cls:'live',go:()=>act('production',stem)}]
   );
 }
-function toggleSched(){
-  $('#schedRow').style.display = $('#schedCb').checked ? 'block' : 'none';
+function toggleWhenCustom(){
+  const v = $('#whenSel').value;
+  $('#whenCustomRow').style.display = (v==='custom') ? 'block' : 'none';
+  // Schedule + a public toggle don't mix: a scheduled video is private until go-time.
+  $('#visRow').style.display = (v==='now') ? 'block' : 'none';
 }
 function confirmPublish(stem){
   const card = (STATE&&STATE.cards||[]).find(c=>c.stem===stem);
   const title = card ? card.youtube_title : '';
-  const body = `<p class="danger">Publish <b>${esc(stem)}</b> to YouTube — this is <b>public and hard to undo</b>.</p>
+  const body = `<p class="danger">Publish <b>${esc(stem)}</b> to YouTube — public and hard to undo.</p>
     <p style="margin-top:6px">${title?('"'+esc(title)+'"'):''}</p>
-    <label class="lbl" style="margin-top:14px">VISIBILITY</label>
-    <select id="visSel"><option value="public">public</option><option value="unlisted">unlisted</option><option value="private">private</option></select>
-    <label class="chk" style="margin-top:10px;display:flex;align-items:center;gap:6px">
-      <input type="checkbox" id="schedCb" onchange="toggleSched()"> Schedule for later
-    </label>
-    <div id="schedRow" style="display:none;margin-top:6px">
-      <input type="datetime-local" id="schedDt" style="width:100%">
+    <label class="lbl" style="margin-top:14px">WHEN <span style="color:var(--faint)">· times are ET</span></label>
+    <select id="whenSel" onchange="toggleWhenCustom()">
+      <option value="now">Publish now</option>
+      <option value="tomorrow 9am">Tomorrow · 9:00 AM ET</option>
+      <option value="tonight 6pm">Tonight · 6:00 PM ET</option>
+      <option value="custom">Custom time…</option>
+    </select>
+    <div id="whenCustomRow" style="display:none;margin-top:8px">
+      <input type="text" id="whenCustom" placeholder='e.g. "tomorrow 9am", "in 3 hours", "jun 22 6pm et"' style="width:100%">
+      <div style="font-size:9px;color:var(--faint);margin-top:4px">natural language · defaults to ET · YouTube holds it private until then</div>
+    </div>
+    <div id="visRow">
+      <label class="lbl" style="margin-top:12px">VISIBILITY</label>
+      <select id="visSel"><option value="public">public</option><option value="unlisted">unlisted</option><option value="private">private</option></select>
     </div>`;
   showConfirm('PUBLISH TO YOUTUBE', body,
     [{label:'CANCEL',cls:'ghost'},
      {label:'▲ PUBLISH',cls:'green',go:()=>{
-       const extra = {visibility:$('#visSel').value};
-       if ($('#schedCb').checked && $('#schedDt').value) {
-         extra.publish_at = new Date($('#schedDt').value).toISOString();
+       const when = $('#whenSel').value;
+       const extra = {tz:'America/New_York'};
+       if (when==='now'){
+         extra.visibility = $('#visSel').value;
+       } else if (when==='custom'){
+         const v = ($('#whenCustom').value||'').trim();
+         if(!v){ toast('enter a time, or pick Publish now','err'); return; }
+         extra.publish_when = v;
+       } else {
+         extra.publish_when = when;   // the option value IS the friendly string
        }
        act('publish',stem,extra);
      }}]);
+}
+
+// ---------------- scheduled queue ----------------
+async function loadScheduled(){
+  try{
+    const r = await fetch('/api/scheduled');
+    const d = await r.json();
+    const n = (d.items||[]).length;
+    const chip = $('#schedCount');
+    if(n>0){ chip.style.display='inline-block'; chip.textContent=n; }
+    else { chip.style.display='none'; }
+    return d;
+  }catch(e){ return {items:[], error:String(e)}; }
+}
+async function showScheduled(){
+  showConfirm('SCHEDULED UPLOADS', '<p style="color:var(--faint)">Loading the queue…</p>', [{label:'CLOSE',cls:'ghost'}]);
+  const d = await loadScheduled();
+  const items = d.items||[];
+  let html;
+  if(d.error){ html = `<p class="danger">${esc(d.error)}</p>`; }
+  else if(!items.length){ html = '<p style="color:var(--faint)">Nothing scheduled. Use a card\'s Publish → "Custom time" to queue one.</p>'; }
+  else {
+    html = items.map(it=>`
+      <div style="border:1px solid var(--line);border-radius:8px;padding:10px;margin-bottom:8px">
+        <div style="font-weight:600;font-size:12px">${esc(it.title||it.stem||it.video_id)}</div>
+        <div style="font-size:11px;color:var(--gold);margin-top:3px">▲ ${esc(it.local||it.publish_at)}</div>
+        <div style="font-size:9px;color:var(--faint);margin-top:2px">${esc(it.stem||'')} · ${esc(it.video_id)}</div>
+        <div style="display:flex;gap:6px;margin-top:8px">
+          <button class="btn" style="width:auto;padding:5px 10px;font-size:9.5px" onclick="reschedulePrompt('${esc(it.stem||it.video_id)}')">RESCHEDULE</button>
+          <button class="btn" style="width:auto;padding:5px 10px;font-size:9.5px" onclick="cancelSchedule('${esc(it.stem||it.video_id)}',false)">UNSCHEDULE</button>
+          <button class="btn gold" style="width:auto;padding:5px 10px;font-size:9.5px" onclick="cancelSchedule('${esc(it.stem||it.video_id)}',true)">PUBLISH NOW</button>
+        </div>
+      </div>`).join('');
+  }
+  $('#modalBody').innerHTML = `<p style="font-size:10px;color:var(--faint);margin-bottom:8px">times in ${esc(d.tz||'America/New_York')}</p>` + html;
+}
+function reschedulePrompt(target){
+  const body = `<p>New time for <b>${esc(target)}</b>:</p>
+    <input type="text" id="reWhen" placeholder='e.g. "tonight 8pm", "in 2 hours", "jun 22 6pm et"' style="width:100%;margin-top:8px">
+    <div style="font-size:9px;color:var(--faint);margin-top:4px">natural language · defaults to ET</div>`;
+  showConfirm('RESCHEDULE', body,
+    [{label:'CANCEL',cls:'ghost'},
+     {label:'MOVE',cls:'green',go:()=>{
+       const v=($('#reWhen').value||'').trim();
+       if(!v){ toast('enter a time','err'); return; }
+       act('reschedule','',{target, publish_when:v, tz:'America/New_York'});
+     }}]);
+}
+function cancelSchedule(target, now){
+  const msg = now
+    ? `Publish <b>${esc(target)}</b> right now (skip the schedule)?`
+    : `Unschedule <b>${esc(target)}</b>? It stays private — you can publish it later.`;
+  showConfirm(now?'PUBLISH NOW':'UNSCHEDULE', `<p class="${now?'danger':''}">${msg}</p>`,
+    [{label:'CANCEL',cls:'ghost'},
+     {label: now?'▲ PUBLISH NOW':'UNSCHEDULE', cls: now?'green':'live', go:()=>act('cancel_schedule','',{target, now})}]);
 }
 
 // ---------------- jobs / console ----------------
@@ -701,6 +779,7 @@ function mdToHtml(md){
 
 // boot
 loadState();
+loadScheduled();
 POLL=setInterval(slowTick,4000);
 </script>
 </body>

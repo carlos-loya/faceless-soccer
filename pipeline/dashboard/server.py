@@ -42,6 +42,7 @@ PUBLISHED = ROOT / "out" / "published"
 TOPICS = ROOT / "out" / "topics"
 POSTLOG = PUBLISHED / "post-log.jsonl"
 PORT = int(os.environ.get("TTV_DASHBOARD_PORT", "8770"))
+DEFAULT_TZ = os.environ.get("TTV_SCHEDULE_TZ", "America/New_York")  # friendly times default to ET
 
 TOPICS.mkdir(parents=True, exist_ok=True)
 (ROOT / "out" / "dashboard" / "jobs").mkdir(parents=True, exist_ok=True)
@@ -227,6 +228,37 @@ def build_state() -> dict:
             "jobs": _jobs_public(), "now": time.time()}
 
 
+# ---------------------------------------------------------------- scheduled ------
+def _scheduled_queue() -> dict:
+    """Run `upload_youtube.py scheduled --json` and return the parsed queue (+ ET labels)."""
+    import datetime as _dt
+
+    try:
+        proc = subprocess.run(
+            ["uv", "run", "pipeline/upload_youtube.py", "scheduled", "--json"],
+            cwd=str(ROOT), capture_output=True, text=True, timeout=60,
+        )
+    except Exception as e:
+        return {"items": [], "error": f"could not query schedule: {e}"}
+    if proc.returncode != 0:
+        return {"items": [], "error": (proc.stderr or proc.stdout or "").strip()[:300]}
+    # The script prints one JSON line; tolerate stray lines by taking the last non-empty one.
+    line = next((ln for ln in reversed(proc.stdout.splitlines()) if ln.strip()), "[]")
+    try:
+        items = json.loads(line)
+    except json.JSONDecodeError:
+        return {"items": [], "error": "unexpected output from scheduler"}
+    try:
+        from zoneinfo import ZoneInfo
+        zone = ZoneInfo(DEFAULT_TZ)
+        for it in items:
+            when = _dt.datetime.fromisoformat(it["publish_at"].replace("Z", "+00:00")).astimezone(zone)
+            it["local"] = when.strftime("%a %b %d, %-I:%M %p %Z")
+    except Exception:
+        pass
+    return {"items": items, "tz": DEFAULT_TZ}
+
+
 # ---------------------------------------------------------------- actions --------
 def start_action(payload: dict) -> dict:
     action = payload.get("action")
@@ -270,13 +302,36 @@ def start_action(payload: dict) -> dict:
         vis = payload.get("visibility", "public")
         if vis not in ("public", "unlisted", "private"):
             vis = "public"
-        cmd = ["uv", "run", "pipeline/upload_youtube.py", "upload",
-               f"out/specs/{stem}.json", str(mp4.relative_to(ROOT)),
-               "--visibility", vis]
-        publish_at = payload.get("publish_at")
-        if publish_at:
-            cmd.extend(["--publish-at", publish_at])
+        tz = payload.get("tz") or DEFAULT_TZ
+        # Friendly time (e.g. "tomorrow 9am") preferred; legacy ISO publish_at still accepted.
+        when = payload.get("publish_when") or payload.get("publish_at")
+        if when:
+            cmd = ["uv", "run", "pipeline/upload_youtube.py", "schedule",
+                   f"out/specs/{stem}.json", str(mp4.relative_to(ROOT)), when, "--tz", tz]
+        else:
+            cmd = ["uv", "run", "pipeline/upload_youtube.py", "upload",
+                   f"out/specs/{stem}.json", str(mp4.relative_to(ROOT)), "--visibility", vis]
         jid = _new_job("publish", stem, cmd)
+        return {"job": jid}
+
+    if action == "cancel_schedule":
+        target = payload.get("target") or stem
+        if not target:
+            return {"error": "no target for cancel"}
+        cmd = ["uv", "run", "pipeline/upload_youtube.py", "cancel", target]
+        if payload.get("now"):
+            cmd.append("--now")
+        jid = _new_job("cancel_schedule", target, cmd)
+        return {"job": jid}
+
+    if action == "reschedule":
+        target = payload.get("target") or stem
+        when = payload.get("publish_when")
+        if not target or not when:
+            return {"error": "reschedule needs a target and a time"}
+        tz = payload.get("tz") or DEFAULT_TZ
+        cmd = ["uv", "run", "pipeline/upload_youtube.py", "reschedule", target, when, "--tz", tz]
+        jid = _new_job("reschedule", target, cmd)
         return {"job": jid}
 
     if action == "gather_topics":
@@ -384,6 +439,10 @@ class Handler(BaseHTTPRequestHandler):
             return
         if path == "/api/state":
             self._send(200, build_state())
+            return
+        if path == "/api/scheduled":
+            # Synchronous, quick (one Data API call) — list videos queued to publish.
+            self._send(200, _scheduled_queue())
             return
         if path == "/api/job":
             qs = parse_qs(u.query)
