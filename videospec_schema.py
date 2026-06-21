@@ -6,8 +6,8 @@ ElevenLabs VO, Remotion assembly). It deliberately does NOT call the Claude API 
 "brain" that PRODUCES a VideoSpec runs through the Claude Code subscription via the
 `videospec` skill (.claude/skills/videospec/SKILL.md), not metered API calls.
 
-The schema still encodes the viral formula (see VIRAL-FORMULA.md) and the no-footage
-model (see PLAYBOOK.md §5): there is no "clip" field, only `graphic_prompt`s for
+The schema still encodes the viral formula (see docs/VIRAL-FORMULA.md) and the no-footage
+model (see docs/PLAYBOOK.md §5): there is no "clip" field, only `graphic_prompt`s for
 generated graphics.
 
 Usage (downstream pipeline):

@@ -11,7 +11,11 @@ What needs translating per harness:
     - Claude Code:  reads `.claude/skills/` natively.
     - OpenCode:     reads `.claude/skills/` AND `.agents/skills/` natively
                     (same `name` + `description` SKILL.md format).
-    => Skills are already portable; NOTHING to generate. We only verify them.
+    - Antigravity:  reads `.agents/skills/<name>/SKILL.md` (plain-file copies; it does
+                    NOT read `.claude/`). => We mirror every skill into `.agents/skills/`.
+                    (`find-skills` is the exception: its REAL files already live in
+                    `.agents/skills/find-skills/` and `.claude/skills/find-skills` is a
+                    symlink INTO it, so we skip it — it's already where antigravity looks.)
 
   COMMANDS  (`.claude/commands/<name>.md`)
     - Claude Code:  reads `.claude/commands/`.
@@ -21,11 +25,14 @@ What needs translating per harness:
                       * `model` must be `provider/model` (e.g. anthropic/claude-haiku-4-5)
                       * body keeps `$ARGUMENTS`, `$1`, !`shell`, @file — compatible
                       * skill references are prose ("invoke the `videospec` skill") — portable
-    => We translate each command's frontmatter and copy the body verbatim.
+    - Antigravity:  reads `.agents/commands/<name>.md` (verbatim Claude-format copies).
+    => We translate each command's frontmatter for OpenCode and copy it verbatim for
+       Antigravity.
 
   INSTRUCTIONS
     - OpenCode reads `AGENTS.md`, not `CLAUDE.md`. We bridge with a symlink (or a
-      stub that points at CLAUDE.md) so the project context loads there too.
+      stub that points at CLAUDE.md) so the project context loads there too. Antigravity
+      reads `AGENTS.md` too, so the same bridge serves it.
 
 Usage:
     python3 pipeline/sync_harness.py sync     # regenerate all harness copies
@@ -42,6 +49,8 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent
 CLAUDE_COMMANDS = REPO / ".claude" / "commands"
 CLAUDE_SKILLS = REPO / ".claude" / "skills"
+AGENTS_SKILLS = REPO / ".agents" / "skills"
+AGENTS_COMMANDS = REPO / ".agents" / "commands"
 
 GENERATED_BANNER = (
     "<!-- AUTO-GENERATED from {src} by pipeline/sync_harness.py — "
@@ -154,6 +163,47 @@ def sync_agents_md(write: bool) -> list[str]:
     return changed
 
 
+# ---- Antigravity mirror (.agents) ------------------------------------------
+
+def _copy_if_changed(src: Path, dest: Path, write: bool, changed: list[str]) -> None:
+    """Copy src->dest as a verbatim text file when content differs. Skips a self-copy
+    (src and dest resolving to the SAME real file — e.g. the find-skills symlink)."""
+    if src.resolve() == dest.resolve():
+        return  # already the canonical file at the destination; nothing to do
+    new = src.read_text()
+    old = dest.read_text() if dest.exists() else None
+    if old != new:
+        changed.append(str(dest.relative_to(REPO)))
+        if write:
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            dest.write_text(new)
+
+
+def sync_agents_skills(write: bool) -> list[str]:
+    """Mirror every .claude skill into .agents/skills/<name>/ (verbatim) for Antigravity,
+    which doesn't read .claude/. Follows the .claude symlinks (find-skills) and skips it
+    because its real files already live under .agents/skills/."""
+    changed: list[str] = []
+    # iterate .claude/skills entries, following the find-skills symlink to its SKILL.md
+    for skill_dir in sorted(p for p in CLAUDE_SKILLS.iterdir() if (p / "SKILL.md").exists()):
+        name = skill_dir.name
+        # mirror EVERY file in the skill dir (SKILL.md today; future assets too)
+        for src in sorted(f for f in skill_dir.rglob("*") if f.is_file()):
+            rel = src.relative_to(skill_dir)
+            dest = AGENTS_SKILLS / name / rel
+            _copy_if_changed(src, dest, write, changed)
+    return changed
+
+
+def sync_agents_commands(write: bool) -> list[str]:
+    """Mirror every .claude command into .agents/commands/<name>.md (verbatim Claude format)
+    for Antigravity."""
+    changed: list[str] = []
+    for src in sorted(CLAUDE_COMMANDS.glob("*.md")):
+        _copy_if_changed(src, AGENTS_COMMANDS / src.name, write, changed)
+    return changed
+
+
 # ---- skills verification ---------------------------------------------------
 
 def verify_skills() -> list[str]:
@@ -183,30 +233,38 @@ def main() -> int:
 
     cmd_changed = sync_opencode_commands(write)
     agents_changed = sync_agents_md(write)
+    ag_skills_changed = sync_agents_skills(write)
+    ag_cmds_changed = sync_agents_commands(write)
     skill_problems = verify_skills()
 
     print("== TikiTakaFootyTV harness sync ==")
     print(f"skills: {len(list(CLAUDE_SKILLS.glob('*/SKILL.md')))} found "
-          "(read natively by OpenCode from .claude/skills — no copy needed)")
+          "(read natively by Claude Code + OpenCode from .claude/skills)")
     if skill_problems:
         print("  ⚠️ skill issues:")
         for p in skill_problems:
             print(f"    - {p}")
 
     verb = "wrote" if write else "STALE"
-    if cmd_changed:
-        print(f"opencode commands: {verb} {len(cmd_changed)} →")
-        for c in cmd_changed:
-            print(f"    - {c}")
-    else:
-        print("opencode commands: up to date")
+
+    def report(label: str, changed: list[str]) -> None:
+        if changed:
+            print(f"{label}: {verb} {len(changed)} →")
+            for c in changed:
+                print(f"    - {c}")
+        else:
+            print(f"{label}: up to date")
+
+    report("opencode commands", cmd_changed)
+    report("agents skills (Antigravity)", ag_skills_changed)
+    report("agents commands (Antigravity)", ag_cmds_changed)
 
     if agents_changed:
-        print(f"AGENTS.md: {verb} (bridges OpenCode → CLAUDE.md)")
+        print(f"AGENTS.md: {verb} (bridges OpenCode/Antigravity → CLAUDE.md)")
     else:
         print("AGENTS.md: up to date")
 
-    if mode == "check" and (cmd_changed or agents_changed):
+    if mode == "check" and (cmd_changed or agents_changed or ag_skills_changed or ag_cmds_changed):
         print("\nOut of date. Run: python3 pipeline/sync_harness.py sync")
         return 1
     return 0

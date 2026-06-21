@@ -22,7 +22,7 @@ from pathlib import Path
 import requests
 
 COMMONS = "https://commons.wikimedia.org/w/api.php"
-UA = {"User-Agent": "TikiTakaFootyTV/1.0 (faceless-soccer content tool; contact: exafterdev@gmail.com)"}
+UA = {"User-Agent": "TikiTakaFootyTV/1.0 (faceless-soccer content tool; +https://github.com/carlos-loya/faceless-soccer)"}
 
 
 def get_image(url: str, tries: int = 4) -> bytes | None:
