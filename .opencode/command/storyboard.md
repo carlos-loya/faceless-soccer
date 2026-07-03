@@ -38,7 +38,11 @@ Run in order:
      - a **missing matchup flag** (the scoreboard/VS badge won't render) or a **missing subject sticker**;
    - the exact next steps (do NOT run these yourself):
      - to fix a visual: edit `visual_source` / `visual_query` (or the matchup/entity slug) in
-       `out/specs/<stem>.json`, then re-run `/storyboard` (free, seconds) until it looks right;
+       `out/specs/<stem>.json`, then re-run `/storyboard` (free, seconds) until it looks right.
+       Editing a scene's background now **re-resolves automatically** — a stale vision-pick is
+       ignored once its query changes. If a background still looks stuck, force a clean rebuild:
+       `bash pipeline/storyboard.sh --fresh out/specs/<stem>.json` (or the dashboard's
+       "Clear visuals & re-storyboard");
      - when the visuals are right: render the free draft —
        `bash pipeline/make_video.sh out/specs/<stem>.json`.
 

@@ -10,8 +10,23 @@
 # Bonus: the images it downloads are cached, so the eventual draft render is faster too.
 set -euo pipefail
 
-SPEC="${1:?usage: bash pipeline/storyboard.sh <spec.json>}"
+# Optional --fresh: wipe cached downloads + stale vision-picks for a guaranteed-clean regen
+# (use when a scene's background looks stuck). Accepted before or after the spec path.
+FRESH=0
+ARGS=()
+for a in "$@"; do
+  if [ "$a" = "--fresh" ]; then FRESH=1; else ARGS+=("$a"); fi
+done
+set -- "${ARGS[@]}"
+
+SPEC="${1:?usage: bash pipeline/storyboard.sh [--fresh] <spec.json>}"
 STEM="$(basename "$SPEC" .json)"
+
+if [ "$FRESH" = "1" ]; then
+  echo "== 0/3  --fresh: clearing cached visuals + stale picks for $STEM =="
+  rm -rf "pipeline/remotion/public/$STEM"
+  rm -f "out/candidates/$STEM/choices.json"
+fi
 
 echo "== 1/3  ensure assets (fetch CC images + cut out subject; no VO) =="
 uv run pipeline/ensure_assets.py "$SPEC"

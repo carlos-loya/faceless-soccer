@@ -259,10 +259,97 @@ def _scheduled_queue() -> dict:
     return {"items": items, "tz": DEFAULT_TZ}
 
 
+# ---------------------------------------------------------------- analytics ------
+def _build_analytics() -> dict:
+    """Read analytics/performance.jsonl and return per-video records + a summary."""
+    path = ROOT / "analytics" / "performance.jsonl"
+    records = []
+    if path.exists():
+        for line in path.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if line:
+                try:
+                    records.append(json.loads(line))
+                except Exception:
+                    pass
+    summary: dict = {}
+    if records:
+        views = [(r.get("public_metrics") or {}).get("views", 0) or 0 for r in records]
+        retentions = [(r.get("retention") or {}).get("avg_view_pct")
+                      for r in records if (r.get("retention") or {}).get("avg_view_pct") is not None]
+        swipe_fracs = [(r.get("retention") or {}).get("early_leak")
+                       for r in records if (r.get("retention") or {}).get("early_leak") is not None]
+        conversions = [(r.get("attribution") or {}).get("subscribe_conversion")
+                       for r in records if (r.get("attribution") or {}).get("subscribe_conversion") is not None]
+        summary = {
+            "total_views": sum(views),
+            "avg_retention": round(sum(retentions) / len(retentions), 1) if retentions else None,
+            "avg_swipe_away": round(sum(swipe_fracs) / len(swipe_fracs) * 100, 1) if swipe_fracs else None,
+            "avg_conversion": round(sum(conversions) / len(conversions), 4) if conversions else None,
+            "video_count": len(records),
+            "matured_count": len(retentions),
+        }
+    return {"videos": records, "summary": summary}
+
+
+# ---------------------------------------------------------------- entities -------
+def _build_entities() -> dict:
+    """Read all kb/entities/*.json and return a lightweight list for the browser."""
+    ent_dir = ROOT / "kb" / "entities"
+    cutout_dir = ROOT / "out" / "cutouts"
+    source_dir = ROOT / "assets" / "source"
+    entities = []
+    counts: dict[str, int] = {}
+    for p in sorted(ent_dir.glob("*.json"), key=lambda x: x.name):
+        try:
+            e = json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        slug = e.get("slug") or p.stem
+        etype = e.get("type", "other")
+        counts[etype] = counts.get(etype, 0) + 1
+        img = e.get("image") or {}
+        has_cutout = (cutout_dir / f"{slug}.png").exists()
+        has_source = any(source_dir.glob(f"{slug}.*"))
+        entities.append({
+            "slug": slug,
+            "type": etype,
+            "name": e.get("name", slug),
+            "image_url": img.get("url"),
+            "image_attribution": img.get("attribution", ""),
+            "has_cutout": has_cutout,
+            "has_source": has_source,
+            "last_verified": e.get("last_verified"),
+        })
+    return {"entities": entities, "counts": counts}
+
+
 # ---------------------------------------------------------------- actions --------
+_SAFE_STEM = re.compile(r'^[A-Za-z0-9_-]{1,120}$')
+
+def _safe_stem(stem: str) -> bool:
+    """Return True only if stem is safe to use in path construction."""
+    if not _SAFE_STEM.match(stem):
+        return False
+    # Belt-and-suspenders: resolve and confirm it stays under known output dirs
+    for base in (SPECS, RENDERS, PUBLISHED, STORY, ROOT / "out" / "assets"):
+        try:
+            candidate = (base / stem).resolve()
+            if candidate.parent.resolve() == base.resolve():
+                return True
+        except Exception:
+            pass
+    return False
+
+
 def start_action(payload: dict) -> dict:
     action = payload.get("action")
     stem = payload.get("stem", "")
+
+    # Validate stem for any action that uses it in a path
+    if stem and not _safe_stem(stem):
+        return {"error": "invalid stem"}
+
     spec = SPECS / f"{stem}.json"
 
     if action in ("storyboard", "draft", "production", "publish") and not spec.exists():
@@ -333,6 +420,46 @@ def start_action(payload: dict) -> dict:
         cmd = ["uv", "run", "pipeline/upload_youtube.py", "reschedule", target, when, "--tz", tz]
         jid = _new_job("reschedule", target, cmd)
         return {"job": jid}
+
+    # ── Synchronous delete actions — no subprocess, return immediately ──────────
+    if action in ("delete_draft", "delete_production", "delete_assets", "delete_spec", "clear_visuals"):
+        postlog = _read_postlog()
+        is_published = "youtube" in postlog.get(stem, {})
+
+        if action == "delete_draft":
+            if is_published:
+                return {"error": "cannot delete draft of a published video"}
+            p = RENDERS / f"{stem}-draft.mp4"
+            p.unlink(missing_ok=True)
+            return {"ok": True, "deleted": str(p.name)}
+
+        if action == "delete_production":
+            if is_published:
+                return {"error": "cannot delete production render of a published video"}
+            for cand in (RENDERS / f"{stem}.mp4", PUBLISHED / f"{stem}.mp4"):
+                cand.unlink(missing_ok=True)
+            return {"ok": True, "deleted": f"{stem}.mp4"}
+
+        if action == "delete_assets":
+            d = ROOT / "out" / "assets" / stem
+            shutil.rmtree(d, ignore_errors=True)
+            return {"ok": True, "deleted": f"out/assets/{stem}/"}
+
+        if action == "clear_visuals":
+            # Force a clean re-storyboard: drop cached downloads + stale vision-picks so an
+            # edited scene background actually re-resolves. Leaves the spec + assets intact.
+            shutil.rmtree(ROOT / "out" / "candidates" / stem, ignore_errors=True)
+            shutil.rmtree(ROOT / "pipeline" / "remotion" / "public" / stem, ignore_errors=True)
+            return {"ok": True, "deleted": f"out/candidates/{stem}/ + remotion public cache"}
+
+        if action == "delete_spec":
+            if is_published:
+                return {"error": "cannot remove spec of a published video — unpublish first"}
+            spec.unlink(missing_ok=True)
+            (STORY / f"{stem}.html").unlink(missing_ok=True)
+            (STORY / f"{stem}.summary.json").unlink(missing_ok=True)
+            shutil.rmtree(ROOT / "out" / "assets" / stem, ignore_errors=True)
+            return {"ok": True, "deleted": f"out/specs/{stem}.json + storyboard + assets"}
 
     if action == "gather_topics":
         # DETERMINISTIC viral-topic signal — no Claude, no tokens. Runs the outlier
@@ -444,6 +571,23 @@ class Handler(BaseHTTPRequestHandler):
             # Synchronous, quick (one Data API call) — list videos queued to publish.
             self._send(200, _scheduled_queue())
             return
+        if path == "/api/analytics":
+            self._send(200, _build_analytics())
+            return
+        if path == "/api/entities":
+            self._send(200, _build_entities())
+            return
+        if path.startswith("/api/entity/"):
+            slug = path[len("/api/entity/"):]
+            if not slug or "/" in slug:
+                self._send(400, {"error": "bad slug"})
+                return
+            ep = ROOT / "kb" / "entities" / f"{slug}.json"
+            if not ep.exists():
+                self._send(404, {"error": "entity not found"})
+                return
+            self._send(200, json.loads(ep.read_text(encoding="utf-8")))
+            return
         if path == "/api/job":
             qs = parse_qs(u.query)
             jid = qs.get("id", [""])[0]
@@ -470,9 +614,6 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         u = urlparse(self.path)
-        if u.path != "/api/action":
-            self._send(404, {"error": "not found"})
-            return
         length = int(self.headers.get("Content-Length", "0"))
         raw = self.rfile.read(length) if length else b"{}"
         try:
@@ -480,7 +621,41 @@ class Handler(BaseHTTPRequestHandler):
         except json.JSONDecodeError:
             self._send(400, {"error": "bad json"})
             return
-        self._send(200, start_action(payload))
+
+        if u.path.startswith("/api/entity/"):
+            slug = u.path[len("/api/entity/"):]
+            if not slug or "/" in slug:
+                self._send(400, {"error": "bad slug"})
+                return
+            ep = ROOT / "kb" / "entities" / f"{slug}.json"
+            if not ep.exists():
+                self._send(404, {"error": "entity not found"})
+                return
+            try:
+                entity = json.loads(ep.read_text(encoding="utf-8"))
+                img = entity.get("image") or {}
+                url = payload.get("image_url")
+                if url is not None:
+                    img["url"] = url or None
+                attr = payload.get("image_attribution")
+                if attr is not None:
+                    img["attribution"] = attr
+                lic = payload.get("image_license")
+                if lic is not None:
+                    img["license"] = lic
+                entity["image"] = img if any(img.values()) else None
+                ep.write_text(json.dumps(entity, indent=2, ensure_ascii=False) + "\n",
+                              encoding="utf-8")
+                self._send(200, {"ok": True})
+            except Exception as exc:
+                self._send(500, {"error": str(exc)})
+            return
+
+        if u.path != "/api/action":
+            self._send(404, {"error": "not found"})
+            return
+        result = start_action(payload)
+        self._send(200, result)
 
 
 def main():

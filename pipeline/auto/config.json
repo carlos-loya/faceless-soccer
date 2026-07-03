@@ -1,0 +1,10 @@
+{
+  "_note": "Config for the schedule-driven match pipeline (run_match_pipeline.sh). `mode` sets how far each match goes unattended: 'draft' = free Piper draft only (safest, no credits, no posting); 'produce' = spend ElevenLabs for the real render but DON'T post; 'publish' = produce + auto-upload to YouTube. TikTok/IG are NEVER auto-posted (a post_packet handoff is written for the attended post-social skill). The fact-check gate in /match-recap halts any match whose claims don't verify, so a bad match never reaches produce/publish. Flip mode to 'draft' anytime to fall back to review-first.",
+  "mode": "publish",
+  "daily_cap": 3,
+  "recent_hours": 36,
+  "notable_only": true,
+  "_visibility_note": "You chose full auto-publish, so this is 'public'. For the FIRST live cron run, consider 'unlisted' so a misfire isn't public, then flip back to 'public'.",
+  "youtube_visibility": "public",
+  "wc_window": ["2026-06-11", "2026-07-19"]
+}
