@@ -10,7 +10,14 @@ Maintains `kb/` (see `kb/schema.md`): a **dated, sourced** store of soccer **fac
 Two modes, chosen from the skill argument:
 
 ## Mode: `refresh <target>`
-`target` = an entity slug (`lamine-yamal`), `narratives`, `watchlist` (everything), or `stale` (only entries past their freshness policy).
+`target` = an entity slug (`lamine-yamal`), `narratives`, `watchlist` (everything), `stale` (only entries past their freshness policy), or `fixtures` (the WC2026 schedule).
+
+**`refresh fixtures`** keeps `kb/fixtures.json` current — the trigger source for schedule-driven
+recaps (`pipeline/fixtures.py`, the auto match pipeline). Web-research the official WC2026 schedule
+and, for each match, set/update `stage`, `date`, `kickoff_et`, `home`/`away` (+ `*_slug` matching
+`kb/entities/`), `venue`, and — once played — `status: "finished"` + `result` (score + note). Focus
+on the knockout stage (the coverage target); fill in knockout pairings as groups/rounds resolve.
+Keep `_meta.as_of` + `sources` dated. During the WC window, `/schedule` this daily alongside `stale`.
 
 For each entity/narrative:
 1. **Research** — `WebSearch` for the current state ("<name> latest 2026", "<name> world cup 2026", "<name> injury/transfer/form"). `WebFetch` the 1–3 best, most recent, most reputable sources.

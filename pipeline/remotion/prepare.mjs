@@ -281,7 +281,15 @@ for (let i = 0; i < assetsProps.scenes.length; i++) {
 
   let visual = null;
   const ckey = String(i + 1);
-  const hasChoice = choices && ckey in choices;
+  // A vision-pick is made for ONE specific `commons` query. Honor it only while it still matches
+  // the current spec scene: if the scene's source changed away from `commons`, or its
+  // `visual_query` changed since the pick, the pick is STALE — fall through and re-resolve from the
+  // spec so editing a scene's background actually takes effect on the next storyboard/render.
+  const manifestQuery = candManifest?.[ckey]?.query;
+  const pickFresh = v.visual_source === "commons" && manifestQuery === v.visual_query;
+  const hasChoice = choices && ckey in choices && pickFresh;
+  if (choices && ckey in choices && !pickFresh)
+    console.log(`  scene ${i + 1}: pick stale (bg changed) → re-resolving from spec`);
   if (hasChoice) {
     // Vision pick wins: a chosen file is used; an explicit null -> brand graphic (no bg).
     const chosen = choices[ckey];
