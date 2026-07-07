@@ -1,0 +1,16 @@
+{
+  "slug": "junior-alonso",
+  "type": "player",
+  "name": "Júnior Alonso",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "assets/source/junior-alonso.jpg",
+    "license": "CC BY 4.0",
+    "license_url": "https://commons.wikimedia.org/wiki/File:J%C3%BAnior_Alonso_20180612_(cropped).jpg",
+    "attribution": "El Loko / CC BY 4.0 via Wikimedia Commons",
+    "as_of": "2026-07-04"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

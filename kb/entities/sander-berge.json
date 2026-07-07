@@ -1,0 +1,16 @@
+{
+  "slug": "sander-berge",
+  "type": "player",
+  "name": "Sander Berge",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "assets/source/sander-berge.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://commons.wikimedia.org/wiki/File:FC_Salzburg_gegen_KRC_Genk_(UEFA_Championsleague_17._September_2019)_16_(cropped).jpg",
+    "attribution": "Werner100359 / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-07-04"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

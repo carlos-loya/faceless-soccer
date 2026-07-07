@@ -1,0 +1,16 @@
+{
+  "slug": "joao-cancelo",
+  "type": "player",
+  "name": "João Cancelo",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "assets/source/joao-cancelo.jpg",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://commons.wikimedia.org/wiki/File:CanceloCity23.jpg",
+    "attribution": "pantkiewicz / CC BY-SA 2.0 via Wikimedia Commons",
+    "as_of": "2026-07-04"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

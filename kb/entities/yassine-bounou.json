@@ -1,0 +1,18 @@
+{
+  "slug": "yassine-bounou",
+  "type": "player",
+  "name": "Yassine Bounou",
+  "aliases": [
+    "Bono"
+  ],
+  "facts": {},
+  "image": {
+    "url": "assets/source/yassine-bounou.jpg",
+    "license": "CC BY 4.0",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Yassine_Bounou_(cropped).jpg",
+    "attribution": "Abdelali Bentarki / CC BY 4.0 via Wikimedia Commons",
+    "as_of": "2026-07-04"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

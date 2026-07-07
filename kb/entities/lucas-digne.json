@@ -1,0 +1,16 @@
+{
+  "slug": "lucas-digne",
+  "type": "player",
+  "name": "Lucas Digne",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "assets/source/lucas-digne.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Lucas_Digne_France_v_Senegal_16_June_2026-275_(cropped).jpg",
+    "attribution": "Bryan Berlin / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-07-04"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}
