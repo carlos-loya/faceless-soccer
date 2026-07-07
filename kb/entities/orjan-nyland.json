@@ -1,0 +1,16 @@
+{
+  "slug": "orjan-nyland",
+  "type": "player",
+  "name": "Ørjan Nyland",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "assets/source/orjan-nyland.jpg",
+    "license": "CC BY 4.0",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Norway_Italy_-_June_2025_A_10_(cropped).jpg",
+    "attribution": "MichaelEmilio / CC BY 4.0 via Wikimedia Commons",
+    "as_of": "2026-07-04"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "chadi-riad",
+  "type": "player",
+  "name": "Chadi Riad",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "assets/source/chadi-riad.jpg",
+    "license": "CC BY 4.0",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Chadi_Riad_against_Paraguay_(cropped).jpg",
+    "attribution": "Abdelali Bentarki / CC BY 4.0 via Wikimedia Commons",
+    "as_of": "2026-07-04"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

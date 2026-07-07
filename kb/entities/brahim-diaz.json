@@ -1,0 +1,18 @@
+{
+  "slug": "brahim-diaz",
+  "type": "player",
+  "name": "Brahim Díaz",
+  "aliases": [
+    "Brahim Diaz"
+  ],
+  "facts": {},
+  "image": {
+    "url": "assets/source/brahim-diaz.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Brahim_Diaz_Morocco_v_Norway_7_June_2026-36_(cropped).jpg",
+    "attribution": "Bryan Berlin / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-07-04"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

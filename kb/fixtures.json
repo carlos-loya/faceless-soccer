@@ -2,7 +2,7 @@
   "_meta": {
     "note": "WC2026 match schedule — the trigger source for schedule-driven recaps. Times are ET (America/New_York, EDT -04:00). `status` is 'scheduled' | 'finished'; `result` is filled once played. Team `*_slug` fields align to kb/entities slugs (null when TBD). Group stage (Jun 11–27) is complete and omitted here; this file focuses on the knockout stage, which is the coverage target ('knockouts + big teams'). Keep current with the soccer-news skill: `soccer-news refresh fixtures`.",
     "maintained_by": "soccer-news",
-    "as_of": "2026-07-03",
+    "as_of": "2026-07-04",
     "wc_window": ["2026-06-11", "2026-07-19"],
     "stage_windows": {
       "group": ["2026-06-11", "2026-06-27"],
@@ -24,6 +24,9 @@
     {"id": "r32-03", "stage": "r32", "date": "2026-06-29", "kickoff_et": "2026-06-29T16:30:00-04:00", "venue": "Gillette Stadium, Foxborough", "home": "Germany", "home_slug": "germany", "away": "Paraguay", "away_slug": null, "status": "finished", "result": {"home": 1, "away": 1, "note": "Paraguay win 4-3 on penalties (a.e.t.)"}},
     {"id": "r32-04", "stage": "r32", "date": "2026-06-29", "kickoff_et": "2026-06-29T21:00:00-04:00", "venue": "Estadio BBVA, Guadalupe", "home": "Netherlands", "home_slug": "netherlands", "away": "Morocco", "away_slug": "morocco", "status": "finished", "result": {"home": 1, "away": 1, "note": "Morocco win 3-2 on penalties (a.e.t.)"}},
     {"id": "r32-05", "stage": "r32", "date": "2026-06-30", "kickoff_et": "2026-06-30T13:00:00-04:00", "venue": "AT&T Stadium, Arlington", "home": "Ivory Coast", "home_slug": null, "away": "Norway", "away_slug": "norway", "status": "finished", "result": {"home": 1, "away": 2, "note": "Norway win"}},
+    {"id": "r32-06", "stage": "r32", "date": "2026-07-03", "kickoff_et": "2026-07-03T14:00:00-04:00", "venue": "AT&T Stadium, Arlington (Dallas)", "home": "Australia", "home_slug": "australia", "away": "Egypt", "away_slug": "egypt", "status": "finished", "result": {"home": 1, "away": 1, "note": "Egypt win 4-2 on penalties (a.e.t.) — Egypt's first-ever WC knockout win"}},
+    {"id": "r32-07", "stage": "r32", "date": "2026-07-03", "kickoff_et": "2026-07-03T18:00:00-04:00", "venue": "Hard Rock Stadium, Miami Gardens", "home": "Argentina", "home_slug": "argentina", "away": "Cape Verde", "away_slug": "cape-verde", "status": "finished", "result": {"home": 3, "away": 2, "note": "Argentina win (a.e.t.) — Messi's 7th goal of the tournament extends his all-time WC scoring record to 20"}},
+    {"id": "r32-08", "stage": "r32", "date": "2026-07-03", "kickoff_et": "2026-07-03T20:30:00-04:00", "venue": "Arrowhead Stadium, Kansas City", "home": "Colombia", "home_slug": "colombia", "away": "Ghana", "away_slug": "ghana", "status": "finished", "result": {"home": 1, "away": 0, "note": "Jhon Arias 14' — Colombia win"}},
 
     {"id": "r16-01", "stage": "r16", "date": "2026-07-04", "kickoff_et": null, "venue": "NRG Stadium, Houston", "home": "Canada", "home_slug": "canada", "away": "Morocco", "away_slug": "morocco", "status": "scheduled", "result": null},
     {"id": "r16-02", "stage": "r16", "date": "2026-07-04", "kickoff_et": null, "venue": "Lincoln Financial Field, Philadelphia", "home": "Paraguay", "home_slug": null, "away": "France", "away_slug": "france", "status": "scheduled", "result": null},
@@ -31,8 +34,8 @@
     {"id": "r16-04", "stage": "r16", "date": "2026-07-05", "kickoff_et": null, "venue": "Estadio Azteca, Mexico City", "home": "Mexico", "home_slug": "mexico", "away": "England", "away_slug": "england", "status": "scheduled", "result": null},
     {"id": "r16-05", "stage": "r16", "date": "2026-07-06", "kickoff_et": null, "venue": "AT&T Stadium, Arlington", "home": "Portugal", "home_slug": "portugal", "away": "Spain", "away_slug": "spain", "status": "scheduled", "result": null},
     {"id": "r16-06", "stage": "r16", "date": "2026-07-06", "kickoff_et": null, "venue": "Lumen Field, Seattle", "home": "United States", "home_slug": "usa", "away": "Belgium", "away_slug": null, "status": "scheduled", "result": null},
-    {"id": "r16-07", "stage": "r16", "date": "2026-07-07", "kickoff_et": null, "venue": "Mercedes-Benz Stadium, Atlanta", "home": "TBD", "home_slug": null, "away": "TBD", "away_slug": null, "status": "scheduled", "result": null},
-    {"id": "r16-08", "stage": "r16", "date": "2026-07-07", "kickoff_et": null, "venue": "BC Place, Vancouver", "home": "Switzerland", "home_slug": null, "away": "TBD", "away_slug": null, "status": "scheduled", "result": null},
+    {"id": "r16-07", "stage": "r16", "date": "2026-07-07", "kickoff_et": null, "venue": "Mercedes-Benz Stadium, Atlanta", "home": "Argentina", "home_slug": "argentina", "away": "Egypt", "away_slug": "egypt", "status": "scheduled", "result": null},
+    {"id": "r16-08", "stage": "r16", "date": "2026-07-07", "kickoff_et": null, "venue": "BC Place, Vancouver", "home": "Switzerland", "home_slug": null, "away": "Colombia", "away_slug": "colombia", "status": "scheduled", "result": null},
 
     {"id": "qf-01", "stage": "qf", "date": "2026-07-09", "kickoff_et": null, "venue": "TBD", "home": "TBD", "home_slug": null, "away": "TBD", "away_slug": null, "status": "scheduled", "result": null},
     {"id": "qf-02", "stage": "qf", "date": "2026-07-10", "kickoff_et": null, "venue": "TBD", "home": "TBD", "home_slug": null, "away": "TBD", "away_slug": null, "status": "scheduled", "result": null},

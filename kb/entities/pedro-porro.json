@@ -1,0 +1,16 @@
+{
+  "slug": "pedro-porro",
+  "type": "player",
+  "name": "Pedro Porro",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "assets/source/pedro-porro.jpg",
+    "license": "CC BY 3.0",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Pedro_Porro_2021.png",
+    "attribution": "Sporting Clube de Portugal / CC BY 3.0 via Wikimedia Commons",
+    "as_of": "2026-07-04"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

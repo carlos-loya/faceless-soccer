@@ -1,0 +1,16 @@
+{
+  "slug": "elliot-anderson",
+  "type": "player",
+  "name": "Elliot Anderson",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "assets/source/elliot-anderson.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Elliot_Anderson_England_v_Ghana_23_June_2026-059_(cropped).jpg",
+    "attribution": "Bryan Berlin / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-07-04"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

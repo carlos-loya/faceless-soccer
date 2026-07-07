@@ -1,0 +1,16 @@
+{
+  "slug": "casemiro",
+  "type": "player",
+  "name": "Casemiro",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "assets/source/casemiro.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Casemiro_Brazil_V_Morocco_13_June_2026-76_(cropped).jpg",
+    "attribution": "Bryan Berlin / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-07-04"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

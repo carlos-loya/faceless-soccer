@@ -1,0 +1,16 @@
+{
+  "slug": "jonathan-david",
+  "type": "player",
+  "name": "Jonathan David",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "assets/source/jonathan-david.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Jonathan_David_Canada_v_Qatar_18_June_2026-242_(cropped).jpg",
+    "attribution": "Bryan Berlin / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-07-04"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

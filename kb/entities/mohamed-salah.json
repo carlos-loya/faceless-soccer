@@ -1,0 +1,16 @@
+{
+  "slug": "mohamed-salah",
+  "type": "player",
+  "name": "Mohamed Salah",
+  "aliases": ["Salah", "The Egyptian King"],
+  "facts": {},
+  "image": {
+    "url": "assets/source/mohamed-salah.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Mohamed_Salah_2021_CAN_Final.jpg",
+    "attribution": "HazemGM / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-07-04"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "erik-lira",
+  "type": "player",
+  "name": "Érik Lira",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "assets/source/erik-lira.jpg",
+    "license": "CC BY 3.0",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Erik_Lira_2.png",
+    "attribution": "Selección Nacional de México / CC BY 3.0 via Wikimedia Commons",
+    "as_of": "2026-07-04"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

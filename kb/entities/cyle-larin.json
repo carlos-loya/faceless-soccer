@@ -1,0 +1,16 @@
+{
+  "slug": "cyle-larin",
+  "type": "player",
+  "name": "Cyle Larin",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "assets/source/cyle-larin.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Cyle_Larin_Canada_v_Qatar_18_June_2026-181.jpg",
+    "attribution": "Bryan Berlin / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-07-04"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}

@@ -56,7 +56,13 @@
       "confidence": "high"
     }
   },
-  "image": null,
+  "image": {
+    "url": "assets/source/ousmane-dembele.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Dembele170727-2_(cropped).jpg",
+    "attribution": "Reto Stauffer / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-07-04"
+  },
   "image_todo": "fetch + verify a Creative-Commons portrait; no fabricated URLs",
   "active_narratives": [
     "mbappe-france-crown"

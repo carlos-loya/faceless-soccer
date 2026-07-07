@@ -1,0 +1,16 @@
+{
+  "slug": "miles-robinson",
+  "type": "player",
+  "name": "Miles Robinson",
+  "aliases": [],
+  "facts": {},
+  "image": {
+    "url": "assets/source/miles-robinson.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Miles_Robinson_USMNT_v_Belgium_Mar_28_2026-40_(cropped).jpg",
+    "attribution": "Bryan Berlin / CC BY-SA 4.0 via Wikimedia Commons",
+    "as_of": "2026-07-04"
+  },
+  "active_narratives": [],
+  "last_verified": ""
+}
