@@ -77,7 +77,7 @@ key**. API keys are only needed for image generation, voiceover, and the YouTube
 
 | Path | What it is |
 |---|---|
-| `CLAUDE.md` | Project context & working conventions for any AI agent (also bridged to `AGENTS.md`) |
+| `CLAUDE.md` | Project context & working conventions for any AI agent |
 | `docs/` | Strategy & design docs — **start with [`docs/PLAYBOOK.md`](docs/PLAYBOOK.md)** |
 | `.claude/skills/` | The **brain**: skills for spec generation, grounding, fact-checking, analytics review, posting |
 | `.claude/commands/` | Slash-command workflows (`/find-topics`, `/daily`, `/storyboard`, `/publish`, `/analyze-channel`) |
@@ -85,12 +85,8 @@ key**. API keys are only needed for image generation, voiceover, and the YouTube
 | `pipeline/remotion/` | The Remotion project that composes graphics + VO + captions → MP4 |
 | `pipeline/dashboard/` | Local, token-free "Mission Control" web dashboard for driving the pipeline |
 | `kb/` | Canonical knowledge base — dated, sourced facts + narratives for grounding |
-| `videospec_schema.py` | The `VideoSpec` Pydantic contract the pipeline validates against |
+| `pipeline/videospec_schema.py` | The `VideoSpec` Pydantic contract the pipeline validates against |
 | `seeds.json` | Seed channels for the outlier-discovery engine |
-| `.agents/`, `.opencode/` | Generated copies of skills/commands for other agent harnesses (see [harness portability](docs/HARNESS-PORTABILITY.md)) |
-
-The brain (`.claude/`) is the single source of truth; `pipeline/sync_harness.py` regenerates
-the `.opencode/` and `.agents/` copies for OpenCode and Antigravity.
 
 ---
 
@@ -149,8 +145,6 @@ reviewed.
   and starter format templates.
 - **[docs/OUTLIER-ENGINE-SPEC.md](docs/OUTLIER-ENGINE-SPEC.md)** — technical spec for the
   outlier-discovery engine.
-- **[docs/HARNESS-PORTABILITY.md](docs/HARNESS-PORTABILITY.md)** — running the skills and
-  commands outside Claude Code (OpenCode, Antigravity).
 - **[CLAUDE.md](CLAUDE.md)** — full project context and working conventions.
 
 ---

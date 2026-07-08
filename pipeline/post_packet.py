@@ -8,9 +8,7 @@ Post-packet builder — the handoff between a finished render and the attended
 
 Reads a VideoSpec JSON + the rendered MP4 and prints a clean per-platform JSON
 "packet" so Claude doesn't have to parse the raw spec while it's driving the browser.
-The captions are formatted IDENTICALLY to the old Postiz path: _caption_for below is
-the same logic as publish._caption_for, inlined here so this helper stays dependency-free
-(publish.py imports `requests`, which the browser path doesn't need).
+The caption logic (`_caption_for` below) lives here so this helper stays dependency-free.
 
 Usage:
   uv run pipeline/post_packet.py out/specs/<stem>.json out/renders/<stem>.mp4
@@ -32,11 +30,7 @@ from pathlib import Path
 
 
 def _caption_for(spec: dict, platform: str) -> str:
-    """Pick the best caption field for the target platform, append hashtags.
-
-    Kept identical to publish._caption_for so TikTok/Instagram captions match whatever
-    the old Postiz path produced.
-    """
+    """Pick the best caption field for the target platform, append hashtags."""
     if platform == "tiktok":
         body = spec.get("tiktok_caption") or spec.get("instagram_caption") or ""
     else:  # instagram / default
