@@ -18,13 +18,22 @@ than a missed match.
 
 1. **Resolve the fixture.** If `$ARGUMENTS` names a fixture id, use it; otherwise pick the most
    recent finished notable match: `uv run pipeline/fixtures.py recent --notable --json`. Read the
-   match (teams, stage, date, result) from `kb/fixtures.json`. If the match is not finished (no
-   `result`), STOP — there's nothing to recap yet.
+   match (teams, stage, date, result) from `kb/fixtures.json`. If the match has no `result`, it is
+   **not confirmed final** — STOP (the auto orchestrator gates on this via `fetch_result.py`, so a
+   missing result means the match isn't over). For a manual run you can fetch it deterministically
+   first: `uv run pipeline/auto/fetch_result.py <id> --write`.
+
+   **The `result` block is AUTHORITATIVE ground truth.** When it carries `"source":"espn"` /
+   `"verified":true`, its `home`/`away` score and `scorers` (player + minute) are what actually
+   happened — use them **verbatim** in the script and scoreboard. Never override them from model
+   memory or a web source.
 
 2. **Ground the game report.** Invoke the **`soccer-news`** skill in `ground` mode on the match
-   ("<Home> vs <Away>, WC2026 <stage> — final result and key moments"). It web-researches the
-   **actual** outcome: final score, scorers + timeline, the turning point, cards/VAR, the standout
-   performer, and the one talking point. Grounded, dated, sourced — never from memory.
+   ("<Home> vs <Away>, WC2026 <stage> — key moments and storylines"). Use it for **narrative and
+   context only** — the turning point, cards/VAR, the standout performer, the one talking point.
+   **It MUST NOT change the score or scorers**: those come from the verified `result` block above.
+   If web sources disagree with the KB score, trust the KB (ESPN) and never invent a scorer (a real
+   past miss: "Zico scored both Egypt goals"). Grounded, dated, sourced — never from memory.
 
 3. **Script it.** Invoke the **`videospec`** skill on that report in the **`post_match`** format:
    a running TV scoreboard that ticks with the real score (both nations need flag images — see the
