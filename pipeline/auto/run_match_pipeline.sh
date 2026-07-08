@@ -57,6 +57,13 @@ for id in $IDS; do
   if handled "$id"; then echo "  · $id already handled — skip"; continue; fi
   if [ "$(today_count)" -ge "$DAILY_CAP" ]; then echo "  · daily cap ($DAILY_CAP) reached — stopping"; break; fi
 
+  # Deterministic finality gate: only proceed once ESPN confirms the match is FINAL, which also
+  # writes the authoritative score+scorers into kb/fixtures.json (so the brain can't invent them,
+  # and /match-recap's "result present?" gate then passes). Fails safe — not final => skip, retry.
+  if ! uv run pipeline/auto/fetch_result.py "$id" --write >>"logs/fetch-result-$id.log" 2>&1; then
+    echo "  · $id not final on ESPN yet — skip (retry next run)"; continue
+  fi
+
   echo "  ▸ $id — running /match-recap $RECAP_FLAG"
   rc_file="$RECEIPTS/$id.json"; rm -f "$rc_file"
   claude -p "/match-recap $id $RECAP_FLAG" >"logs/match-recap-$id.log" 2>&1 || echo "    (claude -p exited non-zero — check logs/match-recap-$id.log)"

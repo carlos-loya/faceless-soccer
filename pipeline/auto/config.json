@@ -4,7 +4,7 @@
   "daily_cap": 3,
   "recent_hours": 36,
   "notable_only": true,
-  "_visibility_note": "You chose full auto-publish, so this is 'public'. For the FIRST live cron run, consider 'unlisted' so a misfire isn't public, then flip back to 'public'.",
-  "youtube_visibility": "public",
+  "_visibility_note": "Set to 'unlisted' for the first fully-autonomous QF (qf-01 Morocco v France, 2026-07-09) as a safety net — the result now comes from a deterministic ESPN fetch (fetch_result.py), but verify the first auto QF looks right, then flip back to 'public'.",
+  "youtube_visibility": "unlisted",
   "wc_window": ["2026-06-11", "2026-07-19"]
 }
