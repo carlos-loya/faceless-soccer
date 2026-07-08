@@ -6,7 +6,13 @@
   "facts": {
     "club": {"value": "FC Augsburg", "as_of": "2026-06-18", "source": "https://www.transfermarkt.com/", "confidence": "high"},
     "position": {"value": "Winger", "as_of": "2026-06-18", "source": "https://www.transfermarkt.com/", "confidence": "high"},
-    "national_team": {"value": "Switzerland", "as_of": "2026-06-18", "source": "https://www.transfermarkt.com/", "confidence": "high"}
+    "national_team": {"value": "Switzerland", "as_of": "2026-06-18", "source": "https://www.transfermarkt.com/", "confidence": "high"},
+    "wc_role": {
+      "value": "Left training early on 2026-07-06 with an injury scare but recovered in time to feature off the bench in the R16 vs Colombia (2026-07-07, Vancouver). Scored the decisive 4th penalty in a 4-3 shootout win (0-0 after extra time) — Kobel saved Cucho Hernandez's kick, Sanchez hit the crossbar for Colombia. Sends Switzerland to their first World Cup quarterfinal since 1954, where they face Argentina.",
+      "as_of": "2026-07-07",
+      "source": "https://www.espn.com/soccer/story/_/id/49300023/switzerland-colombia-world-cup-2026-penalty-shootout-argentina",
+      "confidence": "high"
+    }
   },
   "image": {
     "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Ruben_Vargas_SFV_2019.jpg",
@@ -16,5 +22,5 @@
     "as_of": "2026-06-18"
   },
   "active_narratives": [],
-  "last_verified": "2026-06-18"
+  "last_verified": "2026-07-07"
 }

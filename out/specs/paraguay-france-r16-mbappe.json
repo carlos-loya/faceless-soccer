@@ -1,0 +1,111 @@
+{
+  "format": "post_match",
+  "topic": "Paraguay 0-1 France, WC2026 Round of 16 — Mbappé's penalty breaks the wall, ties the Golden Boot race",
+  "subject": "kylian-mbappe",
+  "matchup": ["paraguay", "france"],
+  "target_duration_seconds": 26,
+  "hook": {
+    "first_frame_text": "70 MINUTES. NOTHING.",
+    "spoken_hook": "For 70 minutes, Paraguay didn't let Mbappé sniff goal.",
+    "hook_type": "shock_number"
+  },
+  "retention_mechanic": "seamless_loop",
+  "scenes": [
+    {
+      "index": 1,
+      "on_screen_text": "70 MINUTES. NOTHING.",
+      "voiceover": "For 70 minutes, Paraguay didn't let Mbappé sniff goal.",
+      "stat_callout": "",
+      "graphic_type": "title_card",
+      "graphic_prompt": "Deep black bg, gold gradient accents, bold white condensed number '70', vertical 9:16, premium broadcast stat card, no real faces.",
+      "visual_source": "entity",
+      "visual_query": "kylian-mbappe",
+      "sticker_entity": "",
+      "score": "0-0",
+      "subscribe_chip": false,
+      "duration_seconds": 3
+    },
+    {
+      "index": 2,
+      "on_screen_text": "76% OF THE BALL. STILL ZERO.",
+      "voiceover": "France had it all night. Still nothing.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black bg, gold gradient light rays, bold condensed white type, moody floodlight atmosphere, premium broadcast feel, no real faces.",
+      "visual_source": "stock_video",
+      "visual_query": "floodlight-bokeh",
+      "sticker_entity": "",
+      "score": "",
+      "subscribe_chip": false,
+      "duration_seconds": 3
+    },
+    {
+      "index": 3,
+      "on_screen_text": "70'. VAR POINTS TO THE SPOT.",
+      "voiceover": "Then VAR catches a foul in the box. Penalty.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black bg, gold gradient accent slash, bold condensed white type '70 MIN', silhouetted crowd on the edge of their seats, premium broadcast feel, no real faces.",
+      "visual_source": "stock_video",
+      "visual_query": "crowd-erupt",
+      "sticker_entity": "",
+      "score": "0-0",
+      "subscribe_chip": false,
+      "duration_seconds": 3
+    },
+    {
+      "index": 4,
+      "on_screen_text": "MBAPPÉ MAKES IT COUNT.",
+      "voiceover": "Mbappé sends the keeper the wrong way — subscribe for every goal on his Golden Boot chase.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black bg, gold gradient burst, bold condensed white type, triumphant premium broadcast feel, no real faces.",
+      "visual_source": "entity",
+      "visual_query": "kylian-mbappe",
+      "sticker_entity": "",
+      "score": "0-1",
+      "subscribe_chip": true,
+      "duration_seconds": 4
+    },
+    {
+      "index": 5,
+      "on_screen_text": "7 GOALS. GOLDEN BOOT RACE.",
+      "voiceover": "Seven goals now — level with Haaland, one behind Messi.",
+      "stat_callout": "",
+      "graphic_type": "stat_card",
+      "graphic_prompt": "Deep black bg, gold gradient accents, huge bold condensed number '7', vertical 9:16, one focal stat, premium broadcast feel, no real faces.",
+      "visual_source": "graphic",
+      "visual_query": "",
+      "sticker_entity": "",
+      "score": "0-1",
+      "subscribe_chip": false,
+      "duration_seconds": 3
+    },
+    {
+      "index": 6,
+      "on_screen_text": "FULL TIME: FRANCE THROUGH.",
+      "voiceover": "Paraguay's wall finally breaks. Next up — Morocco.",
+      "stat_callout": "",
+      "graphic_type": "full_bleed_bg",
+      "graphic_prompt": "Deep black bg, gold gradient accents, bold condensed white type 'FULL TIME', vertical 9:16, premium broadcast feel, no real faces.",
+      "visual_source": "entity",
+      "visual_query": "kylian-mbappe",
+      "sticker_entity": "",
+      "score": "0-1",
+      "subscribe_chip": false,
+      "duration_seconds": 4
+    }
+  ],
+  "comment_bait": "Mbappé or Messi — whose boot goes home gold? Make your case, I'll be reading every reply.",
+  "cta": "Subscribe — follow every Mbappé goal on the Golden Boot chase",
+  "music_mood": "tense building orchestral swelling to triumphant release, premium broadcast",
+  "thumbnail": {
+    "text": "MBAPPÉ BREAKS THE WALL",
+    "concept": "Kylian Mbappé CC photo, dramatic gold rim lighting, bold white condensed text overlay, no other faces."
+  },
+  "youtube_title": "France 1-0 Paraguay: Mbappé's Penalty Keeps the Golden Boot Chase Alive (World Cup R16)",
+  "youtube_description": "Paraguay's five-back wall held for 70 minutes — then VAR spotted a foul in the box and Kylian Mbappé made no mistake from the spot. France grind past a stubborn Paraguay side to reach the quarterfinals, and Mbappé's 7th goal of the tournament keeps him in the thick of the Golden Boot race, level with Erling Haaland and one behind leader Lionel Messi. Full breakdown of the goal, the VAR call, and what's next. #WorldCup2026 #France #Paraguay #Mbappe",
+  "instagram_caption": "70 minutes of nothing. Then VAR pointed to the spot. Mbappé's penalty is the only goal as France grind past Paraguay's wall and reach the quarterfinals — level with Haaland, one behind Messi in the Golden Boot race. Mbappé or Messi — whose boot goes home gold? Make your case, I'll be reading every reply. 👇",
+  "tiktok_caption": "Paraguay held out for 70 minutes. Then VAR found a foul in the box — Mbappé didn't miss. France through, Golden Boot race still wide open. Mbappé or Messi — whose boot goes home gold? Make your case, I'll be reading every reply. 👇",
+  "hashtags": ["#worldcup2026", "#france", "#paraguay", "#mbappe", "#football", "#soccer", "#roundof16", "#tikitakafootytv", "#goldenboot", "#fifaworldcup"]
+}
