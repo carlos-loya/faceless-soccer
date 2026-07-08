@@ -46,7 +46,7 @@ The research confirmed the winning **copyright-safe** formats are stats/data gra
 
 ## 3. The high-leverage pattern: data → structured video spec
 
-> **Implementation note:** the brain runs via the `videospec` **Claude Code skill** on the subscription (not the metered API) — see `.claude/skills/videospec/SKILL.md`. The schema contract lives in `videospec_schema.py`. The metered-API code below is kept only as reference for if you ever switch back to the API.
+> **Implementation note:** the brain runs via the `videospec` **Claude Code skill** on the subscription (not the metered API) — see `.claude/skills/videospec/SKILL.md`. The schema contract lives in `pipeline/videospec_schema.py`. The metered-API code below is kept only as reference for if you ever switch back to the API.
 
 The single most important technique: **force Claude to return a strict JSON schema** describing the whole video. Don't ask for prose and parse it — define the schema and validate against it so you get valid JSON your renderer can consume.
 
@@ -182,7 +182,7 @@ Player likeness caveat: generating a recognizable player's *face* raises a right
 | AI graphics / backgrounds (optional) | **Nano Banana** (Gemini image API — ⚠️ **needs billing**, ~$0.04/img) | richer backgrounds/atmosphere; free tier = 0 for the image model |
 | Video assembly | **Remotion** (React→video) | composes graphics + VO + animated captions, driven by `VideoSpec` JSON |
 | Cinematic B-roll (optional, phase 2) | **Higgsfield** (AI video) | AI stadium/atmosphere; credit-priced, reserve for hero/launch pieces |
-| Posting (DEFAULT) | **Hybrid:** `pipeline/upload_youtube.py` (YouTube, official Data API) + the attended **`post-social`** skill (TikTok/IG, Playwright-MCP browser automation) | YT is API-direct; TikTok/IG are attended browser posts (owner clears captcha/login). Postiz is the legacy fallback. |
+| Posting (DEFAULT) | **Hybrid:** `pipeline/upload_youtube.py` (YouTube, official Data API) + the attended **`post-social`** skill (TikTok/IG, Playwright-MCP browser automation) | YT is API-direct; TikTok/IG are attended browser posts (owner clears captcha/login). |
 
 Claude is the only stage that needs *judgment*; everything else is deterministic glue. That's why the pipeline can run on a few minutes of your review per batch.
 

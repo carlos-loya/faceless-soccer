@@ -2,7 +2,7 @@
   "_meta": {
     "note": "WC2026 match schedule — the trigger source for schedule-driven recaps. Times are ET (America/New_York, EDT -04:00). `status` is 'scheduled' | 'finished'; `result` is filled once played. Team `*_slug` fields align to kb/entities slugs (null when TBD). Group stage (Jun 11–27) is complete and omitted here; this file focuses on the knockout stage, which is the coverage target ('knockouts + big teams'). Keep current with the soccer-news skill: `soccer-news refresh fixtures`.",
     "maintained_by": "soccer-news",
-    "as_of": "2026-07-04",
+    "as_of": "2026-07-07 (kickoff times added for QF/SF/3P/Final)",
     "wc_window": ["2026-06-11", "2026-07-19"],
     "stage_windows": {
       "group": ["2026-06-11", "2026-06-27"],
@@ -15,7 +15,10 @@
     },
     "sources": [
       "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage",
-      "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026"
+      "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
+      "https://www.espn.com/soccer/match/_/gameId/760507/belgium-united-states",
+      "https://www.npr.org/2026/07/06/nx-s1-5883842/2026-world-cup-fifa-usmnt-belgium-round-of-16",
+      "https://www.olympics.com/en/news/fifa-world-cup-2026-bracket-quarter-finals-full-schedule-live-updates"
     ]
   },
   "matches": [
@@ -28,25 +31,25 @@
     {"id": "r32-07", "stage": "r32", "date": "2026-07-03", "kickoff_et": "2026-07-03T18:00:00-04:00", "venue": "Hard Rock Stadium, Miami Gardens", "home": "Argentina", "home_slug": "argentina", "away": "Cape Verde", "away_slug": "cape-verde", "status": "finished", "result": {"home": 3, "away": 2, "note": "Argentina win (a.e.t.) — Messi's 7th goal of the tournament extends his all-time WC scoring record to 20"}},
     {"id": "r32-08", "stage": "r32", "date": "2026-07-03", "kickoff_et": "2026-07-03T20:30:00-04:00", "venue": "Arrowhead Stadium, Kansas City", "home": "Colombia", "home_slug": "colombia", "away": "Ghana", "away_slug": "ghana", "status": "finished", "result": {"home": 1, "away": 0, "note": "Jhon Arias 14' — Colombia win"}},
 
-    {"id": "r16-01", "stage": "r16", "date": "2026-07-04", "kickoff_et": null, "venue": "NRG Stadium, Houston", "home": "Canada", "home_slug": "canada", "away": "Morocco", "away_slug": "morocco", "status": "scheduled", "result": null},
-    {"id": "r16-02", "stage": "r16", "date": "2026-07-04", "kickoff_et": null, "venue": "Lincoln Financial Field, Philadelphia", "home": "Paraguay", "home_slug": null, "away": "France", "away_slug": "france", "status": "scheduled", "result": null},
-    {"id": "r16-03", "stage": "r16", "date": "2026-07-05", "kickoff_et": null, "venue": "MetLife Stadium, East Rutherford", "home": "Brazil", "home_slug": "brazil", "away": "Norway", "away_slug": "norway", "status": "scheduled", "result": null},
-    {"id": "r16-04", "stage": "r16", "date": "2026-07-05", "kickoff_et": null, "venue": "Estadio Azteca, Mexico City", "home": "Mexico", "home_slug": "mexico", "away": "England", "away_slug": "england", "status": "scheduled", "result": null},
-    {"id": "r16-05", "stage": "r16", "date": "2026-07-06", "kickoff_et": null, "venue": "AT&T Stadium, Arlington", "home": "Portugal", "home_slug": "portugal", "away": "Spain", "away_slug": "spain", "status": "scheduled", "result": null},
-    {"id": "r16-06", "stage": "r16", "date": "2026-07-06", "kickoff_et": null, "venue": "Lumen Field, Seattle", "home": "United States", "home_slug": "usa", "away": "Belgium", "away_slug": null, "status": "scheduled", "result": null},
-    {"id": "r16-07", "stage": "r16", "date": "2026-07-07", "kickoff_et": null, "venue": "Mercedes-Benz Stadium, Atlanta", "home": "Argentina", "home_slug": "argentina", "away": "Egypt", "away_slug": "egypt", "status": "scheduled", "result": null},
-    {"id": "r16-08", "stage": "r16", "date": "2026-07-07", "kickoff_et": null, "venue": "BC Place, Vancouver", "home": "Switzerland", "home_slug": null, "away": "Colombia", "away_slug": "colombia", "status": "scheduled", "result": null},
+    {"id": "r16-01", "stage": "r16", "date": "2026-07-04", "kickoff_et": null, "venue": "NRG Stadium, Houston", "home": "Canada", "home_slug": "canada", "away": "Morocco", "away_slug": "morocco", "status": "finished", "result": {"home": 0, "away": 3, "note": "Ounahi brace (50', 82') + late Rahimi goal — Morocco win; best-ever WC run for Canada ends"}},
+    {"id": "r16-02", "stage": "r16", "date": "2026-07-04", "kickoff_et": null, "venue": "Lincoln Financial Field, Philadelphia", "home": "Paraguay", "home_slug": "paraguay", "away": "France", "away_slug": "france", "status": "finished", "result": {"home": 0, "away": 1, "note": "Mbappe 69' pen (VAR) — France win, his 7th goal of the tournament"}},
+    {"id": "r16-03", "stage": "r16", "date": "2026-07-05", "kickoff_et": null, "venue": "MetLife Stadium, East Rutherford", "home": "Brazil", "home_slug": "brazil", "away": "Norway", "away_slug": "norway", "status": "finished", "result": {"home": 1, "away": 2, "note": "Haaland brace (79', 90') sinks Brazil despite Neymar's 90+10' pen — Norway's first-ever WC quarterfinal"}},
+    {"id": "r16-04", "stage": "r16", "date": "2026-07-05", "kickoff_et": null, "venue": "Estadio Azteca, Mexico City", "home": "Mexico", "home_slug": "mexico", "away": "England", "away_slug": "england", "status": "finished", "result": {"home": 2, "away": 3, "note": "Bellingham brace (38'x2) + Kane 60' pen for England; Quinones 42' + Jimenez pen for Mexico; Quansah red card 54' for England"}},
+    {"id": "r16-05", "stage": "r16", "date": "2026-07-06", "kickoff_et": null, "venue": "AT&T Stadium, Arlington", "home": "Portugal", "home_slug": "portugal", "away": "Spain", "away_slug": "spain", "status": "finished", "result": {"home": 0, "away": 1, "note": "Mikel Merino 90+' winner off the bench — Cristiano Ronaldo's final World Cup game ends in defeat"}},
+    {"id": "r16-06", "stage": "r16", "date": "2026-07-06", "kickoff_et": null, "venue": "Lumen Field, Seattle", "home": "United States", "home_slug": "usa", "away": "Belgium", "away_slug": "belgium", "status": "finished", "result": {"home": 1, "away": 4, "note": "De Ketelaere brace (8', + assist) + Tillman free-kick equalizer for USA + Lukaku stoppage-time goal — Belgium win, USMNT's WC run ends"}},
+    {"id": "r16-07", "stage": "r16", "date": "2026-07-07", "kickoff_et": null, "venue": "Mercedes-Benz Stadium, Atlanta", "home": "Argentina", "home_slug": "argentina", "away": "Egypt", "away_slug": "egypt", "status": "finished", "result": {"home": 3, "away": 2, "note": "Down 2-0 with 11 to go, Argentina score 3 in the final 11 minutes: Romero 79', Messi 83', Fernandez 90+2' — Zico scored both Egypt goals"}},
+    {"id": "r16-08", "stage": "r16", "date": "2026-07-07", "kickoff_et": null, "venue": "BC Place, Vancouver", "home": "Switzerland", "home_slug": "switzerland", "away": "Colombia", "away_slug": "colombia", "status": "finished", "result": {"home": 0, "away": 0, "note": "0-0 after extra time; Switzerland win 4-3 on penalties (Vargas the decisive kick) — first WC quarterfinal since 1954"}},
 
-    {"id": "qf-01", "stage": "qf", "date": "2026-07-09", "kickoff_et": null, "venue": "TBD", "home": "TBD", "home_slug": null, "away": "TBD", "away_slug": null, "status": "scheduled", "result": null},
-    {"id": "qf-02", "stage": "qf", "date": "2026-07-10", "kickoff_et": null, "venue": "TBD", "home": "TBD", "home_slug": null, "away": "TBD", "away_slug": null, "status": "scheduled", "result": null},
-    {"id": "qf-03", "stage": "qf", "date": "2026-07-11", "kickoff_et": null, "venue": "TBD", "home": "TBD", "home_slug": null, "away": "TBD", "away_slug": null, "status": "scheduled", "result": null},
-    {"id": "qf-04", "stage": "qf", "date": "2026-07-11", "kickoff_et": null, "venue": "TBD", "home": "TBD", "home_slug": null, "away": "TBD", "away_slug": null, "status": "scheduled", "result": null},
+    {"id": "qf-01", "stage": "qf", "date": "2026-07-09", "kickoff_et": "2026-07-09T16:00:00-04:00", "venue": "Gillette Stadium, Foxborough", "home": "Morocco", "home_slug": "morocco", "away": "France", "away_slug": "france", "status": "scheduled", "result": null},
+    {"id": "qf-02", "stage": "qf", "date": "2026-07-10", "kickoff_et": "2026-07-10T15:00:00-04:00", "venue": "SoFi Stadium, Inglewood", "home": "Belgium", "home_slug": "belgium", "away": "Spain", "away_slug": "spain", "status": "scheduled", "result": null},
+    {"id": "qf-03", "stage": "qf", "date": "2026-07-11", "kickoff_et": "2026-07-11T17:00:00-04:00", "venue": "Hard Rock Stadium, Miami Gardens", "home": "Norway", "home_slug": "norway", "away": "England", "away_slug": "england", "status": "scheduled", "result": null},
+    {"id": "qf-04", "stage": "qf", "date": "2026-07-11", "kickoff_et": "2026-07-11T20:00:00-04:00", "venue": "Arrowhead Stadium, Kansas City", "home": "Argentina", "home_slug": "argentina", "away": "Switzerland", "away_slug": "switzerland", "status": "scheduled", "result": null},
 
-    {"id": "sf-01", "stage": "sf", "date": "2026-07-14", "kickoff_et": null, "venue": "AT&T Stadium, Arlington", "home": "TBD", "home_slug": null, "away": "TBD", "away_slug": null, "status": "scheduled", "result": null},
-    {"id": "sf-02", "stage": "sf", "date": "2026-07-15", "kickoff_et": null, "venue": "Mercedes-Benz Stadium, Atlanta", "home": "TBD", "home_slug": null, "away": "TBD", "away_slug": null, "status": "scheduled", "result": null},
+    {"id": "sf-01", "stage": "sf", "date": "2026-07-14", "kickoff_et": "2026-07-14T15:00:00-04:00", "venue": "AT&T Stadium, Arlington", "home": "TBD", "home_slug": null, "away": "TBD", "away_slug": null, "status": "scheduled", "result": null},
+    {"id": "sf-02", "stage": "sf", "date": "2026-07-15", "kickoff_et": "2026-07-15T15:00:00-04:00", "venue": "Mercedes-Benz Stadium, Atlanta", "home": "TBD", "home_slug": null, "away": "TBD", "away_slug": null, "status": "scheduled", "result": null},
 
-    {"id": "third", "stage": "third", "date": "2026-07-18", "kickoff_et": null, "venue": "TBD", "home": "TBD", "home_slug": null, "away": "TBD", "away_slug": null, "status": "scheduled", "result": null},
+    {"id": "third", "stage": "third", "date": "2026-07-18", "kickoff_et": "2026-07-18T17:00:00-04:00", "venue": "Hard Rock Stadium, Miami Gardens", "home": "TBD", "home_slug": null, "away": "TBD", "away_slug": null, "status": "scheduled", "result": null},
 
-    {"id": "final", "stage": "final", "date": "2026-07-19", "kickoff_et": null, "venue": "MetLife Stadium, East Rutherford", "home": "TBD", "home_slug": null, "away": "TBD", "away_slug": null, "status": "scheduled", "result": null}
+    {"id": "final", "stage": "final", "date": "2026-07-19", "kickoff_et": "2026-07-19T15:00:00-04:00", "venue": "MetLife Stadium, East Rutherford", "home": "TBD", "home_slug": null, "away": "TBD", "away_slug": null, "status": "scheduled", "result": null}
   ]
 }

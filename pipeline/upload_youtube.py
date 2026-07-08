@@ -3,10 +3,10 @@
 # dependencies = ["google-auth-oauthlib", "google-api-python-client", "google-auth", "python-dotenv", "python-dateutil", "tzdata"]
 # ///
 """
-Direct YouTube uploader — the lightweight replacement for the Postiz YouTube path.
+Direct YouTube uploader.
 
 Pushes a rendered MP4 straight to the channel via the official YouTube Data API v3
-(videos.insert). No Docker stack, no Postiz: just an OAuth refresh token in
+(videos.insert). No Docker stack: just an OAuth refresh token in
 pipeline/.secrets/. Title / description / tags come from the VideoSpec JSON the brain
 produced (youtube_title, youtube_description, hashtags). A vertical 1080x1920 clip is
 auto-classified by YouTube as a Short — there's no "short" flag.
@@ -20,15 +20,15 @@ Why a separate token from youtube_analytics.py: that one is read-only analytics
 client, different scope + token file.
 
 ONE-TIME OWNER SETUP (only you can do the consent click):
-  1. Google Cloud Console -> same project as analytics/Postiz (#821403730517):
+  1. Google Cloud Console -> same project as analytics (#821403730517):
      - APIs & Services > Library > ensure "YouTube Data API v3" is ENABLED.
      - OAuth consent screen > Data Access > Add or remove scopes > add BOTH (paste into
        the "manually add scopes" box if not listed):
          .../auth/youtube.upload      (upload the MP4)
          .../auth/youtube.force-ssl   (post/reply to comments — automation)
        Update > Save.
-     (The consent screen is already in Production, so the refresh token won't expire
-      every 7 days the way the old Postiz Testing-mode token did.)
+     (The consent screen must be in Production, not Testing, or the refresh token
+      expires every 7 days.)
   2. The Desktop OAuth client JSON already exists at pipeline/.secrets/yt_oauth_client.json
      (reused from the analytics script). No new client needed.
   3. Authorize (two steps — no interactive prompt, works headless/WSL):

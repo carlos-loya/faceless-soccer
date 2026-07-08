@@ -53,6 +53,6 @@ if [ -z "${TTV_PRODUCTION:-}" ]; then
   echo "  DRAFT preview only (free Piper VO). When the visuals look right, run the real ElevenLabs VO:"
   echo "    TTV_PRODUCTION=1 bash pipeline/make_video.sh $SPEC"
 else
-  echo "  publish:  uv run pipeline/publish.py publish \"$SPEC\" \"out/renders/$STEM.mp4\" --integration <id> --when now"
-  echo "  (channels: uv run pipeline/publish.py channels  |  setup: deploy/postiz/README.md)"
+  echo "  publish YouTube:  uv run pipeline/upload_youtube.py upload \"$SPEC\" \"out/renders/$STEM.mp4\" --visibility public"
+  echo "  publish TikTok/IG: uv run pipeline/post_packet.py \"$SPEC\" \"out/renders/$STEM.mp4\"  (then the post-social skill)"
 fi

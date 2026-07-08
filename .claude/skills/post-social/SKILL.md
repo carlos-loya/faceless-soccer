@@ -33,8 +33,7 @@ navigation or upload, because the DOM changes.
 
 ## Step 0 — build the post packet
 
-Run the helper to get the absolute MP4 path + per-platform captions (formatted exactly like
-the old Postiz path):
+Run the helper to get the absolute MP4 path + per-platform captions:
 
 ```
 uv run pipeline/post_packet.py out/specs/<stem>.json out/renders/<stem>.mp4

@@ -44,15 +44,15 @@
       "confidence": "med"
     },
     "wc_role": {
-      "value": "Captains Portugal at a RECORD sixth World Cup, more than any man in tournament history (he shares the previous joint-record of 5 with Lionel Messi, who is also at 2026). At 41, expected to start; the World Cup is the one major trophy he has never won. Reported to need 2 goals to pass Eus\u00e9bio's Portugal World Cup record of 9. Portugal in Group K with DR Congo, Uzbekistan and Colombia; open vs DR Congo on 17 June in Houston.",
-      "as_of": "2026-06-09",
-      "source": "https://www.uefa.com/european-qualifiers/news/02a6-20d15939ace8-5cc9254d0851-1000--portugal-at-the-world-cup-2026-squad-fixtures-group-and-hi/",
+      "value": "Captained Portugal at a RECORD sixth World Cup, more than any man in tournament history (shares the previous joint-record of 5 with Lionel Messi, also at 2026). ELIMINATED in the Round of 16: Spain won 1-0 on Mikel Merino's 90+1' substitute winner (Dallas Stadium, 2026-07-06). Ronaldo had a first-half volley saved by Unai Sim\u00f3n; finished the tournament with 3 goals (brace vs Uzbekistan, penalty vs Croatia). Confirmed before the match this was his final World Cup \u2014 he retires from World Cups never having won one, still stuck on 4th-place-or-worse across six tournaments.",
+      "as_of": "2026-07-06",
+      "source": "https://theanalyst.com/articles/portugal-vs-spain-stats-world-cup-round-of-16",
       "confidence": "high"
     },
     "records": {
-      "value": "First man to play in six World Cups (record). Most-capped player and all-time leading scorer in men's international football. Won UEFA Euro 2016 and two UEFA Nations League titles; World Cup is the missing major.",
-      "as_of": "2026-06-09",
-      "source": "https://www.uefa.com/european-qualifiers/news/02a6-20d15939ace8-5cc9254d0851-1000--portugal-at-the-world-cup-2026-squad-fixtures-group-and-hi/",
+      "value": "First man to play in six World Cups (record). Most-capped player and all-time leading scorer in men's international football (146 caps-goals tally cited post-WC2026). Won UEFA Euro 2016 and two UEFA Nations League titles; the World Cup is now a permanently missing major \u2014 his international career's last realistic shot at it ended 2026-07-06.",
+      "as_of": "2026-07-06",
+      "source": "https://www.nbcdfw.com/world-cup/spain-portugal-score-cristiano-ronaldo/4045474/",
       "confidence": "med"
     }
   },
@@ -66,5 +66,5 @@
   "active_narratives": [
     "messi-ronaldo-last-dance"
   ],
-  "last_verified": "2026-06-09"
+  "last_verified": "2026-07-07"
 }

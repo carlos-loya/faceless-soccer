@@ -6,14 +6,14 @@
 YouTube Analytics puller — the REAL diagnostic (retention curve + swipe-away), which the
 public Data API key cannot give. Uses owner OAuth (scope yt-analytics.readonly).
 
-This is read-only analytics; it never touches publishing (that's Postiz / publish.py).
+This is read-only analytics; it never touches publishing (that's upload_youtube.py).
 
 ONE-TIME OWNER SETUP (only you can do the consent click):
-  1. Google Cloud Console -> same project as Postiz (#821403730517):
+  1. Google Cloud Console -> same project as the uploader (#821403730517):
      APIs & Services > Library > enable "YouTube Analytics API".
   2. Credentials > Create Credentials > OAuth client ID > Application type: "Desktop app"
      > name it (e.g. tikitaka-analytics) > Create > DOWNLOAD JSON.
-  3. OAuth consent screen (already Production for Postiz): Data Access > Add scopes >
+  3. OAuth consent screen (must be Production): Data Access > Add scopes >
      add  .../auth/yt-analytics.readonly  > Save.
   4. Save the downloaded JSON to:  pipeline/.secrets/yt_oauth_client.json
   5. Authorize (two steps — no interactive prompt, works headless/WSL):

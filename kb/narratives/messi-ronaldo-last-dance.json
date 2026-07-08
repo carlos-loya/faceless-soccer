@@ -1,20 +1,22 @@
 {
   "slug": "messi-ronaldo-last-dance",
   "headline": "The last dance — the only THREE men ever to play six World Cups (Messi, Ronaldo, Ochoa)",
-  "summary": "At WC 2026, three players reach a sixth World Cup — Lionel Messi (Argentina, defending champions), Cristiano Ronaldo (Portugal), and Mexico's goalkeeper Guillermo Ochoa. They are the ONLY three in history to do so; the previous ceiling was five (Lothar Matthäus, Gianluigi Buffon, Rafael Márquez). Because Mexico plays the tournament opener (June 11), Ochoa could be the first of the three to actually take the field at a sixth World Cup. Widely framed as the veteran GOATs' final tournament; Messi is managing a hamstring issue in the build-up.",
+  "summary": "At WC 2026, three players reached a sixth World Cup — Lionel Messi (Argentina, defending champions), Cristiano Ronaldo (Portugal), and Mexico's goalkeeper Guillermo Ochoa. They are the ONLY three in history to do so; the previous ceiling was five (Lothar Matthäus, Gianluigi Buffon, Rafael Márquez). UPDATE 2026-07-06: Ronaldo's dance is OVER — Portugal lost 1-0 to Spain in the R16 (Mikel Merino 90+1' sub winner), confirmed pre-match this was his last World Cup, exits with 3 goals this tournament but no trophy. Messi is still alive in the bracket (Argentina beat Egypt 3-2 in the R16, 2026-07-07, coming from 2-0 down in the final 11 minutes) — the last-dance torch is now his alone among the three.",
   "entities": ["lionel-messi", "cristiano-ronaldo", "guillermo-ochoa"],
   "heat": "hot",
-  "as_of": "2026-06-09",
+  "as_of": "2026-07-07",
   "sources": [
     "https://www.cbssports.com/soccer/news/cristiano-ronaldo-40-year-olds-set-to-make-2026-world-cup-the-oldest/",
     "https://worldsoccertalk.com/news/2026-world-cup-historic-scheduling-twist-could-give-guillermo-ochoa-edge-over-lionel-messi-and-cristiano-ronaldo/",
-    "https://www.espn.com/soccer/story/_/id/48904313/lionel-messi-argentina-2026-world-cup-squad"
+    "https://www.espn.com/soccer/story/_/id/48904313/lionel-messi-argentina-2026-world-cup-squad",
+    "https://theanalyst.com/articles/portugal-vs-spain-stats-world-cup-round-of-16",
+    "https://www.nbcdfw.com/world-cup/spain-portugal-score-cristiano-ronaldo/4045474/"
   ],
   "angles": [
+    "Ronaldo's last dance ends in the R16 — Merino's 91st-minute dagger, no World Cup, ever",
     "Three men, six World Cups — Messi, Ronaldo, or Ochoa: whose longevity is most impressive?",
     "Ochoa could be the FIRST ever to play a sixth World Cup — does that beat Messi & Ronaldo?",
-    "Is this really the last time we ever see Messi at a World Cup?",
-    "Messi at 39 leading the defending champions — can he win it again?"
+    "Messi is now the last of the three still alive in the bracket — is this finally his year?"
   ],
-  "last_verified": "2026-06-09"
+  "last_verified": "2026-07-07"
 }
