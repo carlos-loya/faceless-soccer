@@ -2,20 +2,23 @@
 """
 TikiTakaFootyTV — Mission Control dashboard server.
 
-A tiny stdlib-only HTTP server that turns the faceless-soccer pipeline into a
-clickable control room. It does NOT spend Claude tokens for the deterministic
-stages — it just shells out to the scripts that already exist:
+A stdlib-only HTTP server that turns the faceless-soccer pipeline into a clickable
+control room, bound to 127.0.0.1 (local, single-owner). Most actions are deterministic
+glue — they shell out to the scripts that already exist:
 
     storyboard   -> bash pipeline/storyboard.sh out/specs/<stem>.json
-    draft        -> bash pipeline/make_video.sh out/specs/<stem>.json
+    draft        -> bash pipeline/make_video.sh out/specs/<stem>.json   (voice: Carlos|Piper)
     production   -> TTV_PRODUCTION=1 bash pipeline/make_video.sh out/specs/<stem>.json
     publish      -> uv run pipeline/upload_youtube.py upload <spec> <mp4> --visibility ...
+    comments     -> uv run pipeline/youtube_comments.py fetch
+    analytics    -> uv run pipeline/youtube_analytics.py collect
     gather       -> uv run pipeline/outlier_ingest.py   (deterministic viral feed)
 
-Every action is deterministic glue — NO Claude is invoked from this server (no token
-spend, no autonomous agents). The "brain" steps (/find-topics, videospec, /daily) stay
-in your own Claude Code session; drop their briefs into out/topics/ and the dashboard
-lists them automatically.
+BRAIN steps ARE available here now (owner opt-in) but are clearly gated as token-spending:
+find-topics/daily fire `claude -p ...`, and "Run now" shells the auto match pipeline
+(which fires Claude AND may auto-publish to YouTube). The UI confirms before any of these.
+Everything side-effecting (production/publish/config write/brain/auto-run) is behind an
+explicit confirm; reads are served straight from the repo tree.
 
 Run it:   python3 pipeline/dashboard/server.py   (then open http://localhost:8770)
 """
@@ -41,6 +44,13 @@ RENDERS = ROOT / "out" / "renders"
 PUBLISHED = ROOT / "out" / "published"
 TOPICS = ROOT / "out" / "topics"
 POSTLOG = PUBLISHED / "post-log.jsonl"
+AUTO_CFG = ROOT / "pipeline" / "auto" / "config.json"
+AUTO_DIR = ROOT / "out" / "auto"
+PROCESSED = AUTO_DIR / "processed.jsonl"
+CRON_LOCK = AUTO_DIR / ".cron.lock"
+COMMENTS = ROOT / "out" / "comments" / "unreplied.json"
+PERF = ROOT / "analytics" / "performance.jsonl"
+VOICEBOX_URL = os.environ.get("TTV_VOICEBOX_URL", "http://127.0.0.1:17493")
 PORT = int(os.environ.get("TTV_DASHBOARD_PORT", "8770"))
 DEFAULT_TZ = os.environ.get("TTV_SCHEDULE_TZ", "America/New_York")  # friendly times default to ET
 
@@ -182,8 +192,23 @@ def _spec_card(spec_path: Path, postlog: dict) -> dict:
             if j["stem"] == stem and j["status"] == "running":
                 running.append(j["kind"])
 
+    # Canonical pipeline stage. Publish is authoritative from the post-log, regardless of whether
+    # the local render/asset files still exist (they get cleaned up after publishing). This is the
+    # ONE source of truth for filters/counts — fixes published videos showing under "Needs Work".
+    if pub.get("youtube"):
+        stage = "live"
+    elif prod:
+        stage = "production"
+    elif draft:
+        stage = "draft"
+    elif story:
+        stage = "board"
+    else:
+        stage = "spec"
+
     return {
         "stem": stem,
+        "stage": stage,
         "format": spec.get("format", "?"),
         "topic": spec.get("topic", ""),
         "subject": spec.get("subject", ""),
@@ -215,17 +240,17 @@ def build_state() -> dict:
     postlog = _read_postlog()
     cards = [_spec_card(p, postlog) for p in SPECS.glob("*.json")]
     cards.sort(key=lambda c: c["spec_mtime"], reverse=True)
-    published_stems = {s for s, plats in postlog.items() if "youtube" in plats}
     telemetry = {
         "specs": len(cards),
         "storyboards": sum(1 for c in cards if c["storyboard"]),
         "drafts": sum(1 for c in cards if c["draft"]),
         "productions": sum(1 for c in cards if c["production"]),
-        "published": len(published_stems),
+        "published": sum(1 for c in cards if c["stage"] == "live"),  # authoritative: post-log
         "topics": len(list(TOPICS.glob("*.md"))),
     }
     return {"telemetry": telemetry, "cards": cards, "topics": _topics(),
-            "jobs": _jobs_public(), "now": time.time()}
+            "jobs": _jobs_public(), "voicebox_online": _voicebox_online(),
+            "cron_live": _cron_live(), "now": time.time()}
 
 
 # ---------------------------------------------------------------- scheduled ------
@@ -292,6 +317,114 @@ def _build_analytics() -> dict:
     return {"videos": records, "summary": summary}
 
 
+# ---------------------------------------------------------------- overview -------
+def _read_jsonl(p: Path) -> list[dict]:
+    out: list[dict] = []
+    if p.exists():
+        for line in p.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if line:
+                try:
+                    out.append(json.loads(line))
+                except Exception:  # noqa: BLE001
+                    pass
+    return out
+
+
+_VB_CACHE = {"t": 0.0, "online": False}
+
+
+def _voicebox_online() -> bool:
+    """Ping the local VoiceBox app (/profiles). Cached ~5s so the /api/state poll stays cheap.
+    Connection-refused (app closed) returns instantly; drafts fall back to Piper either way."""
+    now = time.time()
+    if now - _VB_CACHE["t"] < 5:
+        return _VB_CACHE["online"]
+    import urllib.request
+    ok = False
+    try:
+        with urllib.request.urlopen(VOICEBOX_URL + "/profiles", timeout=1.5) as r:
+            ok = r.status == 200
+    except Exception:  # noqa: BLE001
+        ok = False
+    _VB_CACHE.update(t=now, online=ok)
+    return ok
+
+
+def _cron_live() -> bool:
+    """True if the auto-pipeline cron lock is held by a live process."""
+    try:
+        pid = int(CRON_LOCK.read_text().strip())
+        os.kill(pid, 0)
+        return True
+    except Exception:  # noqa: BLE001 — no lock / stale pid / unparseable
+        return False
+
+
+def _et_today() -> str:
+    import datetime as dt
+    try:
+        from zoneinfo import ZoneInfo
+        return dt.datetime.now(ZoneInfo(DEFAULT_TZ)).strftime("%Y-%m-%d")
+    except Exception:  # noqa: BLE001
+        return dt.date.today().isoformat()
+
+
+def _fixtures_json(args: list[str]) -> list:
+    """Run fixtures.py <args> --json and parse the array (empty list on any failure)."""
+    try:
+        proc = subprocess.run(["uv", "run", "pipeline/fixtures.py", *args, "--json"],
+                              cwd=str(ROOT), capture_output=True, text=True, timeout=30)
+        if proc.returncode == 0:
+            line = next((ln for ln in reversed(proc.stdout.splitlines()) if ln.strip()), "[]")
+            return json.loads(line)
+    except Exception:  # noqa: BLE001
+        pass
+    return []
+
+
+def _auto_status() -> dict:
+    try:
+        cfg = json.loads(AUTO_CFG.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        cfg = {}
+    processed = _read_jsonl(PROCESSED)
+    today = _et_today()
+    return {
+        "config": cfg,
+        "cron_live": _cron_live(),
+        "today_count": sum(1 for r in processed if r.get("day") == today),
+        "processed_total": len(processed),
+        "recent": processed[-8:][::-1],
+    }
+
+
+def _build_overview() -> dict:
+    """One aggregate for the Mission Control landing (cross-file compute)."""
+    state = build_state()
+    analytics = _build_analytics()
+    recent = sorted(analytics["videos"], key=lambda r: r.get("published_ts", ""), reverse=True)[:8]
+    comments_n = len(_read_json(COMMENTS) or [])
+    return {
+        "kpis": analytics["summary"],
+        "funnel": state["telemetry"],
+        "recent": recent,
+        "auto": _auto_status(),
+        "fixtures": _fixtures_json(["upcoming", "--n", "5"]),
+        "comments_unreplied": comments_n,
+        "voicebox_online": state["voicebox_online"],
+        "cron_live": state["cron_live"],
+        "now": time.time(),
+    }
+
+
+def _read_json(p: Path):
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return None
+
+
 # ---------------------------------------------------------------- entities -------
 def _build_entities() -> dict:
     """Read all kb/entities/*.json and return a lightweight list for the browser."""
@@ -333,6 +466,35 @@ def _safe_stem(stem: str) -> bool:
     return bool(_SAFE_STEM.match(stem))
 
 
+def _validate_auto_config(cfg: dict):
+    """Merge posted knobs onto the existing config with strict validation (mutating write).
+    Returns (True, clean_config) or (False, error_message)."""
+    base = _read_json(AUTO_CFG) or {}
+    out = dict(base)
+    if "mode" in cfg:
+        if cfg["mode"] not in ("draft", "produce", "publish"):
+            return False, "mode must be draft, produce, or publish"
+        out["mode"] = cfg["mode"]
+    if "youtube_visibility" in cfg:
+        if cfg["youtube_visibility"] not in ("public", "unlisted", "private"):
+            return False, "visibility must be public, unlisted, or private"
+        out["youtube_visibility"] = cfg["youtube_visibility"]
+    for key, lo in (("daily_cap", 0), ("recent_hours", 1)):
+        if key in cfg:
+            try:
+                out[key] = max(lo, int(cfg[key]))
+            except (TypeError, ValueError):
+                return False, f"{key} must be an integer"
+    if "notable_only" in cfg:
+        out["notable_only"] = bool(cfg["notable_only"])
+    if "wc_window" in cfg:
+        w = cfg["wc_window"]
+        if not (isinstance(w, list) and len(w) == 2 and all(isinstance(x, str) for x in w)):
+            return False, "wc_window must be [start, end] ISO date strings"
+        out["wc_window"] = w
+    return True, out
+
+
 def start_action(payload: dict) -> dict:
     action = payload.get("action")
     stem = payload.get("stem", "")
@@ -355,7 +517,11 @@ def start_action(payload: dict) -> dict:
     if action == "draft":
         if _running_for(stem, {"draft", "production"}):
             return {"error": "a render is already running for this video"}
-        jid = _new_job("draft", stem, ["bash", "pipeline/make_video.sh", f"out/specs/{stem}.json"])
+        # Voice: default draft = VoiceBox "Carlos" (falls back to Piper if the app is down);
+        # voice=="piper" forces the fast offline Piper draft.
+        env = {"TTV_PIPER": "1"} if payload.get("voice") == "piper" else None
+        jid = _new_job("draft", stem, ["bash", "pipeline/make_video.sh", f"out/specs/{stem}.json"],
+                       env=env)
         return {"job": jid}
 
     if action == "production":
@@ -470,6 +636,75 @@ def start_action(payload: dict) -> dict:
         jid = _new_job("gather_topics", "outlier-feed", ["bash", "-lc", sh])
         return {"job": jid}
 
+    # ── Deterministic data jobs (no Claude) ─────────────────────────────────────
+    if action == "comments_fetch":
+        if _running_for("comments", {"comments_fetch"}):
+            return {"error": "comments fetch already running"}
+        days = str(max(1, int(payload.get("days", 7) or 7)))
+        jid = _new_job("comments_fetch", "comments",
+                       ["uv", "run", "pipeline/youtube_comments.py", "fetch", "--days", days])
+        return {"job": jid}
+
+    if action == "analytics_collect":
+        if _running_for("analytics", {"analytics_collect"}):
+            return {"error": "analytics collect already running"}
+        jid = _new_job("analytics_collect", "analytics",
+                       ["uv", "run", "pipeline/youtube_analytics.py", "collect"])
+        return {"job": jid}
+
+    if action == "fetch_result":
+        fid = payload.get("fixture_id", "")
+        if not _safe_stem(fid):
+            return {"error": "invalid fixture id"}
+        jid = _new_job("fetch_result", fid,
+                       ["uv", "run", "pipeline/auto/fetch_result.py", fid, "--write"])
+        return {"job": jid}
+
+    if action == "post_packet":
+        # Synchronous — prints one JSON packet for the attended TikTok/IG handoff.
+        mp4 = next((c for c in (PUBLISHED / f"{stem}.mp4", RENDERS / f"{stem}.mp4") if c.exists()), None)
+        if mp4 is None:
+            return {"error": "no production MP4 found for handoff — run Production first"}
+        try:
+            proc = subprocess.run(
+                ["uv", "run", "pipeline/post_packet.py", f"out/specs/{stem}.json",
+                 str(mp4.relative_to(ROOT))],
+                cwd=str(ROOT), capture_output=True, text=True, timeout=60)
+            if proc.returncode != 0:
+                return {"error": (proc.stderr or proc.stdout or "").strip()[:300]}
+            line = next((ln for ln in reversed(proc.stdout.splitlines()) if ln.strip()), "{}")
+            return {"packet": json.loads(line)}
+        except Exception as e:  # noqa: BLE001
+            return {"error": str(e)}
+
+    # ── Auto-pipeline config (mutating write, validated) ────────────────────────
+    if action == "auto_save_config":
+        ok, res = _validate_auto_config(payload.get("config") or {})
+        if not ok:
+            return {"error": res}
+        AUTO_CFG.write_text(json.dumps(res, indent=2) + "\n", encoding="utf-8")
+        return {"ok": True, "config": res}
+
+    # ── Claude / brain jobs — TOKEN-SPENDING, UI must confirm before firing ──────
+    if action == "find_topics":
+        if _running_for("find-topics", {"find_topics"}):
+            return {"error": "find-topics already running"}
+        jid = _new_job("find_topics", "find-topics", ["claude", "-p", "/find-topics"])
+        return {"job": jid}
+
+    if action == "daily":
+        topic = (payload.get("topic") or "").strip()
+        prompt = ("/daily " + topic).strip()
+        jid = _new_job("daily", "daily", ["claude", "-p", prompt])
+        return {"job": jid}
+
+    if action == "auto_run":
+        # Fires claude -p /match-recap per notable match AND may auto-publish to YouTube.
+        if _running_for("auto-run", {"auto_run"}):
+            return {"error": "auto pipeline already running"}
+        jid = _new_job("auto_run", "auto-run", ["bash", "pipeline/auto/run_match_pipeline.sh"])
+        return {"job": jid}
+
     return {"error": f"unknown action: {action}"}
 
 
@@ -557,6 +792,9 @@ class Handler(BaseHTTPRequestHandler):
             return
         if path == "/api/state":
             self._send(200, build_state())
+            return
+        if path == "/api/overview":
+            self._send(200, _build_overview())
             return
         if path == "/api/scheduled":
             # Synchronous, quick (one Data API call) — list videos queued to publish.

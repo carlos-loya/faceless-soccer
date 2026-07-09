@@ -118,7 +118,7 @@ button,input,select,textarea{font-family:inherit;font-size:inherit}
 .vid.focused{box-shadow:0 0 0 2px var(--accent)}
 .vid[data-stage="board"] {border-left-color:var(--cyan)}
 .vid[data-stage="draft"] {border-left-color:var(--accent)}
-.vid[data-stage="ready"]{border-left-color:var(--red)}
+.vid[data-stage="production"]{border-left-color:var(--red)}
 .vid[data-stage="live"] {border-left-color:var(--green)}
 
 .vid-hdr{display:flex;align-items:center;gap:8px;min-width:0}
@@ -378,7 +378,79 @@ button,input,select,textarea{font-family:inherit;font-size:inherit}
   .nav-lbl{display:none}
   #board{grid-template-columns:1fr}
   .ent-grid{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))}
+  .ov-grid{grid-template-columns:1fr}
 }
+
+/* ── Status chips (topbar) ─────────────────────────────────── */
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--mono);color:var(--muted);padding:4px 9px;border:1px solid var(--border);border-radius:20px;background:var(--surface);white-space:nowrap}
+.chip-dot{width:7px;height:7px;border-radius:50%;background:var(--faint);flex-shrink:0}
+.chip.on{color:var(--green);border-color:rgba(34,197,94,.3)}
+.chip.on .chip-dot{background:var(--green);box-shadow:0 0 6px var(--green)}
+
+/* ── Nav badge / live dot ──────────────────────────────────── */
+.nav-badge{margin-left:auto;font-family:var(--mono);font-size:9px;min-width:16px;height:16px;padding:0 4px;border-radius:8px;background:var(--surface2);color:var(--faint);display:none;align-items:center;justify-content:center;font-weight:700}
+.nav-badge.on{display:flex;background:var(--accent);color:#000}
+.nav-dot{margin-left:auto;width:7px;height:7px;border-radius:50%;background:transparent;flex-shrink:0}
+.nav-dot.on{background:var(--green);box-shadow:0 0 6px var(--green);animation:blink 1.4s infinite}
+
+/* ── Overview / panels ─────────────────────────────────────── */
+.ov-grid{display:grid;grid-template-columns:1fr 340px;gap:14px}
+@media(max-width:1000px){.ov-grid{grid-template-columns:1fr}}
+.ov-col{display:flex;flex-direction:column;gap:14px;min-width:0}
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.panel-hd{display:flex;align-items:center;gap:8px;padding:11px 14px;border-bottom:1px solid var(--border)}
+.panel-title{font-size:12px;font-weight:600;color:var(--muted)}
+.danger-panel{border-color:rgba(239,68,68,.22)}
+
+/* Funnel */
+.funnel{padding:14px;display:flex;flex-direction:column;gap:8px}
+.fnl-row{display:flex;align-items:center;gap:10px}
+.fnl-lbl{width:78px;font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);flex-shrink:0}
+.fnl-track{flex:1;height:20px;background:var(--surface2);border-radius:4px;overflow:hidden}
+.fnl-fill{height:100%;border-radius:4px;transition:width .4s ease;min-width:2px}
+.fnl-val{font-family:var(--mono);font-size:12px;color:var(--text);width:30px;text-align:right;flex-shrink:0}
+
+/* Key/value status rows */
+.kv{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--border);font-size:12px}
+.kv:last-child{border-bottom:none}
+.kv-k{color:var(--faint);flex-shrink:0}
+.kv-v{margin-left:auto;font-family:var(--mono);color:var(--text);text-align:right}
+.pill{font-family:var(--mono);font-size:10px;padding:2px 7px;border-radius:10px;border:1px solid var(--border);color:var(--muted)}
+.pill.pub{color:var(--green);border-color:rgba(34,197,94,.3);background:var(--green-bg)}
+.pill.draftm{color:var(--accent);border-color:rgba(245,158,11,.3);background:var(--acc-bg)}
+.pill.halt{color:var(--red);border-color:rgba(239,68,68,.3);background:var(--red-bg)}
+.empty-note{padding:16px 14px;font-size:12px;color:var(--faint);text-align:center}
+
+/* Retention sparkline */
+.spark{display:block}
+.mini-bar{height:5px;border-radius:3px;background:var(--surface2);position:relative;min-width:36px}
+.mini-bar>span{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:var(--accent)}
+
+/* Auto config form */
+.auto-form{padding:14px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.auto-form .full{grid-column:1/-1}
+.auto-form label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--faint);margin-bottom:5px}
+.auto-form .save-row{grid-column:1/-1;display:flex;gap:8px;align-items:center;justify-content:flex-end}
+
+/* Ideation brain cards */
+.brain-bar{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+@media(max-width:800px){.brain-bar{grid-template-columns:1fr}}
+.brain-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:14px}
+.brain-hd{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.brain-title{font-size:13px;font-weight:600}
+.brain-desc{font-size:12px;color:var(--muted);line-height:1.5;margin-bottom:10px}
+.tok-tag{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);background:var(--acc-bg);border:1px solid rgba(245,158,11,.3);border-radius:4px;padding:1px 6px;margin-left:auto}
+.mono{font-family:var(--mono)}
+
+/* Comments */
+.cmt{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:12px 14px;margin-bottom:8px}
+.cmt-hd{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.cmt-author{font-size:12px;font-weight:600;color:var(--text)}
+.cmt-meta{font-family:var(--mono);font-size:10px;color:var(--faint);margin-left:auto}
+.cmt-text{font-size:13px;color:var(--muted);line-height:1.5}
+.cmt-vid{font-size:11px;color:var(--faint);margin-top:7px}
+.cmt-vid a{color:var(--accent)}
+.cmt-foot{display:flex;gap:6px;margin-top:9px;align-items:center}
 </style>
 </head>
 <body>
@@ -395,7 +467,11 @@ button,input,select,textarea{font-family:inherit;font-size:inherit}
   </div>
 
   <div class="sb-nav">
-    <div class="nav-item active" data-sec="pipeline" onclick="navigate('pipeline')">
+    <div class="nav-item active" data-sec="overview" onclick="navigate('overview')">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span class="nav-lbl">Overview</span>
+    </div>
+    <div class="nav-item" data-sec="pipeline" onclick="navigate('pipeline')">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
       <span class="nav-lbl">Pipeline</span>
     </div>
@@ -403,13 +479,23 @@ button,input,select,textarea{font-family:inherit;font-size:inherit}
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
       <span class="nav-lbl">Analytics</span>
     </div>
+    <div class="nav-item" data-sec="comments" onclick="navigate('comments')">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <span class="nav-lbl">Comments</span>
+      <span class="nav-badge" id="nav-comments">0</span>
+    </div>
+    <div class="nav-item" data-sec="automation" onclick="navigate('automation')">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3"/></svg>
+      <span class="nav-lbl">Automation</span>
+      <span class="nav-dot" id="nav-cron" title="Auto-pipeline running"></span>
+    </div>
     <div class="nav-item" data-sec="schedule" onclick="navigate('schedule')">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
       <span class="nav-lbl">Schedule</span>
     </div>
     <div class="nav-item" data-sec="topics" onclick="navigate('topics')">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-      <span class="nav-lbl">Topics</span>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2a2.5 2.5 0 0 0-2.45 3A2.5 2.5 0 0 0 5 9.5a2.5 2.5 0 0 0 1.5 4.5A2.5 2.5 0 0 0 12 20.5V2z"/><path d="M14.5 2a2.5 2.5 0 0 1 2.45 3A2.5 2.5 0 0 1 19 9.5a2.5 2.5 0 0 1-1.5 4.5A2.5 2.5 0 0 1 12 20.5V2z"/></svg>
+      <span class="nav-lbl">Ideation</span>
     </div>
     <div class="nav-item" data-sec="entities" onclick="navigate('entities')">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.29 7 12 12 20.71 7"/><line x1="12" y1="22" x2="12" y2="12"/></svg>
@@ -432,8 +518,9 @@ button,input,select,textarea{font-family:inherit;font-size:inherit}
 <!-- ═══════════════════ MAIN ═══════════════════ -->
 <div id="main">
   <header id="topbar">
-    <h1 id="ptitle">Pipeline</h1>
+    <h1 id="ptitle">Overview</h1>
     <div class="tb-right">
+      <span class="chip" id="vbChip" title="VoiceBox desktop app — powers the Carlos draft voice"><span class="chip-dot"></span><span id="vbLbl">VoiceBox</span></span>
       <span id="clock"></span>
       <button class="btn ghost sm" id="schedBtn" onclick="showScheduled()">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
@@ -445,8 +532,38 @@ button,input,select,textarea{font-family:inherit;font-size:inherit}
 
   <div id="content">
 
+    <!-- ── OVERVIEW ── -->
+    <div id="sec-overview" class="section active">
+      <div id="ov-kpis" class="kpi-row"></div>
+      <div class="ov-grid">
+        <div class="ov-col">
+          <div class="panel">
+            <div class="panel-hd"><span class="panel-title">Pipeline funnel</span>
+              <button class="btn ghost sm" style="margin-left:auto" onclick="navigate('pipeline')">Open pipeline →</button></div>
+            <div id="ov-funnel" class="funnel"></div>
+          </div>
+          <div class="panel">
+            <div class="panel-hd"><span class="panel-title">Recent performance</span>
+              <button class="btn ghost sm" style="margin-left:auto" onclick="navigate('analytics')">Analytics →</button></div>
+            <div id="ov-recent"></div>
+          </div>
+        </div>
+        <div class="ov-col ov-side">
+          <div class="panel">
+            <div class="panel-hd"><span class="panel-title">Automation</span>
+              <button class="btn ghost sm" style="margin-left:auto" onclick="navigate('automation')">Manage →</button></div>
+            <div id="ov-auto"></div>
+          </div>
+          <div class="panel">
+            <div class="panel-hd"><span class="panel-title">Next fixtures</span></div>
+            <div id="ov-fixtures"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- ── PIPELINE ── -->
-    <div id="sec-pipeline" class="section active">
+    <div id="sec-pipeline" class="section">
       <div class="sec-head">
         <span class="sec-title">Videos</span>
         <span class="sec-ct" id="bct"></span>
@@ -465,9 +582,68 @@ button,input,select,textarea{font-family:inherit;font-size:inherit}
       <div class="sec-head">
         <span class="sec-title">Channel Analytics</span>
         <span class="sec-ct" id="analct"></span>
+        <button class="btn ghost sm" style="margin-left:auto" onclick="act('analytics_collect','')" title="Pull fresh YouTube analytics into the performance store (data lags 2–3 days)">↻ Collect data</button>
       </div>
       <div id="kpi-row" class="kpi-row"></div>
       <div id="atable-wrap"></div>
+    </div>
+
+    <!-- ── COMMENTS ── -->
+    <div id="sec-comments" class="section">
+      <div class="sec-head">
+        <span class="sec-title">Unreplied Comments</span>
+        <span class="sec-ct" id="cmtct"></span>
+        <div style="margin-left:auto;display:flex;gap:6px;align-items:center">
+          <select class="fsel" id="cmtDays" style="width:auto;padding:5px 26px 5px 10px" onchange="fetchComments()">
+            <option value="7">Last 7 days</option>
+            <option value="14">Last 14 days</option>
+            <option value="30">Last 30 days</option>
+          </select>
+          <button class="btn accent sm" onclick="fetchComments()" title="Scan the channel for comments you haven't replied to">↻ Fetch</button>
+        </div>
+      </div>
+      <div id="cmtlist"></div>
+    </div>
+
+    <!-- ── AUTOMATION ── -->
+    <div id="sec-automation" class="section">
+      <div class="sec-head"><span class="sec-title">Auto Match Pipeline</span><span class="sec-ct" id="autoct"></span></div>
+      <div class="ov-grid">
+        <div class="ov-col">
+          <div class="panel">
+            <div class="panel-hd"><span class="panel-title">Configuration</span></div>
+            <div id="auto-form" class="auto-form"></div>
+          </div>
+          <div class="panel">
+            <div class="panel-hd"><span class="panel-title">Run history</span></div>
+            <div id="auto-history"></div>
+          </div>
+        </div>
+        <div class="ov-col ov-side">
+          <div class="panel">
+            <div class="panel-hd"><span class="panel-title">Live status</span></div>
+            <div id="auto-status"></div>
+          </div>
+          <div class="panel">
+            <div class="panel-hd"><span class="panel-title">Result gate</span></div>
+            <div style="padding:12px 14px">
+              <label class="flbl">Check a fixture (ESPN final)</label>
+              <div style="display:flex;gap:6px">
+                <input class="finput" id="fidIn" type="text" placeholder="fixture id, e.g. qf-01" autocomplete="off">
+                <button class="btn ghost sm" onclick="runFetchResult()">Check</button>
+              </div>
+              <div class="fhint">Deterministic. Writes the verified score into the schedule when the match is final.</div>
+            </div>
+          </div>
+          <div class="panel danger-panel">
+            <div class="panel-hd"><span class="panel-title">Manual run</span></div>
+            <div style="padding:12px 14px">
+              <p style="font-size:12px;color:var(--muted);line-height:1.5;margin-bottom:10px">Runs the auto pipeline once now. Spends Claude subscription tokens, and in <b>publish</b> mode uploads to YouTube.</p>
+              <button class="btn warn block" onclick="confirmAutoRun()">▸ Run now  ⚠</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- ── SCHEDULE ── -->
@@ -477,9 +653,24 @@ button,input,select,textarea{font-family:inherit;font-size:inherit}
       <div id="schedlist" class="sched-list"></div>
     </div>
 
-    <!-- ── TOPICS ── -->
+    <!-- ── IDEATION ── -->
     <div id="sec-topics" class="section">
-      <div class="sec-head"><span class="sec-title">Topics &amp; Research</span></div>
+      <div class="sec-head"><span class="sec-title">Ideation</span></div>
+      <div class="brain-bar">
+        <div class="brain-card">
+          <div class="brain-hd"><span class="brain-title">Find topics</span><span class="tok-tag">spends tokens</span></div>
+          <p class="brain-desc">Runs <span class="mono">/find-topics</span> in Claude: what's true now × what's viral × what works for us. Drops a brief below.</p>
+          <button class="btn accent sm" onclick="confirmBrain('find_topics')">▸ Run find-topics</button>
+        </div>
+        <div class="brain-card">
+          <div class="brain-hd"><span class="brain-title">Make today's video</span><span class="tok-tag">spends tokens</span></div>
+          <p class="brain-desc">Runs <span class="mono">/daily</span>: grounds the news, scripts, fact-checks, and renders a free draft. New spec appears in Pipeline.</p>
+          <div style="display:flex;gap:6px">
+            <input class="finput" id="dailyTopic" type="text" placeholder="optional angle, e.g. Messi last dance" autocomplete="off">
+            <button class="btn accent sm" onclick="confirmBrain('daily')">▸ Run daily</button>
+          </div>
+        </div>
+      </div>
       <div class="topics-grid">
         <div class="topics-card">
           <div class="tc-head">
@@ -556,8 +747,8 @@ function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').
 function cssesc(s){return String(s||'').replace(/[^a-zA-Z0-9_-]/g,'\\$&');}
 
 // ═══════════════ State ═══════════════
-let STATE=null,ANALYTICS=null,SCHEDULED=null,ENTITIES=null;
-let SECTION='pipeline',FILTER='all',FOCUSED=-1,EXPANDED=null;
+let STATE=null,ANALYTICS=null,SCHEDULED=null,ENTITIES=null,OVERVIEW=null,COMMENTS=null,AUTO=null;
+let SECTION='overview',FILTER='all',FOCUSED=-1,EXPANDED=null;
 let SELJOB=null,JOBOFF={},POLL=null,SIG={};
 let SORT_COL='views',SORT_DIR=-1,CAL_DAY=null;
 let ENT_TYPE='all',ENT_SEARCH='';
@@ -567,7 +758,7 @@ let toastTimer=null;
 (async()=>{
   updateClock(); setInterval(updateClock,1000);
   await loadState();
-  await Promise.all([loadAnalytics(),loadScheduled()]);
+  await Promise.all([loadOverview(),loadAnalytics(),loadScheduled()]);
   slowTick();
   attachKb();
 })();
@@ -577,8 +768,15 @@ async function loadState(){
   try{
     const d=await(await fetch('/api/state')).json();
     STATE=d;
-    renderTelem(); renderBoard(); renderTopics(); renderStoryboards(); renderJobs();
+    renderTelem(); renderStatusChips(); renderBoard(); renderTopics(); renderStoryboards(); renderJobs();
   }catch(e){}
+}
+function renderStatusChips(){
+  if(!STATE) return;
+  const vb=$('#vbChip'), vbl=$('#vbLbl');
+  if(vb){vb.classList.toggle('on',!!STATE.voicebox_online);
+    if(vbl) vbl.textContent=STATE.voicebox_online?'VoiceBox online':'VoiceBox offline';}
+  const cd=$('#nav-cron'); if(cd) cd.classList.toggle('on',!!STATE.cron_live);
 }
 async function loadAnalytics(){
   try{
@@ -617,6 +815,8 @@ async function act(action,stem,extra={}){
     openDock(); SELJOB=d.job;
     await loadState(); renderJobs(); selectJob(d.job); fastPoll();
     if(['publish','cancel_schedule','reschedule'].includes(action)) setTimeout(loadScheduled,4000);
+    if(action==='analytics_collect') setTimeout(loadAnalytics,8000);
+    if(['find_topics','daily','auto_run','gather_topics','fetch_result'].includes(action)) setTimeout(loadOverview,9000);
     return d.job;
   }catch(e){toast('Request failed','err');return null;}
 }
@@ -627,9 +827,13 @@ function navigate(sec){
   document.querySelectorAll('.nav-item').forEach(el=>el.classList.toggle('active',el.dataset.sec===sec));
   document.querySelectorAll('.section').forEach(el=>el.classList.remove('active'));
   $('#sec-'+sec).classList.add('active');
-  const titles={pipeline:'Pipeline',analytics:'Analytics',schedule:'Schedule',topics:'Topics',entities:'Entities'};
+  const titles={overview:'Overview',pipeline:'Pipeline',analytics:'Analytics',comments:'Comments',
+                automation:'Automation',schedule:'Schedule',topics:'Ideation',entities:'Entities'};
   $('#ptitle').textContent=titles[sec]||sec;
+  if(sec==='overview')  loadOverview();
   if(sec==='analytics') renderAnalytics();
+  if(sec==='comments'){if(!COMMENTS) loadComments(); else renderComments();}
+  if(sec==='automation') loadAutomation();
   if(sec==='schedule')  renderSchedule();
   if(sec==='topics'){renderTopics();renderStoryboards();}
   if(sec==='entities'){if(!ENTITIES) loadEntities(); else renderEntities();}
@@ -645,8 +849,9 @@ function renderTelem(){
 }
 
 // ═══════════════ Pipeline / Board ════
-const stageOf=c=>
-  c.published?.youtube?'live':c.production?'ready':c.draft?'draft':c.storyboard?'board':'spec';
+// Canonical stage comes from the server now (published is authoritative from the post-log,
+// regardless of whether local render/asset files still exist). One source of truth for filters.
+const stageOf=c=>c.stage||'spec';
 
 function setFilter(f){
   FILTER=f; FOCUSED=-1;
@@ -655,9 +860,11 @@ function setFilter(f){
 }
 function filteredCards(){
   const all=(STATE?.cards||[]);
-  if(FILTER==='todo')  return all.filter(c=>!c.production);
-  if(FILTER==='ready') return all.filter(c=>c.production&&!c.published?.youtube);
-  if(FILTER==='live')  return all.filter(c=>!!c.published?.youtube);
+  // "Needs work" = anything not yet a finished master and not already live (fixes published
+  // videos wrongly appearing here after their local renders were cleaned up).
+  if(FILTER==='todo')  return all.filter(c=>c.stage!=='live'&&c.stage!=='production');
+  if(FILTER==='ready') return all.filter(c=>c.stage==='production');
+  if(FILTER==='live')  return all.filter(c=>c.stage==='live');
   return all;
 }
 function renderBoard(){
@@ -718,7 +925,7 @@ function vidHtml(c,i){
     cta=`<button class="btn accent sm" ${busy?'disabled':''} title="Resolve visuals for each scene — free, no VO, takes seconds" onclick="act('storyboard','${esc(c.stem)}')">${busy?'Running…':'▸ Preview storyboard'}</button>`;
   } else if(c.storyboard&&!c.draft&&!isPublished){
     const busy=isRun('draft');
-    cta=`<button class="btn accent sm" ${busy?'disabled':''} title="Free render with Piper voice — no ElevenLabs credits spent" onclick="act('draft','${esc(c.stem)}')">${busy?'Rendering…':'▸ Build draft'}</button>`;
+    cta=`<button class="btn accent sm" ${busy?'disabled':''} title="Free render, no ElevenLabs credits. Choose the draft voice next." onclick="confirmDraft('${esc(c.stem)}')">${busy?'Rendering…':'▸ Build draft'}</button>`;
   } else if(c.draft&&!c.production&&!isPublished){
     const busy=isRun('production');
     cta=`<button class="btn warn sm" ${busy?'disabled':''} title="Spends ElevenLabs credits — confirm draft looks right first" onclick="confirmProd('${esc(c.stem)}')">${busy?'Rendering…':'▸ Build production  ⚠'}</button>`;
@@ -743,8 +950,12 @@ function vidHtml(c,i){
   // ── Kebab "⋯ More" menu ──────────────────────────────────
   const kbId=`kb-${cssesc(c.stem)}`;
   const kbItems=[
+    (c.storyboard&&!isPublished)
+      ?`<button class="kebab-item" onclick="confirmDraft('${esc(c.stem)}')" title="Re-render the draft, choosing Carlos or Piper voice">Rebuild draft (pick voice)…</button>`:'',
     c.draft&&!isPublished
       ?`<button class="kebab-item danger" onclick="doDelete('delete_draft','${esc(c.stem)}','draft render')">Delete draft render</button>`:'',
+    (c.production||isPublished)
+      ?`<button class="kebab-item" onclick="doHandoff('${esc(c.stem)}')" title="Get TikTok/IG captions for the attended post-social skill">TikTok / IG handoff…</button>`:'',
     c.production&&!isPublished
       ?`<button class="kebab-item danger" onclick="doDelete('delete_production','${esc(c.stem)}','production render')">Delete production render</button>`:'',
     (c.storyboard&&!isPublished)
@@ -1166,6 +1377,44 @@ function showConfirm(title,bodyHtml,buttons){
 }
 
 // ═══════════════ Confirm dialogs ═════
+function confirmDraft(stem){
+  const vbOn=!!STATE?.voicebox_online;
+  const vbLine=vbOn
+    ?'<span style="color:var(--green)">● VoiceBox online.</span> Carlos will be used.'
+    :'<span style="color:var(--faint)">○ VoiceBox offline.</span> Carlos falls back to Piper automatically.';
+  showConfirm('Build draft',`
+    <p class="strong">Free draft render for <b>${esc(stem)}</b>. No ElevenLabs credits.</p>
+    <div>
+      <label class="flbl">Draft voice</label>
+      <select class="fsel" id="voiceSel">
+        <option value="carlos">Carlos (your VoiceBox clone, default)</option>
+        <option value="piper">Piper (fast offline robotic voice)</option>
+      </select>
+      <div class="fhint">${vbLine}</div>
+    </div>`,
+    [{label:'Cancel',cls:'ghost'},{label:'Build draft',cls:'accent',go:()=>{
+      act('draft',stem,{voice:($('#voiceSel')?.value||'carlos')});
+    }}]);
+}
+async function doHandoff(stem){
+  closeAllKebabs();
+  toast('Preparing handoff…');
+  const r=await fetch('/api/action',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({action:'post_packet',stem})});
+  const d=await r.json();
+  if(d.error){toast(d.error,'err');return;}
+  const p=d.packet||{};
+  const cap=(plat,txt)=>`<div style="margin-bottom:14px">
+    <label class="flbl">${plat} caption</label>
+    <div style="display:flex;gap:6px;align-items:flex-start">
+      <div class="finput" style="flex:1;white-space:pre-wrap;line-height:1.4;user-select:all">${esc(txt||'')}</div>
+      <button class="btn ghost sm" onclick="navigator.clipboard.writeText(${JSON.stringify(txt||'')}).then(()=>toast('Copied','ok'))">Copy</button>
+    </div></div>`;
+  openModal('TikTok / Instagram handoff',`
+    <p style="font-size:12px;color:var(--muted);margin-bottom:14px">Video: <span class="mono" style="color:var(--faint)">${esc(p.video_path||'')}</span>. TikTok and Instagram are posted by hand with the attended <b>post-social</b> skill, never auto-posted.</p>
+    ${cap('TikTok',(p.tiktok||{}).caption)}
+    ${cap('Instagram',(p.instagram||{}).caption)}`,true);
+}
 function confirmProd(stem){
   showConfirm('Build Production',`
     <p class="strong">Spend ElevenLabs credits on <b>${esc(stem)}</b>?</p>
@@ -1244,6 +1493,148 @@ function reschedPrompt(target){
 }
 function cancelSched(target,now){closeModal();act('cancel_schedule','',{target,now});setTimeout(loadScheduled,3000);}
 
+// ═══════════════ Overview ════════════
+async function loadOverview(){
+  try{OVERVIEW=await(await fetch('/api/overview')).json();renderOverview();}catch(e){}
+}
+function renderOverview(){
+  if(!OVERVIEW) return;
+  const k=OVERVIEW.kpis||{},fmt=(v,suf='',d=0)=>v!=null?(+v).toFixed(d)+suf:'—';
+  const kpis=[
+    {lbl:'Total Views',val:k.total_views!=null?k.total_views.toLocaleString():'—',sub:(k.video_count||0)+' videos tracked'},
+    {lbl:'Avg Retention',val:fmt(k.avg_retention,'%',1),sub:(k.matured_count||0)+' matured'},
+    {lbl:'Avg Early Swipe',val:fmt(k.avg_swipe_away,'%',1),sub:'first 20% of video'},
+    {lbl:'Subscribe Conv.',val:k.avg_conversion!=null?(k.avg_conversion*100).toFixed(2)+'%':'—',sub:'per view'},
+  ];
+  $('#ov-kpis').innerHTML=kpis.map(x=>`<div class="kpi"><div class="kpi-lbl">${x.lbl}</div><div class="kpi-val">${x.val}</div><div class="kpi-sub">${x.sub}</div></div>`).join('');
+  const f=OVERVIEW.funnel||{};
+  const rows=[['Specs',f.specs,'var(--faint)'],['Storyboards',f.storyboards,'var(--cyan)'],
+    ['Drafts',f.drafts,'var(--accent)'],['Masters',f.productions,'var(--red)'],['Live',f.published,'var(--green)']];
+  const max=Math.max(1,...rows.map(r=>r[1]||0));
+  $('#ov-funnel').innerHTML=rows.map(([lbl,v,c])=>`<div class="fnl-row">
+    <span class="fnl-lbl">${lbl}</span>
+    <div class="fnl-track"><div class="fnl-fill" style="width:${Math.round((v||0)/max*100)}%;background:${c}"></div></div>
+    <span class="fnl-val">${v||0}</span></div>`).join('');
+  const recent=OVERVIEW.recent||[];
+  $('#ov-recent').innerHTML=recent.length?`<div class="atable-wrap" style="border:none;border-radius:0"><table class="atable">
+    <thead><tr><th>Video</th><th>Views</th><th>Retention</th></tr></thead>
+    <tbody>${recent.map(r=>{const vm=r.public_metrics||{},ret=r.retention||{};
+      return `<tr><td><a href="${esc(r.url||'#')}" target="_blank" rel="noopener">${esc(r.title||r.stem)}</a></td>
+      <td class="mono">${vm.views!=null?vm.views.toLocaleString():'—'}</td>
+      <td class="mono">${ret.avg_view_pct!=null?ret.avg_view_pct.toFixed(1)+'%':'—'}</td></tr>`;}).join('')}</tbody></table></div>`
+    :'<div class="empty-note">No analytics yet. Run "Collect data" in Analytics.</div>';
+  const a=OVERVIEW.auto||{},cfg=a.config||{};
+  const modePill=`<span class="pill ${cfg.mode==='publish'?'pub':cfg.mode==='produce'?'draftm':''}">${esc(cfg.mode||'—')}</span>`;
+  $('#ov-auto').innerHTML=`
+    <div class="kv"><span class="kv-k">Mode</span><span class="kv-v">${modePill}</span></div>
+    <div class="kv"><span class="kv-k">Today</span><span class="kv-v">${a.today_count||0} / ${cfg.daily_cap??'—'}</span></div>
+    <div class="kv"><span class="kv-k">Cron</span><span class="kv-v">${OVERVIEW.cron_live?'<span style="color:var(--green)">● running</span>':'<span style="color:var(--faint)">idle</span>'}</span></div>
+    <div class="kv"><span class="kv-k">Visibility</span><span class="kv-v">${esc(cfg.youtube_visibility||'—')}</span></div>
+    <div class="kv"><span class="kv-k">VoiceBox</span><span class="kv-v">${OVERVIEW.voicebox_online?'<span style="color:var(--green)">online</span>':'offline'}</span></div>
+    <div class="kv"><span class="kv-k">To reply</span><span class="kv-v">${OVERVIEW.comments_unreplied||0} comments</span></div>`;
+  const fx=OVERVIEW.fixtures||[];
+  $('#ov-fixtures').innerHTML=fx.length?fx.slice(0,5).map(m=>`<div class="kv">
+    <span class="kv-k">${esc(m.stage||m.date||'')}</span>
+    <span class="kv-v" style="font-family:var(--sans);color:var(--muted)">${esc((m.home||'')+' v '+(m.away||''))}</span></div>`).join('')
+    :'<div class="empty-note">No upcoming fixtures.</div>';
+  const nb=$('#nav-comments'); if(nb){const n=OVERVIEW.comments_unreplied||0;nb.textContent=n;nb.classList.toggle('on',n>0);}
+}
+
+// ═══════════════ Comments ════════════
+async function loadComments(){COMMENTS=await fetchJSON('/out/comments/unreplied.json')||[];renderComments();}
+async function fetchComments(){
+  const days=$('#cmtDays')?.value||'7';
+  await act('comments_fetch','',{days:+days});
+  setTimeout(async()=>{COMMENTS=await fetchJSON('/out/comments/unreplied.json')||[];renderComments();},6000);
+}
+function renderComments(){
+  const list=COMMENTS||[];
+  const ct=$('#cmtct'); if(ct) ct.textContent=list.length?list.length+' unreplied':'';
+  const nb=$('#nav-comments'); if(nb){nb.textContent=list.length;nb.classList.toggle('on',list.length>0);}
+  const el=$('#cmtlist'); if(!el) return;
+  if(!list.length){el.innerHTML='<div class="empty-note">No unreplied comments loaded. Hit Fetch to scan the channel.</div>';return;}
+  el.innerHTML=list.map(c=>`<div class="cmt">
+    <div class="cmt-hd"><span class="cmt-author">${esc(c.author||'')}</span>
+      <span class="cmt-meta">♥ ${c.like_count||0} · ${esc((c.published_at||'').slice(0,10))}</span></div>
+    <div class="cmt-text">${esc(c.text||'')}</div>
+    <div class="cmt-vid">on <a href="${esc(c.video_url||'#')}" target="_blank" rel="noopener">${esc(c.video_title||c.video_id||'')}</a></div>
+    <div class="cmt-foot">
+      <button class="btn ghost sm" onclick="copyText('/reply-comments --video ${esc(c.video_id||'')}')">Copy /reply-comments</button>
+      <a class="btn ghost sm" href="${esc(c.video_url||'#')}" target="_blank" rel="noopener">Open video ↗</a></div>
+  </div>`).join('');
+}
+
+// ═══════════════ Automation ══════════
+async function loadAutomation(){
+  const [cfg,proc]=await Promise.all([fetchJSON('/pipeline/auto/config.json'),fetchJSONL('/out/auto/processed.jsonl')]);
+  AUTO={config:cfg||{},processed:proc||[]};
+  renderAutomation();
+}
+function renderAutomation(){
+  const cfg=AUTO?.config||{},proc=AUTO?.processed||[];
+  const ct=$('#autoct'); if(ct) ct.textContent=proc.length?proc.length+' runs logged':'';
+  const opt=(v,cur,label)=>`<option value="${v}" ${v===cur?'selected':''}>${label}</option>`;
+  $('#auto-form').innerHTML=`
+    <div><label>Mode</label><select class="fsel" id="cfgMode">
+      ${opt('draft',cfg.mode,'draft (free, no post)')}${opt('produce',cfg.mode,'produce (ElevenLabs, no post)')}${opt('publish',cfg.mode,'publish (produce + YouTube)')}</select></div>
+    <div><label>YouTube visibility</label><select class="fsel" id="cfgVis">
+      ${opt('public',cfg.youtube_visibility,'public')}${opt('unlisted',cfg.youtube_visibility,'unlisted')}${opt('private',cfg.youtube_visibility,'private')}</select></div>
+    <div><label>Daily cap</label><input class="finput" id="cfgCap" type="number" min="0" value="${cfg.daily_cap??3}"></div>
+    <div><label>Recent window (hours)</label><input class="finput" id="cfgHours" type="number" min="1" value="${cfg.recent_hours??36}"></div>
+    <div class="full"><label style="display:flex;align-items:center;gap:8px;text-transform:none;letter-spacing:0;font-size:12px;color:var(--muted)">
+      <input type="checkbox" id="cfgNotable" ${cfg.notable_only?'checked':''}> Notable matches only (knockouts + watchlist nations)</label></div>
+    <div class="save-row"><span class="fhint" id="cfgMsg"></span><button class="btn accent sm" onclick="saveAutoConfig()">Save config</button></div>`;
+  const badge=s=>{const cls=/publish/.test(s||'')?'pub':/halt|fail/.test(s||'')?'halt':'draftm';return `<span class="pill ${cls}">${esc(s||'')}</span>`;};
+  $('#auto-history').innerHTML=proc.length?`<div class="atable-wrap" style="border:none;border-radius:0"><table class="atable">
+    <thead><tr><th>Match</th><th>Status</th><th>Day</th></tr></thead>
+    <tbody>${proc.slice(-14).reverse().map(r=>`<tr><td class="mono">${esc(r.fixture_id||r.stem||'')}</td><td>${badge(r.status)}</td><td class="mono">${esc(r.day||'')}</td></tr>`).join('')}</tbody></table></div>`
+    :'<div class="empty-note">No auto-pipeline runs recorded yet.</div>';
+  const today=proc.filter(r=>r.day===etToday()).length;
+  $('#auto-status').innerHTML=`
+    <div class="kv"><span class="kv-k">Cron</span><span class="kv-v">${STATE?.cron_live?'<span style="color:var(--green)">● running</span>':'<span style="color:var(--faint)">idle</span>'}</span></div>
+    <div class="kv"><span class="kv-k">Today</span><span class="kv-v">${today} / ${cfg.daily_cap??'—'}</span></div>
+    <div class="kv"><span class="kv-k">WC window</span><span class="kv-v" style="font-size:10px">${esc((cfg.wc_window||[]).join(' → ')||'—')}</span></div>
+    <div class="kv"><span class="kv-k">Total runs</span><span class="kv-v">${proc.length}</span></div>`;
+}
+async function saveAutoConfig(){
+  const config={mode:$('#cfgMode').value,youtube_visibility:$('#cfgVis').value,
+    daily_cap:+$('#cfgCap').value,recent_hours:+$('#cfgHours').value,notable_only:$('#cfgNotable').checked};
+  const r=await fetch('/api/action',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'auto_save_config',config})});
+  const d=await r.json();
+  if(d.error){toast(d.error,'err');const m=$('#cfgMsg');if(m){m.textContent=d.error;m.style.color='var(--red)';}return;}
+  toast('Config saved','ok');AUTO.config=d.config;renderAutomation();
+}
+function runFetchResult(){
+  const fid=($('#fidIn')?.value||'').trim();
+  if(!fid){toast('Enter a fixture id','err');return;}
+  act('fetch_result','',{fixture_id:fid});
+}
+function confirmAutoRun(){
+  const mode=AUTO?.config?.mode||'?';
+  showConfirm('Run auto pipeline now',`
+    <p class="strong">Run the auto match pipeline once, right now?</p>
+    <p>Mode is <b>${esc(mode)}</b>. This fires <span class="mono">claude -p /match-recap</span> for each notable finished match${mode==='publish'?' and <b>uploads to YouTube</b>':''}. It spends Claude subscription tokens.</p>`,
+    [{label:'Cancel',cls:'ghost'},{label:'Run now ⚠',cls:'warn',go:()=>act('auto_run','')}]);
+}
+
+// ═══════════════ Brain (Claude) ══════
+function confirmBrain(action){
+  const topic=action==='daily'?($('#dailyTopic')?.value||'').trim():'';
+  const desc=action==='find_topics'
+    ?'Run <span class="mono">/find-topics</span> in a headless Claude session. Drops a ranked brief into Ideation.'
+    :('Run <span class="mono">/daily '+esc(topic)+'</span> in a headless Claude session: grounds the news, scripts, fact-checks, and renders a free draft. The new spec appears in Pipeline.');
+  showConfirm('Run a Claude brain step',`
+    <p class="strong">This spends Claude subscription tokens.</p><p>${desc}</p>`,
+    [{label:'Cancel',cls:'ghost'},{label:'Run it',cls:'accent',go:()=>act(action,'',action==='daily'?{topic}:{})}]);
+}
+
+// ═══════════════ Fetch helpers ═══════
+async function fetchJSON(path){try{const r=await fetch(path);if(!r.ok)return null;return await r.json();}catch(e){return null;}}
+async function fetchJSONL(path){try{const r=await fetch(path);if(!r.ok)return[];const t=await r.text();
+  return t.split('\n').filter(Boolean).map(l=>{try{return JSON.parse(l);}catch(e){return null;}}).filter(Boolean);}catch(e){return[];}}
+function copyText(t){navigator.clipboard.writeText(t).then(()=>toast('Copied','ok')).catch(()=>toast('Copy failed','err'));}
+function etToday(){return new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'});}
+
 // ═══════════════ Polling ═════════════
 function slowTick(){
   if(POLL) clearInterval(POLL);
@@ -1265,11 +1656,14 @@ function attachKb(){
     const tag=document.activeElement?.tagName;
     if(tag==='INPUT'||tag==='TEXTAREA'||tag==='SELECT') return;
     if(!e.ctrlKey&&!e.metaKey&&!e.altKey){
-      if(e.key==='1'){navigate('pipeline');return;}
-      if(e.key==='2'){navigate('analytics');return;}
-      if(e.key==='3'){navigate('schedule');return;}
-      if(e.key==='4'){navigate('topics');return;}
-      if(e.key==='5'){navigate('entities');return;}
+      if(e.key==='1'){navigate('overview');return;}
+      if(e.key==='2'){navigate('pipeline');return;}
+      if(e.key==='3'){navigate('analytics');return;}
+      if(e.key==='4'){navigate('comments');return;}
+      if(e.key==='5'){navigate('automation');return;}
+      if(e.key==='6'){navigate('schedule');return;}
+      if(e.key==='7'){navigate('topics');return;}
+      if(e.key==='8'){navigate('entities');return;}
       if(e.key==='?'){openKbHelp();return;}
       if(e.key==='Escape'){
         if($('#overlay').classList.contains('show')){closeModal();return;}
@@ -1286,7 +1680,7 @@ function attachKb(){
     else if(e.key==='k'||e.key==='ArrowUp'){e.preventDefault();FOCUSED=Math.max(FOCUSED-1,0);updateFocused();}
     else if(e.key==='Enter'&&FOCUSED>=0){e.preventDefault();const c=cards[FOCUSED];if(c)togglePreview({stopPropagation:()=>{}},c.stem);}
     else if(e.key==='s'&&FOCUSED>=0){const c=cards[FOCUSED];if(c)act('storyboard',c.stem);}
-    else if(e.key==='d'&&FOCUSED>=0){const c=cards[FOCUSED];if(c)act('draft',c.stem);}
+    else if(e.key==='d'&&FOCUSED>=0){const c=cards[FOCUSED];if(c)confirmDraft(c.stem);}
   });
 }
 function updateFocused(){
@@ -1295,7 +1689,7 @@ function updateFocused(){
 }
 function openKbHelp(){
   openModal('Keyboard Shortcuts',`<div style="display:grid;grid-template-columns:max-content 1fr;gap:8px 20px;font-size:12px;align-items:center">${
-    [['1–5','Switch section'],['j / k','Navigate cards'],['Enter','Toggle card preview'],
+    [['1–8','Switch section'],['j / k','Navigate cards'],['Enter','Toggle card preview'],
      ['s','Preview storyboard (focused)'],['d','Build draft (focused)'],['Esc','Close modal / deselect'],['?','This help']]
     .map(([k,v])=>`<span class="kbb">${k}</span><span style="color:var(--muted)">${v}</span>`).join('')
   }</div>`,true);
