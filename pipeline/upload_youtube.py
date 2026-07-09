@@ -74,6 +74,8 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+from ytcommon import YTOAuth
+
 ROOT = Path(__file__).resolve().parents[1]
 load_dotenv(ROOT / ".env")
 
@@ -91,12 +93,13 @@ SCOPES = [
 ]
 HERE = Path(__file__).resolve().parent
 SECRETS = HERE / ".secrets"
-DEFAULT_CLIENT = SECRETS / "yt_oauth_client.json"
 DEFAULT_TOKEN = SECRETS / "yt_upload_token.json"
-
-REDIRECT_URI = "http://localhost:8765/"  # desktop clients allow any loopback port
-PENDING = SECRETS / "upload_oauth_pending.json"
 SPORTS_CATEGORY_ID = "17"  # YouTube "Sports" category
+
+_auth = YTOAuth(
+    scopes=SCOPES, token_env="YT_UPLOAD_TOKEN", default_token=DEFAULT_TOKEN,
+    pending=SECRETS / "upload_oauth_pending.json", script="upload_youtube.py", token_label="Upload token",
+    success_hint="Now try:  uv run pipeline/upload_youtube.py upload out/specs/<stem>.json out/renders/<stem>.mp4")
 
 # Friendly times default to the channel's timezone (the owner thinks in ET, not UTC).
 DEFAULT_TZ = os.getenv("TTV_SCHEDULE_TZ", "America/New_York")
@@ -237,101 +240,6 @@ def _fmt_local(iso_z: str, tz: str = DEFAULT_TZ) -> str:
 
 
 # ──────────────────────────────────────────────────────────────────────────────
-# OAuth (cloned from youtube_analytics.py — same headless/WSL two-step flow)
-# ──────────────────────────────────────────────────────────────────────────────
-def _relax_env() -> None:
-    # allow the http loopback redirect + tolerate Google reordering the returned scope string
-    os.environ.setdefault("OAUTHLIB_INSECURE_TRANSPORT", "1")
-    os.environ.setdefault("OAUTHLIB_RELAX_TOKEN_SCOPE", "1")
-
-
-def _client_path() -> Path:
-    p = Path(os.getenv("YT_OAUTH_CLIENT", DEFAULT_CLIENT))
-    if not p.exists():
-        sys.exit(
-            f"Missing OAuth client JSON at {p}.\n"
-            "Download it from Google Cloud (Desktop app OAuth client) and save it there,\n"
-            "or reuse the analytics one. See the setup steps at the top of this file."
-        )
-    return p
-
-
-def _creds():
-    from google.auth.transport.requests import Request
-    from google.oauth2.credentials import Credentials
-
-    token_path = Path(os.getenv("YT_UPLOAD_TOKEN", DEFAULT_TOKEN))
-    if not token_path.exists():
-        sys.exit("Not authorized yet. Run:  uv run pipeline/upload_youtube.py auth")
-    creds = Credentials.from_authorized_user_file(str(token_path), SCOPES)
-    if creds and creds.expired and creds.refresh_token:
-        creds.refresh(Request())
-        token_path.write_text(creds.to_json())
-    return creds
-
-
-def _service():
-    """Build an authorized YouTube Data API client (shared by upload + schedule mgmt)."""
-    from googleapiclient.discovery import build
-
-    return build("youtube", "v3", credentials=_creds(), cache_discovery=False)
-
-
-def do_auth() -> None:
-    """Step 1: print the consent URL (desktop client uses its client_secret, no PKCE)."""
-    from google_auth_oauthlib.flow import Flow
-
-    client_path = _client_path()
-    SECRETS.mkdir(parents=True, exist_ok=True)
-    _relax_env()
-
-    flow = Flow.from_client_secrets_file(
-        str(client_path), scopes=SCOPES, autogenerate_code_verifier=False
-    )
-    flow.redirect_uri = REDIRECT_URI
-    auth_url, _state = flow.authorization_url(access_type="offline", prompt="consent")
-    PENDING.write_text(json.dumps({"client": str(client_path)}))
-
-    print("\nStep 1 — open this URL, sign in with the CHANNEL's Google account, and authorize:\n")
-    print(auth_url)
-    print("\n  (If an 'unverified app' screen appears: Advanced > continue — it's your own app.)")
-    print("\nStep 2 — the browser redirects to a localhost page that WON'T load")
-    print("         (http://localhost:8765/?code=...  — 'site can't be reached'). That's expected.")
-    print("         Copy the FULL address-bar URL and run this, with the URL in quotes:\n")
-    print('   uv run pipeline/upload_youtube.py auth-finish "<paste the full URL>"\n')
-
-
-def do_auth_finish(resp: str) -> None:
-    """Step 2: exchange the pasted redirect URL (or bare code) for a token."""
-    from urllib.parse import parse_qs, unquote, urlparse
-
-    from google_auth_oauthlib.flow import Flow
-
-    if not PENDING.exists():
-        sys.exit("No pending auth. Run `auth` first to get the URL.")
-    p = json.loads(PENDING.read_text())
-    _relax_env()
-
-    resp = resp.strip()
-    code = (parse_qs(urlparse(resp).query).get("code") or [None])[0] if "code=" in resp else resp
-    if not code:
-        sys.exit("Could not find an auth code in that input.")
-    code = unquote(code)
-
-    flow = Flow.from_client_secrets_file(
-        p["client"], scopes=SCOPES, autogenerate_code_verifier=False
-    )
-    flow.redirect_uri = REDIRECT_URI
-    flow.fetch_token(code=code)
-
-    token_path = Path(os.getenv("YT_UPLOAD_TOKEN", DEFAULT_TOKEN))
-    token_path.write_text(flow.credentials.to_json())
-    PENDING.unlink(missing_ok=True)
-    print(f"Authorized.  Upload token saved to {token_path}")
-    print("Now try:  uv run pipeline/upload_youtube.py upload out/specs/<stem>.json out/renders/<stem>.mp4")
-
-
-# ──────────────────────────────────────────────────────────────────────────────
 # Spec -> snippet/status (mirrors publish.py's field choices)
 # ──────────────────────────────────────────────────────────────────────────────
 def _description(spec: dict) -> str:
@@ -465,7 +373,7 @@ def cmd_upload(spec_path: Path, video_path: Path, visibility: str,
         "status": status_body,
     }
 
-    youtube = _service()
+    youtube = _auth.service("youtube", "v3")
     size_mb = video_path.stat().st_size / 1e6
     print(f"Uploading {video_path.name} ({size_mb:.1f} MB) as '{title}' [{label}] ...")
     media = MediaFileUpload(str(video_path), mimetype="video/mp4", chunksize=8 * 1024 * 1024,
@@ -516,7 +424,7 @@ def cmd_scheduled(as_json: bool = False) -> None:
     items: list[dict] = []
     ids = list(latest.keys())
     if ids:
-        yt = _service()
+        yt = _auth.service("youtube", "v3")
         for i in range(0, len(ids), 50):  # videos.list caps at 50 ids
             resp = yt.videos().list(part="snippet,status", id=",".join(ids[i:i + 50])).execute()
             for v in resp.get("items", []):
@@ -548,7 +456,7 @@ def cmd_scheduled(as_json: bool = False) -> None:
 def cmd_cancel(target: str, go_now: bool = False) -> None:
     """Cancel a scheduled publish. Default leaves the video private; --now publishes it."""
     vid = _resolve_video_id(target)
-    yt = _service()
+    yt = _auth.service("youtube", "v3")
     items = yt.videos().list(part="status", id=vid).execute().get("items", [])
     if not items:
         sys.exit(f"Video '{vid}' not found (check the id/stem with `scheduled`).")
@@ -564,7 +472,7 @@ def cmd_reschedule(target: str, when: str, tz: str) -> None:
     """Move a scheduled video's publish time to a new (friendly) time."""
     iso = parse_when(when, tz)
     vid = _resolve_video_id(target)
-    yt = _service()
+    yt = _auth.service("youtube", "v3")
     items = yt.videos().list(part="status", id=vid).execute().get("items", [])
     if not items:
         sys.exit(f"Video '{vid}' not found (check the id/stem with `scheduled`).")
@@ -623,9 +531,9 @@ def main() -> None:
     args = ap.parse_args()
     try:
         if args.cmd == "auth":
-            do_auth()
+            _auth.do_auth()
         elif args.cmd == "auth-finish":
-            do_auth_finish(args.response)
+            _auth.do_auth_finish(args.response)
         elif args.cmd == "upload":
             publish_at = parse_when(args.publish_at, args.tz) if args.publish_at else None
             cmd_upload(args.spec, args.video, args.visibility, publish_at)

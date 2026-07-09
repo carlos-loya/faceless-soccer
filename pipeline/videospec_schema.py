@@ -39,8 +39,8 @@ Format = Literal[
     "quiz_top5",  # "Can you name X's top 5 …?" — proven outlier (Tifo); accuracy-critical
 ]
 GraphicType = Literal[
-    "title_card", "stat_card", "ranking_row",
-    "comparison_split", "pitch_diagram", "full_bleed_bg",
+    "title_card", "stat_card",
+    "comparison_split", "full_bleed_bg",
     "quiz_board",  # numbered slots, hidden/blurred for the "guess now" beat
     "scorers_split",  # two scorers slide in from opposite sides (player photo or silhouette) with the score between them
     "group_table",  # a ranked group-standings table (flag + code + points); pair with a `group_table` data list
@@ -68,7 +68,10 @@ class Scene(BaseModel):
     index: int = Field(description="1-based; scene 1 is the hook.")
     on_screen_text: str = Field(description="Bold overlay, <=8 words. Carries the story sound-off.")
     voiceover: str = Field(description="What ElevenLabs narrates over this scene.")
-    stat_callout: str = Field(description='Big number/data, e.g. "27 G/A". "" if none.')
+    stat_callout: str = Field(
+        description='Big number/data, e.g. "27 G/A". "" if none. NOTE: load-bearing for '
+        "quiz_board (the answer + GUESS timer trigger) and scorers_split (the center score) — "
+        "not just a story-scene overlay.")
     graphic_type: GraphicType
     graphic_prompt: str = Field(
         description="Nano Banana prompt for this scene's GENERATED graphic. Brand style "
@@ -87,12 +90,6 @@ class Scene(BaseModel):
         description="For 'entity': the KB entity slug (e.g. 'lamine-yamal', 'camp-nou'). For "
         "'stock'/'ai': a vivid phrase matching the VO ('football stadium floodlights night crowd'); "
         "do NOT name real players/clubs in a stock query (stock won't have them). '' for 'graphic'."
-    )
-    sticker_entity: str = Field(
-        default="",
-        description="Optional KB entity slug whose image is pinned as a PER-SCENE corner sticker "
-        "(e.g. a nation flag on a 'name the winner' reveal). '' = no per-scene sticker. Distinct "
-        "from the video-wide subject sticker.",
     )
     score: str = Field(
         default="",

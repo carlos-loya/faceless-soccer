@@ -69,6 +69,8 @@ Two feeder engines surround the brain: the **grounding/news engine** (`soccer-ne
 | `pipeline/generate_assets.py` | ElevenLabs VO (+ optional Nano Banana) asset generation, via `uv` |
 | `pipeline/remotion/` | Remotion project — composes graphics + VO + captions → MP4 |
 | `pipeline/outlier_ingest.py` | **Viral engine MVP** — YouTube outlier discovery (deterministic), ranks `seeds.json` channels |
+| `pipeline/commons.py` | **Shared Wikimedia helpers** — the one copy of the Commons fetch/validate/download logic (UA, `strip_html`, `is_image`, 429-backoff `get_image`, `commons_search`, `download_candidates`) imported by every `fetch_*` script (was duplicated 5×) |
+| `pipeline/ytcommon.py` | **Shared YouTube-script helpers** — the one copy of the two-step headless OAuth flow (`YTOAuth`) + `video_id` parser, imported by `upload_youtube.py` / `youtube_analytics.py` / `youtube_comments.py` (the OAuth flow was byte-duplicated between the first two) |
 | `pipeline/fetch_images.py` | CC/Wikimedia **free** image fetcher (players/stadiums/nations) → KB `image` field |
 | `pipeline/cutout.py` | Background removal (`rembg`) → transparent-PNG **cutout** for the iPhone-sticker corner element (`out/cutouts/<slug>.png`) |
 | `pipeline/ensure_assets.py` | **Auto-fetch + auto-cutout** — creates stub entities, fetches CC images, cuts out the subject for any spec (hands-off) |

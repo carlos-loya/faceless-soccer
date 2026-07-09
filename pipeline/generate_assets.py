@@ -238,7 +238,7 @@ def main() -> None:
         mp3 = assets / f"scene-{i}.mp3"
 
         img_path = None
-        if os.environ.get("TTV_SKIP_IMAGES"):
+        if skip_images:
             print(f"[scene {i}] image SKIPPED (Remotion will render graphics)")
         else:
             print(f"[scene {i}] image …", flush=True)

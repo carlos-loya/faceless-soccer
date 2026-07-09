@@ -18,7 +18,6 @@ Run:  uv run pipeline/fetch_images.py            # all player entities
 from __future__ import annotations
 
 import json
-import re
 import sys
 import time
 from datetime import date
@@ -26,14 +25,7 @@ from pathlib import Path
 
 import requests
 
-UA = {"User-Agent": "TikiTakaFootyTV/1.0 (faceless-soccer project; image-sourcing)"}
-WP = "https://en.wikipedia.org/w/api.php"
-COMMONS = "https://commons.wikimedia.org/w/api.php"
-FREE_MARKERS = ("cc0", "cc by", "cc-by", "public domain", "pdm", "creative commons")
-
-
-def strip_html(s: str) -> str:
-    return re.sub("<[^>]+>", "", s or "").strip()
+from commons import UA, WP, COMMONS, strip_html, is_free
 
 
 def lead_image(title: str):
@@ -69,11 +61,6 @@ def license_info(filename: str):
             "artist": strip_html(getv("Artist")),
         }
     return None
-
-
-def is_free(lic: str) -> bool:
-    l = (lic or "").lower()
-    return any(k in l for k in FREE_MARKERS)
 
 
 def main() -> None:
