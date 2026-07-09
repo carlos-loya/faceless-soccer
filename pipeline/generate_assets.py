@@ -22,6 +22,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -39,6 +40,23 @@ VOICE_ID = os.environ.get("TTV_VOICE_ID", "Gubgw9l4dtIoQA9YZHgx")  # Brian — c
 DRAFT = bool(os.environ.get("TTV_DRAFT"))
 PIPER_VOICE = os.environ.get("TTV_PIPER_VOICE", "en_US-lessac-medium")
 _piper = None  # cached PiperVoice
+
+# VoiceBox = the DEFAULT draft voice: a local, ElevenLabs-style voice-clone desktop app running the
+# owner's own cloned voice ("Carlos") — free, no credits, no commercial-rights issue. Draft tries
+# VoiceBox first and falls back to Piper when the app isn't running (see synth_vo), so headless/auto
+# renders never break. Force Piper directly with TTV_PIPER=1.
+FORCE_PIPER = bool(os.environ.get("TTV_PIPER"))
+VOICEBOX_URL = os.environ.get("TTV_VOICEBOX_URL", "http://127.0.0.1:17493")
+VOICEBOX_PROFILE = os.environ.get("TTV_VOICEBOX_PROFILE", "Carlos")  # resolved to an id via /profiles
+# The API wants a profile_id (UUID), not the name. Set TTV_VOICEBOX_PROFILE_ID to skip the /profiles
+# lookup; otherwise we resolve VOICEBOX_PROFILE by name once and cache it.
+_vb_profile_id = os.environ.get("TTV_VOICEBOX_PROFILE_ID")
+# ponytail: machine-specific path — VoiceBox is a Windows app, its output dir is reached from WSL via
+# /mnt/c. Override per-machine with TTV_VOICEBOX_GENDIR rather than hardcoding a second location.
+VOICEBOX_GENDIR = Path(os.environ.get(
+    "TTV_VOICEBOX_GENDIR",
+    "/mnt/c/Users/exsor/AppData/Roaming/sh.voicebox.app/generations",
+))
 
 # Pronunciation dictionary — applied to VOICEOVER text ONLY (on-screen text keeps correct spelling).
 # OFF by default (owner pref 2026-06-13): pronunciations.json ships empty. Only add an entry when a
@@ -180,14 +198,78 @@ def piper_tts(text: str, out_path: Path, display_text: str | None = None) -> lis
     return split_words(display_text or text, audio_seconds(out_path))
 
 
+def _wait_for_wav(gen_id: str, timeout: float = 120.0) -> Path:
+    """Wait until VoiceBox's <id>.wav exists and stops growing (generation is async)."""
+    wav = VOICEBOX_GENDIR / f"{gen_id}.wav"
+    deadline = time.time() + timeout
+    last = -1
+    while time.time() < deadline:
+        if wav.exists():
+            size = wav.stat().st_size
+            if size > 0 and size == last:
+                return wav
+            last = size
+        time.sleep(0.5)
+    raise TimeoutError(f"VoiceBox WAV {wav} never finished writing")
+
+
+def _resolve_profile_id() -> str:
+    """Map the VoiceBox profile NAME to its id (the API's /generate wants profile_id, not name).
+    Cached after the first lookup; TTV_VOICEBOX_PROFILE_ID short-circuits it."""
+    global _vb_profile_id
+    if _vb_profile_id:
+        return _vb_profile_id
+    import urllib.request
+    with urllib.request.urlopen(f"{VOICEBOX_URL}/profiles", timeout=15) as resp:
+        data = json.loads(resp.read())
+    profiles = data.get("profiles", data) if isinstance(data, dict) else data
+    for p in profiles:
+        if p.get("name") == VOICEBOX_PROFILE:
+            _vb_profile_id = p["id"]
+            return _vb_profile_id
+    raise OSError(f"VoiceBox profile {VOICEBOX_PROFILE!r} not found (set TTV_VOICEBOX_PROFILE_ID)")
+
+
+def voicebox_tts(text: str, out_path: Path, display_text: str | None = None) -> list[dict]:
+    """DRAFT VO via VoiceBox (local voice-clone, free). POSTs to the VoiceBox REST API, waits for the
+    generated WAV, transcodes to mp3, and returns approximate word timings (VoiceBox exposes no
+    timestamps, so words are spread by length like the Piper draft). Raises on connectivity/timeout —
+    synth_vo catches that and falls back to Piper so a draft always renders."""
+    import urllib.request
+    req = urllib.request.Request(
+        f"{VOICEBOX_URL}/generate",
+        data=json.dumps({"profile_id": _resolve_profile_id(), "text": text}).encode(),
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    with urllib.request.urlopen(req, timeout=60) as resp:  # ConnectionRefused if app not running
+        payload = json.loads(resp.read())
+    gen_id = payload.get("id") or payload.get("generation_id")
+    if not gen_id:
+        raise OSError(f"VoiceBox: no generation id in response: {payload}")
+    wav = _wait_for_wav(gen_id)
+    subprocess.run(
+        ["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", str(wav),
+         "-codec:a", "libmp3lame", "-q:a", "4", str(out_path)],
+        check=True,
+    )
+    return split_words(display_text or text, audio_seconds(out_path))
+
+
 def synth_vo(client, text: str, out_path: Path, display_text: str | None = None) -> list[dict]:
-    """Dispatch one VO clip to Piper (DRAFT) or ElevenLabs (real). Returns word timings.
+    """Dispatch one VO clip to VoiceBox/Piper (DRAFT) or ElevenLabs (real). Returns word timings.
 
     `text` is the spoken (phonetically respelled) text; `display_text` is the original
     correct spelling. Karaoke captions must show `display_text`, never the respelling — so
     we re-map the timed words back to the original spelling when the token counts match
     (respellings keep word boundaries, so they do). If counts differ, keep the spoken words."""
     if DRAFT:
+        if not FORCE_PIPER:
+            try:
+                return voicebox_tts(text, out_path, display_text)
+            except Exception as e:  # app not running / timeout / bad response — never fail the draft
+                msg = str(e).split("\n")[0][:120]
+                print(f"  [draft] VoiceBox unavailable ({msg}) — falling back to Piper", flush=True)
         return piper_tts(text, out_path, display_text)
     words = eleven_tts(client, VOICE_ID, text, out_path)
     if display_text and display_text != text:
@@ -228,8 +310,13 @@ def main() -> None:
         from elevenlabs.client import ElevenLabs
         el = ElevenLabs(api_key=os.environ["ELEVENLABS_API_KEY"])
 
-    print(f"VO engine: {'Piper (DRAFT — free, local)' if DRAFT else 'ElevenLabs (paid)'} | "
-          f"voice: {PIPER_VOICE if DRAFT else VOICE_ID}")
+    if not DRAFT:
+        draft_engine = None
+    elif FORCE_PIPER:
+        draft_engine = f"Piper (DRAFT — free, local) | voice: {PIPER_VOICE}"
+    else:
+        draft_engine = f"VoiceBox (DRAFT — free, local; Piper fallback) | voice: {VOICEBOX_PROFILE}"
+    print(f"VO engine: {draft_engine or f'ElevenLabs (paid) | voice: {VOICE_ID}'}")
 
     out_scenes = []
     for sc in spec["scenes"]:
@@ -292,5 +379,18 @@ def main() -> None:
     print(f"\n✓ assets in {assets}/  | total VO {props['total_seconds']}s | props -> {props_path}")
 
 
+def _selfcheck() -> None:
+    # split_words (shared by the Piper + VoiceBox drafts) spreads all tokens across the duration,
+    # in order, non-overlapping, within [0, dur].
+    w = split_words("one two three", 3.0)
+    assert [x["word"] for x in w] == ["one", "two", "three"]
+    assert w[0]["start"] == 0.0 and abs(w[-1]["end"] - 3.0) < 1e-6
+    assert all(a["end"] <= b["start"] + 1e-9 for a, b in zip(w, w[1:]))
+    print("selfcheck ok")
+
+
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) == 2 and sys.argv[1] == "selfcheck":
+        _selfcheck()
+    else:
+        main()

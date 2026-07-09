@@ -27,9 +27,10 @@ if [ -n "${TTV_PRODUCTION:-}" ]; then
   OUT_STEM="$STEM"
   echo "== PRODUCTION RUN: ElevenLabs VO (SPENDS CREDITS) -> out/renders/$OUT_STEM.mp4 =="
 else
-  export TTV_DRAFT=1         # default: free Piper draft, no credits spent
+  export TTV_DRAFT=1         # default: free local draft VO, no credits spent
   OUT_STEM="$STEM-draft"
-  echo "== DRAFT (default): free local Piper VO -> out/renders/$OUT_STEM.mp4 (no ElevenLabs credits) =="
+  echo "== DRAFT (default): free local VO -> out/renders/$OUT_STEM.mp4 (no ElevenLabs credits) =="
+  echo "   voice: VoiceBox 'Carlos' (falls back to Piper if the VoiceBox app isn't running; TTV_PIPER=1 forces Piper)"
   echo "   Visuals approved? Run the real VO with: TTV_PRODUCTION=1 bash pipeline/make_video.sh $SPEC"
 fi
 
