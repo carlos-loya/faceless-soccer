@@ -34,13 +34,14 @@ from __future__ import annotations
 import argparse
 import json
 import os
-import re
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
 from dotenv import load_dotenv
+
+from ytcommon import video_id
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -56,13 +57,7 @@ def _key() -> str:
 
 
 def _video_id(s: str) -> str:
-    s = s.strip()
-    m = re.search(r"(?:v=|youtu\.be/|/shorts/)([A-Za-z0-9_-]{11})", s)
-    if m:
-        return m.group(1)
-    if re.fullmatch(r"[A-Za-z0-9_-]{11}", s):
-        return s
-    sys.exit(f"Could not parse a video id from: {s!r}")
+    return video_id(s) or sys.exit(f"Could not parse a video id from: {s!r}")
 
 
 def _get(path: str, **params) -> dict:

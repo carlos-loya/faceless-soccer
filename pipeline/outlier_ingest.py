@@ -21,7 +21,6 @@ import json
 import re
 import sqlite3
 import statistics
-import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -127,42 +126,6 @@ def age_days(published_at: str, now: datetime) -> float:
     return (now - dt).total_seconds() / 86400
 
 
-def resolve_by_search(name: str) -> tuple[str, str] | None:
-    """One-time name -> channel_id via search.list (100 units). NOT used in routine ingest."""
-    data = yt("search", part="snippet", q=name, type="channel", maxResults=1)
-    items = data.get("items") or []
-    if not items:
-        return None
-    cid = items[0]["id"]["channelId"]
-    return cid, items[0]["snippet"]["title"]
-
-
-def cmd_resolve() -> None:
-    """Fill channel_id for name-only seeds and write seeds.json back. Run once after adding seeds."""
-    path = Path("seeds.json")
-    doc = json.loads(path.read_text())
-    changed = 0
-    print("Resolving name-only seeds (search.list, 100 units each)…")
-    for s in doc["channels"]:
-        if s.get("channel_id") or s.get("handle"):
-            continue
-        try:
-            res = resolve_by_search(s["name"])
-        except Exception as e:
-            print(f"  ✗ {s['name']}: {str(e).splitlines()[0][:60]}"); continue
-        if not res:
-            print(f"  · {s['name']}: no channel match"); continue
-        cid, title = res
-        s["channel_id"] = cid
-        flag = "" if title.lower().replace(" ", "")[:6] in s["name"].lower().replace(" ", "") \
-            or s["name"].lower().replace(" ", "")[:6] in title.lower().replace(" ", "") else "  ⚠ verify"
-        print(f"  ✓ {s['name']:22} -> {title[:28]:28} ({cid}){flag}")
-        changed += 1
-    path.write_text(json.dumps(doc, indent=2) + "\n")
-    print(f"\nResolved {changed}; wrote seeds.json (~{_quota['units']} units). "
-          f"⚠ = name/title mismatch, eyeball it.")
-
-
 def main() -> None:
     seeds = json.loads(Path("seeds.json").read_text())["channels"]
     now = datetime.now(timezone.utc)
@@ -239,7 +202,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1 and sys.argv[1] == "resolve":
-        cmd_resolve()
-    else:
-        main()
+    main()

@@ -61,8 +61,6 @@ const cards = props.scenes.map((s, i) => {
 
   const scoreBadge = s.score ? `<span class="score">${esc(s.score)}</span>` : "";
   const subBadge = (s.subscribe_chip || spec.scenes[i]?.subscribe_chip) ? `<span class="subchip">▶ SUB CHIP</span>` : "";
-  // Only per-scene FLAG stickers render now (the subject/foil corner cutouts were removed).
-  const stickerImg = s.sticker?.flag ? `<img class="sticker" src="${asset(s.sticker.img)}" alt="">` : "";
   const creditLine = s.credit ? `<div class="credit">${esc(s.credit)}</div>` : "";
   const warnHtml = warnings.length
     ? `<ul class="warn">${warnings.map((w) => `<li>${esc(w)}</li>`).join("")}</ul>`
@@ -72,7 +70,6 @@ const cards = props.scenes.map((s, i) => {
   <div class="card">
     <div class="phone">
       ${media}
-      ${stickerImg}
       <div class="topbar"><span class="num">#${n}</span><span class="gt">${esc(s.graphic_type || "graphic")}</span>${subBadge}${scoreBadge}</div>
       <div class="cap">${esc(s.on_screen_text)}</div>
       ${creditLine}
@@ -126,7 +123,6 @@ const html = `<!doctype html>
   .phone { position:relative; aspect-ratio:9/16; background:#000; overflow:hidden; }
   .bg { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
   .nobg { display:flex; flex-direction:column; align-items:center; justify-content:center; color:#555; text-align:center; background:repeating-linear-gradient(45deg,#111,#111 10px,#141414 10px,#141414 20px); }
-  .sticker { position:absolute; top:8px; right:8px; height:64px; width:64px; object-fit:contain; filter:drop-shadow(0 2px 6px #000); z-index:3; }
   .topbar { position:absolute; top:0; left:0; right:0; display:flex; align-items:center; gap:8px; padding:8px; z-index:2; }
   .num { background:var(--gold); color:#000; font-weight:800; border-radius:6px; padding:2px 8px; font-size:13px; }
   .gt { background:rgba(0,0,0,.6); color:#cfcfcf; border-radius:6px; padding:2px 8px; font-size:11px; text-transform:uppercase; letter-spacing:.5px; }

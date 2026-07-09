@@ -115,27 +115,6 @@ async function entityPhoto(slug, i) {
   return { bg, credit: ent.image.attribution };
 }
 
-// Per-scene corner sticker from a KB entity image (e.g. a nation flag on a reveal beat).
-async function entitySticker(slug, i) {
-  try {
-    const ent = JSON.parse(fs.readFileSync(path.join(repoRoot, "kb/entities", `${slug}.json`), "utf8"));
-    // Prefer a background-removed CUTOUT (a player) -> iPhone-sticker style; else the entity image as a flag chip (a nation).
-    const cut = path.join(repoRoot, "out/cutouts", `${slug}.png`);
-    if (fs.existsSync(cut)) {
-      const name = `s${i}-stickercut.png`;
-      fs.copyFileSync(cut, path.join(pub, name));
-      return { img: `${stem}/${name}`, name: ent.name, cutout: true };
-    }
-    if (!ent.image?.url) return null;
-    const ext = (ent.image.url.split(".").pop() || "png").split("?")[0].slice(0, 4);
-    const img = await download(ent.image.url, `s${i}-flag.${ext}`);
-    return { img, name: ent.name, flag: true };
-  } catch (e) {
-    console.log(`  scene ${i}: sticker '${slug}' failed — ${String(e).split("\n")[0].slice(0, 50)}`);
-    return null;
-  }
-}
-
 // For a comparison_split scene ("A vs B"), resolve each side label -> KB entity flag image,
 // so the VS clash shows the two flags. Graceful: any side that doesn't resolve -> null.
 function vsSideLabels(text) {
@@ -319,9 +298,6 @@ for (let i = 0; i < assetsProps.scenes.length; i++) {
     console.log(`  scene ${i + 1}: ${v.visual_source || "graphic"}${visual ? " ✓" : ""}`);
   }
 
-  let scSticker = null;
-  if (v.sticker_entity) scSticker = await entitySticker(v.sticker_entity, i + 1);
-
   let vsImages = null;
   if (v.graphic_type === "comparison_split" || v.graphic_type === "scorers_split")
     vsImages = await vsFlags(a.on_screen_text, i + 1);
@@ -365,7 +341,6 @@ for (let i = 0; i < assetsProps.scenes.length; i++) {
     bg: visual?.bg,
     ...(visual?.bgVideo ? { bgVideo: visual.bgVideo } : {}),
     credit: visual?.credit,
-    ...(scSticker ? { sticker: scSticker } : {}),
     ...(vsImages ? { vsImages } : {}),
     ...(vsCutouts ? { vsCutouts } : {}),
     ...(a.words?.length ? { words: a.words } : {}),
@@ -374,24 +349,6 @@ for (let i = 0; i < assetsProps.scenes.length; i++) {
     ...(groupTable ? { group_table: groupTable } : {}),
     ...(v.subscribe_chip ? { subscribe_chip: true } : {}),
   });
-}
-
-// Subject sticker: the main entity's photo, pinned in the corner across the whole video.
-let sticker;
-if (spec.subject) {
-  try {
-    const ent = JSON.parse(fs.readFileSync(path.join(repoRoot, "kb/entities", `${spec.subject}.json`), "utf8"));
-    const cutoutPath = path.join(repoRoot, "out/cutouts", `${spec.subject}.png`);
-    if (fs.existsSync(cutoutPath)) {
-      fs.copyFileSync(cutoutPath, path.join(pub, "sticker.png"));
-      sticker = { img: `${stem}/sticker.png`, name: ent.name, cutout: true };
-      console.log(`sticker: ${ent.name} (cutout)`);
-    } else if (ent.image?.url) {
-      const ext = (ent.image.url.split(".").pop() || "jpg").split("?")[0].slice(0, 4);
-      sticker = { img: await download(ent.image.url, `sticker.${ext}`), name: ent.name, cutout: false };
-      console.log(`sticker: ${ent.name} (circular fallback — run pipeline/cutout.py ${spec.subject} for a cutout)`);
-    }
-  } catch (e) { console.log(`sticker failed: ${String(e).split("\n")[0].slice(0, 60)}`); }
 }
 
 // Outro VO (the spoken comment-bait question), played over the end card.
@@ -439,7 +396,6 @@ const out = {
   handle: "@tikitakafootytv",
   scenes,
   ...(matchup ? { matchup } : {}),
-  ...(sticker ? { sticker } : {}),
   ...(outro ? { outro } : {}),
   ...(endCard ? { endCard } : {}),
 };

@@ -328,18 +328,9 @@ def _build_entities() -> dict:
 _SAFE_STEM = re.compile(r'^[A-Za-z0-9_-]{1,120}$')
 
 def _safe_stem(stem: str) -> bool:
-    """Return True only if stem is safe to use in path construction."""
-    if not _SAFE_STEM.match(stem):
-        return False
-    # Belt-and-suspenders: resolve and confirm it stays under known output dirs
-    for base in (SPECS, RENDERS, PUBLISHED, STORY, ROOT / "out" / "assets"):
-        try:
-            candidate = (base / stem).resolve()
-            if candidate.parent.resolve() == base.resolve():
-                return True
-        except Exception:
-            pass
-    return False
+    """True only if stem is safe in path construction. The charset (no '/' or '.') is the
+    guard — a matching stem is a bare filename that cannot traverse out of a base dir."""
+    return bool(_SAFE_STEM.match(stem))
 
 
 def start_action(payload: dict) -> dict:

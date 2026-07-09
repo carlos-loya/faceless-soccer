@@ -44,126 +44,29 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+from ytcommon import YTOAuth, video_id
+
 SCOPES = ["https://www.googleapis.com/auth/yt-analytics.readonly"]
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 SECRETS = HERE / ".secrets"
-DEFAULT_CLIENT = SECRETS / "yt_oauth_client.json"
 DEFAULT_TOKEN = SECRETS / "yt_analytics_token.json"
 CHANNEL_START = "2026-06-01"  # channel created 2026-06-09; safe lower bound for startDate
 MATURE_DAYS = 3  # analytics lags ~2-3 days; skip videos younger than this in `collect`
 
+_auth = YTOAuth(
+    scopes=SCOPES, token_env="YT_OAUTH_TOKEN", default_token=DEFAULT_TOKEN,
+    pending=SECRETS / "oauth_pending.json", script="youtube_analytics.py",
+    success_hint="Now try:  uv run pipeline/youtube_analytics.py retention <video-url>")
+
 
 def _video_id(s: str) -> str:
-    """Accept a raw id, a /watch?v=, a youtu.be/, or a /shorts/ URL."""
-    s = s.strip()
-    m = re.search(r"(?:v=|youtu\.be/|/shorts/)([A-Za-z0-9_-]{11})", s)
-    if m:
-        return m.group(1)
-    if re.fullmatch(r"[A-Za-z0-9_-]{11}", s):
-        return s
-    sys.exit(f"Could not parse a video id from: {s!r}")
-
-
-def _creds():
-    from google.auth.transport.requests import Request
-    from google.oauth2.credentials import Credentials
-
-    token_path = Path(os.getenv("YT_OAUTH_TOKEN", DEFAULT_TOKEN))
-    if not token_path.exists():
-        sys.exit("Not authorized yet. Run:  uv run pipeline/youtube_analytics.py auth")
-    creds = Credentials.from_authorized_user_file(str(token_path), SCOPES)
-    if creds and creds.expired and creds.refresh_token:
-        creds.refresh(Request())
-        token_path.write_text(creds.to_json())
-    return creds
-
-
-REDIRECT_URI = "http://localhost:8765/"  # desktop clients allow any loopback port
-PENDING = SECRETS / "oauth_pending.json"
-
-
-def _relax_env() -> None:
-    # allow the http loopback redirect + tolerate Google reordering the returned scope string
-    os.environ.setdefault("OAUTHLIB_INSECURE_TRANSPORT", "1")
-    os.environ.setdefault("OAUTHLIB_RELAX_TOKEN_SCOPE", "1")
-
-
-def _client_path() -> Path:
-    p = Path(os.getenv("YT_OAUTH_CLIENT", DEFAULT_CLIENT))
-    if not p.exists():
-        sys.exit(
-            f"Missing OAuth client JSON at {p}.\n"
-            "Download it from Google Cloud (Desktop app OAuth client) and save it there.\n"
-            "See the setup steps at the top of this file."
-        )
-    return p
-
-
-def do_auth() -> None:
-    """Step 1: print the consent URL (no PKCE — desktop client uses its client_secret)."""
-    import json as _json
-
-    from google_auth_oauthlib.flow import Flow
-
-    client_path = _client_path()
-    SECRETS.mkdir(parents=True, exist_ok=True)
-    _relax_env()
-
-    flow = Flow.from_client_secrets_file(
-        str(client_path), scopes=SCOPES, autogenerate_code_verifier=False
-    )
-    flow.redirect_uri = REDIRECT_URI
-    auth_url, _state = flow.authorization_url(access_type="offline", prompt="consent")
-    PENDING.write_text(_json.dumps({"client": str(client_path)}))
-
-    print("\nStep 1 — open this URL, sign in with the channel's Google account, and authorize:\n")
-    print(auth_url)
-    print("\n  (If an 'unverified app' screen appears: Advanced > continue — it's your own app.)")
-    print("\nStep 2 — the browser redirects to a localhost page that WON'T load")
-    print("         (http://localhost:8765/?code=...  — 'site can't be reached'). That's expected.")
-    print("         Copy the FULL address-bar URL and run this, with the URL in quotes:\n")
-    print('   uv run pipeline/youtube_analytics.py auth-finish "<paste the full URL>"\n')
-
-
-def do_auth_finish(resp: str) -> None:
-    """Step 2: exchange the pasted redirect URL for a token, reusing the saved PKCE verifier."""
-    import json as _json
-
-    from google_auth_oauthlib.flow import Flow
-
-    from urllib.parse import parse_qs, unquote, urlparse
-
-    if not PENDING.exists():
-        sys.exit("No pending auth. Run `auth` first to get the URL.")
-    p = _json.loads(PENDING.read_text())
-    _relax_env()
-
-    # Accept the full redirect URL OR just the bare code. Exchange the code directly
-    # (no authorization_response state-string matching — robust to shell-splitting/copy issues).
-    resp = resp.strip()
-    code = (parse_qs(urlparse(resp).query).get("code") or [None])[0] if "code=" in resp else resp
-    if not code:
-        sys.exit("Could not find an auth code in that input.")
-    code = unquote(code)
-
-    flow = Flow.from_client_secrets_file(
-        p["client"], scopes=SCOPES, autogenerate_code_verifier=False,
-    )
-    flow.redirect_uri = REDIRECT_URI
-    flow.fetch_token(code=code)
-
-    token_path = Path(os.getenv("YT_OAUTH_TOKEN", DEFAULT_TOKEN))
-    token_path.write_text(flow.credentials.to_json())
-    PENDING.unlink(missing_ok=True)
-    print(f"Authorized.  Token saved to {token_path}")
-    print("Now try:  uv run pipeline/youtube_analytics.py retention <video-url>")
+    """Parse a video id (URL or bare id); exit on unparseable user input."""
+    return video_id(s) or sys.exit(f"Could not parse a video id from: {s!r}")
 
 
 def _analytics():
-    from googleapiclient.discovery import build
-
-    return build("youtubeAnalytics", "v2", credentials=_creds(), cache_discovery=False)
+    return _auth.service("youtubeAnalytics", "v2")
 
 
 def _title(vid: str) -> str:
@@ -397,12 +300,9 @@ def _read_post_log() -> list[dict]:
             continue
         if row.get("platform") != "youtube" or row.get("status") != "posted":
             continue
-        vid = row.get("video_id")
+        vid = row.get("video_id") or video_id(row.get("url_or_note", ""))
         if not vid:
-            try:
-                vid = _video_id(row.get("url_or_note", ""))
-            except SystemExit:
-                continue  # no parseable id in this legacy row
+            continue  # no parseable id in this legacy row
         row["video_id"] = vid
         by_id[vid] = row  # latest line for this id wins
     return list(by_id.values())
@@ -562,7 +462,7 @@ def _write_performance_store(new_records: dict[str, dict]) -> None:
     PERF_STORE.write_text("".join(json.dumps(r) + "\n" for r in ordered))
 
 
-def collect(only_stem: str | None = None, min_age_days: int = MATURE_DAYS) -> None:
+def collect(only_stem: str | None = None) -> None:
     """Refresh analytics/performance.jsonl for every published YouTube video.
 
     Public stats (views/likes/comments — Data API, NO lag) are recorded for ALL videos
@@ -593,7 +493,7 @@ def collect(only_stem: str | None = None, min_age_days: int = MATURE_DAYS) -> No
         # Always attempt the Analytics API — it's cheap and the lag is uneven (some videos
         # have retention at ~2d, others not), so a fixed age gate wrongly skips real data.
         # It returns None when a video genuinely hasn't processed yet. Public stats are
-        # always recorded regardless. (min_age_days kept for callers but no longer gates.)
+        # always recorded regardless.
         summ = summary_data(vid)
         ret = retention_data(vid)
         rec = _build_record(p, spec, pub, summ, ret, now)
@@ -714,22 +614,20 @@ def main() -> None:
         p.add_argument("video", help="YouTube video URL or 11-char id")
     pc = sub.add_parser("collect", help="Refresh analytics/performance.jsonl for all published videos")
     pc.add_argument("--stem", default=None, help="Only collect this spec stem")
-    pc.add_argument("--min-age-days", type=int, default=MATURE_DAYS,
-                    help=f"Only query the Analytics API for videos at least this old (default {MATURE_DAYS}; it lags ~2-3d)")
     pi = sub.add_parser("inventory", help="List all channel videos (Data API) + flag/backfill any not in the post-log")
     pi.add_argument("--backfill", action="store_true", help="Append matched-by-title rows to the post-log")
     pi.add_argument("--handle", default=None, help="Channel @handle (default $YT_CHANNEL_HANDLE or tikitakafootytv)")
     args = ap.parse_args()
     if args.cmd == "auth":
-        do_auth()
+        _auth.do_auth()
     elif args.cmd == "auth-finish":
-        do_auth_finish(args.response)
+        _auth.do_auth_finish(args.response)
     elif args.cmd == "retention":
         retention(args.video)
     elif args.cmd == "summary":
         summary(args.video)
     elif args.cmd == "collect":
-        collect(args.stem, args.min_age_days)
+        collect(args.stem)
     elif args.cmd == "inventory":
         inventory(args.backfill, args.handle)
 

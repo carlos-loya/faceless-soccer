@@ -5,7 +5,6 @@ import {
 } from "remotion";
 import { fitText } from "@remotion/layout-utils";
 import { CountUp, parseCount } from "./CountUp";
-import { RankingRow } from "./RankingRow";
 import { QuizReveal } from "./QuizReveal";
 import { KineticHeadline } from "./KineticHeadline";
 import { VsSplit } from "./VsSplit";
@@ -41,7 +40,6 @@ type Scene = {
   bg?: string;       // per-scene background image (staticFile path)
   bgVideo?: string;  // per-scene background VIDEO (stock_video b-roll; staticFile path)
   credit?: string;   // attribution for that image (CC / Pexels)
-  sticker?: { img: string; flag?: boolean; cutout?: boolean; name?: string };  // per-scene corner sticker (flag chip, or a player cutout)
   score?: string;    // running scoreboard score for this beat, "HOME-AWAY" (match summaries)
   group_table?: GroupRow[];  // ranked group-standings table for this beat (hides the scoreboard here)
   subscribe_chip?: boolean;  // pop a small "SUBSCRIBE" pill overlay on THIS beat (the climax) for ~2s
@@ -53,7 +51,6 @@ type Props = {
   cta: string;
   handle: string;
   scenes: Scene[];
-  sticker?: { img: string; name: string; cutout?: boolean };  // subject pinned in the corner
   outro?: { audioFile: string; seconds: number };             // spoken comment-bait on the end card
   endCard?: { bgVideo?: string; credit?: string };            // atmosphere bg behind the comment-bait card
   matchup?: { img: string; name: string; code?: string }[];   // 2 flags -> persistent top-left badge: a running SCOREBOARD if scenes carry `score`, else a "VS" badge
@@ -64,13 +61,6 @@ const goldText: React.CSSProperties = {
   WebkitBackgroundClip: "text",
   backgroundClip: "text",
   color: "transparent",
-};
-
-const accentFor = (s: Scene): string | null => {
-  const t = (s.on_screen_text + " " + s.stat_callout).toLowerCase();
-  if (t.includes("champions")) return "linear-gradient(135deg,#A50044,#004D98)";
-  if (t.includes("spain") || t.includes("euro")) return "#C8102E";
-  return null;
 };
 
 // Directed camera move over a still-image bg (the "cinematography" layer). Each move maps the
@@ -85,11 +75,7 @@ const cameraMove = (move: string, p: number, dir: number): { scale: number; posX
   const lerp = (a: number, b: number) => interpolate(p, [0, 1], [a, b]);
   switch (move) {
     case "push_in":   return { scale: lerp(1.05, 1.28), posX: 50, posY: 50 };
-    case "pull_out":  return { scale: lerp(1.30, 1.06), posX: 50, posY: 50 };
     case "pan_left":  return { scale: 1.06, posX: lerp(72, 8),  posY: 50 };  // drift to the image's LEFT (e.g. a left-side sign)
-    case "pan_right": return { scale: 1.06, posX: lerp(28, 92), posY: 50 };  // drift to the RIGHT
-    case "tilt_up":   return { scale: 1.06, posX: 50, posY: lerp(72, 8) };   // drift to the TOP
-    case "tilt_down": return { scale: 1.06, posX: 50, posY: lerp(28, 92) };  // drift to the BOTTOM
     case "ken_burns":
     default:          return { scale: lerp(1.08, 1.22), posX: lerp(50 - 3 * dir, 50 + 3 * dir), posY: lerp(50 + 3 * dir, 50 - 3 * dir) };
   }
@@ -321,27 +307,6 @@ const GroupTable: React.FC<{ rows: GroupRow[]; title?: string }> = ({ rows, titl
   );
 };
 
-// Per-scene flag sticker: a white-bordered rounded flag chip, tilted, pinned top-right.
-const FlagSticker: React.FC<{ img: string }> = ({ img }) => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const s = spring({ frame, fps, config: { damping: 14, stiffness: 120 } });
-  const pop = interpolate(s, [0, 1], [0.5, 1]);
-  const rot = interpolate(s, [0, 1], [-12, -6]);
-  return (
-    <div style={{
-      position: "absolute", top: 30, right: 30, transformOrigin: "top right",
-      transform: `scale(${pop}) rotate(${rot}deg)`, zIndex: 40,
-      padding: 7, background: "#fff", borderRadius: 16,
-      boxShadow: "0 12px 26px rgba(0,0,0,0.55)",
-    }}>
-      <Img src={staticFile(img)} style={{
-        width: 220, height: 146, objectFit: "cover", borderRadius: 9, display: "block",
-      }} />
-    </div>
-  );
-};
-
 // Karaoke captions (option A — carries the spoken line). Shows the VO a short line at a time,
 // highlighting the word as it's spoken (gold), past words solid white, upcoming words dimmed.
 // Word times are seconds relative to this scene's audio (the Sequence resets frame to 0).
@@ -395,7 +360,6 @@ const Card: React.FC<{ scene: Scene; durationFrames: number; dir: number; index:
   // Bottom-anchor text ONLY over a player photo (keeps it below the face). Over video b-roll
   // (atmosphere — hook/guess/outro) or no bg, center it so it's not cramped at the bottom.
   const anchorBottom = !!scene.bg && !scene.bgVideo;
-  const accent = accentFor(scene);
   const shadow = hasBg ? "0 4px 30px rgba(0,0,0,0.9)" : "none";
   // Auto-fit the big stat so ANY text stays on screen: shrink from the 300px design
   // size only as far as needed to fit the safe width.
@@ -428,7 +392,6 @@ const Card: React.FC<{ scene: Scene; durationFrames: number; dir: number; index:
         textAlign: "center",
         fontFamily: "'Arial Narrow','Helvetica Neue',Arial,sans-serif",
       }}>
-        {accent && !hasBg && <AbsoluteFill style={{ background: accent, opacity: 0.18 }} />}
         <AbsoluteFill style={{
           background: "radial-gradient(circle at 50% 42%,rgba(247,215,116,0.4),transparent 60%)",
           opacity: flash,
@@ -440,8 +403,6 @@ const Card: React.FC<{ scene: Scene; durationFrames: number; dir: number; index:
             <GroupTable rows={scene.group_table} title={scene.on_screen_text} />
             {scene.words?.length ? <Karaoke words={scene.words} shadow={shadow} /> : null}
           </div>
-        ) : scene.graphic_type === "ranking_row" ? (
-          <RankingRow scene={scene} shadow={shadow} />
         ) : scene.graphic_type === "quiz_board" ? (
           <QuizReveal scene={scene} statFontSize={statFontSize} shadow={shadow} durationFrames={durationFrames} />
         ) : scene.graphic_type === "comparison_split" ? (
@@ -484,10 +445,8 @@ const Card: React.FC<{ scene: Scene; durationFrames: number; dir: number; index:
         )}
         <Watermark />
       </AbsoluteFill>
-      {/* Corner stickers disabled entirely (owner preference, 2026-06-14): no subject cutout
-          and no per-scene flag chip. The matchup scoreboard/VS badge already carries the flags,
-          so a corner sticker is redundant and crowds the frame. (FlagSticker + Props.sticker
-          are left defined but intentionally never rendered.) */}
+      {/* Corner stickers removed entirely (owner preference): the matchup scoreboard / VS badge
+          already carries the flags, so a corner sticker is redundant and crowds the frame. */}
       {scene.subscribe_chip && <SubscribeChip durationFrames={durationFrames} />}
       {scene.credit && <Credit text={scene.credit} top={creditTop} />}
     </AbsoluteFill>
